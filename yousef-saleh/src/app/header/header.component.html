@@ -1,4 +1,4 @@
-<div class="header-container">
+<div [ngClass]="{ scrolled: isScrolled }" class="header-container">
   <div class="header">
     <div class="logo">UpConstruction .</div>
     <div class="hamburger" (click)="toggleMenu()">&#9776;</div>
@@ -12,5 +12,18 @@
       <div>Gallery</div>
       <div>Contact Us</div>
     </div>
+  </div>
+</div>
+<div class="banner-container">
+  <div class="banner-content">
+    <div class="banner-title">Welcome to UpConstruction</div>
+    <div class="divider"></div>
+    <div class="banner-sub-title">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.
+    </div>
+    <div class="get-touch-cta">Get Started</div>
   </div>
 </div>
