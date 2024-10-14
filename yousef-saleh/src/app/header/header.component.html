@@ -1,15 +1,16 @@
 <div class="header-container">
   <div class="header">
     <div class="logo">UpConstruction .</div>
-    <div class="nav-item">
+    <div class="hamburger" (click)="toggleMenu()">&#9776;</div>
+    <div [ngClass]="{'active': isMenuOpen}" class="nav-item">
       <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
+      <div>About</div>
+      <div>Services</div>
+      <div>Projects</div>
+      <div>Blog</div>
+      <div>Testimonal</div>
+      <div>Gallery</div>
+      <div>Contact Us</div>
     </div>
   </div>
 </div>
