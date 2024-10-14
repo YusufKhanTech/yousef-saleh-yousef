@@ -28,33 +28,34 @@
   display: flex;
   gap: 26px;
   color: #3c3c3c;
+  cursor: pointer;
 }
 .hamburger {
   display: none;
 }
 /* responsive header continer */
-@media(max-width:1172px){
-    .header{
-        padding: 10px;
-    }
-    .hamburger{
-        display: block;
-        font-size: 20px;
-    }
-    .nav-item{
-        display: none;
-        position: absolute;
-        top: 72px;
-        left: 10px;
-        right: 10px;
-        margin: 0;
-        padding: 10px;
-        background-color: white;
-        box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        line-height: 30px;
-    }
-    }
-    .active{
-        display: block;
-    }
+@media (max-width: 1172px) {
+  .header {
+    padding: 10px;
+  }
+  .hamburger {
+    display: block;
+    font-size: 20px;
+  }
+  .nav-item {
+    display: none;
+    position: absolute;
+    top: 72px;
+    left: 10px;
+    right: 10px;
+    margin: 0;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    line-height: 30px;
+  }
+}
+.active {
+  display: block;
+}
