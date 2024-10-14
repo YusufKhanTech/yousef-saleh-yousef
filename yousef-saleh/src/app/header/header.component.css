@@ -1,186 +1,184 @@
 /* Header */
 .header-container {
-    padding: 20px 0;
-    height: auto;
-    box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
-    background-color: transparent;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    transition: background-color 0.3s ease;
-  }
-  
-  .header-container.scrolled {
-    background-color: white;
-    color: #3c3c3c;
-  }
-  
-  .header-container.scrolled .logo {
-    color: #3c3c3c;
-  }
-  
-  .header-container.scrolled .nav-item {
-    color: #3c3c3c;
-  }
-  
-  /* Header Flexbox */
+  padding: 20px 0;
+  height: auto;
+  box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.header-container.scrolled {
+  background-color: white;
+  color: #3c3c3c;
+}
+
+.header-container.scrolled .logo {
+  color: #3c3c3c;
+}
+
+.header-container.scrolled .nav-item {
+  color: #3c3c3c;
+}
+
+/* Header Flexbox */
+.header {
+  max-width: 1024px;
+  position: relative;
+  min-width: 80%;
+  height: 50px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  margin: 0;
+  font-weight: 700;
+  color: white;
+}
+
+.nav-item {
+  display: flex;
+  gap: 26px;
+  color: white;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: none;
+}
+
+/* Banner */
+.banner-container {
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  position: relative;
+}
+
+.banner-content {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(6, 6, 6, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.banner-title {
+  width: 100%;
+  max-width: 400px;
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.banner-sub-title {
+  font-size: 18px;
+  color: white;
+  width: 100%;
+  max-width: 800px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.divider {
+  height: 3px;
+  width: 60px;
+  background-color: white;
+  margin: 20px auto;
+}
+
+.get-touch-cta {
+  background-color: #ff5722;
+  color: white;
+  padding: 15px 30px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.get-touch-cta:hover {
+  background-color: #e64a19;
+}
+
+/* Responsive Header and Banner Adjustments */
+@media (max-width: 1172px) {
   .header {
-    max-width: 1024px;
-    position: relative;
-    min-width: 80%;
-    height: 50px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 10px;
   }
-  
-  .logo {
-    font-size: 24px;
-    margin: 0;
-    font-weight: 700;
-    color: white;
-  }
-  
-  .nav-item {
-    display: flex;
-    gap: 26px;
-    color: white;
-    cursor: pointer;
-  }
-  
+
   .hamburger {
-    display: none;
+    display: block;
+    color: white;
+    font-size: 20px;
   }
-  
-  /* Banner */
+
+  .nav-item {
+    display: none;
+    position: absolute;
+    top: 72px;
+    left: 10px;
+    right: 10px;
+    margin: 0;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-container {
+    height: 60vh;
+  }
+
+  .banner-title {
+    font-size: 32px;
+  }
+
+  .banner-sub-title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
   .banner-container {
     height: 100vh;
-    background-image: url("https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    background-position: center;
-    background-size: cover;
-    overflow: hidden;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 20px;
-    position: relative;
   }
-  
-  .banner-content {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(6, 6, 6, 0.8);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    box-sizing: border-box;
-  }
-  
-  /* Banner Content Styles */
+
   .banner-title {
-    width: 100%;
-    max-width: 400px;
-    font-size: 48px;
-    font-weight: bold;
-    color: white;
-    margin-bottom: 20px;
+    font-size: 32px;
   }
-  
+
   .banner-sub-title {
-    font-size: 18px;
-    color: white;
-    width: 100%;
-    max-width: 800px;
-    line-height: 1.6;
-    margin-bottom: 40px;
+    font-size: 14px;
   }
-  
-  .divider {
-    height: 3px;
-    width: 60px;
-    background-color: white;
-    margin: 20px auto;
-  }
-  
+
   .get-touch-cta {
-    background-color: #ff5722;
-    color: white;
-    padding: 15px 30px;
-    font-size: 16px;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    padding: 10px 20px;
+    font-size: 14px;
   }
-  
-  .get-touch-cta:hover {
-    background-color: #e64a19;
-  }
-  
-  /* Responsive Header and Banner Adjustments */
-  @media (max-width: 1172px) {
-    .header {
-      padding: 10px;
-    }
-  
-    .hamburger {
-      display: block;
-      color: white;
-      font-size: 20px;
-    }
-  
-    .nav-item {
-      display: none;
-      position: absolute;
-      top: 72px;
-      left: 10px;
-      right: 10px;
-      margin: 0;
-      padding: 10px;
-      background-color: white;
-      box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
-      text-align: center;
-      line-height: 30px;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .banner-container {
-      height: 60vh;
-    }
-  
-    .banner-title {
-      font-size: 32px;
-    }
-  
-    .banner-sub-title {
-      font-size: 16px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .banner-container {
-      height: 100vh;
-    }
-  
-    .banner-title {
-      font-size: 32px;
-    }
-  
-    .banner-sub-title {
-      font-size: 14px;
-    }
-  
-    .get-touch-cta {
-      padding: 10px 20px;
-      font-size: 14px;
-    }
-  }
-  
+}
