@@ -1,0 +1,11 @@
+.center-header{
+    background-color: white;
+}
+.center-header-content{
+    width: 85%;
+    margin: auto;
+}
+.center-right-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1rfr;
+}
