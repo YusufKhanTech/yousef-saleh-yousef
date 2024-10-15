@@ -71,4 +71,7 @@
     .card-title-container{
         margin: 10px;
     }
+    .project-image img{
+        width: 100%;
+    }
 }
