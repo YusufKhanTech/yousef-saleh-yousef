@@ -104,7 +104,7 @@
 .divider {
   height: 3px;
   width: 60px;
-  background-color: #feb900;
+  background-color: #006142;
   margin: 0 auto;
 }
 
@@ -117,15 +117,20 @@
   padding: 12px 40px;
   border-radius: 50px;
   cursor: pointer;
-  border: 2px solid #feb900;
+  border: 2px solid #006142;
   transition: 0.8s ease;
 }
 
 .get-touch-cta:hover {
-  background-color: #09ac9c;
-  border: 2px solid #09ac9c;
+  background-color: #006142;
+  border: 2px solid #006142;
 }
-
+.menu:hover {
+  padding: 12px 40px;
+  border-radius: 50px;
+  background-color: #0b505d;
+  border: 2px solid #0b505d;
+}
 /* Responsive Header and Banner Adjustments */
 @media (max-width: 1172px) {
   .header {

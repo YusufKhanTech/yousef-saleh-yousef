@@ -1,9 +1,9 @@
-import { NgClass } from '@angular/common';
+import {NgClass, NgOptimizedImage} from '@angular/common';
 import { Component, HostListener } from '@angular/core';
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [NgClass],
+  imports: [NgClass, NgOptimizedImage],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
 })
