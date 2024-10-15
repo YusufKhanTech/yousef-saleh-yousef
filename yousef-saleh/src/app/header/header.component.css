@@ -1,0 +1,191 @@
+.header-container {
+  padding: 20px 0;
+  height: auto;
+  box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: 0.8s ease;
+}
+
+.header-container.scrolled {
+  background-color: white;
+  color: #3c3c3c;
+}
+
+.header-container.scrolled .logo {
+  color: #3c3c3c;
+}
+
+.header-container.scrolled .nav-item {
+  color: #3c3c3c;
+}
+
+/* Header Flexbox */
+.header {
+  max-width: 1024px;
+  position: relative;
+  min-width: 80%;
+  height: 50px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  margin: 0;
+  font-weight: 700;
+  color: white;
+}
+
+.nav-item {
+  display: flex;
+  gap: 26px;
+  color: white;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: none;
+}
+
+/* Banner */
+.banner-container {
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  position: relative;
+}
+
+.banner-content {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(6, 6, 6, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.banner-title {
+  width: 100%;
+  max-width: 400px;
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.banner-sub-title {
+  font-size: 18px;
+  color: white;
+  max-width: 800px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.divider {
+  height: 3px;
+  width: 60px;
+  background-color: #feb900;
+  margin: 0 auto;
+}
+
+.get-touch-cta {
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 2px solid #feb900;
+  transition: 0.8s ease;
+}
+
+.get-touch-cta:hover {
+  background-color: #09ac9c;
+  border: 2px solid #09ac9c;
+}
+
+/* Responsive Header and Banner Adjustments */
+@media (max-width: 1172px) {
+  .header {
+    padding: 10px;
+  }
+
+  .hamburger {
+    display: block;
+    color: white;
+    font-size: 20px;
+  }
+
+  .nav-item {
+    display: none;
+  }
+
+  .nav-item.active {
+    display: block;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    color: #3c3c3c;
+    box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-container {
+    height: 100vh;
+  }
+
+  .banner-title {
+    font-size: 32px;
+  }
+
+  .banner-sub-title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-container {
+    height: 100vh;
+  }
+
+  .banner-title {
+    font-size: 32px;
+  }
+
+  .banner-sub-title {
+    font-size: 14px;
+  }
+
+  .get-touch-cta {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
