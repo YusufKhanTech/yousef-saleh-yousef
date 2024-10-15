@@ -10,7 +10,7 @@
 }
 
 .input-form-container {
-  background-color: #F9F9FA;
+  background-color: #f9f9fa;
   padding: 20px;
 }
 
@@ -46,6 +46,12 @@
   background-color: color-mix(in srgb, #ffffff, transparent 20%);
   border-color: color-mix(in srgb, #364d59, transparent 80%);
   box-sizing: border-box;
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+  width: 100%;
 }
 
 .form-content button {
