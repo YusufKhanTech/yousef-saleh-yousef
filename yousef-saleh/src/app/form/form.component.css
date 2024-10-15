@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   gap: 70px;
   width: 80%;
   margin: auto;
@@ -10,14 +9,7 @@
   box-sizing: border-box;
 }
 
-.form-title-container {
-  flex: 1;
-  min-width: 300px;
-}
-
 .input-form-container {
-  flex: 1;
-  min-width: 300px;
   background-color: #F9F9FA;
   padding: 20px;
 }
