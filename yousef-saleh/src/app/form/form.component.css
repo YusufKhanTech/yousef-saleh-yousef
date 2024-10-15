@@ -18,6 +18,8 @@
 .input-form-container {
   flex: 1;
   min-width: 300px;
+  background-color: #F9F9FA;
+  padding: 20px;
 }
 
 .title,
