@@ -11,6 +11,9 @@
     @for(image of projectImages; track image){
     <div class="project-card">
       <img [src]="image" alt="Project Image" />
+      <div class="overlay">
+        <div class="project-detail-cta">Click me</div>
+      </div> 
     </div>
     }
   </div>
