@@ -24,42 +24,40 @@
   .footer-content {
     position: relative;
     z-index: 2;
-    width: 70%; /* Set footer width to 70% */
+    width: 70%;
     margin: 20px auto;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     border-bottom: 1px solid rgba(255, 255, 255, 0.7);
-    flex-wrap: wrap; /* Ensure no overflow */
+    flex-wrap: wrap;
   }
   
-  /* Footer Columns */
   .footer-info,
   .footer-links {
     padding: 0 15px;
     box-sizing: border-box;
   }
   
-  /* Simulate Bootstrap col-sm-4 and col-sm-8 */
   .footer-info {
-    flex: 0 0 33.3333%; /* col-sm-4 */
+    flex: 0 0 33.3333%;
     max-width: 33.3333%;
     margin-bottom: 20px;
+    color: white;
   }
   
   .footer-links {
-    flex: 0 0 66.6667%; /* col-sm-8 */
+    flex: 0 0 66.6667%;
     max-width: 66.6667%;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; /* Ensure content wraps to avoid overflow */
+    flex-wrap: wrap;
     width: 100%;
   }
   
-  /* Footer Links */
   .section {
     flex: 1;
-    margin: 0 20px; /* Reduced margin to prevent override */
+    margin: 0 20px;
     min-width: 150px;
   }
   
@@ -86,7 +84,7 @@
     display: inline-block;
     line-height: 1;
     text-decoration: none;
-    font-size: 14px; /* Standardized font size */
+    font-size: 14px;
     width: max-content;
   }
   
@@ -94,7 +92,6 @@
     text-decoration: underline;
   }
   
-  /* Copywrite Section */
   .copy-write-container {
     position: relative;
     z-index: 2;
@@ -113,7 +110,6 @@
     margin-top: 10px;
   }
   
-  /* Media Queries */
   @media (max-width: 991px) {
     .footer-container {
       width: 100%;
