@@ -4,7 +4,7 @@
     <div class="hamburger" (click)="toggleMenu()">&#9776;</div>
     <div [ngClass]="{ active: isMenuOpen }" class="nav-item">
       <li>Home</li>
-      <li>About</li>
+      <li [routerLink]="['about']">About</li>
       <li>Services</li>
       <li>Contact</li>
     </div>

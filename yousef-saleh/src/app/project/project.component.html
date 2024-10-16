@@ -9,11 +9,11 @@
   </div>
   <div class="project-card-content">
     @for(image of projectImages; track image){
-    <div class="project-card">
-      <img [src]="image" alt="Project Image" />
+    <div class="project-card" (click)="navigateToProjectDetail(image.id)">
+      <img [src]="image?.imageUrl" alt="Project Image" />
       <div class="overlay">
         <div class="project-detail-cta">Click me</div>
-      </div> 
+      </div>
     </div>
     }
   </div>
