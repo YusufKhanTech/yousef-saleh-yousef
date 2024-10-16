@@ -26,8 +26,8 @@ export class AppComponent {
   title = 'yousef-saleh';
   ngOnInit() {
     AOS.init({
-      duration: 1000,  // Default animation duration in milliseconds
-      once: true,  // Animation occurs only once
+      duration: 1000,
+      once: true,
     });
   }
 }
