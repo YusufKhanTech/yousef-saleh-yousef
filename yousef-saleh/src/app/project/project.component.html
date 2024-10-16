@@ -5,10 +5,10 @@
     <div class="divider-container"></div>
   </div>
   <div class="project-sub-title">
-    {{ titleName }}
+    {{ projectTitleName }}
   </div>
   <div class="project-card-content">
-    @for(image of images; track image){
+    @for(image of projectImages; track image){
     <div class="project-card">
       <img [src]="image" alt="Project Image" />
     </div>

@@ -9,8 +9,8 @@ import { Component } from '@angular/core';
   styleUrl: './project.component.css'
 })
 export class ProjectComponent {
-  titleName = "Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit";
-  images = [
+  projectTitleName = "Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit";
+  projectImages = [
     "https://www.bootstrapmade.com/content/demo/UpConstruction/assets/img/projects/remodeling-1.jpg",
     "https://www.bootstrapmade.com/content/demo/UpConstruction/assets/img/projects/construction-1.jpg",
     "https://www.bootstrapmade.com/content/demo/UpConstruction/assets/img/projects/repairs-1.jpg",
