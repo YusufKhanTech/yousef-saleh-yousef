@@ -42,12 +42,41 @@
   font-weight: 700;
   color: white;
 }
-
 .nav-item {
   display: flex;
-  gap: 26px;
-  color: white;
+  gap: 20px;
+}
+
+.nav-item li {
+  position: relative;
+  padding: 10px 0;
   cursor: pointer;
+  color: white;
+  list-style: none;
+}
+
+.nav-item li:first-child {
+  border-bottom: 2px solid #feb900;
+}
+
+.nav-item li:not(:first-child)::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #feb900;
+  transition: width 0.4s ease, left 0.4s ease;
+}
+
+.nav-item li:not(:first-child):hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.nav-item li:not(:first-child):hover {
+  border-bottom: 2px solid transparent;
 }
 
 .hamburger {
