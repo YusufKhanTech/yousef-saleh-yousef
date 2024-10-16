@@ -1,0 +1,142 @@
+.footer-container {
+    position: relative; 
+    padding: 20px 0;
+    height: auto;
+    box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+    background-image: url('https://www.bootstrapmade.com/content/demo/UpConstruction/assets/img/footer-bg.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    overflow: hidden; 
+}
+
+.footer-container::before {
+    content: ''; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8); 
+    z-index: 1; 
+}
+
+.footer-content {
+    position: relative; 
+    z-index: 2; 
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+/* Footer Info */
+.footer-info {
+    margin-bottom: 20px;
+}
+
+.footer-info h3,
+.footer-info p,
+.copy-write-title,
+.copy-write-sub-title {
+    color: white; /* Set text color to white */
+}
+
+.social-icons a {
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Footer Links */
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+
+.section {
+    flex: 1;
+    margin: 0 40px;
+    min-width: 150px; 
+}
+
+.section h4 {
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 12px;
+    color: white;
+}
+
+.section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.section ul li {
+    margin-bottom: 5px;
+}
+
+.section ul li a {
+    color: rgba(255, 255, 255, 0.7); 
+    display: inline-block;
+    line-height: 1;
+    text-decoration: none;
+    font-size: 14px;
+    width: max-content;
+}
+
+.section ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Copywrite Section */
+.copy-write-container {
+    position: relative; 
+    z-index: 2; 
+    text-align: center; /* Center the text */
+}
+
+.copy-write-title {
+    color: white; 
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.copy-write-sub-title {
+    color: white; 
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 991px) {
+    .footer-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; 
+        align-items: flex-start; 
+        margin: 5px;
+        width: 100%;
+    }
+    
+    .footer-info {
+        margin: 10px;
+    }
+
+    .footer-links {
+        display: flex;
+    }
+
+    .section {
+        margin: 10px;
+    }
+}
