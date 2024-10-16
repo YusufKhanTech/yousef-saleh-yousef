@@ -26,9 +26,8 @@
 
 /* Header Flexbox */
 .header {
-  max-width: 1024px;
   position: relative;
-  min-width: 80%;
+  width: 70%;
   height: 50px;
   margin: auto;
   display: flex;
@@ -51,12 +50,14 @@
   position: relative;
   padding: 10px 0;
   cursor: pointer;
-  color: white;
+  color: rgba(255, 255, 255, 0.55);
   list-style: none;
+  font-weight: 500;
 }
 
 .nav-item li:first-child {
   border-bottom: 2px solid var(--color-orange);
+  color: white;
 }
 
 .nav-item li:not(:first-child)::after {
@@ -77,6 +78,7 @@
 
 .nav-item li:not(:first-child):hover {
   border-bottom: 2px solid transparent;
+  color: white;
 }
 
 .hamburger {
@@ -153,8 +155,8 @@
 }
 
 .get-touch-cta:hover {
-  background-color: #09ac9c;
-  border: 2px solid #09ac9c;
+  background-color: #f68122;
+  border: 2px solid #f68122;
 }
 
 /* Responsive Header and Banner Adjustments */
@@ -197,7 +199,19 @@
     line-height: 30px;
   }
 }
-
+@media (max-width: 991px) {
+  .nav-item {
+    height: 85vh;
+    margin: 0 20px;
+    border-radius: 10px;
+  }
+  .header {
+    width: 100%;
+  }
+  .nav-item li:first-child {
+    color: #f68122;
+  }
+}
 @media (max-width: 768px) {
   .banner-container {
     height: 100vh;
