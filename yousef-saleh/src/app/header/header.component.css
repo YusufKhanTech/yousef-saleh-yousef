@@ -20,7 +20,7 @@
   color: #3c3c3c;
 }
 
-.header-container.scrolled .nav-item li{
+.header-container.scrolled .nav-item li {
   color: #3c3c3c;
 }
 
@@ -170,6 +170,16 @@
 
   .nav-item {
     display: none;
+  }
+  .nav-item li {
+    color: #3c3c3c;
+  }
+  .nav-item li:not(:first-child)::after {
+    display: none;
+  }
+
+  .nav-item li:first-child {
+    border-bottom: none;
   }
 
   .nav-item.active {
