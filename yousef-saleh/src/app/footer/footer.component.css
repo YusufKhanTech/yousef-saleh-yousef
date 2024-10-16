@@ -3,15 +3,15 @@
     padding: 20px 0;
     height: auto;
     box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
-    background-image: url('https://www.bootstrapmade.com/content/demo/UpConstruction/assets/img/footer-bg.jpg');
+    background-image: url("https://www.bootstrapmade.com/content/demo/UpConstruction/assets/img/footer-bg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
-}
-
-.footer-container::before {
-    content: '';
+  }
+  
+  .footer-container::before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -19,125 +19,140 @@
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 1;
-}
-
-.footer-content {
+  }
+  
+  .footer-content {
     position: relative;
     z-index: 2;
-    width: 80%;
+    width: 70%; /* Set footer width to 70% */
     margin: 20px auto;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     border-bottom: 1px solid rgba(255, 255, 255, 0.7);
-}
-
-/* Footer Info */
-.footer-info {
+    flex-wrap: wrap; /* Ensure no overflow */
+  }
+  
+  /* Footer Columns */
+  .footer-info,
+  .footer-links {
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+  
+  /* Simulate Bootstrap col-sm-4 and col-sm-8 */
+  .footer-info {
+    flex: 0 0 33.3333%; /* col-sm-4 */
+    max-width: 33.3333%;
     margin-bottom: 20px;
-}
-
-.footer-info h3,
-.footer-info p,
-.copy-write-title,
-.copy-write-sub-title {
-    color: white; /* Set text color to white */
-}
-
-.social-icons a {
-    margin-right: 10px;
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-/* Footer Links */
-.footer-links {
+  }
+  
+  .footer-links {
+    flex: 0 0 66.6667%; /* col-sm-8 */
+    max-width: 66.6667%;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.section {
+    flex-wrap: wrap; /* Ensure content wraps to avoid overflow */
+    width: 100%;
+  }
+  
+  /* Footer Links */
+  .section {
     flex: 1;
-    margin: 0 40px;
+    margin: 0 20px; /* Reduced margin to prevent override */
     min-width: 150px;
-}
-
-.section h4 {
+  }
+  
+  .section h4 {
     font-size: 16px;
     font-weight: bold;
     position: relative;
     padding-bottom: 12px;
     color: white;
-}
-
-.section ul {
+  }
+  
+  .section ul {
     list-style-type: none;
     padding: 0;
-}
-
-.section ul li {
+  }
+  
+  .section ul li {
     margin-bottom: 5px;
-}
-
-.section ul li a {
+    display: inline-block;
+  }
+  
+  .section ul li a {
     color: rgba(255, 255, 255, 0.7);
     display: inline-block;
     line-height: 1;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 14px; /* Standardized font size */
     width: max-content;
-}
-
-.section ul li a:hover {
+  }
+  
+  .section ul li a:hover {
     text-decoration: underline;
-}
-
-/* Copywrite Section */
-.copy-write-container {
+  }
+  
+  /* Copywrite Section */
+  .copy-write-container {
     position: relative;
     z-index: 2;
-    text-align: center; /* Center the text */
-}
-
-.copy-write-title {
+    text-align: center;
+  }
+  
+  .copy-write-title {
     color: white;
     font-size: 14px;
     margin-top: 20px;
-}
-
-.copy-write-sub-title {
+  }
+  
+  .copy-write-sub-title {
     color: white;
     font-size: 14px;
     margin-top: 10px;
-}
-
-/* Media Queries */
-@media (max-width: 991px) {
+  }
+  
+  /* Media Queries */
+  @media (max-width: 991px) {
     .footer-container {
-        width: 100%;
+      width: 100%;
       margin-top: 22px;
     }
-}
-
-@media (max-width: 768px) {
+  
     .footer-content {
-        flex-direction: column;
-        align-items: flex-start;
-        margin: 5px;
-        width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
     }
-
-    .footer-info {
-        margin: 10px;
-    }
-
+  
+    .footer-info,
     .footer-links {
-        display: flex;
+      flex: 0 0 100%;
+      max-width: 100%;
     }
-
+  
+    .footer-links {
+      flex-wrap: wrap;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      margin: 5px;
+    }
+  
+    .footer-info {
+      margin: 10px;
+    }
+  
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
     .section {
-        margin: 10px;
+      margin: 10px;
     }
-}
+  }
+  
