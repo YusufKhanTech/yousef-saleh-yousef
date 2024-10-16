@@ -6,3 +6,6 @@
   box-sizing: border-box !important;
   font-family: "Poppins", sans-serif !important;
 }
+:root {
+  --color-orange: #f68122;
+}
