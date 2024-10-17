@@ -12,6 +12,7 @@ export class BannerContentComponent {
 @Input() title!:string;
 @Input() subTitle!:string;
 @Input() buttonText!:string;
+@Input() breadcrumbText!: string;
 @Input() bannerHeight:string = '100vh';
 @Output() buttonClick = new EventEmitter<any>();
 

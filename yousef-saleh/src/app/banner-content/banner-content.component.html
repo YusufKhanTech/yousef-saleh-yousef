@@ -4,6 +4,9 @@
       @if(title){
       <div class="banner-title">{{ title }}</div>
       }
+      @if(breadcrumbText){
+        <div class="breadcrumb">{{ breadcrumbText }}</div>
+      }
       <div data-aos="fade-up">
         @if(subTitle){
           <div class="divider"></div>
