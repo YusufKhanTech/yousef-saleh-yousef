@@ -1,7 +1,12 @@
 @if(isServicesBanner){
-  <app-banner-content title="Services" breadcrumbText="Home / Services" bannerHeight="400px"></app-banner-content>
+<app-banner-content
+  title="Services"
+  breadcrumbText="Home / Services"
+  bannerHeight="400px"
+></app-banner-content>
 }
 <div class="service-container">
+  @if(!isServicesBanner){
   <div class="service-heading-container">
     <div class="divider-container"></div>
     <div class="title-container">Services</div>
@@ -11,7 +16,7 @@
     Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur
     velit
   </div>
-
+  }
   <div class="service-card-container">
     <div class="service-card-content">
       <div class="card-logo">
@@ -200,9 +205,9 @@
         Enim quis est voluptatibus aliquid consequatur
       </div>
       <div class="content-sub-title">
-        Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non
-        ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere
-        corporis dolores excepturi
+        Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus.
+        Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed
+        facere corporis dolores excepturi
       </div>
     </div>
     <div class="content-image">
