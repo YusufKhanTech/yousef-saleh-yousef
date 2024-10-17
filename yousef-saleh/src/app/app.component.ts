@@ -7,6 +7,7 @@ import { ServicesComponent } from './services/services.component';
 import { ProjectComponent } from './project/project.component';
 import { FooterComponent } from './footer/footer.component';
 import * as AOS from 'aos';
+import { ProjectDetailComponent } from "./project-detail/project-detail.component";
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -18,7 +19,8 @@ import * as AOS from 'aos';
     ServicesComponent,
     ProjectComponent,
     FooterComponent,
-  ],
+    ProjectDetailComponent
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })

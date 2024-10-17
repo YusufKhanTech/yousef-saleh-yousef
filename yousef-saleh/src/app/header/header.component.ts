@@ -1,13 +1,16 @@
 import { NgClass } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
+import { RouterLink } from '@angular/router';
+import { BannerContentComponent } from "../banner-content/banner-content.component";
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [NgClass],
+  imports: [NgClass, RouterLink, BannerContentComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
 })
 export class HeaderComponent {
+[x: string]: any;
   isMenuOpen: boolean = false;
   isScrolled: boolean = false;
 
