@@ -1,11 +1,12 @@
 import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { Route, Router } from '@angular/router';
+import { BannerContentComponent } from "../banner-content/banner-content.component";
 
 @Component({
   selector: 'app-project',
   standalone: true,
-  imports: [NgFor],
+  imports: [NgFor, BannerContentComponent],
   templateUrl: './project.component.html',
   styleUrl: './project.component.css',
 })
