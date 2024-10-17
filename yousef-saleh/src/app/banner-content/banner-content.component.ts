@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-banner-content',
@@ -8,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrl: './banner-content.component.css'
 })
 export class BannerContentComponent {
+@Input() title!:string;
+@Input() subTitle!:string;
+@Input() buttonText!:string;
+@Output() buttonClick = new EventEmitter<any>();
 
+onButtonClick(){
+  this.buttonClick.emit();
+}
 }

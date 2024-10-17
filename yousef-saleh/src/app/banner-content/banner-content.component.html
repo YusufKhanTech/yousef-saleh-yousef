@@ -1,17 +1,16 @@
 <div class="banner-container">
-    <div class="banner-content">
-      <div data-aos="fade-up" data-aos-delay="100">
-        <div class="banner-title">Welcome to UpConstruction</div>
-        <div class="divider"></div>
-        <div data-aos="fade-up" >
-          <div class="banner-sub-title">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat.
-          </div>
+  <div class="banner-content">
+    <div data-aos="fade-up" data-aos-delay="100">
+      <div class="banner-title">{{ title }}</div>
+      <div class="divider"></div>
+      <div data-aos="fade-up">
+        <div class="banner-sub-title">
+          {{ subTitle }}
         </div>
-        <div class="get-touch-cta">Get Started</div>
+      </div>
+      <div class="get-touch-cta" (click)="onButtonClick()">
+        {{ buttonText }}
       </div>
     </div>
   </div>
+</div>
