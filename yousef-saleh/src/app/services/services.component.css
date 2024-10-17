@@ -51,27 +51,94 @@
   border-bottom: 4px solid color-mix(in srgb, #52565e, transparent 90%);
   transition: 0.3s;
 }
-.card-sub-title{
-    font-size: 16px;
-    color: #303030;
+.card-sub-title {
+  font-size: 16px;
+  color: #303030;
 }
 .service-card-content:hover .card-title {
   border-bottom: 4px solid color-mix(in srgb, #feb900, transparent 10%);
 }
-.read-more{
-    font-size: 12px;
-    margin-top: 12px;
-    color: #303030;
+.read-more {
+  font-size: 12px;
+  margin-top: 12px;
+  color: #303030;
 }
-@media(max-width:991px){
-    .service-container{
-        width: 100%;
-    }
-    .service-card-container{
-        display: block;
-        padding: 10px;
-    }
-    .service-card-content{
-        margin-bottom: 20px;
-    }
+.services-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 30px;
+}
+.card-sub-heading {
+  margin-top: 10px;
+  font-size: 15px;
+  color: color-mix(in srgb, #364d59, transparent 20%);
+}
+.card-heading {
+  font-size: 20px;
+  font-weight: 700;
+  color: #52565e;
+}
+.content-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #52565e;
+}
+.content-sub-title {
+  margin-top: 10px;
+  font-size: 15px;
+  color: color-mix(in srgb, #364d59, transparent 20%);
+}
+.services-content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-top: 70px;
+}
+.content-heading-container {
+  width: 50%;
+  overflow: hidden;
+}
+.content-image {
+  width: 50%;
+  height: 400px;
+  overflow: hidden;
+}
+.content-image img {
+  width: 100%;
+}
+@media (max-width: 991px) {
+  .service-container {
+    width: 100%;
+  }
+  .service-card-container {
+    display: block;
+    padding: 10px;
+  }
+  .service-card-content {
+    margin-bottom: 20px;
+  }
+  .services-content-container {
+    display: block;
+    padding: 20px;
+  }
+  .content-image {
+    margin-top: 20px;
+  }
+  .content-heading-container,
+  .content-image {
+    width: 100%;
+  }
+}
+@media (max-width: 668px) {
+  .services-container {
+    display: block;
+    padding: 20px;
+  }
+  .services-card {
+    margin-bottom: 20px;
+  }
 }
