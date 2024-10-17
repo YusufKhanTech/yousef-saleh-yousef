@@ -22,6 +22,6 @@ export class ProjectComponent {
     ];
   constructor(private router: Router) {}
   navigateToProjectDetail(projectId: number) {
-    projectId ? this.router.navigate(['/project-detail', projectId]) : Error('undefined id');
+    projectId ? this.router.navigate(['project/', projectId]) : Error('undefined id');
   }
 }
