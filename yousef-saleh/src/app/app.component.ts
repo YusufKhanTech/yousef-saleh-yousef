@@ -1,30 +1,16 @@
-import { Component } from '@angular/core';
-import { NavigationEnd, RouterOutlet } from '@angular/router';
-import { FormComponent } from './form/form.component';
-import { HeaderComponent } from './header/header.component';
-import { ConstructionsComponent } from './constructions/constructions.component';
-import { ServicesComponent } from './services/services.component';
-import { ProjectComponent } from './project/project.component';
-import { FooterComponent } from './footer/footer.component';
+import {Component, OnInit} from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 import * as AOS from 'aos';
-import { ProjectDetailComponent } from "./project-detail/project-detail.component";
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
-    RouterOutlet,
-    HeaderComponent,
-    FormComponent,
-    ConstructionsComponent,
-    ServicesComponent,
-    ProjectComponent,
-    FooterComponent,
-    ProjectDetailComponent
+    RouterOutlet
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   title = 'yousef-saleh';
   ngOnInit() {
     AOS.init({
