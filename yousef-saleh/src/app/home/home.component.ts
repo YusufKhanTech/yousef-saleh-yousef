@@ -3,6 +3,7 @@ import {FooterComponent} from '../footer/footer.component';
 import {HeaderComponent} from '../header/header.component';
 import {ProjectComponent} from '../project/project.component';
 import {ServicesComponent} from '../services/services.component';
+import {BannerContentComponent} from '../banner-content/banner-content.component';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +12,8 @@ import {ServicesComponent} from '../services/services.component';
     FooterComponent,
     HeaderComponent,
     ProjectComponent,
-    ServicesComponent
+    ServicesComponent,
+    BannerContentComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
