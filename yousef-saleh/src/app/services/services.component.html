@@ -1,3 +1,6 @@
+@if(isServicesBanner){
+  <app-banner-content title="Services" breadcrumbText="Home / Services" bannerHeight="400px"></app-banner-content>
+}
 <div class="service-container">
   <div class="service-heading-container">
     <div class="divider-container"></div>
@@ -179,7 +182,7 @@
       <div class="read-more">Read more</div>
     </div>
   </div>
-  @if(serviceDetail){
+  @if(isServicesBanner){
   <div class="services-container">
     @for(serviceCard of serviceCardData; track serviceCard){
     <div class="services-card">
