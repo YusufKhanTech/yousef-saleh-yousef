@@ -49,6 +49,12 @@ span {
     display: block;
   }
   .about-first-image-container {
+    width: 100%;
+  }
+  .about-first-image-container {
     margin-top: 20px;
+  }
+  .about-first-content {
+    width: 100%;
   }
 }
