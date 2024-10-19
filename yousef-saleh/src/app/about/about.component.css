@@ -1,0 +1,42 @@
+.about-container {
+  width: 70%;
+  margin: 30px auto;
+}
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.about-first-title {
+  font-size: 32px;
+  font-weight: 700;
+}
+.about-first-content {
+  width: 40%;
+}
+.about-first-image-container {
+  width: 60%;
+  overflow: hidden;
+}
+.about-first-image-container img {
+  width: 100%;
+}
+.about-first-card-content {
+  margin-top: 50px;
+  padding: 40px;
+  background-color: color-mix(in srgb, #364d59, transparent 96%);
+}
+span {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  color: color-mix(in srgb, #364d59, transparent 50%);
+}
+.card-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: color-mix(in srgb, 364d59, transparent 20%);
+}
+.card-sub-title {
+  color: #364d59;
+  font-size: 16px;
+}
