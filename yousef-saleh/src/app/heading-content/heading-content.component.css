@@ -1,0 +1,26 @@
+
+.project-heading-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: max-content;
+    margin: auto;
+  }
+  
+  .title-container {
+    font-size: 32px;
+    color: #303030;
+    font-weight: 700;
+  }
+  
+  .divider-container {
+    height: 2.5px;
+    background-color: #feb900;
+    margin: 10px 0;
+    width: 50px;
+  }
+  .project-sub-title {
+    text-align: center;
+    font-size: 16px;
+    margin: 10px auto;
+  }

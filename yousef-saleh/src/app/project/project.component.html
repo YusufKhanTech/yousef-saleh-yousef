@@ -1,12 +1,8 @@
 <div class="project-container">
-  <div class="project-heading-container">
-    <div class="divider-container"></div>
-    <div class="title-container">Project</div>
-    <div class="divider-container"></div>
-  </div>
-  <div class="project-sub-title">
-    {{ projectTitleName }}
-  </div>
+  <app-heading-content
+    title="Project"
+    subTitle="Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit"
+  ></app-heading-content>
   <div class="project-card-content">
     @for(image of projectImages; track image){
     <div class="project-card" (click)="navigateToProjectDetail(image.id)">
