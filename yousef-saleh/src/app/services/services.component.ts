@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { HeadingContentComponent } from "../heading-content/heading-content.component";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-services',
