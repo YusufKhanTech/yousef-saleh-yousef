@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { HeadingContentComponent } from "../heading-content/heading-content.component";
 import { Router } from '@angular/router';
+import { BannerContentComponent } from '../banner-content/banner-content.component';
 
 @Component({
   selector: 'app-services',
   standalone: true,
-  imports: [HeadingContentComponent],
+  imports: [HeadingContentComponent,BannerContentComponent],
   templateUrl: './services.component.html',
   styleUrl: './services.component.css',
 })
