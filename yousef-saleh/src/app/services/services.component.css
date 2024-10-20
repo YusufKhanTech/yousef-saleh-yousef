@@ -32,10 +32,10 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
   margin-top: 60px;
+  padding-bottom: 40px;
 }
 .service-card-content {
   background-color: white;
-  border-radius: 12px;
   padding: 30px;
   cursor: pointer;
   padding: 40px;
