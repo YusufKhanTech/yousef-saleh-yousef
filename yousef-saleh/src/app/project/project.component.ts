@@ -12,6 +12,8 @@ import { HeadingContentComponent } from "../heading-content/heading-content.comp
   styleUrl: './project.component.css',
 })
 export class ProjectComponent {
+  isProject:boolean = false;
+  projectTitleName = 'Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit';
   projectImages = [
       { id: 1, imageUrl: 'https://www.bootstrapmade.com/content/demo/UpConstruction/assets/img/projects/remodeling-1.jpg' },
       { id: 2, imageUrl: 'https://www.bootstrapmade.com/content/demo/UpConstruction/assets/img/projects/construction-1.jpg' },
@@ -20,7 +22,9 @@ export class ProjectComponent {
       { id: 5, imageUrl: 'https://www.bootstrapmade.com/content/demo/UpConstruction/assets/img/projects/remodeling-2.jpg' },
       { id: 6, imageUrl: 'https://www.bootstrapmade.com/content/demo/UpConstruction/assets/img/projects/construction-2.jpg' },
     ];
-  constructor(private router: Router) {}
+  constructor(private router: Router) {
+    this.isProject = this.router.url.includes('project');
+  }
   navigateToProjectDetail(projectId: number) {
     projectId ? this.router.navigate(['project/', projectId]) : Error('undefined id');
   }
