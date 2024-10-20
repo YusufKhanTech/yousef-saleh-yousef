@@ -7,7 +7,7 @@
     title="Project"
     subTitle="Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit"
   ></app-heading-content>
-  <div class="project-card-content">
+  <div class="project-card-content" data-aos="fade-right" data-aos-delay="400">
     @for(image of projectImages; track image){
     <div class="project-card" (click)="navigateToProjectDetail(image.id)">
       <img [src]="image?.imageUrl" alt="Project Image" />
