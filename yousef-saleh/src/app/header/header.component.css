@@ -27,7 +27,6 @@
 /* Header Flexbox */
 .header {
   position: relative;
-  width: 70%;
   height: 50px;
   margin: auto;
   display: flex;
@@ -84,7 +83,17 @@
 .hamburger {
   display: none;
 }
+@media (min-width: 1024px) and (max-width: 1540px) {
+  .header{
+    width: 85%;
+  }
+}
 
+@media (min-width: 1541px) {
+  .header {
+    max-width: 70%;
+  }
+}
 /* Responsive Header and Banner Adjustments */
 @media (max-width: 1172px) {
   .header {

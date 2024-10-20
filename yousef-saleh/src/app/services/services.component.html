@@ -1,20 +1,18 @@
 @if(isServicesBanner){
-  <app-banner-content
-    title="Services"
-    breadcrumbText="Home / Services"
-    bannerHeight="400px"
-  ></app-banner-content>
-  }
+<app-banner-content
+  title="Services"
+  breadcrumbText="Home / Services"
+  bannerHeight="400px"
+></app-banner-content>
+}
+<div class="service">
   <div class="service-container">
     @if(!isServicesBanner){
-    <div class="service-heading-container">
-      <div class="divider-container"></div>
-      <div class="title-container">Services</div>
-      <div class="divider-container"></div>
-    </div>
-    <div class="service-sub-title">
-      Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur
-      velit
+    <div style="padding-top: 40px;">
+      <app-heading-content
+      title="Services"
+      subTitle="Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit"
+    ></app-heading-content>
     </div>
     }
     <div class="service-card-container">
@@ -198,7 +196,7 @@
       </div>
       }
     </div>
-  
+
     <div class="services-content-container">
       <div class="content-heading-container">
         <div class="content-title">
@@ -219,4 +217,4 @@
     </div>
     }
   </div>
-  
+</div>
