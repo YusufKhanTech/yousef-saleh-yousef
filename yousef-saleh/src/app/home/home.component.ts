@@ -4,6 +4,7 @@ import {HeaderComponent} from '../header/header.component';
 import {ProjectComponent} from '../project/project.component';
 import {ServicesComponent} from '../services/services.component';
 import {BannerContentComponent} from '../banner-content/banner-content.component';
+import { HeadingContentComponent } from "../heading-content/heading-content.component";
 
 @Component({
   selector: 'app-home',
@@ -13,8 +14,9 @@ import {BannerContentComponent} from '../banner-content/banner-content.component
     HeaderComponent,
     ProjectComponent,
     ServicesComponent,
-    BannerContentComponent
-  ],
+    BannerContentComponent,
+    HeadingContentComponent
+],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

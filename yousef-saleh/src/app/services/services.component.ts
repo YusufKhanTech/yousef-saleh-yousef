@@ -1,11 +1,10 @@
-import { Component, Input } from '@angular/core';
-import { Router } from '@angular/router';
-import { BannerContentComponent } from '../banner-content/banner-content.component';
+import { Component } from '@angular/core';
+import { HeadingContentComponent } from "../heading-content/heading-content.component";
 
 @Component({
   selector: 'app-services',
   standalone: true,
-  imports: [BannerContentComponent],
+  imports: [HeadingContentComponent],
   templateUrl: './services.component.html',
   styleUrl: './services.component.css',
 })

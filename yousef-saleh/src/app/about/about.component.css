@@ -1,0 +1,160 @@
+.about-container {
+  width: 70%;
+  margin: 30px auto;
+}
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.about-first-title {
+  font-size: 32px;
+  font-weight: 700;
+}
+.about-first-content {
+  width: 40%;
+}
+.about-first-image-container {
+  width: 60%;
+  overflow: hidden;
+}
+.about-first-image-container img {
+  width: 100%;
+}
+.about-first-card-content {
+  margin-top: 50px;
+  padding: 40px;
+  background-color: color-mix(in srgb, #364d59, transparent 96%);
+}
+span {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  color: color-mix(in srgb, #364d59, transparent 50%);
+}
+.card-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: color-mix(in srgb, 364d59, transparent 20%);
+}
+.card-sub-title {
+  color: #364d59;
+  font-size: 16px;
+}
+.customer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  margin-top: 50px;
+  gap: 20px;
+}
+.customer-card {
+  display: flex;
+  gap: 30px;
+  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  align-items: center;
+  height: 150px;
+}
+.card-heading-title {
+  color: #52565e;
+  font-size: 36px;
+  display: block;
+  font-weight: 600;
+}
+.card-heading-sub-title{
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  color: #364d59;
+}
+.logo{
+  height: 42px;
+  width: 42px;
+  color: orange;
+}
+/* Grid layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px; /* Space between the grid items */
+  padding: 20px;
+  margin-top: 60px;
+  justify-items: center; /* Center grid items horizontally */
+  align-items: center;   /* Center grid items vertically */
+}
+.grid-container img {
+  width: 100%;
+}
+
+/* Grid items styling */
+.grid-item {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background-image: url("https://www.bootstrapmade.com/content/demo/UpConstruction/assets/img/team/team-1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-color: lightblue;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  text-align: center; /* Center the text */
+  overflow: hidden; /* Hide overflow for hover effect */
+}
+.icon-container{
+  display: none;
+}
+/* Hover effect styling */
+.grid-item::before {
+  content: "";
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2); /* Black effect */
+  transition: bottom 0.5s ease-in-out;
+}
+
+.grid-item:hover::before {
+  bottom: 0;
+}
+.grid-item:hover .icon-container{
+  display: block;
+}
+
+/* Text stays visible during hover */
+.grid-item:hover {
+  z-index: 1;
+}
+
+@media (max-width: 991px) {
+  .about-container {
+    width: 100%;
+    padding: 20px;
+  }
+  .about-content {
+    display: block;
+  }
+  .about-first-image-container {
+    width: 100%;
+  }
+  .about-first-image-container {
+    margin-top: 20px;
+  }
+  .about-first-content {
+    width: 100%;
+  }
+  .customer-container{
+    display: block;
+  }
+  .customer-card{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

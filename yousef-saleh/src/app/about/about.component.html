@@ -1,1 +1,83 @@
-<p>about works!</p>
+<app-banner-content
+  title="About"
+  bannerHeight="400px"
+  breadcrumbText="Home / About"
+></app-banner-content>
+<div class="about-container">
+  <div class="about-content">
+    <div class="about-first-content">
+      <div class="about-first-title">Consequatur eius et magnam</div>
+      <div class="about-first-card-content">
+        <span>Est 1988</span>
+        <div class="card-title">Our Story</div>
+        <div class="card-sub-title">
+          Inventore aliquam beatae at et id alias. Ipsa dolores amet
+          consequuntur minima quia maxime autem. Quidem id sed ratione. Tenetur
+          provident autem in reiciendis rerum at dolor. Aliquam consectetur
+          laudantium temporibus dicta minus dolor.
+        </div>
+      </div>
+    </div>
+    <div class="about-first-image-container">
+      <img
+        src="https://www.bootstrapmade.com/content/demo/UpConstruction/assets/img/about.jpg"
+        alt=""
+      />
+    </div>
+  </div>
+  <div style="margin-top: 30px">
+    <app-heading-content
+      title="Stats"
+      subTitle="Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit"
+    ></app-heading-content>
+  </div>
+  <div class="customer-container">
+    @for(card of cardContent; track card){
+    <div class="customer-card">
+      <div class="logo">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="42"
+          height="42"
+          fill="currentColor"
+          class="bi bi-emoji-smile"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zM8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0z"
+          />
+          <path
+            d="M4 5.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0zm7 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-7.001 3.99a.5.5 0 0 1 .72.694A5.494 5.494 0 0 0 8 11.5c1.519 0 2.884-.637 3.782-1.316a.5.5 0 1 1 .634.774A6.493 6.493 0 0 1 8 12.5a6.493 6.493 0 0 1-4.415-1.545.5.5 0 0 1 .014-.708z"
+          />
+        </svg>
+      </div>
+      <div class="card-heading-container">
+        <div class="card-heading-title">{{ card?.title }}</div>
+        <div class="card-heading-sub-title">{{ card?.subTitle }}</div>
+      </div>
+    </div>
+    }
+  </div>
+
+  <div style="margin-top: 30px">
+    <app-heading-content
+      title="Team"
+      subTitle="Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit"
+    ></app-heading-content>
+  </div>
+  <div class="grid-container">
+    <div class="grid-item">
+      <div class="icon-container">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="orange" class="bi bi-facebook" viewBox="0 0 16 16">
+          <path d="M8.446 8.745h-1.24v4.574H5.634V8.745H4.277V7.188h1.357V6.175c0-1.262.713-2.131 2.358-2.131.457 0 .896.027 1.35.073v1.58h-.75c-.597 0-.788.383-.788.813v1.23h1.558l-.248 1.557h-1.31V13.32H8.446V8.745z"/>
+        </svg>
+      </div>
+    </div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>
+  </div>
+  
+</div>

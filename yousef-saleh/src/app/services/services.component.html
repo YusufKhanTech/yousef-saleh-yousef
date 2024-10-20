@@ -6,17 +6,11 @@
 ></app-banner-content>
 }
 <div class="service-container">
-  @if(!isServicesBanner){
-  <div class="service-heading-container">
-    <div class="divider-container"></div>
-    <div class="title-container">Services</div>
-    <div class="divider-container"></div>
-  </div>
-  <div class="service-sub-title">
-    Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur
-    velit
-  </div>
-  }
+  <app-heading-content
+    title="Services"
+    subTitle=" Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur"
+  ></app-heading-content>
+
   <div class="service-card-container">
     <div class="service-card-content">
       <div class="card-logo">
@@ -44,6 +38,7 @@
         inventore! Nobis quo rem illo optio dignissimos ipsa neque molestiae
         pariatur?
       </div>
+      <div class="read-more">Read more</div>
       <div class="read-more">Read more</div>
     </div>
     <div class="service-card-content">
@@ -185,36 +180,6 @@
         pariatur?
       </div>
       <div class="read-more">Read more</div>
-    </div>
-  </div>
-  @if(isServicesBanner){
-  <div class="services-container">
-    @for(serviceCard of serviceCardData; track serviceCard){
-    <div class="services-card">
-      <div class="card-heading">{{ serviceCard?.heading }}</div>
-      <div class="card-sub-heading">
-        {{ serviceCard?.subHeading }}
-      </div>
-    </div>
-    }
-  </div>
-
-  <div class="services-content-container">
-    <div class="content-heading-container">
-      <div class="content-title">
-        Enim quis est voluptatibus aliquid consequatur
-      </div>
-      <div class="content-sub-title">
-        Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus.
-        Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed
-        facere corporis dolores excepturi
-      </div>
-    </div>
-    <div class="content-image">
-      <img
-        src="https://www.bootstrapmade.com/content/demo/UpConstruction/assets/img/features-3-2.jpg"
-        alt=""
-      />
     </div>
   </div>
   }
