@@ -40,6 +40,36 @@ span {
   color: #364d59;
   font-size: 16px;
 }
+.customer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  margin-top: 20px;
+}
+.customer-card {
+  display: flex;
+  gap: 30px;
+  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  align-items: center;
+}
+.card-heading-title {
+  color: #52565e;
+  font-size: 36px;
+  display: block;
+  font-weight: 600;
+}
+.card-heading-sub-title{
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  color: #364d59;
+}
+.logo{
+  height: 42px;
+  width: 42px;
+  color: orange;
+}
 @media (max-width: 991px) {
   .about-container {
     width: 100%;
