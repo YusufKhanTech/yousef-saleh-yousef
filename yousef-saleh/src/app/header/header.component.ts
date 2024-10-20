@@ -1,12 +1,12 @@
-import { NgClass, NgFor } from '@angular/common';
+import { NgClass, NgFor, NgStyle } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { BannerContentComponent } from "../banner-content/banner-content.component";
+import { BannerContentComponent } from '../banner-content/banner-content.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [NgClass, RouterLink, BannerContentComponent,NgFor],
+  imports: [NgClass, NgStyle, RouterLink, BannerContentComponent, NgFor],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css'], // Fixed the styleUrls property
 })
@@ -18,7 +18,7 @@ export class HeaderComponent {
     { name: 'Home', link: '' },
     { name: 'About', link: 'about' },
     { name: 'Services', link: 'services' },
-    { name: 'Contact', link: 'contact' }
+    { name: 'Contact', link: 'contact' },
   ];
 
   constructor() {}
