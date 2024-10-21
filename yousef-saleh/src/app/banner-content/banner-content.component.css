@@ -42,7 +42,7 @@
 
 .banner-sub-title {
   font-size: 18px;
-  color: white;
+  color: color-mix(in srgb, #ffffff, transparent 20%);
   max-width: 800px;
   line-height: 1.6;
   margin-bottom: 40px;

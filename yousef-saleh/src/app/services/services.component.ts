@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { HeadingContentComponent } from "../heading-content/heading-content.component";
 import { Router } from '@angular/router';
 import { BannerContentComponent } from '../banner-content/banner-content.component';
+import {FaIconComponent} from '@fortawesome/angular-fontawesome';
 
 @Component({
   selector: 'app-services',
   standalone: true,
-  imports: [HeadingContentComponent,BannerContentComponent],
+  imports: [HeadingContentComponent, BannerContentComponent, FaIconComponent],
   templateUrl: './services.component.html',
   styleUrl: './services.component.css',
 })

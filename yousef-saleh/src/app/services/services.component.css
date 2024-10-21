@@ -42,6 +42,13 @@
   box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
   height: 100%;
 }
+.card-logo {
+  color: color-mix(in srgb, #52565e, transparent 5%);
+  font-size: 56px;
+  transition: ease-in-out 0.3s;
+  z-index: 2;
+  position: relative;
+}
 .card-title {
   color: color-mix(in srgb, #52565e, transparent 20%);
   font-weight: 700;
