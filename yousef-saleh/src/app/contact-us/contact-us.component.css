@@ -114,6 +114,13 @@ form textarea::placeholder {
   border-radius: 50px;
   cursor: pointer;
 }
+.map-container{
+  height: 425px;
+  overflow: hidden;
+}
+.map-container img{
+  width: 100%;
+}
 @media (min-width: 1024px) and (max-width: 1540px) {
   .contact-us-container {
     width: 85%;
