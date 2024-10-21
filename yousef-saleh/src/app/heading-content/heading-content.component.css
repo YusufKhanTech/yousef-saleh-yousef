@@ -6,16 +6,16 @@
     width: max-content;
     margin: auto;
   }
-  
+
   .title-container {
     font-size: 32px;
     color: #303030;
     font-weight: 700;
   }
-  
+
   .divider-container {
     height: 2.5px;
-    background-color: #feb900;
+    background-color: var(--color-orange);
     margin: 10px 0;
     width: 50px;
   }
