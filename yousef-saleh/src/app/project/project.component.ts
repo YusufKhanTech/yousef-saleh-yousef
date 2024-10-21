@@ -3,17 +3,17 @@ import { Component } from '@angular/core';
 import { Route, Router } from '@angular/router';
 import { BannerContentComponent } from "../banner-content/banner-content.component";
 import { HeadingContentComponent } from "../heading-content/heading-content.component";
+import {FaIconComponent} from '@fortawesome/angular-fontawesome';
 
 @Component({
   selector: 'app-project',
   standalone: true,
-  imports: [NgFor, BannerContentComponent, HeadingContentComponent],
+  imports: [NgFor, BannerContentComponent, HeadingContentComponent, FaIconComponent],
   templateUrl: './project.component.html',
   styleUrl: './project.component.css',
 })
 export class ProjectComponent {
   isProject:boolean = false;
-  projectTitleName = 'Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit';
   projectImages = [
       { id: 1, imageUrl: 'https://www.bootstrapmade.com/content/demo/UpConstruction/assets/img/projects/remodeling-1.jpg' },
       { id: 2, imageUrl: 'https://www.bootstrapmade.com/content/demo/UpConstruction/assets/img/projects/construction-1.jpg' },

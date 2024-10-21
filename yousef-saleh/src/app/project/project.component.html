@@ -12,7 +12,7 @@
     <div class="project-card" (click)="navigateToProjectDetail(image.id)">
       <img [src]="image?.imageUrl" alt="Project Image" />
       <div class="overlay">
-        <div class="project-detail-cta">Click me</div>
+        <fa-icon [icon]="['fas', 'link']" title="More Details"></fa-icon>
       </div>
     </div>
     }

@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 import { BannerContentComponent } from '../banner-content/banner-content.component';
 import { HeadingContentComponent } from '../heading-content/heading-content.component';
+import {FaIconComponent} from '@fortawesome/angular-fontawesome';
+import {fas} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [BannerContentComponent, HeadingContentComponent],
+  imports: [BannerContentComponent, HeadingContentComponent, FaIconComponent],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css',
 })
