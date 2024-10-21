@@ -1,18 +1,19 @@
 @if(isProject){
   <app-banner-content title="Projects"
-  bannerHeight="450px" breadcrumbText="Home / Projects"></app-banner-content>
+                      bannerHeight="450px"
+                      breadcrumbText="Home / Projects">
+  </app-banner-content>
 }
 <div class="project-container" data-aos="fade-up" data-aos-delay="300">
-  <app-heading-content
-    title="Project"
-    subTitle="Showcasing Our Commitment to Excellence Through Every Completed Project."
-  ></app-heading-content>
+  <app-heading-content title="Project"
+                       subTitle="Showcasing Our Commitment to Excellence Through Every Completed Project.">
+  </app-heading-content>
   <div class="project-card-content" data-aos="fade-right" data-aos-delay="400">
     @for(image of projectImages; track image){
     <div class="project-card" (click)="navigateToProjectDetail(image.id)">
       <img [src]="image?.imageUrl" alt="Project Image" />
       <div class="overlay">
-        <fa-icon [icon]="['fas', 'link']" title="More Details"></fa-icon>
+        <i class="ti ti-link"></i>
       </div>
     </div>
     }
