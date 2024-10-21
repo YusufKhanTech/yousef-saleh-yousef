@@ -67,17 +67,25 @@
   }
   
   .project-card-content {
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 20px;
-    margin: 0 2px;
+  }
+  
+  .project-card {
+    position: relative; /* Keep the structure intact for the overlay */
+    width: 100%;
+    height: auto; /* Allow the height to adjust */
   }
   
   .project-card img {
     width: 100%;
+    height: auto; /* Adjust the image to fit the card */
     margin-bottom: 12px;
   }
   
-  .project-card {
-    display: contents;
+  .project-card:hover .overlay {
+    opacity: 1;
   }
 }
+
