@@ -154,6 +154,31 @@ span {
 .grid-item:hover {
   z-index: 1;
 }
+.about-element-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-top: 70px;
+}
+.element-logo{
+  width: 100%;
+}
+.element-logo img{
+  width: 100%;
+}
+.element-title{
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  color: #364d59;
+}
+.element-sub-title{
+  font-size: 20px;
+  font-weight: 400;
+  color: #52565e;
+}
 @media (min-width: 1024px) and (max-width: 1540px) {
   .about-container{
     width: 85%;
@@ -188,5 +213,9 @@ span {
   .customer-card{
     width: 100%;
     margin-bottom: 20px;
+  }
+  .about-element-title{
+    display: block;
+    margin-bottom: 30px;
   }
 }
