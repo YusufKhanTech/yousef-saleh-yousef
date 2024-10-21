@@ -30,6 +30,7 @@
 .overlay {
   position: absolute;
   cursor: pointer;
+  font-size: 24px;
   top: 0;
   left: 0;
   right: 0;
@@ -44,6 +45,11 @@
 .project-card:hover .overlay {
   opacity: 1;
 }
+
+.overlay:hover {
+  color: #f68122;
+}
+
 .project-detail-cta{
   color: white;
   font-size: 16px;
@@ -65,25 +71,25 @@
     padding: 10px;
     margin: 0 auto;
   }
-  
+
   .project-card-content {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  
+
   .project-card {
     position: relative; /* Keep the structure intact for the overlay */
     width: 100%;
     height: auto; /* Allow the height to adjust */
   }
-  
+
   .project-card img {
     width: 100%;
     height: auto; /* Adjust the image to fit the card */
     margin-bottom: 12px;
   }
-  
+
   .project-card:hover .overlay {
     opacity: 1;
   }
