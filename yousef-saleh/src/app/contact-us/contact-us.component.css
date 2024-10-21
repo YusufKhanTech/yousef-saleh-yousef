@@ -1,0 +1,32 @@
+.contact-us-container {
+  background-color: red;
+  height: 200px;
+  margin: 40px auto;
+}
+.contact-form-contaner {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.address {
+  width: 50%;
+  background-color: yellow;
+  height: 100px;
+  text-align: center;
+}
+.address-two {
+  width: 50%;
+  background-color: aqua;
+  height: 100px;
+}
+@media (min-width: 1024px) and (max-width: 1540px) {
+  .contact-us-container {
+    width: 85%;
+  }
+}
+
+@media (min-width: 1541px) {
+  .contact-us-container {
+    max-width: 70%;
+  }
+}

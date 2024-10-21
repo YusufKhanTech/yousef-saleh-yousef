@@ -9,6 +9,7 @@ import {
   faCoffee,
   faHelmetSafety,
   faLink,
+  faLocationDot,
   faMountainCity,
   faTrowelBricks
 } from '@fortawesome/free-solid-svg-icons';
@@ -38,6 +39,7 @@ export class AppComponent implements OnInit{
     library.addIcons(faHelmetSafety);
     library.addIcons(faLink);
     library.addIcons(faCircleCheck);
+    library.addIcons(faLocationDot);
   }
   ngOnInit() {
     AOS.init({
