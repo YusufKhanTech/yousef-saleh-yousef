@@ -1,19 +1,18 @@
 @if(isServicesBanner){
-  <app-banner-content
-    title="Services"
-    breadcrumbText="Home / Services"
-    bannerHeight="400px">
-  </app-banner-content>
-  }
+<app-banner-content
+  title="Services"
+  breadcrumbText="Home / Services"
+  bannerHeight="400px"
+></app-banner-content>
+}
+<div class="service" data-aos="fade-up" data-aos-delay="300">
   <div class="service-container">
     @if(!isServicesBanner){
-    <div class="service-heading-container">
-      <div class="divider-container"></div>
-      <div class="title-container">Services</div>
-      <div class="divider-container"></div>
-    </div>
-    <div class="service-sub-title">
-      Comprehensive Construction Solutions Tailored to Your Needs.
+    <div style="padding-top: 40px;">
+      <app-heading-content
+      title="Services"
+      subTitle="Comprehensive Construction Solutions Tailored to Your Needs."
+    ></app-heading-content>
     </div>
     }
     <div class="service-card-container" data-aos="fade-up" data-aos-delay="100">
@@ -112,3 +111,4 @@
     </div>
     }
   </div>
+</div>

@@ -24,26 +24,32 @@
   color: #3c3c3c;
 }
 
-/* Header Flexbox */
 .header {
   position: relative;
-  width: 70%;
   height: 50px;
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.logo {
-  font-size: 24px;
-  margin: 0;
-  font-weight: 700;
-  color: white;
+.logo{
+  width: 300px;
+  height: auto;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background-color: none;
+  cursor: pointer;
 }
+.logo img{
+  width: 100%;
+  mix-blend-mode: multiply;
+}
+
 .nav-item {
   display: flex;
   gap: 20px;
+  list-style: none;
 }
 
 .nav-item li {
@@ -51,13 +57,12 @@
   padding: 10px 0;
   cursor: pointer;
   color: rgba(255, 255, 255, 0.55);
-  list-style: none;
   font-weight: 500;
 }
 
-.nav-item li:first-child {
-  border-bottom: 2px solid var(--color-orange);
+.nav-item li.active {
   color: white;
+  border-bottom: 2px solid var(--color-orange);
 }
 
 .nav-item li:not(:first-child)::after {
@@ -85,7 +90,18 @@
   display: none;
 }
 
-/* Responsive Header and Banner Adjustments */
+@media (min-width: 1024px) and (max-width: 1540px) {
+  .header {
+    width: 85%;
+  }
+}
+
+@media (min-width: 1541px) {
+  .header {
+    max-width: 70%;
+  }
+}
+
 @media (max-width: 1172px) {
   .header {
     padding: 10px;
@@ -99,16 +115,6 @@
 
   .nav-item {
     display: none;
-  }
-  .nav-item li {
-    color: #3c3c3c;
-  }
-  .nav-item li:not(:first-child)::after {
-    display: none;
-  }
-
-  .nav-item li:first-child {
-    border-bottom: none;
   }
 
   .nav-item.active {
@@ -125,16 +131,46 @@
     line-height: 30px;
   }
 }
+
 @media (max-width: 991px) {
   .nav-item {
     height: 85vh;
     margin: 0 20px;
     border-radius: 10px;
   }
+
   .header {
     width: 100%;
   }
-  .nav-item li:first-child {
-    color: #f68122;
+
+  .nav-item li {
+    color: #3c3c3c;
+  }
+
+  .nav-item li.active {
+    border-bottom: none;
+    color: #3c3c3c;
+  }
+
+  .nav-item li:hover {
+    color: #3c3c3c !important;
+    border-bottom: none;
+  }
+
+  .nav-item li:not(:first-child)::after {
+    background-color: none;
+    transition: none;
+  }
+
+  .nav-item li:not(:first-child):hover::after {
+    width: unset;
+  }
+
+  .nav-item li:not(:first-child):hover {
+    border-bottom: none;
+    color: unset;
+  }
+  .logo{
+    width: 200px;
   }
 }
