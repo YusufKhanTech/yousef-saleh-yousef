@@ -26,10 +26,15 @@
   padding: 40px;
   background-color: color-mix(in srgb, #364d59, transparent 96%);
 }
-span {
+.est {
   text-transform: uppercase;
   font-size: 1.1rem;
   color: color-mix(in srgb, #364d59, transparent 50%);
+}
+
+span {
+  font-size: 1.1rem;
+  color: #364d59;
 }
 .card-title {
   font-size: 2.25rem;
@@ -119,6 +124,23 @@ span {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2); /* Black effect */
   transition: bottom 0.5s ease-in-out;
+}
+.story-points {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 16px;
+}
+
+.icon-class {
+  font-size: 18px;
+  color: #f68122;
+  margin-right: 4px;
+}
+
+.points {
+  font-size: 14px;
 }
 
 .grid-item:hover::before {
