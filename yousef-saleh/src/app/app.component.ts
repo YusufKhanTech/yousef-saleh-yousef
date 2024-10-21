@@ -13,6 +13,7 @@ import {
   faTrowelBricks
 } from '@fortawesome/free-solid-svg-icons';
 import {faCompassDrafting} from '@fortawesome/free-solid-svg-icons/faCompassDrafting';
+import {faCircleCheck} from '@fortawesome/free-regular-svg-icons';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -36,6 +37,7 @@ export class AppComponent implements OnInit{
     library.addIcons(faTrowelBricks);
     library.addIcons(faHelmetSafety);
     library.addIcons(faLink);
+    library.addIcons(faCircleCheck);
   }
   ngOnInit() {
     AOS.init({
