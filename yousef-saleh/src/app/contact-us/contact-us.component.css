@@ -27,7 +27,7 @@
   background-color: white;
   padding: 20px;
   text-align: center;
-  box-shadow: 0px 0 18px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
 .address-two {
   display: flex;
@@ -47,7 +47,9 @@
   margin-top: 8px;
 }
 .call-us-container {
-  box-shadow: 0px 0 18px rgba(0, 0, 0, 0.3);
+  background-color: var(--surface-color);
+  padding: 20px 0 30px 0;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   width: 100%;
   display: block;
   place-content: center;
