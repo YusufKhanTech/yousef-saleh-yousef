@@ -32,12 +32,17 @@
   justify-content: space-between;
   align-items: center;
 }
-
-.logo {
-  font-size: 24px;
-  margin: 0;
-  font-weight: 700;
-  color: white;
+.logo{
+  width: 300px;
+  height: auto;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background-color: transparent;
+}
+.logo img{
+  width: 100%;
+  mix-blend-mode: multiply;
 }
 
 .nav-item {
@@ -163,5 +168,8 @@
   .nav-item li:not(:first-child):hover {
     border-bottom: none;
     color: unset;
+  }
+  .logo{
+    width: 200px;
   }
 }
