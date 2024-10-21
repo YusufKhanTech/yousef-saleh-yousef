@@ -39,6 +39,7 @@
   place-items: center;
   overflow: hidden;
   background-color: transparent;
+  cursor: pointer;
 }
 .logo img{
   width: 100%;
