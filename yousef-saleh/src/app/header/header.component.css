@@ -38,7 +38,7 @@
   display: grid;
   place-items: center;
   overflow: hidden;
-  background-color: transparent;
+  background-color: none;
   cursor: pointer;
 }
 .logo img{
