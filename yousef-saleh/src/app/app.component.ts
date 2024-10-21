@@ -8,6 +8,7 @@ import {
   faArrowUpFromGroundWater,
   faCoffee,
   faHelmetSafety,
+  faLink,
   faMountainCity,
   faTrowelBricks
 } from '@fortawesome/free-solid-svg-icons';
@@ -34,6 +35,7 @@ export class AppComponent implements OnInit{
     library.addIcons(faCompassDrafting);
     library.addIcons(faTrowelBricks);
     library.addIcons(faHelmetSafety);
+    library.addIcons(faLink);
   }
   ngOnInit() {
     AOS.init({
