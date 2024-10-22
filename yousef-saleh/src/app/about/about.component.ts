@@ -16,12 +16,12 @@ export class AboutComponent {
     {
       name: 'Afifi Farag',
       designation: 'Financial Advisor',
-      image: 'assets/img/employees/afifi.jpeg'
+      // image: 'assets/img/employees/afifi.jpeg'
     },
     {
       name: 'Saqib Naseer',
       designation: 'Document Controller',
-      image: 'assets/img/employees/saqib.jpeg'
+      // image: 'assets/img/employees/saqib.jpeg'
     },
     {
       name: 'Mohammed Samid bashir Ulde',
@@ -31,7 +31,7 @@ export class AboutComponent {
     {
       name: 'Emad Mohamed Murtada',
       designation: 'HR',
-      image: 'assets/img/employees/emad.jpeg'
+      // image: 'assets/img/employees/emad.jpeg'
     },
     {
       name: 'Mohammad Arif Khan',
