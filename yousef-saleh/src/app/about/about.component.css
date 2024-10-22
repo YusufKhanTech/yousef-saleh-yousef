@@ -66,13 +66,13 @@ span {
   display: block;
   font-weight: 600;
 }
-.card-heading-sub-title{
+.card-heading-sub-title {
   padding: 0;
   margin: 0;
   font-size: 16px;
   color: #364d59;
 }
-.logo{
+.logo {
   height: 42px;
   width: 42px;
   color: orange;
@@ -85,7 +85,7 @@ span {
   padding: 20px;
   margin-top: 60px;
   justify-items: center; /* Center grid items horizontally */
-  align-items: center;   /* Center grid items vertically */
+  align-items: center; /* Center grid items vertically */
 }
 .grid-container img {
   width: 100%;
@@ -94,8 +94,8 @@ span {
 /* Grid items styling */
 .grid-item {
   position: relative;
-  width: 150px;
-  height: 150px;
+  width: 255px;
+  height: 255px;
   background-image: url("/assets/img/arif.jpg");
   background-position: center;
   background-size: cover;
@@ -111,7 +111,7 @@ span {
   text-align: center; /* Center the text */
   overflow: hidden; /* Hide overflow for hover effect */
 }
-.icon-container{
+.icon-container {
   display: none;
 }
 /* Hover effect styling */
@@ -146,7 +146,7 @@ span {
 .grid-item:hover::before {
   bottom: 0;
 }
-.grid-item:hover .icon-container{
+.grid-item:hover .icon-container {
   display: block;
 }
 
@@ -154,33 +154,45 @@ span {
 .grid-item:hover {
   z-index: 1;
 }
-.about-element-title{
+.about-element-title {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   gap: 30px;
   margin-top: 70px;
 }
-.element-logo{
+.element-logo {
+  width: 50%;
+}
+.element-logo img {
   width: 100%;
 }
-.element-logo img{
-  width: 100%;
+.about-element-heading-content{
+  width: 50%;
 }
-.element-title{
+.element-title {
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
   color: #364d59;
 }
-.element-sub-title{
+.element-sub-title {
   font-size: 20px;
   font-weight: 400;
   color: #52565e;
 }
+.team-card {
+  text-align: center;
+  margin-top: 12px;
+}
+.title-name {
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #364d59;
+}
 @media (min-width: 1024px) and (max-width: 1540px) {
-  .about-container{
+  .about-container {
     width: 85%;
   }
 }
@@ -207,15 +219,26 @@ span {
   .about-first-content {
     width: 100%;
   }
-  .customer-container{
+  .customer-container {
     display: block;
   }
-  .customer-card{
+  .customer-card {
     width: 100%;
     margin-bottom: 20px;
   }
-  .about-element-title{
+  .about-element-title {
     display: block;
     margin-bottom: 30px;
+  }
+  .element-logo {
+    width: 100%;
+  }
+  .about-element-heading-content{
+    width: 100%;
+  }
+}
+@media(max-width:768px){
+  .grid-container{
+    display: block;
   }
 }
