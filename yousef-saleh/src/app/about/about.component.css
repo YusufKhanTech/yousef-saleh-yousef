@@ -113,9 +113,12 @@ span {
   font-size: 24px;
   font-weight: bold;
   color: white;
+  margin: auto;
   cursor: pointer;
   text-align: center; /* Center the text */
   overflow: hidden; /* Hide overflow for hover effect */
+  display: grid;
+  border: 1px solid orange;
 }
 .icon-container {
   display: none;
@@ -205,6 +208,10 @@ span {
 }
 .sub-title-name {
   color: #364d59;
+}
+.grid-item img{
+  text-align: center;
+  margin: auto;
 }
 @media (min-width: 1024px) and (max-width: 1540px) {
   .about-container {
