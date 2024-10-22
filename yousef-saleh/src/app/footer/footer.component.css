@@ -11,9 +11,9 @@
 }
 .footer-logo{
   width: 200px;
+  height: 140px;
   overflow: hidden;
   margin-bottom: 20px;
-  background-color: white;
 }
 .footer-logo img{
   width: 100%;
