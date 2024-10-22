@@ -12,22 +12,81 @@ import {fas} from '@fortawesome/free-solid-svg-icons';
   styleUrl: './about.component.css',
 })
 export class AboutComponent {
-  cardContent = [
+  teamContent = [
     {
-      title: '232',
-      subTitle: 'Happy Clients',
+      name: 'Afifi Farag',
+      designation: 'Financial Advisor',
+      image: 'assets/img/employees/afifi.jpeg'
     },
     {
-      title: '521',
-      subTitle: 'Projects',
+      name: 'Saqib Naseer',
+      designation: 'Document Controller',
+      image: 'assets/img/employees/saqib.jpeg'
     },
     {
-      title: '1463',
-      subTitle: 'Hours of Support',
+      name: 'Mohammed Samid bashir Ulde',
+      designation: 'AutoCAD Draftsman & Supervisor',
+      image: 'assets/img/employees/samid.jpeg'
     },
     {
-      title: '15',
-      subTitle: 'Hard Workers',
+      name: 'Emad Mohamed Murtada',
+      designation: 'HR',
+      image: 'assets/img/employees/emad.jpeg'
+    },
+    {
+      name: 'Mohammad Arif Khan',
+      designation: 'Project Engineer',
+      image: 'assets/img/employees/arif.jpeg'
+    },
+    {
+      name: 'Serajuddin Khan',
+      designation: 'Quantity Surveyor & Site Engineer',
+      image: 'assets/img/employees/serajuddin.jpeg'
+    },
+    {
+      name: 'Mohd Kaleem ',
+      designation: 'Site Engineer',
+      image: 'assets/img/employees/kaleem.jpeg'
+    },
+    {
+      name: 'Ali Tahir',
+      designation: 'Site Engineer',
+      image: 'assets/img/employees/ali.jpeg'
+    },
+    {
+      name: 'Rethal Arabi',
+      designation: 'Site Engineer',
+      image: 'assets/img/employees/rethal.jpeg'
+    },
+    {
+      name: 'Mohamed Yoosuf Asan Kani',
+      designation: 'Site Engineer',
+      image: 'assets/img/employees/yoosuf.jpeg'
+    },
+    {
+      name: 'Vidhadhar Jangio',
+      designation: 'Site Engineer',
+      image: 'assets/img/employees/vidhadhar.jpeg'
+    },
+    {
+      name: 'Mohammad Mustafa Jamil Ahmad',
+      designation: 'Site Engineer',
+      image: 'assets/img/employees/mustafa.jpeg'
+    },
+    {
+      name: 'Ayum Kabari Sabila Khatun',
+      designation: 'Site Engineer',
+      image: 'assets/img/employees/ayyum.jpeg'
+    },
+    {
+      name: 'Muhammad Asif Muhammad Arshad',
+      designation: 'Site Engineer',
+      image: 'assets/img/employees/asif.jpeg'
+    },
+    {
+      name: 'Mohammad Irfan Alam',
+      designation: 'Safety Supervisor',
+      image: 'assets/img/employees/irfan.jpeg'
     },
   ];
 }
