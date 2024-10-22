@@ -12,26 +12,11 @@
 ></app-banner-content>
 <div class="scrolling-container">
 	<div class="scrolling-content">
-	  <img src="https://www.bootstrapmade.com/content/demo/UpConstruction/assets/img/features-3-2.jpg" alt="Image 1">
-	  <img src="https://www.bootstrapmade.com/content/demo/UpConstruction/assets/img/features-3-2.jpg" alt="Image 1">
-	  <img src="https://www.bootstrapmade.com/content/demo/UpConstruction/assets/img/features-3-2.jpg" alt="Image 1">
-	  <img src="https://www.bootstrapmade.com/content/demo/UpConstruction/assets/img/features-3-2.jpg" alt="Image 1">
-	  <img src="https://www.bootstrapmade.com/content/demo/UpConstruction/assets/img/features-3-2.jpg" alt="Image 1">
-	  <img src="https://www.bootstrapmade.com/content/demo/UpConstruction/assets/img/features-3-2.jpg" alt="Image 1">
-	  <img src="https://www.bootstrapmade.com/content/demo/UpConstruction/assets/img/features-3-2.jpg" alt="Image 1">
-	  <img src="https://www.bootstrapmade.com/content/demo/UpConstruction/assets/img/features-3-2.jpg" alt="Image 1">
-	  <img src="https://www.bootstrapmade.com/content/demo/UpConstruction/assets/img/features-3-2.jpg" alt="Image 1">
-	  <img src="https://www.bootstrapmade.com/content/demo/UpConstruction/assets/img/features-3-2.jpg" alt="Image 1">
-	  <img src="https://www.bootstrapmade.com/content/demo/UpConstruction/assets/img/features-3-2.jpg" alt="Image 1">
-	  <img src="https://www.bootstrapmade.com/content/demo/UpConstruction/assets/img/features-3-2.jpg" alt="Image 1">
-	  <img src="https://www.bootstrapmade.com/content/demo/UpConstruction/assets/img/features-3-2.jpg" alt="Image 1">
-	  <img src="https://www.bootstrapmade.com/content/demo/UpConstruction/assets/img/features-3-2.jpg" alt="Image 1">
-	  <img src="https://www.bootstrapmade.com/content/demo/UpConstruction/assets/img/features-3-2.jpg" alt="Image 1">
+		@for (clientImage of clientImages; track clientImages) {
+	  		<img [src]="clientImage?.logo" [alt]="clientImage?.clientName">
+		}
 	</div>
   </div>
-  
-  
-  
 <app-services></app-services>
 <app-project></app-project>
 <app-heading-content></app-heading-content>
