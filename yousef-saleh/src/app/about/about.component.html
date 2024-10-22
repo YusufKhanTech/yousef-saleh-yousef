@@ -52,7 +52,7 @@
         </div>
       </div>
     </div>
-    <div class="about-first-image-container" data-aos="fade-right" data-aos-delay="100">
+    <div class="about-first-image-container">
       <img src="https://www.bootstrapmade.com/content/demo/UpConstruction/assets/img/about.jpg"  alt="" />
     </div>
   </div>
@@ -65,6 +65,9 @@
         Yousef Saleh Yousef
       </div>
       <div class="divider"></div>
+      <div class="element-designation">
+        Managing Director
+      </div>
       <div class="element-sub-title">
         Managing Director of Yousef Saleh Yousef
         Yousef Al Dossary is a seasoned leader with extensive experience in the construction industry. He has played a pivotal role in driving the company’s growth, ensuring the delivery of high-quality projects and maintaining strong client relationships. His strategic vision and hands-on approach have been instrumental in achieving business success.
@@ -97,6 +100,7 @@
         Shamsuddin Khan
       </div>
       <div class="divider"></div>
+      <div class="element-designation">General Manager</div>
       <div class="element-sub-title">
         Shamsuddin Khan, the General Manager of Yousef Saleh Yousef Cont. & Est., plays a pivotal role in overseeing the company's operations and ensuring the successful execution of its projects. With extensive experience in the construction industry, he brings strong leadership and operational excellence to the team. Shamsuddin is dedicated to maintaining high standards of quality, safety, and efficiency in every project, ensuring that the company consistently meets client expectations. His hands-on approach and industry knowledge have been instrumental in the continued growth and success of the firm.
         <div class="story-points">
@@ -134,47 +138,14 @@
     </app-heading-content>
   </div>
   <div class="grid-container" data-aos="fade-up" data-aos-delay="100">
+    @for (team of teamContent; track team) {
     <div class="team-card">
       <div class="grid-item">
-        <img src="https://www.bootstrapmade.com/content/demo/UpConstruction/assets/img/team/team-4.jpg" />
+        <img [src]="team?.image" />
       </div>
-      <div class="title-name">Adil qureshi</div>
-      <div class="sub-title-name">Frontend Developer</div>
+      <div class="title-name">{{team?.name}}</div>
+      <div class="sub-title-name">{{team?.designation}}</div>
     </div>
-    <div class="team-card">
-      <div class="grid-item">
-        <img src="https://www.bootstrapmade.com/content/demo/UpConstruction/assets/img/team/team-4.jpg" />
-      </div>
-      <div class="title-name">Adil qureshi</div>
-      <div class="sub-title-name">Frontend Developer</div>
-    </div>
-    <div class="team-card">
-      <div class="grid-item">
-        <img src="https://www.bootstrapmade.com/content/demo/UpConstruction/assets/img/team/team-4.jpg" />
-      </div>
-      <div class="title-name">Adil qureshi</div>
-      <div class="sub-title-name">Frontend Developer</div>
-    </div>
-    <div class="team-card">
-      <div class="grid-item">
-        <img src="https://www.bootstrapmade.com/content/demo/UpConstruction/assets/img/team/team-4.jpg" />
-      </div>
-      <div class="title-name">Adil qureshi</div>
-      <div class="sub-title-name">Frontend Developer</div>
-    </div>
-    <div class="team-card">
-      <div class="grid-item">
-        <img src="https://www.bootstrapmade.com/content/demo/UpConstruction/assets/img/team/team-4.jpg" />
-      </div>
-      <div class="title-name">Adil qureshi</div>
-      <div class="sub-title-name">Frontend Developer</div>
-    </div>
-    <div class="team-card">
-      <div class="grid-item">
-        <img src="https://www.bootstrapmade.com/content/demo/UpConstruction/assets/img/team/team-4.jpg" />
-      </div>
-      <div class="title-name">Adil qureshi</div>
-      <div class="sub-title-name">Frontend Developer</div>
-    </div>
+    }
   </div>
 </div>
