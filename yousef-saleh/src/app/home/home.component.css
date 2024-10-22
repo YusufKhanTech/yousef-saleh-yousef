@@ -6,19 +6,19 @@
     width: 80%;
     margin: 20px auto;
   }
-  
+
   .scrolling-content {
     display: inline-block;
     padding-left: 100%;    /* Start off-screen */
-    animation: scroll-left 10s linear infinite; /* Adjust the speed and loop infinitely */
+    animation: scroll-left 20s linear infinite; /* Adjust the speed and loop infinitely */
   }
-  
+
   .scrolling-content img {
     width: 200px;          /* Set width of images */
     height: 100px;         /* Set height of images */
-    margin-right: 20px;    /* Space between images */
+    margin-right: 40px;    /* Space between images */
   }
-  
+
   @keyframes scroll-left {
     0% {
       transform: translateX(0%);  /* Start from right */
@@ -27,4 +27,3 @@
       transform: translateX(-100%); /* Move to the left and loop */
     }
   }
-  
