@@ -157,15 +157,17 @@ span {
 .about-element-title {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   gap: 30px;
   margin-top: 70px;
 }
 .element-logo {
-  width: 100%;
+  width: 50%;
 }
 .element-logo img {
   width: 100%;
+}
+.about-element-heading-content{
+  width: 50%;
 }
 .element-title {
   font-size: 28px;
@@ -227,6 +229,12 @@ span {
   .about-element-title {
     display: block;
     margin-bottom: 30px;
+  }
+  .element-logo {
+    width: 100%;
+  }
+  .about-element-heading-content{
+    width: 100%;
   }
 }
 @media(max-width:768px){
