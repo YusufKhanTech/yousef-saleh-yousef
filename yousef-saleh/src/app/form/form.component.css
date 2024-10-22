@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 70px;
-  width: 80%; 
+  width: 80%;
   margin: 60px auto;
   box-sizing: border-box;
 }
@@ -21,7 +21,7 @@
 
 .divider {
   height: 2px;
-  background-color: #feb900;
+  background-color: var(--color-orange);
   margin: 10px 0;
   width: 50px;
 }
@@ -55,7 +55,7 @@ textarea {
 
 .form-content button {
   color: #ffffff;
-  background: #feb900;
+  background: var(--color-orange);
   border: 0;
   padding: 10px 30px;
   transition: 0.4s;
