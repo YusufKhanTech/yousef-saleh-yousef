@@ -36,11 +36,11 @@
 }
 .service-card-content {
   background-color: white;
-  padding: 30px;
   cursor: pointer;
   padding: 40px;
   box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
   height: 100%;
+  border-radius: 32px;
 }
 .card-logo {
   color: color-mix(in srgb, #52565e, transparent 5%);
