@@ -1,5 +1,5 @@
 import { NgClass, NgFor, NgStyle } from '@angular/common';
-import { Component, HostListener } from '@angular/core';
+import {Component, HostListener, OnDestroy, OnInit} from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { BannerContentComponent } from '../banner-content/banner-content.component';
 
@@ -10,9 +10,10 @@ import { BannerContentComponent } from '../banner-content/banner-content.compone
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css'], // Fixed the styleUrls property
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit, OnDestroy {
   isMenuOpen: boolean = false;
   isScrolled: boolean = false;
+  logo = "assets/img/ysy-white-logo.png";
   activeItem: string = 'Home'; // Set default active item
   navItems = [
     { name: 'Home', link: '' },
@@ -38,6 +39,12 @@ export class HeaderComponent {
   @HostListener('window:scroll', [])
   onScroll(): void {
     this.isScrolled = window.scrollY > 50;
+    if (window.scrollY > 50) {
+      this.logo = "assets/img/ysy-logo.png";
+    }
+    else {
+      this.logo = "assets/img/ysy-white-logo.png";
+    }
   }
 
   setActiveItem(item: string) {
