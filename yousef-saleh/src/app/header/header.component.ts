@@ -21,33 +21,34 @@ export class HeaderComponent implements OnInit, OnDestroy {
     { name: 'Services', link: 'services' },
     { name: 'Contact', link: 'contact' },
   ];
-
+  
   constructor() {}
-
+  
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
   }
-
+  
   ngOnInit(): void {
     window.addEventListener('scroll', this.onScroll);
   }
-
+  
   ngOnDestroy(): void {
     window.removeEventListener('scroll', this.onScroll);
   }
-
+  
   @HostListener('window:scroll', [])
   onScroll(): void {
     this.isScrolled = window.scrollY > 50;
     if (window.scrollY > 50) {
       this.logo = "assets/img/ysy-logo.png";
-    }
-    else {
+    } else {
       this.logo = "assets/img/ysy-white-logo.png";
     }
   }
-
+  
   setActiveItem(item: string) {
     this.activeItem = item;
+    this.isMenuOpen = false; // Close the menu after selecting an item
   }
+  
 }

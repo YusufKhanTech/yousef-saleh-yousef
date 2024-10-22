@@ -32,7 +32,8 @@
   justify-content: space-between;
   align-items: center;
 }
-.logo{
+
+.logo {
   width: 300px;
   height: auto;
   display: grid;
@@ -41,7 +42,8 @@
   background-color: none;
   cursor: pointer;
 }
-.logo img{
+
+.logo img {
   width: 100%;
   mix-blend-mode: multiply;
 }
@@ -170,7 +172,8 @@
     border-bottom: none;
     color: unset;
   }
-  .logo{
+
+  .logo {
     width: 200px;
   }
 }
