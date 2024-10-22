@@ -32,7 +32,7 @@
 
 .banner-title {
   width: 100%;
-  max-width: 400px;
+  max-width: 1200px;
   font-size: 48px;
   font-weight: bold;
   color: white;
@@ -43,10 +43,11 @@
 .banner-sub-title {
   font-size: 18px;
   color: color-mix(in srgb, #ffffff, transparent 20%);
-  max-width: 800px;
+  max-width: 1200px;
   line-height: 1.6;
   margin-bottom: 40px;
   margin-top: 20px;
+  text-align: justify;
 }
 
 .divider {

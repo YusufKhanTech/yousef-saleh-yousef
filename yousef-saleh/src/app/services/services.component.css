@@ -18,7 +18,7 @@
 }
 .divider-container {
   height: 2.5px;
-  background-color: #feb900;
+  background-color: var(--color-orange);
   margin: 10px 0;
   width: 50px;
 }
@@ -65,7 +65,7 @@
   color: #303030;
 }
 .service-card-content:hover .card-title {
-  border-bottom: 4px solid color-mix(in srgb, #feb900, transparent 10%);
+  border-bottom: 4px solid color-mix(in srgb, var(--color-orange), transparent 10%);
 }
 .read-more {
   font-size: 12px;

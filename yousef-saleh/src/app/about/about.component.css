@@ -2,6 +2,11 @@
   width: 70%;
   margin: 30px auto;
 }
+.divider {
+  width: 80px;
+  margin-bottom: 8px;
+  border: 2px solid var(--color-orange);
+}
 .about-content {
   display: flex;
   justify-content: space-between;
@@ -10,6 +15,7 @@
 .about-first-title {
   font-size: 32px;
   font-weight: 700;
+  color: #364d59
 }
 .about-first-content {
   width: 40%;
@@ -157,6 +163,7 @@ span {
 .about-element-title {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 30px;
   margin-top: 70px;
 }
@@ -172,14 +179,19 @@ span {
 .element-title {
   font-size: 28px;
   font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 8px;
+  color: #364d59;
+}
+.element-designation{
+  font-size: 18px;
+  font-weight: 400;
   color: #364d59;
 }
 .element-sub-title {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
   color: #52565e;
+  margin-top: 8px;
 }
 .team-card {
   text-align: center;
@@ -189,6 +201,9 @@ span {
   margin-top: 12px;
   font-size: 18px;
   font-weight: 700;
+  color: #364d59;
+}
+.sub-title-name {
   color: #364d59;
 }
 @media (min-width: 1024px) and (max-width: 1540px) {
