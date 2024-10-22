@@ -13,26 +13,26 @@ import {fas} from '@fortawesome/free-solid-svg-icons';
 })
 export class AboutComponent {
   teamContent = [
-    {
-      name: 'Afifi Farag',
-      designation: 'Financial Advisor',
-      // image: 'assets/img/employees/afifi.jpeg'
-    },
-    {
-      name: 'Saqib Naseer',
-      designation: 'Document Controller',
-      // image: 'assets/img/employees/saqib.jpeg'
-    },
+    // {
+    //   name: 'Afifi Farag',
+    //   designation: 'Financial Advisor',
+    //   image: 'assets/img/employees/afifi.jpeg'
+    // },
+    // {
+    //   name: 'Saqib Naseer',
+    //   designation: 'Document Controller',
+    //   image: 'assets/img/employees/saqib.jpeg'
+    // },
     {
       name: 'Mohammed Samid bashir Ulde',
       designation: 'AutoCAD Draftsman & Supervisor',
       image: 'assets/img/employees/samid.jpeg'
     },
-    {
-      name: 'Emad Mohamed Murtada',
-      designation: 'HR',
-      // image: 'assets/img/employees/emad.jpeg'
-    },
+    // {
+    //   name: 'Emad Mohamed Murtada',
+    //   designation: 'HR',
+    //   image: 'assets/img/employees/emad.jpeg'
+    // },
     {
       name: 'Mohammad Arif Khan',
       designation: 'Project Engineer',
