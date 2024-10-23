@@ -60,3 +60,16 @@ export class ServicesComponent {
     this.isServicesBanner = this.router.url.includes('services');
   }
 }
+
+export class ServiceModel {
+  serviceId: number = 0;
+  serviceName: string = '';
+  serviceDescription: string = '';
+  keyPoints: ServiceKeyPoints[] = [];
+  images: string[] = [];
+}
+
+export class ServiceKeyPoints {
+  icon: string = '';
+  keyPointName: string = '';
+}
