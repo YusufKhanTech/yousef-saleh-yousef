@@ -1,25 +1,30 @@
-import { NgClass, NgFor, NgStyle } from '@angular/common';
-import {Component, HostListener, OnDestroy, OnInit} from '@angular/core';
+import { JsonPipe, NgClass, NgFor, NgIf, NgStyle } from '@angular/common';
+import { Component, HostListener, OnDestroy, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { BannerContentComponent } from '../banner-content/banner-content.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [NgClass, NgStyle, RouterLink, BannerContentComponent, NgFor],
+  imports: [NgClass, NgStyle, NgIf, RouterLink, BannerContentComponent, NgFor,JsonPipe],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css'], // Fixed the styleUrls property
 })
 export class HeaderComponent implements OnInit, OnDestroy {
   isMenuOpen: boolean = false;
   isScrolled: boolean = false;
-  logo = "assets/img/ysy-white-logo.png";
+  logo = 'assets/img/ysy-white-logo.png';
   activeItem: string = 'Home'; // Set default active item
   navItems = [
     { name: 'Home', link: '' },
     { name: 'About', link: 'about' },
-    { name: 'Services', link: 'services' },
+    { name: 'Services', icon:'ti ti-arrow-down', link: 'services' },
     { name: 'Contact', link: 'contact' },
+  ];
+  services = [
+    { name: 'Web Development', link: 'web-development' },
+    { name: 'App Development', link: 'app-development' },
+    { name: 'SEO', link: 'seo' },
   ];
 
   constructor() {}
@@ -39,15 +44,13 @@ export class HeaderComponent implements OnInit, OnDestroy {
   @HostListener('window:scroll', [])
   onScroll(): void {
     this.isScrolled = window.scrollY > 50;
-    if (window.scrollY > 50) {
-      this.logo = "assets/img/ysy-logo.png";
-    }
-    else {
-      this.logo = "assets/img/ysy-white-logo.png";
-    }
+    window.scrollY > 50
+      ? (this.logo = 'assets/img/ysy-logo.png')
+      : (this.logo = 'assets/img/ysy-white-logo.png');
   }
 
   setActiveItem(item: string) {
     this.activeItem = item;
+    this.isMenuOpen = false; // Close the menu after selecting an item
   }
 }
