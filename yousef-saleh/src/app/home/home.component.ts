@@ -24,51 +24,51 @@ export class HomeComponent {
 
   clientImages = [
     {
-      clientName: '',
+      clientName: 'saudi-electricity',
       logo: '/assets/img/clients/saudi-electricity-logo.png'
     },
     {
-      clientName: '',
+      clientName: 'national-grid',
       logo: '/assets/img/clients/national-grid-logo.png'
     },
     {
-      clientName: '',
+      clientName: 'rcjy-logo',
       logo: '/assets/img/clients/rcjy-logo.png'
     },
     {
-      clientName: '',
+      clientName: 'bank-al-bilad',
       logo: '/assets/img/clients/bank-al-bilad-logo.png'
     },
     {
-      clientName: '',
+      clientName: 'anb-bank',
       logo: '/assets/img/clients/anb-bank-logo.png'
     },
     {
-      clientName: '',
+      clientName: 'al-rajhi-bank',
       logo: '/assets/img/clients/al-rajhi-bank-logo.png'
     },
     {
-      clientName: '',
+      clientName: 'sab-bank',
       logo: '/assets/img/clients/sab-bank-logo.png'
     },
     {
-      clientName: '',
+      clientName: 'riyad',
       logo: '/assets/img/clients/riyad-logo.png'
     },
     {
-      clientName: '',
+      clientName: 'al-awwal-bank',
       logo: '/assets/img/clients/al-awwal-bank-logo.png'
     },
     {
-      clientName: '',
+      clientName: 'ascott',
       logo: '/assets/img/clients/ascott-logo.png'
     },
     {
-      clientName: '',
+      clientName: 'altoukhi',
       logo: '/assets/img/clients/altoukhi-logo.jpg'
     },
     {
-      clientName: '',
+      clientName: 'ncr',
       logo: '/assets/img/clients/ncr-logo.png'
     }
   ]
