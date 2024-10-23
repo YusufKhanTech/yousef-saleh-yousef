@@ -6,42 +6,54 @@
 </div>
 <div class="custom-container">
   <div class="custom-row">
-
     <div class="custom-col-left" data-aos="fade-up" data-aos-delay="100">
-      <div class="services-list">
-        <a href="#" class="active">Web Design</a>
-        <a href="#">Software Development</a>
-        <a href="#">Product Management</a>
-        <a href="#">Graphic Design</a>
-        <a href="#">Marketing</a>
-      </div>
-
-      <div class="title-small">Enim qui eos rerum in delectus</div>
-      <div class="text-content">
-        Nam voluptatem quasi numquam quas fugiat ex temporibus quo est. Quia aut quam quod facere ut non occaecati ut aut. Nesciunt mollitia illum tempore corrupti sed eum reiciendis. Maxime modi rerum.
-      </div>
-    </div>
-
-    <div class="custom-col-right" data-aos="fade-up" data-aos-delay="200">
       <img src="assets/img/electric-substation.jpg" alt="" class="services-img">
-
-      <div class="title-large">Temporibus et in vero dicta aut eius lidero plastis trand lined voluptas dolorem ut voluptas</div>
+    </div>
+    <div class="custom-col-right" data-aos="fade-up" data-aos-delay="200">
+      <div class="title-large">Electromechanical Works</div>
       <div class="text-content">
-        Blanditiis voluptate odit ex error ea sed officiis deserunt. Cupiditate non consequatur et doloremque consequuntur. Accusantium labore reprehenderit error temporibus saepe perferendis fuga doloribus vero. Qui omnis quo sit. Dolorem architecto eum et quos deleniti officia qui.
+        Electromechanical works are the backbone of any modern construction project, blending electrical and mechanical systems to create efficient and reliable infrastructures. At [Your Client's Company Name], we take pride in delivering high-quality electromechanical solutions tailored to the unique demands of our clients. Our experienced team leverages advanced technology and industry best practices to ensure seamless integration and optimal performance of all systems involved.
       </div>
       <ul>
-        <li><span>Aut eum totam accusantium voluptatem.</span></li>
-        <li><span>Assumenda et porro nisi nihil nesciunt voluptatibus.</span></li>
-        <li><span>Ullamco laboris nisi ut aliquip ex ea</span></li>
+        <li><i class="ti ti-checks icon"></i><span>Aut eum totam accusantium voluptatem.</span></li>
+        <li><i class="ti ti-checks icon"></i><span>Assumenda et porro nisi nihil nesciunt voluptatibus.</span></li>
+        <li><i class="ti ti-checks icon"></i><span>Ullamco laboris nisi ut aliquip ex ea</span></li>
       </ul>
       <div class="text-content">
         Est reprehenderit voluptatem necessitatibus asperiores neque sed ea illo. Deleniti quam sequi optio iste veniam repellat odit. Aut pariatur itaque nesciunt fuga.
       </div>
-      <div class="text-content">
-        Sunt rem odit accusantium omnis perspiciatis officia. Laboriosam aut consequuntur recusandae mollitia doloremque est architecto cupiditate ullam. Quia est ut occaecati fuga. Distinctio ex repellendus eveniet velit sint quia sapiente cumque. Et ipsa perferendis ut nihil. Laboriosam vel voluptates tenetur nostrum. Eaque iusto cupiditate et totam et quia dolorum in. Sunt molestiae ipsum at consequatur vero. Architecto ut pariatur autem ad non cumque nesciunt qui maxime. Sunt eum quia impedit dolore alias explicabo ea.
+      <div class="services-list">
+        <a href="#" (click)="selectService($event, 'web-design')" [class.active]="selectedService === 'web-design'">Web Design</a>
+        @if (selectedService === 'web-design') {
+        <div class="service-content">
+          We design and install energy-efficient heating, ventilation, and air conditioning systems that enhance comfort and air quality in your buildings. Our approach ensures compliance with local regulations and international standards.
+        </div>
+        }
+        <a href="#" (click)="selectService($event, 'software-development')" [class.active]="selectedService === 'software-development'">Software Development</a>
+        @if (selectedService === 'software-development') {
+        <div class="service-content">
+          Our comprehensive electrical services cover everything from wiring and lighting design to power distribution and backup systems. We prioritize safety and efficiency, ensuring that all installations are carried out by qualified professionals.
+        </div>
+        }
+        <a href="#" (click)="selectService($event, 'product-management')" [class.active]="selectedService === 'product-management'">Product Management</a>
+        @if (selectedService === 'product-management') {
+        <div class="service-content">
+          We provide reliable plumbing services that include the installation and maintenance of pipes, fixtures, and drainage systems. Our focus is on ensuring a steady supply of water while effectively managing waste.
+        </div>
+        }
+        <a href="#" (click)="selectService($event, 'graphic-design')" [class.active]="selectedService === 'graphic-design'">Graphic Design</a>
+        @if (selectedService === 'graphic-design') {
+        <div class="service-content">
+          Safety is our top priority. We integrate advanced fire alarm systems, surveillance, and safety measures into your projects, ensuring the protection of both personnel and property.
+        </div>
+        }
+        <a href="#" (click)="selectService($event, 'marketing')" [class.active]="selectedService === 'marketing'">Marketing</a>
+        @if (selectedService === 'marketing') {
+        <div class="service-content">
+          We specialize in smart building solutions, implementing automation and control systems that optimize energy consumption and enhance operational efficiency.
+        </div>
+        }
       </div>
     </div>
-
   </div>
 </div>
-

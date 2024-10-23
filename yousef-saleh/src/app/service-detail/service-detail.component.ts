@@ -12,4 +12,10 @@ import {BannerContentComponent} from '../banner-content/banner-content.component
 })
 export class ServiceDetailComponent {
 
+  selectedService: string = 'web-design';
+
+  selectService(event: Event, service: string): void {
+    event.preventDefault();
+    this.selectedService = service;
+  }
 }
