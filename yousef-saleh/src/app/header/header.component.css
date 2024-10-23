@@ -93,9 +93,9 @@
   display: none;
 }
 .drop-down {
-  display: none; /* Hide dropdown by default */
+  display: none;
   position: absolute;
-  width: max-content; /* Adjust width as necessary */
+  width: max-content;
   background-color: white;
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
   padding: 12px;
@@ -103,15 +103,20 @@
 }
 
 .nav-item li:hover .drop-down {
-  display: block; /* Show dropdown on hover */
+  display: block; 
 }
 
 .nav-item li:hover .drop-down li {
   color: #3c3c3c;
-  display: block; /* Ensure each service item is a block */
-  border: none !important; /* Remove border if any */
+  display: block;
+  border: none !important; 
 }
-
+.nav-item li:not(:first-child):hover .drop-down li::after {
+  width: 0%;
+}
+.drop-down li:hover{
+  color: var(--color-orange) !important;
+}
 
 @media (min-width: 1024px) and (max-width: 1540px) {
   .header {
