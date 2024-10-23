@@ -11,7 +11,7 @@
 </app-banner-content>
 <div class="scrolling-container">
 	<div class="scrolling-content">
-		@for (clientImage of clientImages; track clientImages) {
+		@for (clientImage of clientImages; track clientImage?.clientName) {
 	  		<img [src]="clientImage?.logo" [alt]="clientImage?.clientName">
 		}
 	</div>
