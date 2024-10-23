@@ -52,6 +52,7 @@
   display: flex;
   gap: 20px;
   list-style: none;
+  position: relative;
 }
 
 .nav-item li {
@@ -91,6 +92,26 @@
 .hamburger {
   display: none;
 }
+.drop-down {
+  display: none; /* Hide dropdown by default */
+  position: absolute;
+  width: max-content; /* Adjust width as necessary */
+  background-color: white;
+  box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  z-index: 999;
+}
+
+.nav-item li:hover .drop-down {
+  display: block; /* Show dropdown on hover */
+}
+
+.nav-item li:hover .drop-down li {
+  color: #3c3c3c;
+  display: block; /* Ensure each service item is a block */
+  border: none !important; /* Remove border if any */
+}
+
 
 @media (min-width: 1024px) and (max-width: 1540px) {
   .header {
@@ -175,5 +196,9 @@
 
   .logo {
     width: 200px;
+  }
+  .nav-item li:hover .drop-down{
+    width: 100%;
+    margin-top: 10px;
   }
 }
