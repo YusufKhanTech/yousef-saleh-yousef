@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
 import { HeadingContentComponent } from "../heading-content/heading-content.component";
-import { Router } from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 import { BannerContentComponent } from '../banner-content/banner-content.component';
 import {FaIconComponent} from '@fortawesome/angular-fontawesome';
+import {ServicesUtil} from './util/service.util';
+import {ServiceCard, ServiceModel} from './model/service.model';
 
 @Component({
   selector: 'app-services',
@@ -12,51 +14,16 @@ import {FaIconComponent} from '@fortawesome/angular-fontawesome';
   styleUrl: './services.component.css',
 })
 export class ServicesComponent {
-  isServicesBanner: boolean = false;
-  serviceCardData = [
-    {
-      heading: 'Quasi eaque omnis',
-      subHeading:
-        'Eius non minus autem soluta ut ui labore omnis quisquam corrupti autemodit voluptas quos commodi magnam occaecati.',
-    },
-    {
-      heading: 'Quasi eaque omnis',
-      subHeading:
-        'Eius non minus autem soluta ut ui labore omnis quisquam corrupti autemodit voluptas quos commodi magnam occaecati.',
-    },
-    {
-      heading: 'Quasi eaque omnis',
-      subHeading:
-        'Eius non minus autem soluta ut ui labore omnis quisquam corrupti autemodit voluptas quos commodi magnam occaecati.',
-    },
-    {
-      heading: 'Quasi eaque omnis',
-      subHeading:
-        'Eius non minus autem soluta ut ui labore omnis quisquam corrupti autemodit voluptas quos commodi magnam occaecati.',
-    },
-    {
-      heading: 'Quasi eaque omnis',
-      subHeading:
-        'Eius non minus autem soluta ut ui labore omnis quisquam corrupti autemodit voluptas quos commodi magnam occaecati.',
-    },
-    {
-      heading: 'Quasi eaque omnis',
-      subHeading:
-        'Eius non minus autem soluta ut ui labore omnis quisquam corrupti autemodit voluptas quos commodi magnam occaecati.',
-    },
-    {
-      heading: 'Quasi eaque omnis',
-      subHeading:
-        'Eius non minus autem soluta ut ui labore omnis quisquam corrupti autemodit voluptas quos commodi magnam occaecati.',
-    },
-    {
-      heading: 'Quasi eaque omnis',
-      subHeading:
-        'Eius non minus autem soluta ut ui labore omnis quisquam corrupti autemodit voluptas quos commodi magnam occaecati.',
-    },
-  ];
 
-  constructor(private router: Router) {
+  isServicesBanner: boolean = false;
+  services: ServiceModel[] = ServicesUtil.getServices();
+
+  constructor(private router: Router,
+              private activatedRoute: ActivatedRoute) {
     this.isServicesBanner = this.router.url.includes('services');
+  }
+
+  navigateToServiceDetails(service: ServiceModel): void {
+    this.router.navigate(['/services/' + service?.serviceId], {relativeTo: this.activatedRoute});
   }
 }

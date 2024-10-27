@@ -19,7 +19,8 @@ export const routes: Routes = [
   },
   {
     path:'services',
-    component:ServicesComponent
+    loadChildren: () =>
+      import('./services/service.route').then((m) => m.serviceRoutes),
   },
   {
     path: 'project',

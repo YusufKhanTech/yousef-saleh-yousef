@@ -71,7 +71,7 @@
 .read-more {
   font-size: 12px;
   margin-top: 12px;
-  color: #303030;
+  color: var(--color-orange);
 }
 .services-container {
   display: grid;

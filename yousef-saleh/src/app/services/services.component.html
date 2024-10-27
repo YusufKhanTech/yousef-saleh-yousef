@@ -8,163 +8,22 @@
   <div class="service-container">
     @if(!isServicesBanner){
     <div style="padding-top: 40px;">
-      <app-heading-content
-      title="Services"
-      subTitle="Comprehensive Construction Solutions Tailored to Your Needs."
-    ></app-heading-content>
+      <app-heading-content title="Services"
+                           subTitle="Comprehensive Construction Solutions Tailored to Your Needs.">
+      </app-heading-content>
     </div>
     }
     <div class="service-card-container" data-aos="fade-up" data-aos-delay="100">
-      <div class="service-card-content">
+    @for (service of services; track service?.serviceId) {
+      <div class="service-card-content" (click)="navigateToServiceDetails(service)">
         <div class="card-logo">
-          <i class="ti ti-solar-panel"></i>
+          <i [class]="service?.serviceIcon"></i>
         </div>
-        <div class="card-title">Electrical Substation Construction</div>
-        <div class="card-sub-title">
-          We specialize in the construction of electrical substations, ensuring the safe and efficient
-          distribution of electrical power. Our experienced team handles all aspects of substation design,
-          installation, and commissioning, adhering to industry standards and regulations.
-        </div>
+        <div class="card-title">{{service?.serviceName}}</div>
+        <div class="card-sub-title">{{service?.serviceDescription}}</div>
         <div class="read-more">Read more</div>
       </div>
-      <div class="service-card-content">
-        <div class="card-logo">
-          <i class="ti ti-building-factory-2"></i>
-        </div>
-        <div class="card-title">Industrial and Commercial Building Construction</div>
-        <div class="card-sub-title">
-          We specialize in delivering top-tier industrial and commercial construction services tailored to meet the needs of various industries.
-          Our team ensures that each project is built to the highest standards, combining innovation, quality materials, and precision in execution.
-        </div>
-        <div class="read-more">Read more</div>
-      </div>
-      <div class="service-card-content">
-        <div class="card-logo">
-          <i class="ti ti-home-check"></i>
-        </div>
-        <div class="card-title">Residential Building Construction</div>
-        <div class="card-sub-title">
-          We construct high-quality residential buildings, including single-family homes, apartments, and
-          villas. Our commitment to excellence ensures that every project is completed on time and meets
-          the unique preferences of our clients.
-        </div>
-        <div class="read-more">Read more</div>
-      </div>
-      <div class="service-card-content">
-        <div class="card-logo">
-          <i class="ti ti-building-estate"></i>
-        </div>
-        <div class="card-title">Pre-engineered Steel Buildings</div>
-        <div class="card-sub-title">
-          Our pre-engineered steel buildings provide a versatile solution for various applications, including
-          warehouses and industrial facilities. These structures are designed for durability, quick installation,
-          and cost-effectiveness
-        </div>
-        <div class="read-more">Read more</div>
-      </div>
-      <div class="service-card-content">
-        <div class="card-logo">
-          <i class="ti ti-building"></i>
-        </div>
-        <div class="card-title">Cladding and Glass Solutions</div>
-        <div class="card-sub-title">
-          we offer comprehensive Cladding and Glass Solutions designed to transform buildings with a modern and sleek look.
-          Our focus on quality materials like aluminium cladding and glass panels ensures not only aesthetic excellence
-          but also long-term durability and protection against environmental factors.
-        </div>
-        <div class="read-more">Read more</div>
-      </div>
-      <div class="service-card-content">
-        <div class="card-logo">
-          <i class="ti ti-beach"></i>
-        </div>
-        <div class="card-title">Waterproofing and Insulation Services</div>
-        <div class="card-sub-title">
-          We provide comprehensive waterproofing and insulation services to protect your structures
-          from moisture damage and improve energy efficiency
-        </div>
-        <div class="read-more">Read more</div>
-      </div>
-      <div class="service-card-content">
-        <div class="card-logo">
-          <i class="ti ti-solar-electricity"></i>
-        </div>
-        <div class="card-title">Electro Mechanical Works</div>
-        <div class="card-sub-title">
-          We specialize in electromechanical works that integrate electrical and mechanical systems for efficient, sustainable solutions. Our skilled team ensures reliable installation and maintenance, enhancing the performance of your infrastructure.
-        </div>
-        <div class="read-more">Read more</div>
-      </div>
-      <div class="service-card-content">
-        <div class="card-logo">
-          <i class="ti ti-building-skyscraper"></i>
-        </div>
-        <div class="card-title">Portable office & Accomodation</div>
-        <div class="card-sub-title">
-          We provide innovative portable office and accommodation solutions designed for the construction industry. Our mobile structures offer comfort and functionality, ensuring your team has a productive workspace and restful living quarters on-site.
-        </div>
-        <div class="read-more">Read more</div>
-      </div>
-      <div class="service-card-content">
-        <div class="card-logo">
-          <i class="ti ti-shield-lock"></i>
-        </div>
-        <div class="card-title">Security fencing installation & general work</div>
-        <div class="card-sub-title">
-          Our comprehensive security fencing installation services safeguard your construction site while enhancing site organization. We offer custom solutions tailored to your needs, ensuring your project remains secure and well-structured.
-        </div>
-        <div class="read-more">Read more</div>
-      </div>
-      <div class="service-card-content">
-        <div class="card-logo">
-          <i class="ti ti-geometry"></i>
-        </div>
-        <div class="card-title">Concrete repair and Rehabilitation</div>
-        <div class="card-sub-title">
-          At Yousef Saleh Yousef, we specialize in concrete repair and rehabilitation services that extend the lifespan of your structures. Our expert team utilizes advanced techniques to restore integrity and functionality, ensuring safety and durability.
-        </div>
-        <div class="read-more">Read more</div>
-      </div>
-      <div class="service-card-content">
-        <div class="card-logo">
-          <i class="ti ti-backhoe"></i>
-        </div>
-        <div class="card-title">Asphalting & Road Works</div>
-        <div class="card-sub-title">
-          We offer professional asphalting and road work services, ensuring high-quality surface finishes that stand the test of time. Our experienced team is committed to delivering durable solutions for roadways, parking lots, and other essential infrastructures.
-        </div>
-        <div class="read-more">Read more</div>
-      </div>
-    </div>
-    @if(isServicesBanner){
-    <div class="services-container">
-      @for(serviceCard of serviceCardData; track serviceCard){
-      <div class="services-card">
-        <div class="card-heading">{{ serviceCard?.heading }}</div>
-        <div class="card-sub-heading">
-          {{ serviceCard?.subHeading }}
-        </div>
-      </div>
-      }
-    </div>
-    <div class="services-content-container">
-      <div class="content-heading-container">
-        <div class="content-title">
-          Enim quis est voluptatibus aliquid consequatur
-        </div>
-        <div class="content-sub-title">
-          Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus.
-          Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed
-          facere corporis dolores excepturi
-        </div>
-      </div>
-      <div class="content-image">
-        <img
-          src="https://www.bootstrapmade.com/content/demo/UpConstruction/assets/img/features-3-2.jpg"
-          alt=""
-        />
-      </div>
-    </div>
     }
+    </div>
   </div>
 </div>
