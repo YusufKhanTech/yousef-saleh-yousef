@@ -13,7 +13,7 @@ import { BannerContentComponent } from '../banner-content/banner-content.compone
 export class HeaderComponent implements OnInit, OnDestroy {
   isMenuOpen: boolean = false;
   isScrolled: boolean = false;
-  logo = 'assets/img/ysy-white-logo.png';
+  logo = 'assets/img/website-images/ysy-white-logo.png';
   activeItem: string = 'Home'; // Set default active item
   navItems = [
     { name: 'Home', link: '' },
@@ -45,8 +45,8 @@ export class HeaderComponent implements OnInit, OnDestroy {
   onScroll(): void {
     this.isScrolled = window.scrollY > 50;
     window.scrollY > 50
-      ? (this.logo = 'assets/img/ysy-logo.png')
-      : (this.logo = 'assets/img/ysy-white-logo.png');
+      ? (this.logo = 'assets/img/website-images/ysy-logo.png')
+      : (this.logo = 'assets/img/website-images/ysy-white-logo.png');
   }
 
   setActiveItem(item: string) {
