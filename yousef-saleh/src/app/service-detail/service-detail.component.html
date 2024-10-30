@@ -1,9 +1,3 @@
-<div>
-  <app-banner-content title="Service detail"
-                      breadcrumbText="Home / Service Details"
-                      bannerHeight="300px">
-  </app-banner-content>
-</div>
 <div class="custom-container">
   <div class="custom-row">
     <div class="custom-col-left" data-aos="fade-up" data-aos-delay="100">
@@ -23,8 +17,8 @@
         }
       </ul>
       <div class="services-list">
-        @for (serviceInclude of service?.serviceIncludes; track service?.serviceId) {
-          <a href="#" (click)="selectService($event, serviceInclude.serviceIncludeName)" [class.active]="selectedService === serviceInclude.serviceIncludeName">{{serviceInclude.serviceIncludeName}}</a>
+        @for (serviceInclude of service?.serviceIncludes; track serviceInclude?.serviceIncludeName) {
+          <a href="#" (click)="selectService($event, serviceInclude?.serviceIncludeName)" [class.active]="selectedService === serviceInclude.serviceIncludeName">{{serviceInclude.serviceIncludeName}}</a>
           @if (selectedService === serviceInclude.serviceIncludeName) {
           <div class="service-content">
             {{serviceInclude?.serviceIncludeDescription}}
