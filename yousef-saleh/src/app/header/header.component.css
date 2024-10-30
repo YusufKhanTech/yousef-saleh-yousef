@@ -102,14 +102,29 @@
   z-index: 999;
 }
 
+.sub-dropdown {
+  display: none;
+  position: absolute;
+  width: max-content;
+  left: 100%;
+  background-color: white;
+  box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  z-index: 999;
+}
+
+.drop-down li:hover > .sub-dropdown {
+  display: block;
+}
+
 .nav-item li:hover .drop-down {
-  display: block; 
+  display: block;
 }
 
 .nav-item li:hover .drop-down li {
   color: #3c3c3c;
   display: block;
-  border: none !important; 
+  border: none !important;
 }
 .nav-item li:not(:first-child):hover .drop-down li::after {
   width: 0%;
