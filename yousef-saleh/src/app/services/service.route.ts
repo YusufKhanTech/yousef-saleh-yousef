@@ -9,7 +9,7 @@ export const serviceRoutes: Routes = [
     component: ServicesComponent
   },
   {
-    path: 'service-category',
+    path: 'service-category/:serviceCategoryId',
     component: ServiceCategoryComponent
   },
   {
