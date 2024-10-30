@@ -1,0 +1,24 @@
+<div>
+  <app-banner-content title="Service category"
+                      breadcrumbText="Home / Constructions"
+                      bannerHeight="300px">
+  </app-banner-content>
+</div>
+<div class="service-container">
+<div class="services-list">
+  @for (constructionService of constructionServices; track constructionService?.serviceId) {
+    <div class="service-detail">
+      <a href="#"
+         (click)="selectService($event, constructionService)"
+         [class.active]="selectedService?.serviceName === constructionService.serviceName">
+        {{ constructionService.serviceName }}
+      </a>
+    </div>
+    }
+  </div>
+  @if (selectedService) {
+    <div class="service-detail-view">
+      <app-service-detail [service]="selectedService"></app-service-detail>
+    </div>
+  }
+</div>
