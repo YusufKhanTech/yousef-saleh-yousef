@@ -3,19 +3,30 @@
     <div class="logo" routerLink=""><img [src]="logo" alt="" /></div>
     <div class="hamburger" (click)="toggleMenu()">&#9776;</div>
     <ul [ngClass]="{ active: isMenuOpen }" class="nav-item">
-      <li
-        *ngFor="let item of navItems"
-        [routerLink]="[item.link]"
-        [ngClass]="{ active: activeItem === item.name }"
-        (click)="setActiveItem(item.name)"
-      >
-        {{ item.name }} <i class="{{ item.icon }}"></i>
-        @if(item.name === 'Services'){
-        <div class="drop-down">
-          @for(service of services; track service){
-          <li>{{ service.name }}</li>
-          }
-        </div>
+      <li *ngFor="let item of navItems"
+          [routerLink]="[item?.link]"
+          [ngClass]="{ active: activeItem === item?.name }"
+          (click)="setActiveItem(item.name)">
+        {{ item?.name }} <i class="{{ item?.icon }}"></i>
+        @if (item?.name === 'Services') {
+          <ng-container>
+            <div class="drop-down">
+              <ul>
+                @for (service of allServiceCategories; track service?.serviceCategoryId) {
+                <li (mouseenter)="onHover(service)">
+                  {{ service.serviceCategoryName }}
+                  @if (hoveredService === service) {
+                    <ul class="sub-dropdown">
+                      @for (subService of service.serviceSubCategories; track subService?.serviceId) {
+                        <li> {{ subService.serviceName }}</li>
+                      }
+                  </ul>
+                  }
+                </li>
+                }
+              </ul>
+            </div>
+          </ng-container>
         }
       </li>
     </ul>
