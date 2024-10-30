@@ -16,7 +16,7 @@ import {ServiceCard, ServiceModel} from './model/service.model';
 export class ServicesComponent {
 
   isServicesBanner: boolean = false;
-  services: ServiceModel[] = ServicesUtil.getServices();
+  services: ServiceModel[] = ServicesUtil.getServiceSubCategory();
 
   constructor(private router: Router,
               private activatedRoute: ActivatedRoute) {
