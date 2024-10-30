@@ -2,6 +2,8 @@ import { JsonPipe, NgClass, NgFor, NgIf, NgStyle } from '@angular/common';
 import { Component, HostListener, OnDestroy, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { BannerContentComponent } from '../banner-content/banner-content.component';
+import {ServicesUtil} from '../services/util/service.util';
+import {ServiceCategory} from '../services/model/service.model';
 
 @Component({
   selector: 'app-header',
@@ -14,19 +16,15 @@ export class HeaderComponent implements OnInit, OnDestroy {
   isMenuOpen: boolean = false;
   isScrolled: boolean = false;
   logo = 'assets/img/website-images/ysy-white-logo.png';
-  activeItem: string = 'Home'; // Set default active item
+  activeItem: string = 'Home';
   navItems = [
     { name: 'Home', link: '' },
     { name: 'About', link: 'about' },
     { name: 'Services', icon:'ti ti-arrow-down', link: 'services' },
     { name: 'Contact', link: 'contact' },
   ];
-  services = [
-    { name: 'Web Development', link: 'web-development' },
-    { name: 'App Development', link: 'app-development' },
-    { name: 'SEO', link: 'seo' },
-  ];
-
+  allServiceCategories = ServicesUtil.getAllServices();
+  hoveredService: ServiceCategory | null = null;
   constructor() {}
 
   toggleMenu() {
@@ -41,6 +39,10 @@ export class HeaderComponent implements OnInit, OnDestroy {
     window.removeEventListener('scroll', this.onScroll);
   }
 
+  onHover(service: ServiceCategory) {
+    this.hoveredService = service;
+  }
+
   @HostListener('window:scroll', [])
   onScroll(): void {
     this.isScrolled = window.scrollY > 50;
@@ -51,6 +53,6 @@ export class HeaderComponent implements OnInit, OnDestroy {
 
   setActiveItem(item: string) {
     this.activeItem = item;
-    this.isMenuOpen = false; // Close the menu after selecting an item
+    this.isMenuOpen = false;
   }
 }
