@@ -1,22 +1,34 @@
-import {ServiceCard, ServiceCategory, ServiceModel, ServiceSubCategories} from '../model/service.model';
+import {ServiceCard, ServiceCategory, ServiceModel} from '../model/service.model';
 
 export class ServicesUtil {
 
   public static getAllServices(): ServiceCategory[] {
     return [
       {
-        serviceCategoryId: 0,
+        serviceCategoryId: 1,
         serviceCategoryName: 'Constructions',
+        image: 'assets/img/website-images/construction.jpg',
+        icon: '',
+        description: '',
+        shortDescription: 'Quality-driven, reliable construction solutions for every project need.',
         serviceSubCategories: ServicesUtil.getConstructionServices(),
       },
       {
-        serviceCategoryId: 1,
+        serviceCategoryId: 2,
         serviceCategoryName: 'Maintenance & Operations',
+        image: 'assets/img/website-images/maintenance.jpg',
+        icon: '',
+        description: '',
+        shortDescription: 'Reliable upkeep and efficient operations to maximize asset performance.',
         serviceSubCategories: ServicesUtil.getMaintenanceAndOperationServices(),
       },
       {
-        serviceCategoryId: 2,
+        serviceCategoryId: 3,
         serviceCategoryName: 'Water Proofing',
+        image: 'assets/img/website-images/water-proofing.jpg',
+        icon: '',
+        description: '',
+        shortDescription: 'Protective solutions to safeguard structures from moisture and leaks.',
         serviceSubCategories: ServicesUtil.getWaterProofingServices(),
       }
     ]
