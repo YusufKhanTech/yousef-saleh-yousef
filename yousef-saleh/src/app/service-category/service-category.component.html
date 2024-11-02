@@ -6,12 +6,12 @@
 </div>
 <div class="service-container">
 <div class="services-list">
-  @for (constructionService of constructionServices; track constructionService?.serviceId) {
+  @for (allService of allServices; track allService?.serviceId) {
     <div class="service-detail">
       <a href="#"
-         (click)="selectService($event, constructionService)"
-         [class.active]="selectedService?.serviceName === constructionService.serviceName">
-        {{ constructionService.serviceName }}
+         (click)="selectService($event, allService)"
+         [class.active]="selectedService?.serviceName === allService?.serviceName">
+        {{ allService.serviceName }}
       </a>
     </div>
     }
