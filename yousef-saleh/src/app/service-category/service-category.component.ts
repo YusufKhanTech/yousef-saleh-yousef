@@ -17,19 +17,29 @@ import {ServiceDetailComponent} from '../service-detail/service-detail.component
 })
 export class ServiceCategoryComponent implements OnInit {
 
-  constructionServices: ServiceModel[] = ServicesUtil.getConstructionServices();
-  selectedService: ServiceModel = this.constructionServices[0];
+  selectedService?: ServiceModel;
+  serviceCategoryId?: number;
+  allServices?: ServiceModel[] | undefined = [];
 
-  constructor() { }
+  constructor(private activatedRoute: ActivatedRoute) {
+    this.setCategoryId();
+  }
 
   ngOnInit(): void {
-    if (!this.selectedService && this.constructionServices.length > 0) {
-      this.selectedService = this.constructionServices[0];
+    if (!this.selectedService && this.allServices) {
+      this.selectedService = this.allServices[0];
     }
   }
 
   selectService(event: Event, service: ServiceModel): void {
     event.preventDefault();
     this.selectedService = service;
+  }
+
+  private setCategoryId(): void {
+    this.activatedRoute.params.subscribe(params => {
+      this.serviceCategoryId = +params['serviceCategoryId']; // Convert serviceId to a number
+      this.allServices = ServicesUtil.getAllServices().find(s=> s?.serviceCategoryId === this.serviceCategoryId)?.serviceSubCategories;
+    });
   }
 }
