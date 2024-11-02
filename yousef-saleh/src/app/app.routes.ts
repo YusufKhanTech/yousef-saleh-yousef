@@ -18,7 +18,7 @@ export const routes: Routes = [
     component: ContactUsComponent,
   },
   {
-    path:'services',
+    path:'service-category',
     loadChildren: () =>
       import('./services/service.route').then((m) => m.serviceRoutes),
   },
