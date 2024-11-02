@@ -26,9 +26,8 @@ export class ServiceCategory {
   serviceCategoryId?: number;
   serviceCategoryName?: string;
   serviceSubCategories?: ServiceModel[];
-}
-
-export class ServiceSubCategories {
-  serviceSubCategoryId?: number;
-  serviceSubCategories?: any[];
+  image?: string;
+  icon?: string;
+  description?: string;
+  shortDescription?: string;
 }
