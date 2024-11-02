@@ -4,7 +4,7 @@ import {ActivatedRoute, Router} from '@angular/router';
 import { BannerContentComponent } from '../banner-content/banner-content.component';
 import {FaIconComponent} from '@fortawesome/angular-fontawesome';
 import {ServicesUtil} from './util/service.util';
-import {ServiceCard, ServiceModel} from './model/service.model';
+import { ServiceCategory} from './model/service.model';
 
 @Component({
   selector: 'app-services',
@@ -16,14 +16,14 @@ import {ServiceCard, ServiceModel} from './model/service.model';
 export class ServicesComponent {
 
   isServicesBanner: boolean = false;
-  services: ServiceModel[] = ServicesUtil.getServices();
+  serviceCategories: ServiceCategory[] = ServicesUtil.getAllServices();
 
   constructor(private router: Router,
               private activatedRoute: ActivatedRoute) {
     this.isServicesBanner = this.router.url.includes('services');
   }
 
-  navigateToServiceDetails(service: ServiceModel): void {
-    this.router.navigate(['/services/' + service?.serviceId], {relativeTo: this.activatedRoute});
+  navigateToServiceDetails(serviceCategory: ServiceCategory): void {
+    this.router.navigate(['/service-category/' + serviceCategory?.serviceCategoryId + '/services'], {relativeTo: this.activatedRoute});
   }
 }

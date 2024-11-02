@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import {ServicesComponent} from './services.component';
 import {ServiceDetailComponent} from '../service-detail/service-detail.component';
+import {ServiceCategoryComponent} from '../service-category/service-category.component';
 
 export const serviceRoutes: Routes = [
   {
@@ -8,7 +9,7 @@ export const serviceRoutes: Routes = [
     component: ServicesComponent
   },
   {
-    path: ':serviceId',
-    component: ServiceDetailComponent
+    path: ':serviceCategoryId/services',
+    component: ServiceCategoryComponent
   }
 ];

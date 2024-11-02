@@ -1,125 +1,95 @@
 .service {
   background-color: #f4f7f6;
 }
+
 .service-container {
   margin: 0px auto;
 }
-.service-heading-container {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  width: max-content;
-  margin: auto;
-}
-.title-container {
-  font-size: 32px;
-  color: #303030;
-  font-weight: 700;
-}
-.divider-container {
-  height: 2.5px;
-  background-color: var(--color-orange);
-  margin: 10px 0;
-  width: 50px;
-}
-.service-sub-title {
-  text-align: center;
-  font-size: 16px;
-  margin: 10px auto;
-}
-.service-card-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-  padding-top: 60px;
-  padding-bottom: 40px;
-}
-.service-card-content {
-  background-color: white;
-  cursor: pointer;
-  padding: 40px;
-  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
-  height: 100%;
-  border-radius: 32px;
-}
-.card-logo {
-  color: color-mix(in srgb, #52565e, transparent 5%);
-  font-size: 56px;
-  transition: ease-in-out 0.3s;
-  z-index: 2;
-  position: relative;
-}
-.card-title {
-  color: color-mix(in srgb, #52565e, transparent 20%);
-  font-weight: 700;
-  margin: 0 0 20px 0;
-  padding-bottom: 8px;
-  font-size: 22px;
-  position: relative;
-  display: inline-block;
-  border-bottom: 4px solid color-mix(in srgb, #52565e, transparent 90%);
-  transition: 0.3s;
-}
-.card-sub-title {
-  font-size: 16px;
-  color: #303030;
-}
-.service-card-content:hover .card-title {
-  border-bottom: 4px solid
-    color-mix(in srgb, var(--color-orange), transparent 10%);
-}
-.read-more {
-  font-size: 12px;
-  margin-top: 12px;
-  color: var(--color-orange);
-}
-.services-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 40px;
-  justify-content: center;
-  margin-top: 30px;
-}
-.card-sub-heading {
-  margin-top: 10px;
-  font-size: 15px;
-  color: color-mix(in srgb, #364d59, transparent 20%);
-}
-.card-heading {
-  font-size: 20px;
-  font-weight: 700;
-  color: #52565e;
-}
-.content-title {
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  color: #52565e;
-}
-.content-sub-title {
-  margin-top: 10px;
-  font-size: 15px;
-  color: color-mix(in srgb, #364d59, transparent 20%);
-}
-.services-content-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 30px;
-  margin-top: 70px;
-}
-.content-heading-container {
-  width: 50%;
-  overflow: hidden;
-}
-.content-image {
-  width: 50%;
-  height: 400px;
-  overflow: hidden;
-}
+
 .content-image img {
   width: 100%;
 }
+
+.service-card-content {
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  height: 400px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7); /* semi-transparent background */
+  color: #fff;
+  padding: 20px;
+  transform: translateY(100%); /* initially hidden below the card */
+  transition: transform 0.3s ease;
+}
+
+.service-card-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0px;
+}
+
+.arrow-button {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-top: 10px;
+}
+
+.card-sub-title{
+  color: #fff;
+  font-size: 14px;
+}
+
+.arrow-button i {
+  font-size: 18px; /* Icon size */
+}
+.service-card-content:hover .card-content {
+  transform: translateY(0); /* slide up on hover */
+}
+
+.service-card-content:hover .card-image img {
+  transform: scale(1.1); /* optional zoom effect */
+}
+
+.service-card-content:hover .arrow-button {
+  background-color: var(--color-orange); /* Change color on hover */
+  color: #fff;
+}
+
+.service-card-content:hover .card-title {
+  border-bottom: 4px solid color-mix(in srgb, var(--color-orange), transparent 10%);
+  margin-bottom: 2px;
+}
+
 @media (min-width: 1024px) and (max-width: 1540px) {
   .service-container {
     width: 85%;
