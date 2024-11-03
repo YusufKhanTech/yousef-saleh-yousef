@@ -4,27 +4,15 @@
   max-width: 1200px;
 }
 
-.custom-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
 .custom-col-left {
-  flex: 1 1 100%;
-  max-width: 40%;
   margin-bottom: 20px;
-}
-
-.custom-col-right {
-  flex: 1 1 100%;
-  max-width: 55%;
 }
 
 .services-img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .title-large {
@@ -36,18 +24,23 @@
 .text-content {
   color: #666;
   line-height: 1.6;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
+.key-points {
+  margin-top: 20px;
 }
 
-ul li {
+.key-points h3 {
+  font-size: 20px;
+  color: #333;
   margin-bottom: 10px;
-  position: relative;
+}
+
+.key-points ul li {
+  display: flex;
   color: #666;
+  margin-bottom: 4px;
 }
 
 .icon {
@@ -56,10 +49,9 @@ ul li {
   padding-left: 0 !important;
   color: var(--color-orange);
 }
-
-.services-list {
-  display: flex;
-  flex-direction: column;
+.services-list h3 {
+  font-size: 20px;
+  color: #333;
   margin-top: 20px;
 }
 
@@ -84,12 +76,14 @@ ul li {
   margin-left: 10px;
 }
 
-.service-content.active {
-  display: block;
-}
-
 @media (max-width: 768px) {
   .custom-col-left, .custom-col-right {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .key-points ul {
+    grid-template-columns: 1fr;
   }
 }
