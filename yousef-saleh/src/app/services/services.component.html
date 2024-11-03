@@ -16,7 +16,7 @@
     <div class="service-card-container" data-aos="fade-up" data-aos-delay="100">
       @for (serviceCategory of serviceCategories; track serviceCategory?.serviceCategoryId) {
       <ng-container>
-        <div class="service-card-content" (click)="navigateToServiceDetails(serviceCategory)">
+        <div class="service-card-content">
           <div class="card-image">
             <img [src]="serviceCategory?.image" alt="{{ serviceCategory?.serviceCategoryName }}" />
             <div class="card-title">{{ serviceCategory?.serviceCategoryName }}</div>
@@ -25,7 +25,7 @@
             <div class="card-content-title">{{ serviceCategory?.serviceCategoryName }}</div>
             <div class="divider"></div>
             <div class="card-sub-title">{{ serviceCategory?.shortDescription }}</div>
-            <div class="arrow-button">
+            <div class="arrow-button" (click)="navigateToServiceDetails(serviceCategory)">
               <i class="ti ti-arrow-narrow-right"></i>
             </div>
           </div>
