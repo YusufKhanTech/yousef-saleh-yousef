@@ -1,19 +1,21 @@
+.service-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 .services-list {
-  width: 20%;
+  flex: 1;
   display: flex;
   flex-direction: column;
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: 12px;
-  border-top: 1px solid var(--color-orange);
-  border-left: 1px solid var(--color-orange);
-  border-right: 1px solid var(--color-orange);
 }
-.service-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
+
 .services-list .service-detail a {
   padding: 10px;
   text-decoration: none;
@@ -22,17 +24,35 @@
   border-bottom: 1px solid var(--color-orange);
 }
 
-.services-list .service-detail:last-child a  {
-  border-bottom: none;
-}
 .service-detail {
   display: flex;
   flex-direction: column;
 }
 
-.services-list a.active,
-.services-list a:hover {
+.services-list .service-detail a:hover {
   background-color: var(--color-orange);
-  font-weight: bold;
   color: white;
 }
+
+.services-list .service-detail a.active {
+  color: var(--color-orange);
+}
+
+.services-list .service-detail a.active:hover {
+  color: white;
+}
+
+.service-detail-view {
+  max-width: 700px;
+}
+
+@media (max-width: 768px) {
+  .service-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .services-list, .service-detail-view {
+    max-width: 100%;
+  }
+}
+
