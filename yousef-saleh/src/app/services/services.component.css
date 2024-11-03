@@ -9,11 +9,13 @@
 .content-image img {
   width: 100%;
 }
-
+.service-card-container{
+  display: flex;
+  gap: 20px;
+}
 .service-card-content {
   position: relative;
   overflow: hidden;
-  width: 300px;
   height: 400px;
   cursor: pointer;
   transition: transform 0.3s ease;
