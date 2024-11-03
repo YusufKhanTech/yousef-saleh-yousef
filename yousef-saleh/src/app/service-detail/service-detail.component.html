@@ -20,11 +20,11 @@
       <div class="services-list">
         <h3>Service name includes:</h3>
         @for (serviceInclude of service?.serviceIncludes; track serviceInclude?.serviceIncludeName) {
-        <div>
-          <a href="#" (click)="selectService($event, serviceInclude?.serviceIncludeName)"
-             [class.active]="selectedService === serviceInclude.serviceIncludeName">
-            {{serviceInclude?.serviceIncludeName}}
-          </a>
+        <div class="service-list-content" (click)="selectService($event, serviceInclude?.serviceIncludeName)">
+       <div [class.active]="selectedService === serviceInclude.serviceIncludeName" class="active-continer"> 
+        {{serviceInclude?.serviceIncludeName}}
+      </div>
+  
           @if (selectedService === serviceInclude.serviceIncludeName) {
 
           <div class="service-content">
