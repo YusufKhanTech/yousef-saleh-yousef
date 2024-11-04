@@ -14,7 +14,10 @@
 .content-image img {
   width: 100%;
 }
-
+.service-card-container {
+  display: flex;
+  gap: 20px;
+}
 .service-card-content {
   position: relative;
   overflow: hidden;
@@ -86,6 +89,7 @@
   padding: 10px 0;
   transition: transform 0.3s ease;
 }
+
 .card-sub-title {
   color: #fff;
   font-size: 14px;
@@ -114,7 +118,8 @@
 }
 
 .service-card-content:hover .card-title {
-  border-bottom: 4px solid color-mix(in srgb, var(--color-orange), transparent 10%);
+  border-bottom: 4px solid
+    color-mix(in srgb, var(--color-orange), transparent 10%);
   margin-bottom: 2px;
   display: none;
 }
