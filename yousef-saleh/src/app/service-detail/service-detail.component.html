@@ -2,10 +2,10 @@
   <div class="custom-row">
     <div class="custom-col-right" data-aos="fade-up" data-aos-delay="200">
       <div class="title-large">{{service?.serviceName}}</div>
-      <div class="text-content">{{service?.serviceDescription}}</div>
       <div class="custom-col-left" data-aos="fade-up" data-aos-delay="100">
         <img [src]="service?.images" alt="{{service?.serviceName}}" class="services-img">
       </div>
+      <div class="text-content">{{service?.serviceDescription}}</div>
       <div class="key-points">
         <h3>Key Points:</h3>
         <ul>
@@ -18,15 +18,13 @@
         </ul>
       </div>
       <div class="services-list">
-        <h3>Service name includes:</h3>
+        <h3>Service includes:</h3>
         @for (serviceInclude of service?.serviceIncludes; track serviceInclude?.serviceIncludeName) {
         <div class="service-list-content" (click)="selectService($event, serviceInclude?.serviceIncludeName)">
-       <div [class.active]="selectedService === serviceInclude.serviceIncludeName" class="active-continer"> 
+       <div [class.active]="selectedService === serviceInclude.serviceIncludeName" class="active-continer">
         {{serviceInclude?.serviceIncludeName}}
       </div>
-  
           @if (selectedService === serviceInclude.serviceIncludeName) {
-
           <div class="service-content">
             {{serviceInclude?.serviceIncludeDescription}}
           </div>
