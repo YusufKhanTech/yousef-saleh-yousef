@@ -15,14 +15,14 @@
   width: 100%;
 }
 .service-card-container {
-  display: flex;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .service-card-content {
   position: relative;
   overflow: hidden;
-  width: 300px;
-  height: 400px;
+  width: 430px;
+  height: 480px;
   transition: transform 0.3s ease;
 }
 
