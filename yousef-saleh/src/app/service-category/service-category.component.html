@@ -5,16 +5,19 @@
   </app-banner-content>
 </div>
 <div class="service-container">
-  <div class="services-list">
-    @for (allService of allServices; track allService?.serviceId) {
-      <div class="service-detail">
-        <a href="#"
-           (click)="selectService($event, allService)"
-           [class.active]="selectedService?.serviceName === allService?.serviceName">
-          {{ allService.serviceName }}
-        </a>
+  <div>
+    <h4 class="right-side-title">Category</h4>
+    <div class="services-list">
+      @for (allService of allServices; track allService?.serviceId) {
+        <div class="service-detail">
+          <a href="#"
+             (click)="selectService($event, allService)"
+             [class.active]="selectedService?.serviceName === allService?.serviceName">
+            {{ allService.serviceName }}
+          </a>
+        </div>
+        }
       </div>
-      }
     </div>
     @if (selectedService) {
       <div class="service-detail-view">
