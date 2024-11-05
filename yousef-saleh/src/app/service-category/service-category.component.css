@@ -5,23 +5,30 @@
   gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 100px 20px;
 }
 
 .services-list {
+  position: sticky;
+  top: 60px;
   flex: 1;
   display: flex;
   flex-direction: column;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid rgba(21, 24, 27, 0.1);
 }
 
 .services-list .service-detail a {
-  padding: 10px;
   text-decoration: none;
   color: #333;
   transition: background-color 0.3s;
-  border-bottom: 1px solid var(--color-orange);
+  border-radius: 3px;
+  border: 1px solid rgba(21, 24, 27, 0.1);
+  padding: 15px 24px;
+  margin-bottom: 15px;
 }
 
 .service-detail {
@@ -32,6 +39,10 @@
 .services-list .service-detail a:hover {
   background-color: var(--color-orange);
   color: white;
+  border-color: transparent;
+  img {
+    filter: brightness(0) invert(1);
+  }
 }
 
 .services-list .service-detail a.active {
@@ -44,6 +55,16 @@
 
 .service-detail-view {
   max-width: 700px;
+}
+
+.right-side-title {
+  font-size: 24px;
+  display: block;
+  line-height: 29px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  position: relative;
+  padding-left: 10px;
 }
 
 @media (max-width: 768px) {
