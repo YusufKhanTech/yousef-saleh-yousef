@@ -140,19 +140,41 @@
   justify-content: space-between;
   cursor: pointer;
 }
+
 .social-content {
-  font-size: 22px;
-  color: white;
+  fill: #0077b5;
+  font-size: 32px;
+  font-weight: 700;
+  color: #0a66c2;
 }
+
 .social-link-cta {
   padding: 6px 20px;
   color: white;
   border: 1px solid var(--color-orange);
   border-radius: 22px;
+  font-weight: 500;
+  transition: 0.8s ease;
 }
+
 .social-link-one {
   display: none;
 }
+
+.icon-linkedin svg {
+  fill: #0077b5;
+  width: 28px;
+  height: 28px;
+}
+
+.header-container.scrolled .social-link-cta {
+  color: #3c3c3c;
+}
+
+.social-link-cta:hover {
+  background-color: var(--color-orange);
+}
+
 @media (min-width: 1024px) and (max-width: 1540px) {
   .header {
     width: 85%;

@@ -1,15 +1,15 @@
 .custom-container {
-  padding: 20px;
+  padding: 0px 20px;
   margin: 0 auto;
   max-width: 1200px;
 }
 
 .custom-col-left {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .services-img {
-  width: 100%;
+  width: 60%;
   height: auto;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -18,17 +18,19 @@
 .title-large {
   font-size: 24px;
   color: #333;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
+  font-weight: 700;
 }
 
 .text-content {
   color: #666;
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .key-points {
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .key-points h3 {
