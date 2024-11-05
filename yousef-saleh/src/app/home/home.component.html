@@ -9,13 +9,6 @@
 					experience, YSY stands as a reliable partner in the construction industry, known for turning visions
 					into reality.">
 </app-banner-content>
-<div class="scrolling-container">
-	<div class="scrolling-content">
-		@for (clientImage of clientImages; track clientImage?.clientName) {
-	  		<img [src]="clientImage?.logo" [alt]="clientImage?.clientName">
-		}
-	</div>
-  </div>
 <app-services></app-services>
 <app-project></app-project>
-<app-heading-content></app-heading-content>
+<app-client></app-client>
