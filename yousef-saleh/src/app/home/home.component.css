@@ -1,0 +1,51 @@
+.about-container {
+  width: 80%;
+  margin: 40px auto;
+}
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+.about-image-container {
+  width: 100%;
+}
+.title {
+  font-size: 48px;
+  line-height: 1.2;
+}
+.sub-title {
+  font-size: 17px;
+  font-weight: normal;
+  color: #6a6a6a;
+  margin-bottom: 30px;
+  line-height: 28px;
+  margin-top: 30px;
+}
+.info-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.check-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.icon {
+  color: var(--color-orange);
+  font-size: 32px;
+}
+.more-about-us-cta {
+  padding: 10px 20px;
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+  width: max-content;
+  margin-top: 40px;
+  background-color: orangered;
+  cursor: pointer;
+}
