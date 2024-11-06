@@ -1,6 +1,10 @@
 .about-container {
-  width: 80%;
-  margin: 40px auto;
+  width: 85%;
+  margin: 70px auto;
+}
+.about-container-content{
+  background-color: rgb(255, 237, 237,0.4);
+  padding: 40px 20px;
 }
 .about-content {
   display: flex;
@@ -8,8 +12,34 @@
   align-items: center;
   gap: 40px;
 }
-.about-image-container {
+.about-image-content {
+  background-image: url("../../assets/img/website-images/shape-1.png");
+  background-position: center;
+  padding: 12px 0;
+  background-size: contain;
+  height: 700px;
   width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  place-content: center;
+  position: relative;
+}
+
+.image-one {
+  height: auto;
+  width: 250px;
+  margin-bottom: 20px;
+  overflow: hidden;
+
+}
+.image-one img {
+  width: 100%;
+  border: 6px solid white;
+  border-top-left-radius: 32px;
+  border-bottom-right-radius: 32px;
+  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+ 
 }
 .title {
   font-size: 48px;
@@ -49,7 +79,7 @@
   background-color: var(--color-orange);
   cursor: pointer;
 }
-.about-us-divider{
+.about-us-divider {
   display: flex;
   gap: 10px;
   align-items: center;
@@ -62,9 +92,24 @@
   color: var(--color-orange);
   margin-bottom: 20px;
 }
-.divider{
+.divider {
   width: 40px;
   height: 3px;
   background-color: var(--color-orange);
   list-style-type: none;
+}
+
+.about-left-container img{
+  width: 100%;
+}
+@media(max-width:991px){
+  .about-content{
+    display: block;
+  }
+  .about-image-content{
+    height: max-content;
+  }
+  .image-one {
+    width: 150px;
+  }
 }
