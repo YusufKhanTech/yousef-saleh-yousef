@@ -46,6 +46,6 @@
   text-align: center;
   width: max-content;
   margin-top: 40px;
-  background-color: orangered;
+  background-color: var(--color-orange);
   cursor: pointer;
 }
