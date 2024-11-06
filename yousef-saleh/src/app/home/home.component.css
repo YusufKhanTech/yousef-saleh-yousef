@@ -49,3 +49,22 @@
   background-color: var(--color-orange);
   cursor: pointer;
 }
+.about-us-divider{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--color-orange);
+  margin-bottom: 20px;
+}
+.divider{
+  width: 40px;
+  height: 3px;
+  background-color: var(--color-orange);
+  list-style-type: none;
+}
