@@ -160,6 +160,10 @@
 .social-link-one {
   display: none;
 }
+.icon-linkedin{
+  width: max-content;
+  display: grid;
+}
 
 .icon-linkedin svg {
   fill: #0077b5;

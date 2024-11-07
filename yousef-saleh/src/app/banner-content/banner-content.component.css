@@ -15,6 +15,11 @@
 }
 .breadcrumb {
   color: white;
+  width: max-content;
+  margin: auto;
+  border-radius: 3px;
+  padding: 5px 19px;
+  background-color: var(--color-orange);
 }
 
 .banner-content {
