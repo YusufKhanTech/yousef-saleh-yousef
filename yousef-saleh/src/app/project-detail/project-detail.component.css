@@ -1,7 +1,7 @@
 .project-container {
   display: flex;
   flex-wrap: wrap;
-  width: 70%;
+  width: 85%;
   margin: 40px auto;
 }
 
@@ -22,25 +22,48 @@
 
 .related-info {
   flex: 0 0 33.33%;
-  display: grid;
-  align-items: start;
-  justify-content: center;
+  padding: 0 30px;
+  margin-top: -6%;
 }
 
 .related-info .title {
-  text-transform: uppercase;
+  font-style: normal;
   font-weight: 400;
-  color: color-mix(in srgb, #364d59, transparent 50%);
-  font-size: 18px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #6A6A6A;
 }
 .related-info .sub-title {
-  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: #15181B;
+  padding-bottom: 10px;
 }
 .related-info .project-link {
   font-size: 16px;
   color: var(--color-orange);
   cursor: pointer;
 }
+.heading-container{
+  background-color: var(--color-orange);
+  width: 100%;
+  padding: 30px;
+  color: white;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  font-size: 20px;
+}
+.related-item-content{
+  background-color: #F9F9F8;
+  padding: 30px;
+}
+.related-item{
+  border-bottom: 1px solid rgba(21, 24, 27, 0.1);
+  margin-bottom: 12px;
+}
+
 .btn {
   padding: 8px 40px;
   background: var(--color-orange);
@@ -54,7 +77,19 @@
 .btn:hover {
   background-color: #0056b3;
 }
-
+.project-detail-image{
+  overflow: hidden;
+}
+.project-detail-image img{
+  width: 100%;
+  margin-bottom: 30px;
+}
+.list-item-project-detail{
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 500;
+  color:#15181B;
+}
 @media (max-width: 768px) {
   .project-detail,
   .related-info {
