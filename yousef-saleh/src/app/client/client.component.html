@@ -1,16 +1,20 @@
-<div class="clients-container">
-  <div class="clients-row">
-    <app-heading-content title="Our Clients"
-                         subTitle="Award-winning clients">
-    </app-heading-content>
-    <div class="clients-carousel">
-      <div class="clients-track" #clientsTrack>
-        @for (clientImage of clientImages; track clientImage?.clientName) {
-          <div class="client-item">
-            <img class="client-logo" [src]="clientImage?.logo" alt="{{clientImage?.clientName}}">
-          </div>
-        }
-      </div>
+<div class="our-client-container">
+  <app-heading-content
+title="Our Clients"
+subTitle="Award-winning clients">
+</app-heading-content>
+<div class="clients-carousel">
+  <div class="clients-track">
+    @for(clientImage of clientImages; track clientImages; let i = $index){
+    <div class="client-item">
+      <img
+        class="client-logo"
+        [src]="clientImage.logo"
+        [alt]="clientImage.clientName"
+      />
     </div>
+    }
   </div>
+</div>
+
 </div>
