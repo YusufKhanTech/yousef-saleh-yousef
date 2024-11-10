@@ -1,9 +1,10 @@
 import { JsonPipe, NgClass, NgFor, NgIf, NgStyle } from '@angular/common';
 import { Component, HostListener, OnDestroy, OnInit } from '@angular/core';
-import {Router, RouterLink} from '@angular/router';
+import {NavigationEnd, Router, RouterLink} from '@angular/router';
 import { BannerContentComponent } from '../banner-content/banner-content.component';
 import {ServicesUtil} from '../services/util/service.util';
 import {ServiceCategory} from '../services/model/service.model';
+import {filter} from 'rxjs';
 
 @Component({
   selector: 'app-header',
@@ -34,6 +35,14 @@ export class HeaderComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
+    this.router.events
+      .pipe(filter((event) => event instanceof NavigationEnd))
+      .subscribe((event: NavigationEnd) => {
+        this.activeItem = this.navItems.find(
+          (item) => `/${item.link}` === event.urlAfterRedirects
+        )?.name || 'Home';
+      });
+
     window.addEventListener('scroll', this.onScroll);
   }
 
@@ -65,4 +74,10 @@ export class HeaderComponent implements OnInit, OnDestroy {
   navigateToLinkedin(): void {
     window.open('https://www.linkedin.com/company/yousef-saleh-yousef-contracting-and-establishment/', '_blank')
   }
+
+  navigateToHome(): void {
+    this.setActiveItem('Home');
+    this.router.navigate(['/']);
+  }
+
 }

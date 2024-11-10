@@ -1,6 +1,6 @@
 <div [ngClass]="{ scrolled: isScrolled }" class="header-container">
   <div class="header">
-    <div class="logo" routerLink=""><img [src]="logo" alt="" /></div>
+    <div class="logo" routerLink="" (click)="navigateToHome()"><img [src]="logo" alt="" /></div>
     <div class="hamburger" (click)="toggleMenu()">&#9776;</div>
     <ul [ngClass]="{ active: isMenuOpen }" class="nav-item">
       <li *ngFor="let item of navItems"
