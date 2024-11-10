@@ -1,1 +1,18 @@
-<p>our-projects works!</p>
+<app-banner-content
+  title="Our Projects"
+  breadcrumbText="Home / Our Projects"
+  bannerHeight="400px"
+></app-banner-content>
+<div class="our-projects-container">
+  <div class="tabs-container">
+    @for(tab of tabs; track tab; let i = $index){
+    <div
+      [ngClass]="{ 'active-tab': i === activeTabIndex }"
+      class="all"
+      (click)="selectedTab(i)"
+    >
+      {{ tab }}
+    </div>
+    }
+  </div>
+</div>

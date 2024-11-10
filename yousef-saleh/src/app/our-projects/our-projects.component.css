@@ -1,0 +1,38 @@
+.our-projects-container{
+    width: 70%;
+    margin: 40px auto;
+}
+.tabs-container{
+    width: max-content;
+    padding: 12px;
+    margin: auto;
+    gap: 30px;
+    display: flex;
+    text-align: center;
+}
+.all{
+    color: #15181B;
+    padding: 2px 13.5px;
+    border-radius: 3px;
+    font-family: var(--rr-ff-robo);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    cursor: pointer;
+}
+.active-tab {
+    color: white;
+    background-color: var(--color-orange);
+  }
+  @media(max-width:600px){
+    .our-projects-container{
+        width: 100%;
+    }
+    .tabs-container{
+        flex-wrap: wrap !important;
+        gap: 10px;
+        justify-content: center;
+        width: 100%;
+    }
+  }
