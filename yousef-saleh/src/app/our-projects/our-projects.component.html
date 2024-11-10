@@ -17,9 +17,18 @@
   </div>
   <div class="project-container">
     @for(image of projectsImage; track image){
-        <div class="project-card">
-            <img [src]="image" alt="" srcset="">
+    <div class="project-card">
+      <img [src]="image" alt="Project Image" />
+      <div class="overlay">
+        <div class="overlay-content">
+          <div class="icon"><i class="ti ti-arrow-right"></i></div>
+          <div class="description-container">
+            <div class="title">Residencial</div>
+            <div class="sub-title">Home Construction</div>
+          </div>
         </div>
+      </div>
+    </div>
     }
   </div>
 </div>
