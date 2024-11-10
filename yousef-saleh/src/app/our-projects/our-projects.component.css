@@ -1,38 +1,55 @@
-.our-projects-container{
-    width: 70%;
-    margin: 40px auto;
+.our-projects-container {
+  width: 85%;
+  margin: 40px auto;
 }
-.tabs-container{
-    width: max-content;
-    padding: 12px;
-    margin: auto;
-    gap: 30px;
-    display: flex;
-    text-align: center;
+.tabs-container {
+  width: max-content;
+  padding: 12px;
+  margin: auto;
+  gap: 30px;
+  display: flex;
+  text-align: center;
 }
-.all{
-    color: #15181B;
-    padding: 2px 13.5px;
-    border-radius: 3px;
-    font-family: var(--rr-ff-robo);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    cursor: pointer;
+.all {
+  color: #15181b;
+  padding: 2px 13.5px;
+  border-radius: 3px;
+  font-family: var(--rr-ff-robo);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  cursor: pointer;
 }
 .active-tab {
-    color: white;
-    background-color: var(--color-orange);
+  color: white;
+  background-color: var(--color-orange);
+}
+.project-container {
+  display: grid;
+  margin-top: 40px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.project-card {
+  height: 350px;
+  overflow: hidden;
+  width: auto;
+  background-color: yellow;
+  border-radius: 12px;
+}
+.project-card img{
+    width: 100%;
+    height: 100%;
+}
+@media (max-width: 600px) {
+  .our-projects-container {
+    width: 100%;
   }
-  @media(max-width:600px){
-    .our-projects-container{
-        width: 100%;
-    }
-    .tabs-container{
-        flex-wrap: wrap !important;
-        gap: 10px;
-        justify-content: center;
-        width: 100%;
-    }
+  .tabs-container {
+    flex-wrap: wrap !important;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
   }
+}

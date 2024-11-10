@@ -15,4 +15,11 @@
     </div>
     }
   </div>
+  <div class="project-container">
+    @for(image of projectsImage; track image){
+        <div class="project-card">
+            <img [src]="image" alt="" srcset="">
+        </div>
+    }
+  </div>
 </div>
