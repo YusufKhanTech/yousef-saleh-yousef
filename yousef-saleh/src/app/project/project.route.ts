@@ -1,11 +1,11 @@
 import { Routes } from '@angular/router';
-import { ProjectComponent } from './project.component';
 import { ProjectDetailComponent } from '../project-detail/project-detail.component';
+import {OurProjectsComponent} from '../our-projects/our-projects.component';
 
 export const projectRoutes: Routes = [
   {
     path: '',
-    component: ProjectComponent
+    component: OurProjectsComponent
   },
   {
     path: ':projectId',
