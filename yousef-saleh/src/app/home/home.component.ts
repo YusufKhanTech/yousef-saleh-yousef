@@ -1,9 +1,10 @@
-import {Component} from '@angular/core';
-import {ProjectComponent} from '../project/project.component';
-import {ServicesComponent} from '../services/services.component';
-import {BannerContentComponent} from '../banner-content/banner-content.component';
-import {ClientComponent} from '../client/client.component';
-import { HeadingContentComponent } from "../heading-content/heading-content.component";
+import { Component } from '@angular/core';
+import { ProjectComponent } from '../project/project.component';
+import { ServicesComponent } from '../services/services.component';
+import { BannerContentComponent } from '../banner-content/banner-content.component';
+import { ClientComponent } from '../client/client.component';
+import { HeadingContentComponent } from '../heading-content/heading-content.component';
+import { OurProjectsComponent } from '../our-projects/our-projects.component';
 import {Router} from '@angular/router';
 
 @Component({
@@ -11,6 +12,7 @@ import {Router} from '@angular/router';
   standalone: true,
   imports: [
     BannerContentComponent,
+    OurProjectsComponent,
     ServicesComponent,
     ProjectComponent,
     ClientComponent,
