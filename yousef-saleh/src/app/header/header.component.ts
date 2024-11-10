@@ -1,6 +1,6 @@
 import { JsonPipe, NgClass, NgFor, NgIf, NgStyle } from '@angular/common';
 import { Component, HostListener, OnDestroy, OnInit } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import {Router, RouterLink} from '@angular/router';
 import { BannerContentComponent } from '../banner-content/banner-content.component';
 import {ServicesUtil} from '../services/util/service.util';
 import {ServiceCategory} from '../services/model/service.model';
@@ -25,7 +25,8 @@ export class HeaderComponent implements OnInit, OnDestroy {
   ];
   allServiceCategories = ServicesUtil.getAllServices();
   hoveredService: ServiceCategory | null = null;
-  constructor() {}
+
+  constructor(private router: Router) {}
 
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
@@ -54,5 +55,13 @@ export class HeaderComponent implements OnInit, OnDestroy {
   setActiveItem(item: string) {
     this.activeItem = item;
     this.isMenuOpen = false;
+  }
+
+  navigateToContactUs(): void {
+    this.router.navigate(['/contact']);
+  }
+
+  navigateToLinkedin(): void {
+    window.open('https://www.linkedin.com/company/yousef-saleh-yousef-contracting-and-establishment/', '_blank')
   }
 }
