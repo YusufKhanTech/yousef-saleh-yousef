@@ -90,6 +90,39 @@
   font-weight: 500;
   color:#15181B;
 }
+.projects-carousel {
+  overflow: hidden;
+  margin-top: 30px;
+  position: relative;
+}
+
+.project-card-detail {
+  display: flex;
+  gap: 25px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+  scrollbar-width: none;
+}
+
+.project-card-detail img {
+  border-radius: 8px;
+  width: 430px
+}
+
+.project-button {
+  margin-top: 22px;
+  display: flex;
+  gap: 6px;
+  justify-content: left;
+}
+
+.project-button i {
+  font-size: 28px;
+  cursor: pointer;
+  color: var(--color-orange);
+}
+
 @media (max-width: 768px) {
   .project-detail,
   .related-info {
