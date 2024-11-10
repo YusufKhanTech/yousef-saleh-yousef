@@ -9,6 +9,12 @@
   background-repeat: no-repeat;
   overflow: hidden;
 }
+.company {
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--color-orange);
+  width: 100%;
+}
 .footer-logo{
   width: 200px;
   height: 140px;
@@ -40,12 +46,11 @@
   justify-content: space-between;
   align-items: flex-start;
   border-bottom: 1px solid rgba(255, 255, 255, 0.7);
-  flex-wrap: wrap;
 }
 
 .footer-info {
-  flex: 0 0 33.3333%;
-  max-width: 33.3333%;
+  flex: 0 0 40%;
+  max-width: 40%;
   margin-bottom: 20px;
   color: white;
 }

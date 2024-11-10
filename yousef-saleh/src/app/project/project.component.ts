@@ -3,12 +3,11 @@ import { Component } from '@angular/core';
 import { Route, Router } from '@angular/router';
 import { BannerContentComponent } from "../banner-content/banner-content.component";
 import { HeadingContentComponent } from "../heading-content/heading-content.component";
-import {FaIconComponent} from '@fortawesome/angular-fontawesome';
 
 @Component({
   selector: 'app-project',
   standalone: true,
-  imports: [NgFor, BannerContentComponent, HeadingContentComponent, FaIconComponent],
+  imports: [NgFor, BannerContentComponent, HeadingContentComponent],
   templateUrl: './project.component.html',
   styleUrl: './project.component.css',
 })
