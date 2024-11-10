@@ -76,8 +76,8 @@
 }
 
 .get-touch-cta:hover {
-  background-color: #f68122;
-  border: 2px solid #f68122;
+  background-color: var(--color-orange);
+  border: 2px solid var(--color-orange);
 }
 
 @media (max-width: 768px) {

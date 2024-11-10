@@ -5,6 +5,7 @@ import { BannerContentComponent } from '../banner-content/banner-content.compone
 import { ClientComponent } from '../client/client.component';
 import { HeadingContentComponent } from '../heading-content/heading-content.component';
 import { OurProjectsComponent } from '../our-projects/our-projects.component';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -15,9 +16,21 @@ import { OurProjectsComponent } from '../our-projects/our-projects.component';
     ServicesComponent,
     ProjectComponent,
     ClientComponent,
-    HeadingContentComponent,
-  ],
+    HeadingContentComponent
+],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css',
+  styleUrl: './home.component.css'
 })
-export class HomeComponent {}
+export class HomeComponent {
+
+  constructor(private router: Router) {
+  }
+
+  navigateToAboutUs(): void {
+    this.router.navigate(['/about']);
+  }
+
+  navigateToContactUs(): void {
+    this.router.navigate(['/contact']);
+  }
+}

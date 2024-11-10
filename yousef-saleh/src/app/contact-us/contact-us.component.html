@@ -9,7 +9,11 @@
         <i class="ti ti-map-pin"></i>
       </div>
       <div class="address-title">Address</div>
-      <div class="address-sub-title">A108 Adam Street, New York, NY 535022</div>
+      <div class="address-sub-title">
+        P. O. Box No. 2077
+        Dammam-31451
+        Kingdom of Saudi Arabia.
+      </div>
     </div>
     <div class="address-two">
       <div class="call-us-container">
@@ -17,14 +21,14 @@
           <i class="ti ti-phone"></i>
         </div>
         <div class="address-title">Call Us</div>
-        <div class="address-sub-title">+1 2323232323</div>
+        <div class="address-sub-title">+966-13-819 1114</div>
       </div>
       <div class="call-us-container">
         <div class="icon">
           <i class="ti ti-mail"></i>
         </div>
-        <div class="address-title">Call Us</div>
-        <div class="address-sub-title">+1 2323232323</div>
+        <div class="address-title">Email Us</div>
+        <div class="address-sub-title">contact&#64;symcoest.com</div>
       </div>
     </div>
   </div>
@@ -33,15 +37,21 @@
       <img src="https://imgs.search.brave.com/vSATNADyi7zleEHRlBBuK7aj4AvX-Ql8WvZnJiSghgk/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Z3Jvb3Z5cG9zdC5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjAvMDcvR29vZ2xl/LVBob3Rvcy1tYXAt/c2VhcmNoLW1hcC12/aWV3LnBuZw" />
     </div>
     <div class="input-form-container">
-      <form>
+      <form (submit)="sendEmail($event)">
+        <input type="text" name="name" placeholder="Your Name" required />
         <div class="input-container">
-          <input type="text" placeholder="Your Name" />
-          <input type="email" placeholder="Your Email" />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <input type="tel" name="phone" placeholder="Your Phone number" />
         </div>
-        <input type="text" placeholder="Subject" />
-        <textarea placeholder="Message"></textarea>
-        <div class="send-message-cta">Send Message</div>
+        <input type="text" name="subject" placeholder="Subject" required />
+        <textarea name="message" placeholder="Message" required></textarea>
+        <button type="submit" class="send-message-cta">Send Message</button>
       </form>
+      @if (isSubmitted) {
+      <div class="success-message">
+        Message sent successfully!
+      </div>
+      }
     </div>
   </div>
 </div>
