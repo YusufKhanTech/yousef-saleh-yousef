@@ -13,9 +13,9 @@ import { ProjectComponent } from '../project/project.component';
 export class OurProjectsComponent {
   tabs = [
     'All',
-    'Constrctions',
-    'Water Proffing',
+    'Constructions',
     'Maintenance and operations',
+    'Water Proofing'
   ];
   projectsImage = [
     'https://html.rrdevs.net/ribuild/assets/imgs/our-projects/latest-project__item-1.jpg',

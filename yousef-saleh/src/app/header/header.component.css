@@ -178,6 +178,7 @@
 
 .social-link-cta:hover {
   background-color: var(--color-orange);
+  color: #FFFFFF;
 }
 
 @media (max-width: 1172px) {
