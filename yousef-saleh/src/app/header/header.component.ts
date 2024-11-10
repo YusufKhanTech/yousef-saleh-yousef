@@ -19,9 +19,10 @@ export class HeaderComponent implements OnInit, OnDestroy {
   activeItem: string = 'Home';
   navItems = [
     { name: 'Home', link: '' },
-    { name: 'About', link: 'about' },
+    { name: 'About Us', link: 'about' },
+    { name: 'Our Projects', link: 'project' },
     { name: 'Services', icon:'ti ti-arrow-down', link: 'services' },
-    { name: 'Contact', link: 'contact' },
+    { name: 'Contact Us', link: 'contact' },
   ];
   allServiceCategories = ServicesUtil.getAllServices();
   hoveredService: ServiceCategory | null = null;
