@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 import { BannerContentComponent } from '../banner-content/banner-content.component';
 import { NgClass } from '@angular/common';
 import { ProjectComponent } from '../project/project.component';
+import {ProjectUtil} from '../project/util/project.util';
+import {Project} from '../project/model/project.model';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-our-projects',
@@ -17,15 +20,17 @@ export class OurProjectsComponent {
     'Maintenance and operations',
     'Water Proofing'
   ];
-  projectsImage = [
-    'https://html.rrdevs.net/ribuild/assets/imgs/our-projects/latest-project__item-1.jpg',
-    'https://html.rrdevs.net/ribuild/assets/imgs/our-projects/latest-project__item-2.jpg',
-    'https://html.rrdevs.net/ribuild/assets/imgs/our-projects/latest-project__item-1.jpg',
-    'https://html.rrdevs.net/ribuild/assets/imgs/our-projects/latest-project__item-2.jpg',
-  ];
+  projects = ProjectUtil.getAllProjects();
   activeTabIndex = 0;
+
+  constructor(private router: Router) {
+  }
 
   selectedTab(index: number) {
     this.activeTabIndex = index;
+  }
+
+  navigateToProjectDetails(project: Project) {
+      this.router.navigate(['/project', project?.id]);
   }
 }
