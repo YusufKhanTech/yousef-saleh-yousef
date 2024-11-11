@@ -7,7 +7,7 @@ export class ProjectUtil {
       {
         id: 1,
         name: 'Electrical Substation',
-        category: PROJECT_TYPE.CONSTRUCTIONS,
+        projectType: PROJECT_TYPE.CONSTRUCTIONS,
         image: 'assets/img/website-images/electric-substation.jpg',
         description: '',
         projectInfo: {
@@ -25,7 +25,7 @@ export class ProjectUtil {
       {
         id: 2,
         name: 'Civil Maintenance',
-        category: PROJECT_TYPE.MAINTENANCE_AND_OPERATIONS,
+        projectType: PROJECT_TYPE.MAINTENANCE_AND_OPERATIONS,
         image: 'assets/img/website-images/electro-mech.jpg',
         description: '',
         projectInfo: {
@@ -42,7 +42,7 @@ export class ProjectUtil {
       {
         id: 3,
         name: 'Industrial & Commercial building construction',
-        category: PROJECT_TYPE.CONSTRUCTIONS,
+        projectType: PROJECT_TYPE.CONSTRUCTIONS,
         image: 'assets/img/website-images/industrial.jpg',
         description: '',
         projectInfo: {
@@ -56,7 +56,7 @@ export class ProjectUtil {
       {
         id: 4,
         name: 'Electrical Maintenance',
-        category: PROJECT_TYPE.MAINTENANCE_AND_OPERATIONS,
+        projectType: PROJECT_TYPE.MAINTENANCE_AND_OPERATIONS,
         image: 'assets/img/website-images/electrical-m-1.jpg',
         description: '',
         projectInfo: {
@@ -73,7 +73,7 @@ export class ProjectUtil {
       {
         id: 5,
         name: 'Pre Engineered Steel Buildings',
-        category: PROJECT_TYPE.CONSTRUCTIONS,
+        projectType: PROJECT_TYPE.CONSTRUCTIONS,
         image: 'assets/img/website-images/steel-building.jpg',
         description: '',
         projectInfo: {
@@ -87,7 +87,7 @@ export class ProjectUtil {
       {
         id: 6,
         name: 'Water Proofing & Insulation Services',
-        category: PROJECT_TYPE.WATER_PROOFING,
+        projectType: PROJECT_TYPE.WATER_PROOFING,
         image: 'assets/img/website-images/water-proofing.jpeg',
         description: '',
         projectInfo: {
@@ -101,7 +101,7 @@ export class ProjectUtil {
       {
         id: 7,
         name: 'Cladding and Glass solutions',
-        category: PROJECT_TYPE.CONSTRUCTIONS,
+        projectType: PROJECT_TYPE.CONSTRUCTIONS,
         image: 'assets/img/website-images/cladding-and-glass.jpg',
         description: '',
         projectInfo: {
@@ -115,7 +115,7 @@ export class ProjectUtil {
       {
         id: 8,
         name: 'Asphalting & Road works',
-        category: PROJECT_TYPE.CONSTRUCTIONS,
+        projectType: PROJECT_TYPE.CONSTRUCTIONS,
         image: 'assets/img/website-images/asphalting.jpg',
         description: '',
         projectInfo: {
@@ -129,7 +129,7 @@ export class ProjectUtil {
       {
         id: 9,
         name: 'Fending Installations',
-        category: PROJECT_TYPE.CONSTRUCTIONS,
+        projectType: PROJECT_TYPE.CONSTRUCTIONS,
         image: 'assets/img/website-images/fencing.jpg',
         description: '',
         projectInfo: {
@@ -143,7 +143,7 @@ export class ProjectUtil {
       {
         id: 10,
         name: 'Concrete repair',
-        category: PROJECT_TYPE.MAINTENANCE_AND_OPERATIONS,
+        projectType: PROJECT_TYPE.MAINTENANCE_AND_OPERATIONS,
         image: 'assets/img/website-images/concrete.jpg',
         description: '',
         projectInfo: {
@@ -157,7 +157,7 @@ export class ProjectUtil {
       {
         id: 11,
         name: 'Electro Mechanical Works',
-        category: PROJECT_TYPE.CONSTRUCTIONS,
+        projectType: PROJECT_TYPE.CONSTRUCTIONS,
         image: 'assets/img/website-images/electro-mech.jpg',
         description: '',
         projectInfo: {
@@ -171,7 +171,7 @@ export class ProjectUtil {
       {
         id: 12,
         name: 'Portable office & Accommodation',
-        category: PROJECT_TYPE.CONSTRUCTIONS,
+        projectType: PROJECT_TYPE.CONSTRUCTIONS,
         image: 'assets/img/website-images/portable-office.jpg',
         description: '',
         projectInfo: {
@@ -185,7 +185,7 @@ export class ProjectUtil {
       {
         id: 13,
         name: 'Electro Mechanical Repair / Maintenance',
-        category: PROJECT_TYPE.MAINTENANCE_AND_OPERATIONS,
+        projectType: PROJECT_TYPE.MAINTENANCE_AND_OPERATIONS,
         image: 'assets/img/website-images/electrical-m-2.jpg',
         description: '',
         projectInfo: {
