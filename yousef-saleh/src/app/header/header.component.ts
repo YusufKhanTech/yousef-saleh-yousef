@@ -13,10 +13,9 @@ import {filter} from 'rxjs';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css'], // Fixed the styleUrls property
 })
-export class HeaderComponent implements OnInit, OnDestroy {
+export class HeaderComponent implements OnInit {
   isMenuOpen: boolean = false;
-  isScrolled: boolean = false;
-  logo = 'assets/img/website-images/ysy-white-logo.png';
+  logo = 'assets/img/website-images/ysy-logo.png';
   activeItem: string = 'Home';
   navItems = [
     { name: 'Home', link: '' },
@@ -42,24 +41,10 @@ export class HeaderComponent implements OnInit, OnDestroy {
           (item) => `/${item.link}` === event.urlAfterRedirects
         )?.name || 'Home';
       });
-
-    window.addEventListener('scroll', this.onScroll);
-  }
-
-  ngOnDestroy(): void {
-    window.removeEventListener('scroll', this.onScroll);
   }
 
   onHover(service: ServiceCategory) {
     this.hoveredService = service;
-  }
-
-  @HostListener('window:scroll', [])
-  onScroll(): void {
-    this.isScrolled = window.scrollY > 50;
-    window.scrollY > 50
-      ? (this.logo = 'assets/img/website-images/ysy-logo.png')
-      : (this.logo = 'assets/img/website-images/ysy-white-logo.png');
   }
 
   setActiveItem(item: string) {
