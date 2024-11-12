@@ -107,21 +107,30 @@
 
 .project-card-detail img {
   border-radius: 8px;
-  width: 430px
+  width: 430px;
 }
 
 .project-button {
-  margin-top: 22px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
   display: flex;
-  gap: 6px;
-  justify-content: left;
+  justify-content: space-between;
+  pointer-events: none;
 }
 
 .project-button i {
   font-size: 28px;
   cursor: pointer;
   color: var(--color-orange);
+  pointer-events: auto; /* Enables clicking on icons */
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  margin: 22px;
 }
+
 
 @media (max-width: 768px) {
   .project-detail,
