@@ -20,6 +20,7 @@ export class ServiceCategoryComponent implements OnInit {
   selectedService?: ServiceModel;
   serviceCategoryId?: number;
   allServices?: ServiceModel[] | undefined = [];
+  breadcrumbTexts= ['Home', 'Service Category'];
 
   constructor(private activatedRoute: ActivatedRoute) {
     this.setCategoryId();
