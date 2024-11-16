@@ -17,7 +17,7 @@ export class ProjectDetailComponent {
     projectId?: number;
     project?: Project;
     scrollAmount = 430;
-
+    breadcrumbTexts = ['Home', 'Projects', 'Project Details'];
     constructor(private activatedRoute: ActivatedRoute) {
       this.setProjectId();
     }
