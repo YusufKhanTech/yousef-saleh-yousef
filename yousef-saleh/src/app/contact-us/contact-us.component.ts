@@ -16,9 +16,11 @@ export class ContactUsComponent {
 
   public sendEmail(event: Event): void {
     event.preventDefault();
+    const form = event?.target as HTMLFormElement;
     emailjs.sendForm('service_e8ptueg', 'template_80shf1s', event.target as HTMLFormElement, '3L2F3zz1tTFqoj_3K')
       .then((result: EmailJSResponseStatus) => {
         this.isSubmitted = true;
+        form.reset();
       }, (error) => {
         console.log('FAILED...', error);
       });
