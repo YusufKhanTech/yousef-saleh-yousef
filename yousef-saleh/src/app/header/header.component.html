@@ -3,21 +3,25 @@
     <div class="logo" routerLink="" (click)="navigateToHome()"><img [src]="logo" alt="" /></div>
     <div class="hamburger" (click)="toggleMenu()">&#9776;</div>
     <ul [ngClass]="{ active: isMenuOpen }" class="nav-item">
-      <li *ngFor="let item of navItems"
-          [routerLink]="[item?.link]"
+      @for (item of navItems; track item?.name) {
+      <li [routerLink]="[item?.link]"
           [ngClass]="{ active: activeItem === item?.name }"
           (click)="setActiveItem(item.name)">
-        {{ item?.name }} <i class="{{ item?.icon }}"></i>
+          {{ item?.name }}
+        @if (item?.name === 'Services') {
+          <i class="ti ti-arrow-down"></i>
+        }
         @if (item?.name === 'Services') {
           <ng-container>
             <div class="drop-down">
               <ul>
-                @for (service of allServiceCategories; track service?.serviceCategoryId) {
-                <li (mouseenter)="onHover(service)">
-                  {{ service.serviceCategoryName }}
-                  @if (hoveredService === service) {
+                @for (allServiceCategory of allServiceCategories; track allServiceCategory?.serviceCategoryId) {
+                <li (mouseenter)="onHover(allServiceCategory)"
+                (click)="navigateToService(allServiceCategory)">
+                  {{ allServiceCategory.serviceCategoryName }}
+                  @if (hoveredService === allServiceCategory) {
                     <ul class="sub-dropdown">
-                      @for (subService of service.serviceSubCategories; track subService?.serviceId) {
+                      @for (subService of allServiceCategory.serviceSubCategories; track subService?.serviceId) {
                         <li> {{ subService.serviceName }}</li>
                       }
                   </ul>
@@ -29,6 +33,7 @@
           </ng-container>
         }
       </li>
+      }
       <div class="social-link-one">
         <div class="ti ti-brand-linkedin social-content"></div>
         <div class="social-link-cta">Get a quote</div>
