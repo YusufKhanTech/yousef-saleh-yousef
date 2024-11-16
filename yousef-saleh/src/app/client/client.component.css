@@ -10,12 +10,12 @@
 
 .clients-track {
   display: flex;
-  gap: 60px; 
-  animation: scroll 20s linear infinite; 
+  gap: 60px;
+  animation: scroll 20s linear infinite;
 }
 
 .client-item {
-  min-width: 150px; 
+  min-width: 150px;
   display: flex;
   justify-content: center;
   align-items: center;

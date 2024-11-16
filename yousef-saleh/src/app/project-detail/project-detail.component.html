@@ -1,9 +1,8 @@
 <div>
-  <app-banner-content
-    title="Project detail"
-    breadcrumbText="Home / Project Details"
-    bannerHeight="400px"
-  ></app-banner-content>
+  <app-banner-content title="Project detail"
+                      breadcrumbText="Home / Projects / Project Details"
+                      bannerHeight="400px">
+  </app-banner-content>
 </div>
 <div class="project-container">
   <div class="project-detail-image">
@@ -13,68 +12,54 @@
     />
   </div>
   <div class="project-detail">
-    <h2>This is an example of portfodivo details</h2>
+    <h2>{{project?.name}}</h2>
     <p>
-      Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque
-      inventore commodi labore quia quia. Exercitationem repudiandae officiis
-      neque suscipit non officia eaque itaque enim. Voluptatem officia
-      accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi
-      nulla at esse enim cum deserunt eius. Amet consequatur qui dolore veniam
-      voluptatem voluptatem sit. Non aspernatur atque natus ut cum nam et.
-      Praesentium error dolores rerum minus sequi quia veritatis eum. Eos et
-      doloribus doloremque nesciunt molestiae laboriosam.
+      {{project?.description}}
     </p>
-    <p>
-      voluptatem voluptatem sit. Non aspernatur atque natus ut cum nam et.
-      Praesentium error dolores rerum minus sequi quia veritatis eum. Eos et
-      doloribus doloremque nesciunt molestiae laboriosam.
-    </p>
-    <li class="list-item-project-detail">
-      Aliquam tincidunt nisi vitae nulla molestie laoreet.
-    </li>
-    <li class="list-item-project-detail">
-      Aliquam tincidunt nisi vitae nulla molestie laoreet.
-    </li>
-    <li class="list-item-project-detail">
-      Aliquam tincidunt nisi vitae nulla molestie laoreet.
-    </li>
-    <li class="list-item-project-detail">
-      Aliquam tincidunt nisi vitae nulla molestie laoreet.
-    </li>
-    <li class="list-item-project-detail">
-      Aliquam tincidunt nisi vitae nulla molestie laoreet.
-    </li>
+    @if (project?.subDescription) {
+      <p>
+        {{project?.subDescription}}
+      </p>
+    }
+    @for (keyPoint of project?.projectInfo?.keyPoints; track project?.id) {
+      <li class="list-item-project-detail">
+        {{keyPoint}}
+      </li>
+    }
   </div>
-
   <div class="related-info">
     <div class="heading-container"><h3>Project Information</h3></div>
     <div class="related-item-content">
       <div class="related-item">
         <div class="title">Client Name:</div>
-        <div class="sub-title">Construction Agency</div>
+        <div class="sub-title">{{project?.projectInfo?.clientName}}</div>
       </div>
-      <div class="related-item">
-        <div class="title">Category:</div>
-        <div class="sub-title">Building Construction</div>
-      </div>
+      @if (project?.projectType) {
+        <div class="related-item">
+          <div class="title">Category:</div>
+          <div class="sub-title">{{ project?.projectType }}</div>
+        </div>
+      }
       <div class="related-item">
         <div class="title">Start Date:</div>
-        <div class="sub-title">01 January 2024</div>
+        <div class="sub-title">{{project?.projectInfo?.startDate}}</div>
       </div>
       <div class="related-item">
         <div class="title">End Date:</div>
-        <div class="sub-title">01 January 2024</div>
+        <div class="sub-title">{{project?.projectInfo?.endDate}}</div>
       </div>
-      <div class="related-item">
-        <div class="title">Website:</div>
-        <div class="sub-title">http://rrdevs.com</div>
-      </div>
+      @if (project?.projectInfo?.website) {
+        <div class="related-item">
+          <div class="title">Website:</div>
+          <div class="sub-title">http://rrdevs.com</div>
+        </div>
+      }
     </div>
   </div>
-  <div class="projects-carousel"> 
+  <div class="projects-carousel">
     <div class="project-card-detail" #carousel>
-      @for(image of images; track image){
-      <img [src]="image" />
+      @for(image of project?.projectInfo?.images; track image) {
+        <img [src]="image" />
       }
     </div>
     <div class="project-button">

@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 import { BannerContentComponent } from '../banner-content/banner-content.component';
 import { NgClass } from '@angular/common';
 import { ProjectComponent } from '../project/project.component';
+import {ProjectUtil} from '../project/util/project.util';
+import {Project, Tabs, TABS_DISPLAY} from '../project/model/project.model';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-our-projects',
@@ -11,21 +14,23 @@ import { ProjectComponent } from '../project/project.component';
   styleUrl: './our-projects.component.css',
 })
 export class OurProjectsComponent {
-  tabs = [
-    'All',
-    'Constructions',
-    'Maintenance and operations',
-    'Water Proofing'
-  ];
-  projectsImage = [
-    'https://html.rrdevs.net/ribuild/assets/imgs/our-projects/latest-project__item-1.jpg',
-    'https://html.rrdevs.net/ribuild/assets/imgs/our-projects/latest-project__item-2.jpg',
-    'https://html.rrdevs.net/ribuild/assets/imgs/our-projects/latest-project__item-1.jpg',
-    'https://html.rrdevs.net/ribuild/assets/imgs/our-projects/latest-project__item-2.jpg',
-  ];
+  tabs = ProjectUtil.getAllTabs();
+  projects = ProjectUtil.getAllProjects();
   activeTabIndex = 0;
 
-  selectedTab(index: number) {
+  constructor(private router: Router) {
+  }
+
+  selectedTab(index: number, tab: Tabs) {
     this.activeTabIndex = index;
+    if (tab?.name === TABS_DISPLAY.ALL) {
+      this.projects = ProjectUtil.getAllProjects();
+    } else {
+      this.projects = ProjectUtil.getAllProjects().filter(project =>  (project.projectType?.replaceAll('_', ' ').toLowerCase()) === (tab.name)?.toLowerCase());
+    }
+  }
+
+  navigateToProjectDetails(project: Project) {
+      this.router.navigate(['/project', project?.id]);
   }
 }
