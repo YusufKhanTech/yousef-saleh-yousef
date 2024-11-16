@@ -6,7 +6,7 @@ export class ProjectUtil {
     return [
       {id: 0, name: 'All'},
       {id: 1, name: 'Constructions'},
-      {id: 2, name: 'Maintenance & Operations'},
+      {id: 2, name: 'Maintenance And Operations'},
       {id: 3, name: 'Water Proofing'},
     ]
   }
