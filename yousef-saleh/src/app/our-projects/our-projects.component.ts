@@ -3,7 +3,7 @@ import { BannerContentComponent } from '../banner-content/banner-content.compone
 import { NgClass } from '@angular/common';
 import { ProjectComponent } from '../project/project.component';
 import {ProjectUtil} from '../project/util/project.util';
-import {Project, Tabs} from '../project/model/project.model';
+import {Project, Tabs, TABS_DISPLAY} from '../project/model/project.model';
 import {Router} from '@angular/router';
 
 @Component({
@@ -23,7 +23,11 @@ export class OurProjectsComponent {
 
   selectedTab(index: number, tab: Tabs) {
     this.activeTabIndex = index;
-    this.projects = ProjectUtil.getAllProjects().filter(project => (project.projectType?.replaceAll('_', ' ').toLowerCase()) === (tab.name)?.toLowerCase());
+    if (tab?.name === TABS_DISPLAY.ALL) {
+      this.projects = ProjectUtil.getAllProjects();
+    } else {
+      this.projects = ProjectUtil.getAllProjects().filter(project =>  (project.projectType?.replaceAll('_', ' ').toLowerCase()) === (tab.name)?.toLowerCase());
+    }
   }
 
   navigateToProjectDetails(project: Project) {
