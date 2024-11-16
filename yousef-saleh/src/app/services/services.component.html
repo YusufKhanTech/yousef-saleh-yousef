@@ -1,7 +1,7 @@
 @if(isServicesBanner){
 <app-banner-content title="Services"
-                    breadcrumbText="Home / Services"
-                    bannerHeight="400px">
+                    bannerHeight="400px"
+                    [breadcrumbTexts]="breadcrumbTexts">
 </app-banner-content>
 }
 <div class="service" data-aos="fade-up" data-aos-delay="300">
