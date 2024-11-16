@@ -3,7 +3,7 @@ import { BannerContentComponent } from '../banner-content/banner-content.compone
 import { NgClass } from '@angular/common';
 import { ProjectComponent } from '../project/project.component';
 import {ProjectUtil} from '../project/util/project.util';
-import {Project} from '../project/model/project.model';
+import {Project, Tabs} from '../project/model/project.model';
 import {Router} from '@angular/router';
 
 @Component({
@@ -14,20 +14,16 @@ import {Router} from '@angular/router';
   styleUrl: './our-projects.component.css',
 })
 export class OurProjectsComponent {
-  tabs = [
-    'All',
-    'Constructions',
-    'Maintenance and operations',
-    'Water Proofing'
-  ];
+  tabs = ProjectUtil.getAllTabs();
   projects = ProjectUtil.getAllProjects();
   activeTabIndex = 0;
 
   constructor(private router: Router) {
   }
 
-  selectedTab(index: number) {
+  selectedTab(index: number, tab: Tabs) {
     this.activeTabIndex = index;
+    this.projects = ProjectUtil.getAllProjects().filter(project => (project.projectType?.replaceAll('_', ' ').toLowerCase()) === (tab.name)?.toLowerCase());
   }
 
   navigateToProjectDetails(project: Project) {

@@ -29,3 +29,21 @@ export enum PROJECT_TYPE_DISPLAY {
   MAINTENANCE_AND_OPERATIONS = 'Maintenance and Operations',
   WATER_PROOFING = 'Water Proofing'
 }
+
+export enum TABS {
+    ALL = 'ALL',
+    CONSTRUCTIONS = 'CONSTRUCTIONS',
+    MAINTENANCE_AND_OPERATIONS = 'MAINTENANCE_AND_OPERATIONS',
+    WATER_PROOFING = 'WATER_PROOFING'
+}
+
+export enum TABS_DISPLAY {
+  ALL = 'All',
+  CONSTRUCTIONS = 'Constructions',
+  MAINTENANCE_AND_OPERATIONS = 'Maintenance & Operations',
+  WATER_PROOFING = 'Water Proofing'
+}
+export class Tabs {
+  id?: number;
+  name?: string;
+}

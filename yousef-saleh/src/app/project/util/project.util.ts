@@ -1,7 +1,15 @@
-import {Project, PROJECT_TYPE} from '../model/project.model';
+import {Project, PROJECT_TYPE, Tabs} from '../model/project.model';
 
 export class ProjectUtil {
 
+  public static getAllTabs(): Tabs[] {
+    return [
+      {id: 0, name: 'All'},
+      {id: 1, name: 'Constructions'},
+      {id: 2, name: 'Maintenance & Operations'},
+      {id: 3, name: 'Water Proofing'},
+    ]
+  }
   public static getAllProjects(): Project[] {
     return [
       {
