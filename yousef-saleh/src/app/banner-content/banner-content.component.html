@@ -4,7 +4,7 @@
       @if(title) {
       <div class="banner-title">{{ title }}</div>
       }
-      <div class="breadcrumb">
+      <div *ngIf="breadcrumbTexts && breadcrumbTexts.length > 0" class="breadcrumb">
         @for (breadcrumbText of breadcrumbTexts; track breadcrumbText; let i = $index) {
           <div [ngClass]="i === 0 ? 'firstElement' : ''">
             @if (i === 0) {
