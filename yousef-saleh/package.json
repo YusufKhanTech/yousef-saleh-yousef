@@ -7,7 +7,7 @@
     "build": "ng build --configuration production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "postinstall": "ls -R environments"
+    "postinstall": "ls -R src/environments"
   },
   "private": true,
   "dependencies": {
