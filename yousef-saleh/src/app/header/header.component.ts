@@ -21,7 +21,7 @@ export class HeaderComponent implements OnInit {
     { name: 'Home', link: '' },
     { name: 'About Us', link: 'about' },
     { name: 'Our Projects', link: 'project' },
-    { name: 'Services', icon:'ti ti-arrow-down', link: 'services' },
+    { name: 'Services', icon:'ti ti-arrow-down', link: 'service-category' },
     { name: 'Contact Us', link: 'contact' },
   ];
   allServiceCategories = ServicesUtil.getAllServices();
@@ -71,8 +71,10 @@ export class HeaderComponent implements OnInit {
     this.router.navigate(['/']);
   }
 
-  navigateToService(serviceCategory: ServiceCategory): void {
-    this.router.navigate(['/service-category/' + serviceCategory?.serviceCategoryId + '/services'], { relativeTo: this.activatedRoute });
-    this.activeItem = 'Services';
+  navigateToService(link: string | undefined, serviceCategory: ServiceCategory): void {
+    if (link) {
+      this.router.navigate([link + '/' + serviceCategory?.serviceCategoryId + '/services'], { relativeTo: this.activatedRoute });
+      this.activeItem = 'Services';
+    }
   }
 }
