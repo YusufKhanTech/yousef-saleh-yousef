@@ -67,8 +67,7 @@ export class HeaderComponent implements OnInit {
   }
 
   navigateToService(serviceCategory: ServiceCategory): void {
-    this.router.navigate(['/service-category/' + serviceCategory?.serviceCategoryId + '/services'], {
-      relativeTo: this.activatedRoute
-    });
+    this.router.navigate(['/service-category/' + serviceCategory?.serviceCategoryId + '/services'], {relativeTo: this.activatedRoute});
+    this.setActiveItem('Services');
   }
 }
