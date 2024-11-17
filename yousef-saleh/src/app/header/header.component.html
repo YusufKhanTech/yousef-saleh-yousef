@@ -17,8 +17,8 @@
               <ul>
                 @for (allServiceCategory of allServiceCategories; track allServiceCategory?.serviceCategoryId) {
                 <li (mouseenter)="onHover(allServiceCategory)"
-                (click)="navigateToService(allServiceCategory)">
-                  {{ allServiceCategory.serviceCategoryName }}
+                    (click)="navigateToService(allServiceCategory)">
+                    {{ allServiceCategory.serviceCategoryName }}
                   @if (hoveredService === allServiceCategory) {
                     <ul class="sub-dropdown">
                       @for (subService of allServiceCategory.serviceSubCategories; track subService?.serviceId) {
