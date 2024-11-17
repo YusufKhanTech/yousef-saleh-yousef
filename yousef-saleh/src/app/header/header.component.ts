@@ -38,9 +38,14 @@ export class HeaderComponent implements OnInit {
     this.router.events
       .pipe(filter((event) => event instanceof NavigationEnd))
       .subscribe((event: NavigationEnd) => {
-        this.activeItem = this.navItems.find(
-          (item) => `/${item.link}` === event.urlAfterRedirects
-        )?.name || 'Home';
+        const url = this.router.url;
+        if (url.includes('/service-category')) {
+          this.activeItem = 'Services';
+        } else {
+          this.activeItem = this.navItems.find(
+            (item) => `/${item.link}` === url
+          )?.name || 'Home';
+        }
       });
   }
 
@@ -67,7 +72,7 @@ export class HeaderComponent implements OnInit {
   }
 
   navigateToService(serviceCategory: ServiceCategory): void {
-    this.router.navigate(['/service-category/' + serviceCategory?.serviceCategoryId + '/services'], {relativeTo: this.activatedRoute});
-    this.setActiveItem('Services');
+    this.router.navigate(['/service-category/' + serviceCategory?.serviceCategoryId + '/services'], { relativeTo: this.activatedRoute });
+    this.activeItem = 'Services';
   }
 }
