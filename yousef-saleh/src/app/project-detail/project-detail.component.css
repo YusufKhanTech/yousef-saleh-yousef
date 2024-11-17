@@ -121,10 +121,10 @@
 }
 
 .project-button i {
-  font-size: 28px;
+  font-size: 38px;
   cursor: pointer;
   color: var(--color-orange);
-  pointer-events: auto; /* Enables clicking on icons */
+  pointer-events: auto;
   padding: 8px;
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 50%;

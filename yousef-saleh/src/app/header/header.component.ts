@@ -21,7 +21,7 @@ export class HeaderComponent implements OnInit {
     { name: 'Home', link: '' },
     { name: 'About Us', link: 'about' },
     { name: 'Our Projects', link: 'project' },
-    { name: 'Services', icon:'ti ti-arrow-down', link: 'services' },
+    { name: 'Services', icon:'ti ti-arrow-down', link: 'service-category' },
     { name: 'Contact Us', link: 'contact' },
   ];
   allServiceCategories = ServicesUtil.getAllServices();
@@ -38,9 +38,14 @@ export class HeaderComponent implements OnInit {
     this.router.events
       .pipe(filter((event) => event instanceof NavigationEnd))
       .subscribe((event: NavigationEnd) => {
-        this.activeItem = this.navItems.find(
-          (item) => `/${item.link}` === event.urlAfterRedirects
-        )?.name || 'Home';
+        const url = this.router.url;
+        if (url.includes('/service-category')) {
+          this.activeItem = 'Services';
+        } else {
+          this.activeItem = this.navItems.find(
+            (item) => `/${item.link}` === url
+          )?.name || 'Home';
+        }
       });
   }
 
@@ -66,8 +71,10 @@ export class HeaderComponent implements OnInit {
     this.router.navigate(['/']);
   }
 
-  navigateToService(serviceCategory: ServiceCategory): void {
-    this.router.navigate(['/service-category/' + serviceCategory?.serviceCategoryId + '/services'], {relativeTo: this.activatedRoute});
-    this.setActiveItem('Services');
+  navigateToService(link: string | undefined, serviceCategory: ServiceCategory): void {
+    if (link) {
+      this.router.navigate([link + '/' + serviceCategory?.serviceCategoryId + '/services'], { relativeTo: this.activatedRoute });
+      this.activeItem = 'Services';
+    }
   }
 }

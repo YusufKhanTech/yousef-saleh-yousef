@@ -8,30 +8,30 @@
           [ngClass]="{ active: activeItem === item?.name }"
           (click)="setActiveItem(item.name)">
           {{ item?.name }}
-        @if (item?.name === 'Services') {
-          <i class="ti ti-arrow-down"></i>
-        }
-        @if (item?.name === 'Services') {
-          <ng-container>
-            <div class="drop-down">
-              <ul>
-                @for (allServiceCategory of allServiceCategories; track allServiceCategory?.serviceCategoryId) {
-                <li (mouseenter)="onHover(allServiceCategory)"
-                    (click)="navigateToService(allServiceCategory)">
-                    {{ allServiceCategory.serviceCategoryName }}
-                  @if (hoveredService === allServiceCategory) {
-                    <ul class="sub-dropdown">
-                      @for (subService of allServiceCategory.serviceSubCategories; track subService?.serviceId) {
-                        <li> {{ subService.serviceName }}</li>
-                      }
-                  </ul>
-                  }
-                </li>
-                }
-              </ul>
-            </div>
-          </ng-container>
-        }
+<!--        @if (item?.name === 'Services') {-->
+<!--          <i class="ti ti-arrow-down"></i>-->
+<!--        }-->
+<!--        @if (item?.name === 'Services') {-->
+<!--          <ng-container>-->
+<!--            <div class="drop-down">-->
+<!--              <ul>-->
+<!--                @for (allServiceCategory of allServiceCategories; track allServiceCategory?.serviceCategoryId) {-->
+<!--                <li [routerLink]="[item?.link + '/' + allServiceCategory?.serviceCategoryId + '/services']"-->
+<!--                    (mouseenter)="onHover(allServiceCategory)">-->
+<!--                    {{ allServiceCategory.serviceCategoryName }}-->
+<!--                  @if (hoveredService === allServiceCategory) {-->
+<!--                    <ul class="sub-dropdown">-->
+<!--                      @for (subService of allServiceCategory.serviceSubCategories; track subService?.serviceId) {-->
+<!--                        <li> {{ subService.serviceName }}</li>-->
+<!--                      }-->
+<!--                  </ul>-->
+<!--                  }-->
+<!--                </li>-->
+<!--                }-->
+<!--              </ul>-->
+<!--            </div>-->
+<!--          </ng-container>-->
+<!--        }-->
       </li>
       }
       <div class="social-link-one">
