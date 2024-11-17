@@ -1,4 +1,10 @@
 {
+  "builds": [
+    {
+      "src": "dist/yousef-saleh/browser/**",
+      "use": "@vercel/static"
+    }
+  ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/" }
   ]
