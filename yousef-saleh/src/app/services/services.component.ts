@@ -15,6 +15,7 @@ import { ServiceCategory} from './model/service.model';
 export class ServicesComponent {
 
   isServicesBanner: boolean = false;
+  breadcrumbTexts = ['Home', 'Services'];
   serviceCategories: ServiceCategory[] = ServicesUtil.getAllServices();
 
   constructor(private router: Router,

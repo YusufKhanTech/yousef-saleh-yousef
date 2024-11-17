@@ -9,7 +9,10 @@ import { HeadingContentComponent } from '../heading-content/heading-content.comp
   templateUrl: './about.component.html',
   styleUrl: './about.component.css',
 })
+
 export class AboutComponent {
+
+  breadcrumbTexts= ['Home', 'About Us'];
   teamContent = [
     // {
     //   name: 'Afifi Farag',

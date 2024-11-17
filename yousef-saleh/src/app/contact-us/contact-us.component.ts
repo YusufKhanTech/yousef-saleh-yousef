@@ -11,6 +11,7 @@ import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 })
 export class ContactUsComponent {
 
+  breadcrumbTexts = ['Home ','Contact Us'];
   isSubmitted = false;
   constructor() {}
 

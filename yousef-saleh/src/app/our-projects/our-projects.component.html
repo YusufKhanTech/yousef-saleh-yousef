@@ -1,8 +1,7 @@
-<app-banner-content
-  title="Our Projects"
-  breadcrumbText="Home / Our Projects"
-  bannerHeight="400px"
-></app-banner-content>
+<app-banner-content title="Our Projects"
+                    bannerHeight="400px"
+                    [breadcrumbTexts]="breadcrumbTexts">
+</app-banner-content>
 <div class="our-projects-container">
   <div class="tabs-container">
     @for(tab of tabs; track tab?.id; let i = $index){

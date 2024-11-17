@@ -1,12 +1,22 @@
 <div [ngStyle]="{'height':bannerHeight}" class="banner-container">
   <div class="banner-content">
     <div data-aos="fade-up" data-aos-delay="100">
-      @if(title){
+      @if(title) {
       <div class="banner-title">{{ title }}</div>
       }
-      @if(breadcrumbText){
-        <div class="breadcrumb">{{ breadcrumbText }}</div>
-      }
+      <div *ngIf="breadcrumbTexts && breadcrumbTexts.length > 0" class="breadcrumb">
+        @for (breadcrumbText of breadcrumbTexts; track breadcrumbText; let i = $index) {
+          <div [ngClass]="i === 0 ? 'firstElement' : ''">
+            @if (i === 0) {
+              <i class="icon-element ti ti-home"></i>
+            }
+            {{ breadcrumbText }}
+            @if (i < breadcrumbTexts.length - 1) {
+              <span class="dot">&#8226;</span>
+            }
+          </div>
+        }
+      </div>
       <div data-aos="fade-up">
         @if(subTitle){
           <div class="divider"></div>

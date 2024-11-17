@@ -1,6 +1,6 @@
 import { JsonPipe, NgClass, NgFor, NgIf, NgStyle } from '@angular/common';
-import { Component, HostListener, OnDestroy, OnInit } from '@angular/core';
-import {NavigationEnd, Router, RouterLink} from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute, NavigationEnd, Router, RouterLink} from '@angular/router';
 import { BannerContentComponent } from '../banner-content/banner-content.component';
 import {ServicesUtil} from '../services/util/service.util';
 import {ServiceCategory} from '../services/model/service.model';
@@ -27,7 +27,8 @@ export class HeaderComponent implements OnInit {
   allServiceCategories = ServicesUtil.getAllServices();
   hoveredService: ServiceCategory | null = null;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router,
+              private activatedRoute: ActivatedRoute) {}
 
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
@@ -65,4 +66,8 @@ export class HeaderComponent implements OnInit {
     this.router.navigate(['/']);
   }
 
+  navigateToService(serviceCategory: ServiceCategory): void {
+    this.router.navigate(['/service-category/' + serviceCategory?.serviceCategoryId + '/services'], {relativeTo: this.activatedRoute});
+    this.setActiveItem('Services');
+  }
 }

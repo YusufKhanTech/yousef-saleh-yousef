@@ -1,22 +1,22 @@
-import { NgStyle } from '@angular/common';
+import {NgClass, NgIf, NgStyle} from '@angular/common';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-banner-content',
   standalone: true,
-  imports: [NgStyle],
+  imports: [NgStyle, NgClass, NgIf],
   templateUrl: './banner-content.component.html',
   styleUrl: './banner-content.component.css'
 })
 export class BannerContentComponent {
-@Input() title!:string;
-@Input() subTitle!:string;
-@Input() buttonText!:string;
-@Input() breadcrumbText!: string;
-@Input() bannerHeight:string = '100vh';
-@Output() buttonClick = new EventEmitter<any>();
+  @Input() title!:string;
+  @Input() subTitle!:string;
+  @Input() buttonText!:string;
+  @Input() breadcrumbTexts: string[] = [];
+  @Input() bannerHeight:string = '100vh';
+  @Output() buttonClick = new EventEmitter<any>();
 
-onButtonClick(){
-  this.buttonClick.emit();
-}
+  onButtonClick(){
+    this.buttonClick.emit();
+  }
 }

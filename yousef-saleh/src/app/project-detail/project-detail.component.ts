@@ -1,10 +1,9 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { BannerContentComponent } from '../banner-content/banner-content.component';
 import { HeaderComponent } from '../header/header.component';
-import {ActivatedRoute, Router} from '@angular/router';
-import {ServicesUtil} from '../services/util/service.util';
+import {ActivatedRoute} from '@angular/router';
+import {Project} from '../project/model/project.model';
 import {ProjectUtil} from '../project/util/project.util';
-import {Project, PROJECT_TYPE_DISPLAY} from '../project/model/project.model';
 
 @Component({
   selector: 'app-project-detail',
@@ -18,8 +17,7 @@ export class ProjectDetailComponent {
     projectId?: number;
     project?: Project;
     scrollAmount = 430;
-    protected readonly PROJECT_TYPE_DISPLAY = PROJECT_TYPE_DISPLAY;
-
+    breadcrumbTexts = ['Home', 'Projects', 'Project Details'];
     constructor(private activatedRoute: ActivatedRoute) {
       this.setProjectId();
     }

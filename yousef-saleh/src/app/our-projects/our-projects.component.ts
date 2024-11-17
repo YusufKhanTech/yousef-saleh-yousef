@@ -14,9 +14,11 @@ import {Router} from '@angular/router';
   styleUrl: './our-projects.component.css',
 })
 export class OurProjectsComponent {
+
   tabs = ProjectUtil.getAllTabs();
   projects = ProjectUtil.getAllProjects();
   activeTabIndex = 0;
+  breadcrumbTexts= ['Home', 'Our Projects'];
 
   constructor(private router: Router) {
   }
