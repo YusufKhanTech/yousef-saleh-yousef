@@ -158,7 +158,6 @@ span {
   display: block;
 }
 
-/* Text stays visible during hover */
 .grid-item:hover {
   z-index: 1;
 }
@@ -171,7 +170,7 @@ span {
 }
 .element-logo {
   width: 30%;
-  height: 400px;
+  height: 440px;
 }
 
 .element-logo img {
