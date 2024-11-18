@@ -41,6 +41,8 @@ export class HeaderComponent implements OnInit {
         const url = this.router.url;
         if (url.includes('/service-category')) {
           this.activeItem = 'Services';
+        } else if(url.includes('/project')) {
+          this.activeItem = 'Our Projects';
         } else {
           this.activeItem = this.navItems.find(
             (item) => `/${item.link}` === url
