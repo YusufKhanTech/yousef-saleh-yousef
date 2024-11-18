@@ -6,9 +6,12 @@
         <div>with innovation and precision</div>
       </div>
       <div data-aos="fade-up">
+        @for (keypoint of keyPoints; track keypoint?.key) {
         <div class="banner-sub-title">
-          We provide the best architectural design, construction, and building maintenance services for you.
+          <i class="ti ti-circle-check icon"></i>
+          <span>{{keypoint?.key}}</span>
         </div>
+        }
       </div>
       <div class="get-touch-cta" (click)="navigateToServices()">
         Our Services <i class="ti ti-arrow-right"></i>
