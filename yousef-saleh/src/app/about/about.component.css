@@ -167,6 +167,13 @@ span {
   gap: 70px;
   margin-top: 70px;
 }
+.about-element-title-two {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 70px;
+  margin-top: 70px;
+}
 .element-logo {
   width: 30%;
   height: 440px;
@@ -270,5 +277,8 @@ span {
 @media(max-width:768px){
   .grid-container{
     display: block;
+  }
+  .about-element-title-two{
+    flex-direction: column-reverse;
   }
 }
