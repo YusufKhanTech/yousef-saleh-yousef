@@ -264,7 +264,9 @@ span {
     margin-bottom: 20px;
   }
   .about-element-title {
-    display: block;
+    display: grid;
+    gap: 40px;
+    margin: 0;
     margin-bottom: 30px;
   }
   .element-logo {
@@ -277,6 +279,9 @@ span {
 @media(max-width:768px){
   .grid-container{
     display: block;
+  }
+  .element-sub-title{
+    margin-bottom: 12px;
   }
   .about-element-title-two{
     flex-direction: column-reverse;
