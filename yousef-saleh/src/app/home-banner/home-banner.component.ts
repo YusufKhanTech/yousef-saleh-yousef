@@ -7,8 +7,6 @@ import {Router} from '@angular/router';
   standalone: true,
   imports: [
     NgStyle,
-    NgClass,
-    NgForOf
   ],
   templateUrl: './home-banner.component.html',
   styleUrl: './home-banner.component.css'
@@ -52,7 +50,6 @@ export class HomeBannerComponent implements OnInit, OnDestroy {
   startImageCarousel(): void {
     this.intervalId = setInterval(() => {
       this.activeIndex = (this.activeIndex + 1) % this.backgroundImageUrls.length;
-      console.log('Active image index:', this.activeIndex); // Check if this logs correctly
     }, 3000);
   }
 
