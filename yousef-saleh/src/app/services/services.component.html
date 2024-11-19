@@ -5,7 +5,7 @@
 </app-banner-content>
 }
 <div class="service" data-aos="fade-up" data-aos-delay="300">
-  <div class="service-container">
+  <div [ngStyle]="{'margin': margin + ' auto'}" class="service-container">
     @if(!isServicesBanner){
     <div style="padding-top: 40px;">
       <app-heading-content title="Services"
