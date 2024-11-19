@@ -265,7 +265,7 @@ span {
   }
   .about-element-title {
     display: grid;
-    gap: 40px;
+    gap: 20px;
     margin: 0;
     margin-bottom: 30px;
   }
@@ -284,6 +284,11 @@ span {
     margin-bottom: 12px;
   }
   .about-element-title-two{
+    gap: 20px;
     flex-direction: column-reverse;
+    margin: 0;
+  }
+  .about-element-title > :nth-child(1){
+    margin-top: 42px;
   }
 }
