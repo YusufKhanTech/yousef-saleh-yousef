@@ -7,13 +7,13 @@
 }
 
 .banner-container::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background:linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1));
   z-index: 0;
 }
 
@@ -45,7 +45,7 @@
 }
 
 .banner-title div:last-child {
-width: max-content;
+  width: max-content;
 }
 
 .banner-sub-title {
@@ -74,10 +74,10 @@ width: max-content;
 .get-touch-cta i {
   font-size: 18px;
   cursor: pointer;
-  color: #FFFFFF;
+  color: #ffffff;
   pointer-events: auto;
   padding: 2px;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #ffffff;
   border-radius: 50%;
   margin: 8px;
 }
@@ -88,6 +88,9 @@ width: max-content;
 }
 
 @media (max-width: 768px) {
+  .banner-content {
+    margin: 12px;
+  }
   .banner-title div:first-child {
     font-size: 32px;
   }
