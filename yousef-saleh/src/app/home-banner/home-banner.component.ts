@@ -27,7 +27,9 @@ export class HomeBannerComponent implements OnInit, OnDestroy {
     { key: '/assets/img/website-images/home-bg-3.jpg' },
     { key: '/assets/img/website-images/home-bg-4.jpg' },
     { key: '/assets/img/website-images/home-bg-5.jpg' },
-    { key: '/assets/img/website-images/home-bg-6.jpg' }
+    { key: '/assets/img/website-images/home-bg-6.jpg' },
+    { key: '/assets/img/website-images/substation-4.jpg' },
+    { key: '/assets/img/website-images/substation-switch-panel.jpg' }
   ];
   activeIndex = 0;
   private intervalId: any;
