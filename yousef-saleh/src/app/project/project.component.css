@@ -16,6 +16,20 @@
   height: 312px;
 }
 
+.card-title {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 0;
+  transition: transform 0.3s ease;
+}
+
 .project-card img {
   height: 100%;
   width: 100%;
