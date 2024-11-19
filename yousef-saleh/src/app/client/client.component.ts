@@ -13,18 +13,18 @@ import { NgFor } from '@angular/common';
 })
 export class ClientComponent{
   clientImages = [
-    { clientName: 'saudi-electricity', logo: '/assets/img/clients/saudi-electricity-logo.png' },
-    { clientName: 'national-grid', logo: '/assets/img/clients/national-grid-logo.png' },
-    { clientName: 'rcjy-logo', logo: '/assets/img/clients/rcjy-logo.png' },
-    { clientName: 'bank-al-bilad', logo: '/assets/img/clients/bank-al-bilad-logo.png' },
-    { clientName: 'anb-bank', logo: '/assets/img/clients/anb-bank-logo.png' },
-    { clientName: 'al-rajhi-bank', logo: '/assets/img/clients/al-rajhi-bank-logo.png' },
-    { clientName: 'al-awwal-bank-logo', logo: '/assets/img/clients/al-awwal-bank-logo.png' },
-    { clientName: 'ascott-logo', logo: '/assets/img/clients/ascott-logo.png' },
-    { clientName: 'ncr-logo', logo: '/assets/img/clients/ncr-logo.png' },
-    { clientName: 'riyad-logo', logo: '/assets/img/clients/riyad-logo.png' },
-    { clientName: 'sab-bank-logo', logo: '/assets/img/clients/sab-bank-logo.png' },
-    { clientName: 'altoukhi-logo', logo: '/assets/img/clients/altoukhi-logo.jpg' },
+    { clientId: 'cl01', clientName: 'saudi-electricity', logo: '/assets/img/clients/saudi-electricity-logo.png' },
+    { clientId: 'cl02', clientName: 'national-grid', logo: '/assets/img/clients/national-grid-logo.png' },
+    { clientId: 'cl03', clientName: 'rcjy-logo', logo: '/assets/img/clients/rcjy-logo.png' },
+    { clientId: 'cl04', clientName: 'bank-al-bilad', logo: '/assets/img/clients/bank-al-bilad-logo.png' },
+    { clientId: 'cl05', clientName: 'anb-bank', logo: '/assets/img/clients/anb-bank-logo.png' },
+    { clientId: 'cl06', clientName: 'al-rajhi-bank', logo: '/assets/img/clients/al-rajhi-bank-logo.png' },
+    { clientId: 'cl07', clientName: 'al-awwal-bank-logo', logo: '/assets/img/clients/al-awwal-bank-logo.png' },
+    { clientId: 'cl08', clientName: 'ascott-logo', logo: '/assets/img/clients/ascott-logo.png' },
+    { clientId: 'cl09', clientName: 'ncr-logo', logo: '/assets/img/clients/ncr-logo.png' },
+    { clientId: 'cl010', clientName: 'riyad-logo', logo: '/assets/img/clients/riyad-logo.png' },
+    { clientId: 'cl011', clientName: 'sab-bank-logo', logo: '/assets/img/clients/sab-bank-logo.png' },
+    { clientId: 'cl012', clientName: 'altoukhi-logo', logo: '/assets/img/clients/altoukhi-logo.jpg' },
   ];
 }
 
