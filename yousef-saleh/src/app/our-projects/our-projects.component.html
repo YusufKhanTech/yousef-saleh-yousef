@@ -14,7 +14,7 @@
   </div>
   <div class="project-container">
     @for(project of projects; track project?.id){
-    <div class="project-card">
+    <div class="project-card" data-aos="fade-left" data-aos-delay="300">
       <img [src]="project?.image" alt="Project Image" />
       <div class="overlay">
         <div class="overlay-content">

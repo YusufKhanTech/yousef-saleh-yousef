@@ -101,6 +101,11 @@
 .about-left-container img{
   width: 100%;
 }
+@media (min-width: 1541px) {
+  .about-container{
+    max-width: 70%;
+  }
+}
 @media(max-width:991px){
   .about-content{
     display: block;
