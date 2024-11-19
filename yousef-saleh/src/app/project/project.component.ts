@@ -13,13 +13,13 @@ import { HeadingContentComponent } from "../heading-content/heading-content.comp
 })
 export class ProjectComponent {
   isProject:boolean = false;
-  projectImages = [
-      { id: 1, imageUrl: 'https://www.bootstrapmade.com/content/demo/UpConstruction/assets/img/projects/remodeling-1.jpg' },
-      { id: 2, imageUrl: 'https://www.bootstrapmade.com/content/demo/UpConstruction/assets/img/projects/construction-1.jpg' },
-      { id: 3, imageUrl: 'https://www.bootstrapmade.com/content/demo/UpConstruction/assets/img/projects/repairs-1.jpg' },
-      { id: 4, imageUrl: 'https://www.bootstrapmade.com/content/demo/UpConstruction/assets/img/projects/design-1.jpg' },
-      { id: 5, imageUrl: 'https://www.bootstrapmade.com/content/demo/UpConstruction/assets/img/projects/remodeling-2.jpg' },
-      { id: 6, imageUrl: 'https://www.bootstrapmade.com/content/demo/UpConstruction/assets/img/projects/construction-2.jpg' },
+  projects = [
+      { id: 1, name:'Riyad Bank', imageUrl: '/assets/img/website-images/riyad-bank-project-1.jpg' },
+      { id: 2, name:'Saudi Electricity Company', imageUrl: '/assets/img/website-images/substation-1.jpg' },
+      { id: 3, name:'Al Rajhi Bank', imageUrl: '/assets/img/website-images/al-rajhi-project-3.jpg' },
+      { id: 4, name:'Al Bilad Bank', imageUrl: '/assets/img/website-images/al-bilad-project-4.jpg' },
+      { id: 5, name:'Saudi Investment Bank', imageUrl: '/assets/img/website-images/saudi-investment-bank.jpg' },
+      { id: 5, name:'Saudi Electricity Company', imageUrl: '/assets/img/website-images/substation-2.jpg' },
     ];
   constructor(private router: Router) {
     this.isProject = this.router.url.includes('project');

@@ -14,7 +14,7 @@ import {Router} from '@angular/router';
 export class HomeBannerComponent implements OnInit, OnDestroy {
 
   keyPoints = [
-    {key: 'We specialize in operations and maintenance, using advanced technology for optimal results.'},
+    {key: 'We specialize in operations and maintenance, using future technology for optimal results.'},
     {key: 'Our architectural designs focus on energy efficiency and sustainability'},
     {key: 'Expertise in the power plant and energy sector, delivering reliable solutions.'},
     {key: 'Committed to efficient, high-quality services with future-ready technology.'}
@@ -25,7 +25,9 @@ export class HomeBannerComponent implements OnInit, OnDestroy {
     { key: '/assets/img/website-images/home-bg-3.jpg' },
     { key: '/assets/img/website-images/home-bg-4.jpg' },
     { key: '/assets/img/website-images/home-bg-5.jpg' },
-    { key: '/assets/img/website-images/home-bg-6.jpg' }
+    { key: '/assets/img/website-images/home-bg-6.jpg' },
+    { key: '/assets/img/website-images/substation-4.jpg' },
+    { key: '/assets/img/website-images/substation-switch-panel.jpg' }
   ];
   activeIndex = 0;
   private intervalId: any;
