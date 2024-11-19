@@ -5,7 +5,7 @@ subTitle="Award-winning clients">
 </app-heading-content>
 <div class="clients-carousel">
   <div class="clients-track">
-    @for(clientImage of clientImages; track clientImages; let i = $index){
+    @for(clientImage of clientImages; track clientImage?.clientId; let i = $index){
     <div class="client-item">
       <img
         class="client-logo"
