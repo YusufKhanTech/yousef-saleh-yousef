@@ -28,6 +28,7 @@
   position: relative;
   z-index: 2;
   margin-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
 }
 .footer-item {
   overflow: hidden;
@@ -113,7 +114,24 @@
   align-items: center;
   gap: 14px;
 }
-
+.copy-write-container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+.copy-write-title {
+  color: white;
+  font-size: 14px;
+  margin-top: 20px;
+}
+.copy-write-sub-title {
+  color: white;
+  font-size: 14px;
+  margin-top: 10px;
+}
+span{
+  color: var(--color-orange);
+}
 @media (min-width: 1024px) and (max-width: 1540px) {
   .footer-content {
     width: 85%;
@@ -158,6 +176,9 @@
 }
 
 @media (max-width: 768px) {
+  .footer-logo{
+    display: none;
+  }
   .footer-logo {
     width: 300px;
   }
