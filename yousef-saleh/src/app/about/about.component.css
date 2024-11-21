@@ -277,8 +277,17 @@ span {
   }
 }
 @media(max-width:768px){
+  .about-container{
+    padding: 0 12px;
+  }
   .grid-container{
     display: block;
+  }
+  .element-logo{
+    margin: 10px 0 8px 0;
+  }
+  .about-element-heading-content{
+    margin-top: 12px;
   }
   .element-sub-title{
     margin-bottom: 12px;
