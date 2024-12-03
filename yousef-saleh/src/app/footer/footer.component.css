@@ -33,7 +33,7 @@
 .footer-item {
   overflow: hidden;
   display: grid;
-  justify-content: center;
+  width: max-content;
 }
 .footer-logo {
   width: 350px;
@@ -74,7 +74,6 @@
   background-color: var(--color-orange);
 }
 .pages-title {
-  margin-bottom: 35px;
   font-style: normal;
   text-transform: capitalize;
   color: #ffffff;
@@ -88,14 +87,13 @@
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 40px;
+  line-height: 10px;
   opacity: 0.7;
 }
 .title{
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 30px;
   color: rgba(255, 255, 255, 0.7);
 }
 .sub-title{
