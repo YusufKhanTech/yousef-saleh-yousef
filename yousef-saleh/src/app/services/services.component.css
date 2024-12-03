@@ -25,6 +25,7 @@
   overflow: hidden;
   width: 430px;
   height: 480px;
+  cursor: pointer;
   transition: transform 0.3s ease;
 }
 
