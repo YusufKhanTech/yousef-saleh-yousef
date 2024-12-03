@@ -49,11 +49,16 @@
       <div class="element-title">
         {{ employeeContent?.name }}
       </div>
+      @if (employeeContent?.designation !== 'Founder') {
+        <div class="divider"></div>
+      }
       <div class="element-designation">
         {{ employeeContent?.designation }}
       </div>
+      @if (employeeContent?.designation === 'Founder') {
       <div class="divider"></div>
-      <div class="element-founder">Founders Message</div>
+        <div class="element-founder">Founders Message</div>
+      }
       <div class="element-sub-title">
         {{ employeeContent?.description }}
         @if (employeeContent?.keyPoints) { @for (keyPoint of
