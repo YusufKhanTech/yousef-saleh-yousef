@@ -38,13 +38,13 @@
 .footer-logo {
   width: 350px;
   height: auto;
-  margin-bottom: 35px;
+  margin-bottom: 18px;
 }
 .footer-logo img {
   width: 100%;
 }
 .footer-description {
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.7);
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -83,6 +83,7 @@
   line-height: 30px;
 }
 .pages-sub-title {
+  cursor: pointer;
   color: white;
   font-style: normal;
   font-weight: 400;
@@ -129,6 +130,12 @@
   font-size: 14px;
   margin-top: 10px;
 }
+
+.pages-sub-title:hover {
+  text-decoration: underline;
+  color: #0249ff;
+}
+
 span{
   color: var(--color-orange);
 }
