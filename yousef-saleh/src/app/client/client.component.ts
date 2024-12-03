@@ -21,7 +21,7 @@ export class ClientComponent{
     { clientId: 'cl06', clientName: 'al-rajhi-bank', logo: '/assets/img/clients/al-rajhi-bank-logo.png' },
     { clientId: 'cl07', clientName: 'al-awwal-bank-logo', logo: '/assets/img/clients/al-awwal-bank-logo.png' },
     { clientId: 'cl08', clientName: 'ascott-logo', logo: '/assets/img/clients/ascott-logo.png' },
-    { clientId: 'cl09', clientName: 'ncr-logo', logo: '/assets/img/clients/ncr-logo.png' },
+    { clientId: 'cl09', clientName: 'ncr-logo', logo: '/assets/img/clients/NCR.png' },
     { clientId: 'cl010', clientName: 'riyad-logo', logo: '/assets/img/clients/riyad-logo.png' },
     { clientId: 'cl011', clientName: 'sab-bank-logo', logo: '/assets/img/clients/sab-bank-logo.png' },
     { clientId: 'cl012', clientName: 'altoukhi-logo', logo: '/assets/img/clients/altoukhi-logo.jpg' },
