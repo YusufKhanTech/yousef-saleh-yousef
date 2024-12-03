@@ -3,8 +3,9 @@
 }
 
 .service-container {
-  margin: 70px auto;
+  margin: 0 auto;
 }
+
 .divider {
   margin-top: 4px;
   margin-bottom: 4px;
@@ -24,6 +25,7 @@
   overflow: hidden;
   width: 430px;
   height: 480px;
+  cursor: pointer;
   transition: transform 0.3s ease;
 }
 

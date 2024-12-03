@@ -11,6 +11,9 @@ export class Project {
 export class ProjectInfo {
   id?: number;
   clientName?: string;
+  image?: string;
+  city?: string;
+  mainContractor?: string;
   images?: string[];
   keyPoints?: string[];
   website?: string;

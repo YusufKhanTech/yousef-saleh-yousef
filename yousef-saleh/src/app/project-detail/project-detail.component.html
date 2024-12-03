@@ -7,7 +7,7 @@
 <div class="project-container">
   <div class="project-detail-image">
     <img
-      src="https://html.rrdevs.net/ribuild/assets/imgs/project-details/project-details.jpg"
+      [src]="project?.image"
       alt=""
     />
   </div>
@@ -34,20 +34,30 @@
         <div class="title">Client Name:</div>
         <div class="sub-title">{{project?.projectInfo?.clientName}}</div>
       </div>
+      @if (project?.projectInfo?.mainContractor) {
+        <div class="related-item">
+          <div class="title">Main Contractor:</div>
+          <div class="sub-title">{{project?.projectInfo?.mainContractor}}</div>
+        </div>
+      }
       @if (project?.projectType) {
         <div class="related-item">
           <div class="title">Category:</div>
           <div class="sub-title">{{ project?.projectType }}</div>
         </div>
       }
-      <div class="related-item">
-        <div class="title">Start Date:</div>
-        <div class="sub-title">{{project?.projectInfo?.startDate}}</div>
-      </div>
-      <div class="related-item">
-        <div class="title">End Date:</div>
-        <div class="sub-title">{{project?.projectInfo?.endDate}}</div>
-      </div>
+      @if (project?.projectInfo?.startDate) {
+        <div class="related-item">
+          <div class="title">Start Date:</div>
+          <div class="sub-title">{{project?.projectInfo?.startDate}}</div>
+        </div>
+      }
+      @if (project?.projectInfo?.startDate) {
+        <div class="related-item">
+          <div class="title">End Date:</div>
+          <div class="sub-title">{{project?.projectInfo?.endDate}}</div>
+        </div>
+      }
       @if (project?.projectInfo?.website) {
         <div class="related-item">
           <div class="title">Website:</div>
@@ -62,9 +72,9 @@
         <img [src]="image" />
       }
     </div>
-    <div class="project-button">
-      <i class="ti ti-arrow-narrow-left" (click)="scrollLeft()"></i>
-      <i class="ti ti-arrow-narrow-right" (click)="scrollRight()"></i>
-    </div>
+      <div class="project-button">
+        <i class="ti ti-arrow-narrow-left" (click)="scrollLeft()"></i>
+        <i class="ti ti-arrow-narrow-right" (click)="scrollRight()"></i>
+      </div>
   </div>
 </div>

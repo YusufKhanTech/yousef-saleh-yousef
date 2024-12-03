@@ -1,33 +1,47 @@
-<app-banner-content title="About"
-                    bannerHeight="400px"
-                    [breadcrumbTexts]="breadcrumbTexts">
+<app-banner-content
+  title="About"
+  bannerHeight="400px"
+  [breadcrumbTexts]="breadcrumbTexts"
+>
 </app-banner-content>
 <div class="about-container">
   @for (employeeContent of employeeContents; track employeeContent?.id) {
-    <ng-container *ngTemplateOutlet="employeeContent?.alignment === EmployeeAlignment.LEFT
-      ? leftAlignRef : rightAlignRef;
-      context: {data: employeeContent}">
-    </ng-container>
+  <ng-container
+    *ngTemplateOutlet="
+      employeeContent?.alignment === EmployeeAlignment.LEFT
+        ? leftAlignRef
+        : rightAlignRef;
+      context: { data: employeeContent }
+    "
+  >
+  </ng-container>
   }
   <div style="margin-top: 30px">
-    <app-heading-content title="Team"
-                         subTitle="Meet the Experts Behind Our Success, Dedicated to Delivering Excellence in Every Project.">
+    <app-heading-content
+      title="Team"
+      subTitle="Meet the Experts Behind Our Success, Dedicated to Delivering Excellence in Every Project."
+    >
     </app-heading-content>
   </div>
-  <div class="grid-container" >
+  <div class="grid-container">
     @for (team of teamContent; track team?.id) {
     <div class="team-card" data-aos="fade-up" data-aos-delay="200">
       <div class="grid-item">
         <img [src]="team?.image" />
       </div>
-      <div class="title-name">{{team?.name}}</div>
-      <div class="sub-title-name">{{team?.designation}}</div>
+      <div class="title-name">{{ team?.name }}</div>
+      <div class="sub-title-name">{{ team?.designation }}</div>
     </div>
     }
   </div>
 </div>
 <ng-template #leftAlignRef let-employeeContent="data">
-  <div class="about-element-title" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200">
+  <div
+    class="about-element-title"
+    data-aos="zoom-in"
+    data-aos-duration="1500"
+    data-aos-delay="200"
+  >
     <div class="element-logo">
       <img [src]="employeeContent?.image" alt="" />
     </div>
@@ -35,62 +49,63 @@
       <div class="element-title">
         {{ employeeContent?.name }}
       </div>
+      @if (employeeContent?.designation !== 'Founder') {
+        <div class="divider"></div>
+      }
       <div class="element-designation">
         {{ employeeContent?.designation }}
       </div>
+      @if (employeeContent?.designation === 'Founder') {
       <div class="divider"></div>
-      <div class="element-founder">
-        Founders Message
-      </div>
+        <div class="element-founder">Founders Message</div>
+      }
       <div class="element-sub-title">
-        {{employeeContent?.description}}
-        @if (employeeContent?.keyPoints) {
-          @for (keyPoint of employeeContent?.keyPoints; track keyPoint?.id) {
-            <div class="story-points">
-              <div>
-                <i class="ti ti-circle-check icon-class"></i>
-                <span class="points">
-                {{keyPoint?.value}}
-              </span>
-              </div>
-            </div>
-          }
-        }
+        {{ employeeContent?.description }}
+        @if (employeeContent?.keyPoints) { @for (keyPoint of
+        employeeContent?.keyPoints; track keyPoint?.id) {
+        <div class="story-points">
+          <div>
+            <i class="ti ti-circle-check icon-class"></i>
+            <span class="points">
+              {{ keyPoint?.value }}
+            </span>
+          </div>
+        </div>
+        } }
       </div>
     </div>
   </div>
 </ng-template>
 <ng-template #rightAlignRef let-employeeContent="data">
-  <div class="about-element-title" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200">
-    <div class="element-logo">
-      <img [src]="employeeContent?.image" alt="" />
-    </div>
+  <div
+    class="about-element-title-two"
+    data-aos="zoom-out"
+    data-aos-duration="1500"
+    data-aos-delay="100"
+  >
     <div class="about-element-heading-content">
       <div class="element-title">
         {{ employeeContent?.name }}
       </div>
-      <div class="element-designation">
-        {{ employeeContent?.designation }}
-      </div>
       <div class="divider"></div>
-      <div class="element-founder">
-        Founders Message
-      </div>
+      <div class="element-designation">{{ employeeContent?.designation }}</div>
       <div class="element-sub-title">
-        {{employeeContent?.description}}
-        @if (employeeContent?.keyPoints) {
-          @for (keyPoint of employeeContent?.keyPoints; track keyPoint?.id) {
-            <div class="story-points">
-              <div>
-                <i class="ti ti-circle-check icon-class"></i>
-                <span class="points">
-                {{keyPoint?.value}}
-              </span>
-              </div>
-            </div>
-          }
-        }
+        {{ employeeContent?.description }}
+        @if (employeeContent?.keyPoints) { @for (keyPoint of
+        employeeContent?.keyPoints; track keyPoint?.id) {
+        <div class="story-points">
+          <div>
+            <i class="ti ti-circle-check icon-class"></i>
+            <span class="points">
+              {{ keyPoint?.value }}
+            </span>
+          </div>
+        </div>
+        }}
       </div>
+    </div>
+    <div class="element-logo">
+      <img [src]="employeeContent?.image" alt="" />
     </div>
   </div>
 </ng-template>

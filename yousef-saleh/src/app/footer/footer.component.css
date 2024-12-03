@@ -9,22 +9,6 @@
   background-repeat: no-repeat;
   overflow: hidden;
 }
-.company {
-  font-weight: 700;
-  font-size: 20px;
-  color: var(--color-orange);
-  width: 100%;
-}
-.footer-logo{
-  width: 200px;
-  height: 140px;
-  overflow: hidden;
-  margin-bottom: 20px;
-}
-.footer-logo img{
-  width: 100%;
-  mix-blend-mode: multiply;
-}
 
 .footer-container::before {
   content: "";
@@ -36,89 +20,123 @@
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 1;
 }
-
 .footer-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 30px;
+  margin: auto;
   position: relative;
   z-index: 2;
-  width: 70%;
-  margin: 20px auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  margin-bottom: 12px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.7);
 }
-
-.footer-info {
-  flex: 0 0 40%;
-  max-width: 40%;
-  margin-bottom: 20px;
-  color: white;
+.footer-item {
+  overflow: hidden;
+  display: grid;
+  justify-content: center;
 }
-
-.footer-links {
-  flex: 0 0 66.6667%;
-  max-width: 66.6667%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.footer-logo {
+  width: 350px;
+  height: auto;
+  margin-bottom: 18px;
+}
+.footer-logo img {
   width: 100%;
 }
-
-.section {
-  flex: 1;
-  margin: 0 20px;
-  min-width: 150px;
-}
-
-.section h4 {
-  font-size: 16px;
-  font-weight: bold;
-  position: relative;
-  padding-bottom: 12px;
-  color: white;
-}
-
-.section ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.section ul li {
-  margin-bottom: 16px;
-  display: block; /* Changed from inline-block to block */
-}
-
-.section ul li a {
+.footer-description {
   color: rgba(255, 255, 255, 0.7);
-  display: block; /* Ensuring links take full width */
-  line-height: 1;
-  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 26px;
+}
+.social-link {
+  display: flex;
+  gap: 12px;
+  margin-top: 35px;
+  cursor: pointer;
+}
+.social-icon {
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  background: rgba(21, 24, 27, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.social-icon:hover {
+  background-color: var(--color-orange);
+}
+.pages-title {
+  margin-bottom: 35px;
+  font-style: normal;
+  text-transform: capitalize;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+.pages-sub-title {
+  cursor: pointer;
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 40px;
+  opacity: 0.7;
+}
+.title{
+  font-style: normal;
+  font-weight: 400;
   font-size: 14px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.7);
 }
-
-.section ul li a:hover {
-  text-decoration: underline;
+.sub-title{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 30px;
+  color:#ffffff;
+  opacity: 1;
 }
-
+.icon{
+  color: #ffffff;
+  font-size: 22px;
+}
+.contact-content{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
 .copy-write-container {
   position: relative;
   z-index: 2;
   text-align: center;
 }
-
 .copy-write-title {
   color: white;
   font-size: 14px;
   margin-top: 20px;
 }
-
 .copy-write-sub-title {
   color: white;
   font-size: 14px;
   margin-top: 10px;
 }
 
-span {
+.pages-sub-title:hover {
+  text-decoration: underline;
+  color: #0249ff;
+}
+
+span{
   color: var(--color-orange);
 }
 @media (min-width: 1024px) and (max-width: 1540px) {
@@ -153,25 +171,45 @@ span {
   .footer-links {
     flex-wrap: wrap;
   }
-  .footer-logo{
+  .footer-logo {
     width: 100%;
   }
-  .footer-info{
+  .footer-info {
     text-align: center;
-   }
-   .footer-info p{
+  }
+  .footer-info p {
     margin-bottom: 12px;
-   }
+  }
 }
 
 @media (max-width: 768px) {
+  .footer-logo{
+    display: none;
+  }
+  .footer-logo {
+    width: 300px;
+  }
   .footer-content {
-    margin: 5px;
+    margin: 12px;
+    display: block;
+  }
+  .footer-item {
+    justify-content: start;
+  }
+  .pages-title{
+    margin-top: 22px;
+    margin-bottom: 12px;
   }
 
   .footer-links {
     display: flex;
     flex-wrap: wrap;
+  }
+  .contact-content{
+    margin: 0;
+  }
+  .contact-description{
+    margin-bottom: 12px;
   }
 
   .section {
