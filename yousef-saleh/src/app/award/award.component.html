@@ -1,0 +1,24 @@
+<app-banner-content title="Awards"
+                    bannerHeight="400px"
+                    [breadcrumbTexts]="breadcrumbTexts">
+</app-banner-content>
+<div class="our-award-container">
+  <div class="award-carousel">
+    <div class="award-track">
+      @for(awardImage of awardImages; track awardImage?.awardId; let i = $index){
+        <div class="award-item">
+          <img
+            class="award-logo"
+            [src]="awardImage.logo"
+            [alt]="awardImage.awardName"
+            (click)="openPopup(awardImage?.logo)"
+          />
+        </div>
+      }
+    </div>
+  </div>
+</div>
+<div *ngIf="isPopupOpen" class="popup" (click)="closePopup()">
+  <span class="close" (click)="closePopup()">&times;</span>
+  <img [src]="popupImageSrc" class="popup-content" alt="Popup Image">
+</div>
