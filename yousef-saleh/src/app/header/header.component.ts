@@ -22,6 +22,7 @@ export class HeaderComponent implements OnInit {
     { name: 'About Us', link: 'about' },
     { name: 'Our Projects', link: 'project' },
     { name: 'Services', icon:'ti ti-arrow-down', link: 'service-category' },
+    { name: 'Awards', link: 'award' },
     { name: 'Contact Us', link: 'contact' },
   ];
   allServiceCategories = ServicesUtil.getAllServices();
