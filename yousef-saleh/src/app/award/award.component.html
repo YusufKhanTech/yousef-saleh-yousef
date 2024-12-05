@@ -2,23 +2,83 @@
                     bannerHeight="400px"
                     [breadcrumbTexts]="breadcrumbTexts">
 </app-banner-content>
-<div class="our-award-container">
-  <div class="award-carousel">
-    <div class="award-track">
-      @for(awardImage of awardImages; track awardImage?.awardId; let i = $index){
-        <div class="award-item">
-          <img
-            class="award-logo"
-            [src]="awardImage.logo"
-            [alt]="awardImage.awardName"
-            (click)="openPopup(awardImage?.logo)"
-          />
-        </div>
-      }
-    </div>
-  </div>
-</div>
-<div *ngIf="isPopupOpen" class="popup" (click)="closePopup()">
-  <span class="close" (click)="closePopup()">&times;</span>
-  <img [src]="popupImageSrc" class="popup-content" alt="Popup Image">
+<div class="award-columns">
+	<div>
+		<app-heading-content title="Commercial Certificates"
+							 subTitle="subTitle">
+		</app-heading-content>
+		<div class="our-award-container">
+		  <div class="certificate-carousel">
+			<div class="certificate-detail" #carousel>
+			  @for(commercialCertificate of commercialCertificates; track commercialCertificate) {
+				<img [src]="commercialCertificate?.logo"
+					 (click)="openPopup(commercialCertificate?.logo)"/>
+			  }
+			</div>
+			<div class="carousel-button">
+			  <i class="ti ti-arrow-narrow-left" (click)="scrollLeft('CC')"></i>
+			  <i class="ti ti-arrow-narrow-right" (click)="scrollRight('CC')"></i>
+			</div>
+		  </div>
+		</div>
+	</div>
+	<div>
+		<app-heading-content title="ISO Certification"
+							 subTitle="subTitle">
+		</app-heading-content>
+		<div class="our-award-container">
+		  <div class="iso-award-carousel">
+			<div class="iso-award-track">
+			  @for(isoImage of isoCertificates; track isoImage?.awardId; let i = $index){
+				<div class="award-item">
+				  <img
+					class="award-logo"
+					[src]="isoImage.logo"
+					[alt]="isoImage.awardName"
+					(click)="openPopup(isoImage?.logo)"
+				  />
+				</div>
+			  }
+			</div>
+		  </div>
+		</div>
+	</div>
+	<div>
+		<app-heading-content title="Awards and Certificates"
+							 subTitle="subTitle">
+		</app-heading-content>
+		<div class="our-award-container">
+		  <div class="certificate-carousel">
+			<div class="certificate-detail" #recognitionCarousel>
+			  @for(recognitionImage of recognitionCertificates; track recognitionImage) {
+				<img [src]="recognitionImage?.logo"
+					 (click)="openPopup(recognitionImage?.logo)"/>
+			  }
+			</div>
+			<div class="carousel-button">
+			  <i class="ti ti-arrow-narrow-left" (click)="scrollLeft('RC')"></i>
+			  <i class="ti ti-arrow-narrow-right" (click)="scrollRight('RC')"></i>
+			</div>
+		  </div>
+		</div>
+	</div>
+	<div>
+		<app-heading-content title="Pre-Qualified Certification"
+							 subTitle="subTitle">
+		</app-heading-content>
+		<div class="our-award-container">
+		  <div class="certificate-carousel">
+			<div class="certificate-detail" #preCarousel>
+			  @for(preQualifiedCertificate of preQualifiedCertificates; track preQualifiedCertificate) {
+				<img [src]="preQualifiedCertificate?.logo"
+					 (click)="openPopup(preQualifiedCertificate?.logo)"/>
+			  }
+			</div>
+		  </div>
+		</div>
+		<div *ngIf="isPopupOpen" class="popup" (click)="closePopup()">
+		  <span class="close" (click)="closePopup()">&times;</span>
+		  <img [src]="popupImageSrc" class="popup-content" alt="Popup Image">
+		</div>
+	</div>
 </div>
