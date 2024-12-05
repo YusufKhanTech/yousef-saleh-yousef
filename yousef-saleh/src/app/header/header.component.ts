@@ -1,17 +1,14 @@
-import { JsonPipe, NgClass, NgFor, NgIf, NgStyle } from '@angular/common';
+import { NgClass } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute, NavigationEnd, Router, RouterLink} from '@angular/router';
-import { BannerContentComponent } from '../banner-content/banner-content.component';
-import {ServicesUtil} from '../services/util/service.util';
-import {ServiceCategory} from '../services/model/service.model';
+import { NavigationEnd, Router, RouterLink} from '@angular/router';
 import {filter} from 'rxjs';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [NgClass, NgStyle, NgIf, RouterLink, BannerContentComponent, NgFor,JsonPipe],
+  imports: [NgClass, RouterLink],
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css'], // Fixed the styleUrls property
+  styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
   isMenuOpen: boolean = false;
@@ -22,14 +19,11 @@ export class HeaderComponent implements OnInit {
     { name: 'About Us', link: 'about' },
     { name: 'Our Projects', link: 'project' },
     { name: 'Services', icon:'ti ti-arrow-down', link: 'service-category' },
-    { name: 'Awards', link: 'award' },
+    { name: 'Our Success', link: 'award' },
     { name: 'Contact Us', link: 'contact' },
   ];
-  allServiceCategories = ServicesUtil.getAllServices();
-  hoveredService: ServiceCategory | null = null;
 
-  constructor(private router: Router,
-              private activatedRoute: ActivatedRoute) {}
+  constructor(private router: Router) {}
 
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
@@ -52,10 +46,6 @@ export class HeaderComponent implements OnInit {
       });
   }
 
-  onHover(service: ServiceCategory) {
-    this.hoveredService = service;
-  }
-
   setActiveItem(item: string) {
     this.activeItem = item;
     this.isMenuOpen = false;
@@ -72,12 +62,5 @@ export class HeaderComponent implements OnInit {
   navigateToHome(): void {
     this.setActiveItem('Home');
     this.router.navigate(['/']);
-  }
-
-  navigateToService(link: string | undefined, serviceCategory: ServiceCategory): void {
-    if (link) {
-      this.router.navigate([link + '/' + serviceCategory?.serviceCategoryId + '/services'], { relativeTo: this.activatedRoute });
-      this.activeItem = 'Services';
-    }
   }
 }
