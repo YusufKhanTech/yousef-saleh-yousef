@@ -1,11 +1,20 @@
-.our-award-container{
+.our-award-container {
   width: 80%;
   margin: 20px auto;
 }
-.award-carousel {
+
+.award-columns {
+  margin: 80px auto;
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+}
+
+.iso-award-carousel {
   width: 100%;
   overflow: hidden;
   position: relative;
+  margin: 50px auto 50px auto;
 }
 
 .award-track {
@@ -15,8 +24,20 @@
   transition: animation-play-state 0.3s;
 }
 
+.iso-award-track {
+  display: flex;
+  gap: 60px;
+}
+
+.p-award-track {
+  display: flex;
+  gap: 60px;
+  animation: c-scroll 20s linear infinite;
+  transition: animation-play-state 0.3s;
+}
+
 .award-item {
-  min-width: 150px;
+  min-width: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,14 +46,17 @@
 .award-logo {
   max-width: 100%;
   height: auto;
-  filter: grayscale(100%);
   transition: filter 0.3s ease;
   cursor: pointer;
+  border: 2px solid #364d59;
 }
 
-.award-carousel:hover .award-track {
+.iso-award-carousel:hover .award-track {
   animation-play-state: paused;
-  filter: grayscale(0%);
+}
+
+.iso-award-carousel:hover .iso-award-track {
+  animation-play-state: paused;
 }
 
 .popup {
@@ -45,14 +69,14 @@
   height: 100%;
   border: var(--color-orange);
   border-radius: 2px solid var(--color-orange);
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
   justify-content: center;
   align-items: center;
 }
 
 .popup-content {
-  max-width: 60%;
-  max-height: 60%;
+  max-width: 80%;
+  max-height: 70%;
 }
 
 .close {
@@ -70,11 +94,71 @@
   color: #f1f1f1;
 }
 
+.certificate-carousel {
+  overflow: hidden;
+  margin-top: 50px;
+  position: relative;
+}
+
+.certificate-detail {
+  display: flex;
+  gap: 26px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+  scrollbar-width: none;
+  cursor: pointer;
+}
+
+.certificate-detail img {
+  border-radius: 8px;
+  width: 366px;
+  height: auto;
+  border: 2px solid #364d59;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.carousel-button i {
+  font-size: 38px;
+  cursor: pointer;
+  color: var(--color-orange);
+  pointer-events: auto;
+  padding: 8px;
+  background-color: rgba(46, 45, 45, 0.7);
+  border-radius: 50%;
+  margin: 22px;
+}
+
+@media (max-width: 768px) {
+  .project-detail,
+  .related-info {
+    flex: 0 0 100%;
+  }
+}
+
 @keyframes scroll {
   0% {
     transform: translateX(0);
   }
   100% {
     transform: translateX(-100%);
+  }
+}
+
+@keyframes c-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
   }
 }
