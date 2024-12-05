@@ -11,8 +11,8 @@
 		  <div class="certificate-carousel">
 			<div class="certificate-detail" #carousel>
 			  @for(commercialCertificate of commercialCertificates; track commercialCertificate) {
-				<img [src]="commercialCertificate?.logo"
-					 (click)="openPopup(commercialCertificate?.logo)"/>
+				<img [src]="commercialCertificate?.image"
+					 (click)="openPopup(commercialCertificate?.image)"/>
 			  }
 			</div>
 			<div class="carousel-button">
@@ -29,13 +29,13 @@
 		<div class="our-award-container">
 		  <div class="iso-award-carousel">
 			<div class="iso-award-track">
-			  @for(isoImage of isoCertificates; track isoImage?.awardId; let i = $index){
+			  @for(isoCertificate of isoCertificates; track isoCertificate?.certificateId; let i = $index){
 				<div class="award-item">
 				  <img
 					class="award-logo"
-					[src]="isoImage.logo"
-					[alt]="isoImage.awardName"
-					(click)="openPopup(isoImage?.logo)"
+					[src]="isoCertificate.image"
+					[alt]="isoCertificate.certificateName"
+					(click)="openPopup(isoCertificate?.image)"
 				  />
 				</div>
 			  }
@@ -50,9 +50,9 @@
 		<div class="our-award-container">
 		  <div class="certificate-carousel">
 			<div class="certificate-detail" #recognitionCarousel>
-			  @for(recognitionImage of recognitionCertificates; track recognitionImage) {
-				<img [src]="recognitionImage?.logo"
-					 (click)="openPopup(recognitionImage?.logo)"/>
+			  @for(recognitionCertificate of recognitionCertificates; track recognitionCertificate) {
+				<img [src]="recognitionCertificate?.image"
+					 (click)="openPopup(recognitionCertificate?.image)"/>
 			  }
 			</div>
 			<div class="carousel-button">
@@ -70,8 +70,8 @@
 		  <div class="certificate-carousel">
 			<div class="certificate-detail" #preCarousel>
 			  @for(preQualifiedCertificate of preQualifiedCertificates; track preQualifiedCertificate) {
-				<img [src]="preQualifiedCertificate?.logo"
-					 (click)="openPopup(preQualifiedCertificate?.logo)"/>
+				<img [src]="preQualifiedCertificate?.image"
+					 (click)="openPopup(preQualifiedCertificate?.image)"/>
 			  }
 			</div>
 		  </div>
