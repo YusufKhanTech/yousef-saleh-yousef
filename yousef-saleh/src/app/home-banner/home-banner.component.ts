@@ -52,7 +52,7 @@ export class HomeBannerComponent implements OnInit, OnDestroy {
   startImageCarousel(): void {
     this.intervalId = setInterval(() => {
       this.activeIndex = (this.activeIndex + 1) % this.backgroundImageUrls.length;
-    }, 3000);
+    }, 2000);
   }
 
   navigateToServices(): void {
