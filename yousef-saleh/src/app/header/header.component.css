@@ -2,7 +2,6 @@
   padding: 20px 0;
   height: auto;
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
-  background-color: transparent;
   position: fixed;
   top: 0;
   left: 0;
@@ -29,7 +28,6 @@
   display: grid;
   place-items: center;
   overflow: hidden;
-  background-color: none;
   cursor: pointer;
 }
 

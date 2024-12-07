@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   max-width: 85%;
-  margin: 40px auto;
+  margin: 60px auto;
 }
 
 .project-detail {
@@ -23,8 +23,8 @@
 
 .related-info {
   flex: 0 0 33.33%;
-  padding-left:30px;
-  margin-top: -7.3%;
+  padding-left: 30px;
+  margin-top: -2.5%;
 }
 
 .related-info .title {
@@ -86,6 +86,7 @@
 .project-detail-image img{
   width: 100%;
   margin-bottom: 30px;
+  border-radius: 15px;
 }
 .list-item-project-detail{
   font-size: 18px;
