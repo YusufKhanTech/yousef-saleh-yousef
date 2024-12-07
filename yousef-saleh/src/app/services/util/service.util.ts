@@ -68,7 +68,7 @@ export class ServicesUtil {
               serviceIncludeDescription: 'We prioritize safety by integrating protective equipment and automation systems into every substation, ensuring compliance with international safety standards.'
             }
           ],
-        images: ['assets/img/website-images/electric-substation.jpg']
+        images: ['/assets/img/website-images/substation-4.jpg']
       },
       {
         serviceId: 1,
