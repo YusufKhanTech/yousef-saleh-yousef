@@ -1,12 +1,11 @@
-import {Component, ElementRef, OnDestroy, OnInit, ViewChild} from '@angular/core';
+import { Component } from '@angular/core';
 import {HeadingContentComponent} from "../heading-content/heading-content.component";
-import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-client',
   standalone: true,
     imports: [
-        HeadingContentComponent,NgFor
+        HeadingContentComponent
     ],
   templateUrl: './client.component.html',
   styleUrl: './client.component.css'

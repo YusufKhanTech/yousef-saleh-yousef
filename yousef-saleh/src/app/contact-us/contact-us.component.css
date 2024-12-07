@@ -71,11 +71,6 @@
   margin-top: 30px;
 }
 
-.map-container {
-  width: 50%;
-  background-color: red;
-}
-
 .input-form-container {
   width: 50%;
   background-color: white;
@@ -133,12 +128,16 @@ form textarea::placeholder {
   cursor: pointer;
 }
 .map-container {
-  height: 425px;
+  width: 50%;
+  height: 450px;
   overflow: hidden;
+  border: 1px solid #364d59;
 }
+
 .map-container img {
   width: 100%;
 }
+
 @media (min-width: 1024px) and (max-width: 1540px) {
   .contact-us-container {
     width: 85%;
