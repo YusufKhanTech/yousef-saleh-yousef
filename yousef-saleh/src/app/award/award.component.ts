@@ -1,6 +1,9 @@
-import {Component} from '@angular/core';
+import {Component, ElementRef, ViewChild} from '@angular/core';
 import {BannerContentComponent} from "../banner-content/banner-content.component";
-import {NgIf} from '@angular/common';
+import { NgIf } from '@angular/common';
+import {HeadingContentComponent} from "../heading-content/heading-content.component";
+import { CERTIFICATE_TYPE} from "./model/award-and-certification.model";
+import {AwardAndCertificateUtil} from "./util/award-and-certificate.util";
 
 @Component({
   selector: 'app-award',
@@ -8,39 +11,67 @@ import {NgIf} from '@angular/common';
   imports: [
     BannerContentComponent,
     NgIf,
+    HeadingContentComponent,
   ],
   templateUrl: './award.component.html',
   styleUrl: './award.component.css'
 })
 export class AwardComponent {
+
+  @ViewChild('carousel', { static: false }) carousel!: ElementRef;
+  @ViewChild('recognitionCarousel', { static: false }) recognitionCarousel!: ElementRef;
+  @ViewChild('preCarousel', { static: false }) preCarousel!: ElementRef;
+  scrollAmount = 400;
   breadcrumbTexts = ['Home', 'Awards'];
   isPopupOpen = false;
   popupImageSrc: string | undefined;
-
-  awardImages = [
-    { awardId: 'cl01', awardName: 'saudi-electricity', logo: '/assets/img/clients/saudi-electricity-logo.png' },
-    { awardId: 'cl02', awardName: 'national-grid', logo: '/assets/img/clients/national-grid-logo.png' },
-    { awardId: 'cl03', awardName: 'rcjy-logo', logo: '/assets/img/clients/rcjy-logo.png' },
-    { awardId: 'cl04', awardName: 'bank-al-bilad', logo: '/assets/img/clients/bank-al-bilad-logo.png' },
-    { awardId: 'cl05', awardName: 'anb-bank', logo: '/assets/img/clients/anb-bank-logo.png' },
-    { awardId: 'cl06', awardName: 'al-rajhi-bank', logo: '/assets/img/clients/al-rajhi-bank-logo.png' },
-    { awardId: 'cl07', awardName: 'al-awwal-bank-logo', logo: '/assets/img/clients/al-awwal-bank-logo.png' },
-    { awardId: 'cl08', awardName: 'ascott-logo', logo: '/assets/img/clients/ascott-logo.png' },
-    { awardId: 'cl09', awardName: 'ncr-logo', logo: '/assets/img/clients/NCR.png' },
-    { awardId: 'cl010', awardName: 'riyad-logo', logo: '/assets/img/clients/riyad-logo.png' },
-    { awardId: 'cl011', awardName: 'sab-bank-logo', logo: '/assets/img/clients/sab-bank-logo.png' },
-    { awardId: 'cl012', awardName: 'altoukhi-logo', logo: '/assets/img/clients/altoukhi-logo.jpg' },
-  ];
+  commercialCertificates = AwardAndCertificateUtil.getCertificatesByCategory(CERTIFICATE_TYPE.COMMERCIAL);
+  preQualifiedCertificates = AwardAndCertificateUtil.getCertificatesByCategory(CERTIFICATE_TYPE.PREQUALIFIED);
+  isoCertificates = AwardAndCertificateUtil.getCertificatesByCategory(CERTIFICATE_TYPE.ISO);
+  recognitionCertificates = AwardAndCertificateUtil.getCertificatesByCategory(CERTIFICATE_TYPE.RECOGNITION);
+  protected readonly CERTIFICATE_TYPE = CERTIFICATE_TYPE;
 
   openPopup(src: string | undefined): void {
-    console.log("src: ",src)
     this.popupImageSrc = src;
     this.isPopupOpen = true;
   }
 
-  // Method to close the popup
   closePopup(): void {
     this.isPopupOpen = false;
     this.popupImageSrc = undefined;
   }
+
+  scroll(awardType: string, direction: 'left' | 'right'): void {
+    const scrollAmount = direction === 'left' ? -this.scrollAmount : this.scrollAmount;
+    let targetCarousel: any;
+    targetCarousel = this.getCarouselByCertificateType(awardType, targetCarousel);
+    targetCarousel.nativeElement.scrollBy({
+      left: scrollAmount,
+      behavior: 'smooth',
+    });
+  }
+
+  private getCarouselByCertificateType(awardType: string, targetCarousel: any) {
+    switch (awardType) {
+      case CERTIFICATE_TYPE.COMMERCIAL:
+        targetCarousel = this.carousel;
+        break;
+      case CERTIFICATE_TYPE.RECOGNITION:
+        targetCarousel = this.recognitionCarousel;
+        break;
+      default:
+        targetCarousel = this.preCarousel;
+        break;
+    }
+    return targetCarousel;
+  }
+
+  scrollLeft(awardType: string): void {
+    this.scroll(awardType, 'left');
+  }
+
+  scrollRight(awardType: string): void {
+    this.scroll(awardType, 'right');
+  }
+
 }
