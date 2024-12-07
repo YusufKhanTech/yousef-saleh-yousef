@@ -22,12 +22,12 @@ export class EmployeeUtil {
         name: 'Yousef Saleh Al Dossary',
         designation: 'Chairman',
         alignment: EmployeeAlignment.RIGHT,
-        description: 'Yousef Saleh Al Dossary is a seasoned leader with extensive experience in the construction industry. He has played a pivotal role in driving the company’s growth, ensuring the delivery of high-quality projects and maintaining strong client relationships. His strategic vision and hands-on approach have been instrumental in achieving business success.',
+        description: 'As Chairman of Yousef Saleh Yousef Contracting and Establishment, I am proud to lead an organization known for quality, integrity, and professionalism. Our commitment to delivering exceptional services and innovative solutions is at the core of our success. We prioritize safety, efficiency, and customer satisfaction in every project. Together with our dedicated team, we continue to set the standard for excellence and build a brighter future for our communities.',
         image: '/assets/img/employees/yousef.png',
         keyPoints: [
-          {id: 'ek001', value: 'Over a decade of leadership experience in the construction sector.'},
-          {id: 'ek002', value: 'Proven track record of managing successful, high-quality projects.'},
-          {id: 'ek003', value: 'Strong focus on client satisfaction and long-term partnerships.'}
+          {id: 'ek001', value: 'Committed to delivering exceptional services with integrity and innovation.'},
+          {id: 'ek002', value: 'Prioritizing safety, efficiency, and satisfaction in every project.'},
+          {id: 'ek003', value: 'Dedicated to setting industry standards and uplifting communities.'}
         ]
       },
       {
@@ -35,12 +35,12 @@ export class EmployeeUtil {
         name: 'Khalifa Al Dossary',
         designation:'Vice Chairman',
         alignment: EmployeeAlignment.LEFT,
-        description: 'Khalifa Al Dossary, as the Vice Chairman, ensuring the highest standards of quality, and fostering a culture of excellence. We pride ourselves on delivering exceptional results while maintaining strong relationships with our clients and partners. Our focus is on sustainable growth and creating value at every stage of the project.',
+        description: 'As Vice Chairman, I am honored to help steer Yousef Saleh Yousef Contracting and Establishment’s strategic direction. Our focus is on operational excellence, timely project delivery, and maintaining high-quality standards. We are committed to integrity, transparency, and building strong relationships with clients and partners. With a forward-looking approach, we are prepared to navigate future challenges and contribute to the development of Saudi Arabia.',
         image:'/assets/img/employees/khalifa.jpeg',
         keyPoints: [
-          {id: 'ek001', value: 'Focus on innovation and quality.'},
-          {id: 'ek002', value: 'Strong client and partner relationships.'},
-          {id: 'ek003', value: 'Commitment to sustainable growth and value creation.'}
+          {id: 'ek001', value: 'Driving operational excellence and ensuring timely, high-quality project delivery.'},
+          {id: 'ek002', value: 'Upholding integrity, transparency, and fostering strong client and partner relationships.'},
+          {id: 'ek003', value: 'Committed to overcoming challenges and contributing to Saudi Arabia\'s development.'}
         ]
       },
       {
@@ -48,7 +48,7 @@ export class EmployeeUtil {
         name: 'Shamsuddin Khan',
         designation:'General Manager',
         alignment: EmployeeAlignment.RIGHT,
-        description: 'Shamsuddin Khan, as the General Manager, brings a wealth of expertise in operations and project management within the construction industry. His leadership ensures the seamless execution of projects, from planning to completion, while maintaining the highest standards of quality and efficiency. His dedication to operational excellence has been key to the company\'s success.',
+        description: 'As General Manager of Yousef Saleh Yousef Contracting and Establishment, I am focused on driving operational excellence and ensuring that every project is completed to the highest standards of quality and efficiency. Our team is dedicated to delivering exceptional results, prioritizing client satisfaction, and maintaining the integrity of our work. Through careful planning, collaboration, and a commitment to continuous improvement, we are committed to achieving sustainable growth and success for the organization.',
         image:'/assets/img/employees/shams.jpeg',
         keyPoints: [
           {id: 'ek001', value: 'Expertise in managing day-to-day operations and project coordination.'},
