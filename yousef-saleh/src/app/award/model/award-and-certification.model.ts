@@ -1,13 +1,12 @@
-export class AwardAndCertificationModel {
-  id?: string;
-  title?: string;
-  subTitle?: string;
-  image?: string;
-  type?: RECOGNITION_TYPE;
+export interface AwardAndCertificate {
+  certificateId: string;
+  certificateName: string;
+  image: string;
 }
 
-export enum RECOGNITION_TYPE {
-  AWARDS = 'AWARDS',
-  CERTIFICATION = 'CERTIFICATION',
-  COMMERCIAL = 'COMMERCIAL'
+export enum CERTIFICATE_TYPE {
+  COMMERCIAL = 'COMMERCIAL',
+  PREQUALIFIED = 'PREQUALIFIED',
+  ISO = 'ISO',
+  RECOGNITION = 'RECOGNITION'
 }
