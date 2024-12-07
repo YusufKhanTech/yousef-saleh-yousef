@@ -10,11 +10,10 @@ import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
   styleUrl: './contact-us.component.css',
 })
 export class ContactUsComponent {
-
   breadcrumbTexts = ['Home ','Contact Us'];
   isSubmitted = false;
-  constructor() {}
 
+  constructor() {}
   public sendEmail(event: Event): void {
     event.preventDefault();
     const form = event?.target as HTMLFormElement;
@@ -26,5 +25,4 @@ export class ContactUsComponent {
         console.log('FAILED...', error);
       });
   }
-
 }
