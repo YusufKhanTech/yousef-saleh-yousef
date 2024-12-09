@@ -137,8 +137,26 @@
 
 
 @media (max-width: 768px) {
+  .project-container{
+    max-width: 100%;
+    margin: 12px;
+  }
   .project-detail,
   .related-info {
     flex: 0 0 100%;
+  }
+  .project-detail-image{
+    height: auto;
+  }
+  .project-detail-image img{
+    margin: 0;
+  }
+  .related-info{
+    margin: 0;
+    padding: 0;
+    order: 2;
+  }
+  .projects-carousel{
+    order: 1;
   }
 }
