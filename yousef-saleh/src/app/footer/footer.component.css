@@ -90,25 +90,25 @@
   line-height: 10px;
   opacity: 0.7;
 }
-.title{
+.title {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   color: rgba(255, 255, 255, 0.7);
 }
-.sub-title{
+.sub-title {
   font-style: normal;
   font-weight: 600;
   font-size: 17px;
   line-height: 30px;
-  color:#ffffff;
+  color: #ffffff;
   opacity: 1;
 }
-.icon{
+.icon {
   color: #ffffff;
   font-size: 22px;
 }
-.contact-content{
+.contact-content {
   display: flex;
   align-items: center;
   gap: 14px;
@@ -134,7 +134,7 @@
   color: #0249ff;
 }
 
-span{
+span {
   color: var(--color-orange);
 }
 @media (min-width: 1024px) and (max-width: 1540px) {
@@ -181,7 +181,7 @@ span{
 }
 
 @media (max-width: 768px) {
-  .footer-logo{
+  .footer-logo {
     display: none;
   }
   .footer-logo {
@@ -191,22 +191,25 @@ span{
     margin: 12px;
     display: block;
   }
-  .footer-item {
-    justify-content: start;
-  }
-  .pages-title{
+  .pages-title {
     margin-top: 22px;
     margin-bottom: 12px;
   }
-
+  .footer-item {
+    overflow: none;
+  }
+  .pages-sub-title {
+    display: block;
+    line-height: 40px;
+  }
   .footer-links {
     display: flex;
     flex-wrap: wrap;
   }
-  .contact-content{
+  .contact-content {
     margin: 0;
   }
-  .contact-description{
+  .contact-description {
     margin-bottom: 12px;
   }
 

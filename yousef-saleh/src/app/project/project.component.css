@@ -95,12 +95,12 @@
   .project-card {
     position: relative; /* Keep the structure intact for the overlay */
     width: 100%;
-    height: auto; /* Allow the height to adjust */
+    height: 350px; /* Allow the height to adjust */
   }
 
   .project-card img {
     width: 100%;
-    height: auto; /* Adjust the image to fit the card */
+    height: 100%; /* Adjust the image to fit the card */
     margin-bottom: 12px;
   }
 

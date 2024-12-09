@@ -1,7 +1,8 @@
 .banner-container {
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 95vh;
+  margin-top: 90px;
   transition: background-image 1s ease-in-out;
   position: relative;
 }
@@ -16,17 +17,9 @@
   background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1));
   z-index: 0;
 }
-
-.icon {
-  margin-right: 8px;
-  font-size: 24px;
-  padding-left: 0 !important;
-  color: var(--color-orange);
-}
-
 .banner-content {
   position: relative;
-  padding: 0 20px;
+  padding: 0;
   color: white;
   max-width: 920px;
   text-align: left;
@@ -37,6 +30,14 @@
   justify-content: center;
   height: 100%;
 }
+
+.icon {
+  margin-right: 8px;
+  font-size: 24px;
+  padding-left: 0 !important;
+  color: var(--color-orange);
+}
+
 
 .banner-title {
   font-size: 68px;
@@ -62,6 +63,7 @@
   font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
+  width: max-content;
   padding: 12px 40px;
   border-radius: 50px;
   cursor: pointer;
@@ -88,14 +90,19 @@
 }
 
 @media (max-width: 768px) {
-  .banner-content {
-    margin: 12px;
+  .banner-container{
+    height: 85vh;
   }
-  .banner-title div:first-child {
-    font-size: 32px;
+  .banner-content {
+    margin: 0px;
+    padding: 12px;
+    word-break: break-word;
+  }
+  .banner-text {
+    font-size: 28px;
   }
 
-  .banner-title div:last-child {
+  .banner-sub-text {
     font-size: 24px;
   }
 

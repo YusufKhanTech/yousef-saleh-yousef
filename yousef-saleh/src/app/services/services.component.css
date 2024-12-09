@@ -149,6 +149,8 @@
   }
   .service-card-content {
     margin-bottom: 20px;
+    width: auto;
+    height: 350px;
   }
   .services-content-container {
     display: block;
