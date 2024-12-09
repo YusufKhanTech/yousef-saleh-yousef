@@ -24,7 +24,7 @@
   position: relative;
   overflow: hidden;
   width: 430px;
-  height: 480px;
+  height: 400px;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
@@ -149,6 +149,8 @@
   }
   .service-card-content {
     margin-bottom: 20px;
+    width: auto;
+    height: 350px;
   }
   .services-content-container {
     display: block;

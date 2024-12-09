@@ -107,6 +107,9 @@
   }
 }
 @media(max-width:991px){
+  .about-container{
+   margin: 0;
+  }
   .about-content{
     display: block;
   }

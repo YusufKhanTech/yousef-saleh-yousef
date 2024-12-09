@@ -200,6 +200,10 @@
 }
 
 @media (max-width: 991px) {
+  .header{
+    width: 100vw;
+    padding: 0;
+  }
   .nav-item {
     height: 85vh;
     margin: 0 20px;
