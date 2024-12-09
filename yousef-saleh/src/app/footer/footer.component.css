@@ -32,8 +32,7 @@
 }
 .footer-item {
   overflow: hidden;
-  display: grid;
-  width: max-content;
+  display: block;
 }
 .footer-logo {
   width: 350px;
@@ -70,6 +69,7 @@
   background: rgba(21, 24, 27, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
+
 .social-icon:hover {
   background-color: var(--color-orange);
 }
@@ -79,7 +79,7 @@
   color: #ffffff;
   font-weight: 700;
   font-size: 20px;
-  line-height: 30px;
+  line-height: 40px;
 }
 .pages-sub-title {
   cursor: pointer;
@@ -87,8 +87,8 @@
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 10px;
   opacity: 0.7;
+  line-height: 50px;
 }
 .title {
   font-style: normal;
@@ -112,6 +112,7 @@
   display: flex;
   align-items: center;
   gap: 14px;
+  margin-top: 12px;
 }
 .copy-write-container {
   position: relative;
