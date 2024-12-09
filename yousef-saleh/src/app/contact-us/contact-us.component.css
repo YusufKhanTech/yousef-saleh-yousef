@@ -72,7 +72,7 @@
 }
 
 .input-form-container {
-  width: 50%;
+  width: 60%;
   background-color: white;
   height: 100%;
   padding: 30px;
@@ -128,7 +128,7 @@ form textarea::placeholder {
   cursor: pointer;
 }
 .map-container {
-  width: 50%;
+  width: max-content;
   height: 450px;
   overflow: hidden;
   border: 1px solid #364d59;
