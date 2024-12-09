@@ -209,6 +209,9 @@
     margin: 0 20px;
     border-radius: 10px;
   }
+  .nav-item.active{
+    height: max-content;
+  }
   .social-link-one {
     display: block;
   }
