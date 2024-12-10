@@ -47,25 +47,25 @@
 }
 
 .project-card:hover img {
-  transform: scale(1.1); /* Zoom effect on hover */
+  transform: scale(1.1);
 }
 
 .overlay {
   position: absolute;
-  top: -100%; /* Start hidden above the card */
+  top: -100%;
   left: 0;
   right: 0;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* Black overlay with transparency */
+  background-color: rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  transition: top 0.3s ease; /* Slide-down effect */
+  transition: top 0.3s ease;
 }
 
 .project-card:hover .overlay {
-  top: 0; /* Slide the overlay down to cover the image */
+  top: 0;
 }
 
 .overlay-content {
@@ -85,6 +85,7 @@
   width: 80px;
   font-size: 32px;
   transition: 0.5s ease-in-out;
+  rotate: -45deg;
 }
 .icon:hover {
   background-color: var(--color-orange);
@@ -101,7 +102,7 @@
   bottom: 0;
 }
 .sub-title {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
 }
 .title {
