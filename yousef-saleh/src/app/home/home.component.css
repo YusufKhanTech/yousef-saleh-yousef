@@ -119,4 +119,7 @@
   .image-one {
     width: 150px;
   }
+  .info-container{
+    display: block;
+  }
 }

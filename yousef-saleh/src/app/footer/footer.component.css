@@ -23,7 +23,7 @@
 .footer-content {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
-  gap: 30px;
+  gap: 100px;
   margin: auto;
   position: relative;
   z-index: 2;
@@ -33,6 +33,7 @@
 .footer-item {
   overflow: hidden;
   display: block;
+  width: max-content;
 }
 .footer-logo {
   width: 350px;
@@ -81,13 +82,12 @@
 .title {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 18px;
   color: rgba(255, 255, 255, 0.7);
 }
 .sub-title {
   font-style: normal;
-  font-weight: 600;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 30px;
   color: #ffffff;
   opacity: 1;
@@ -101,6 +101,7 @@
   align-items: center;
   gap: 14px;
   margin-top: 12px;
+  margin-bottom: 26px;
 }
 .copy-write-container {
   position: relative;
@@ -196,7 +197,7 @@ span {
     flex-wrap: wrap;
   }
   .contact-content {
-    margin: 0;
+    margin: 12px;
   }
   .contact-description {
     margin-bottom: 12px;
