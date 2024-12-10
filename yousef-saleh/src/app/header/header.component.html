@@ -50,3 +50,19 @@
     </div>
   </div>
 </div>
+<div class="header-two" [ngClass]="{ active: isMenuOpen }">
+  <div class="header-content-two">
+    <div class="social-link-cta">Get a quote</div>
+    <div class="hamburger-two ti ti-x" (click)="toggleMenu()"></div>
+  </div>
+  <div class="list">
+    <ul class="nav-item-two">
+      @for (item of navItems; track item?.name) {
+      <li [routerLink]="[item?.link]"   [ngClass]="{ active: activeItem === item?.name }"
+      (click)="setActiveItem(item.name)">
+          {{ item?.name }}
+      </li>
+      }
+    </ul>
+  </div>
+   </div>
