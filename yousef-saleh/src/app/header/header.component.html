@@ -52,7 +52,7 @@
 </div>
 <div class="header-two" [ngClass]="{ active: isMenuOpen }">
   <div class="header-content-two">
-    <div class="social-link-cta">Get a quote</div>
+    <div class="social-link-cta" [routerLink]="'/contact'"  (click)="setActiveItem('/contact')">Get a quote</div>
     <div class="hamburger-two ti ti-x" (click)="toggleMenu()"></div>
   </div>
   <div class="list">
