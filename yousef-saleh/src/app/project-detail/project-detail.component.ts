@@ -1,6 +1,6 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { BannerContentComponent } from '../banner-content/banner-content.component';
-import { HeaderComponent } from '../header/header.component';
+import { TitleCasePipe } from '@angular/common';
 import {ActivatedRoute} from '@angular/router';
 import {Project} from '../project/model/project.model';
 import {ProjectUtil} from '../project/util/project.util';
@@ -8,7 +8,7 @@ import {ProjectUtil} from '../project/util/project.util';
 @Component({
   selector: 'app-project-detail',
   standalone: true,
-  imports: [BannerContentComponent, HeaderComponent],
+  imports: [BannerContentComponent,TitleCasePipe],
   templateUrl: './project-detail.component.html',
   styleUrls: ['./project-detail.component.css'],
 })

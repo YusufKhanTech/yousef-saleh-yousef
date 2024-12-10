@@ -49,6 +49,7 @@
   transition: filter 0.3s ease;
   cursor: pointer;
   border: 2px solid #364d59;
+  border-radius: 8px;
 }
 
 .iso-award-carousel:hover .award-track {

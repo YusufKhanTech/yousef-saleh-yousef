@@ -1,20 +1,18 @@
-<div class="our-client-container">
-  <app-heading-content
-title="Our Clients"
-subTitle="Award-winning clients">
-</app-heading-content>
-<div class="clients-carousel">
-  <div class="clients-track">
-    @for(clientImage of clientImages; track clientImage?.clientId; let i = $index){
-    <div class="client-item">
-      <img
-        class="client-logo"
-        [src]="clientImage.logo"
-        [alt]="clientImage.clientName"
-      />
+<div class="our-client-container" data-aos="fade-up" data-aos-delay="100">
+  <app-heading-content title="Our Clients" subTitle="Award-winning clients">
+  </app-heading-content>
+  <div class="clients-carousel" data-aos="fade-up" data-aos-delay="100">
+    <div class="clients-track">
+      @for(clientImage of clientImages; track clientImage?.clientId; let i =
+      $index){
+      <div class="client-item">
+        <img
+          class="client-logo"
+          [src]="clientImage.logo"
+          [alt]="clientImage.clientName"
+        />
+      </div>
+      }
     </div>
-    }
   </div>
-</div>
-
 </div>

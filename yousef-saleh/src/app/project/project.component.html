@@ -1,12 +1,8 @@
-@if(isProject){
-  <app-banner-content title="Projects"
-                      bannerHeight="450px"
-                      breadcrumbText="Home / Projects">
-  </app-banner-content>
-}
 <div class="project-container" data-aos="fade-up" data-aos-delay="300">
-  <app-heading-content title="Project"
-                       subTitle="Showcasing Our Commitment to Excellence Through Every Completed Project.">
+  <app-heading-content
+    title="Project"
+    subTitle="Showcasing Our Commitment to Excellence Through Every Completed Project."
+  >
   </app-heading-content>
   <div class="project-card-content" data-aos="fade-right" data-aos-delay="400">
     @for(project of projects; track project){
@@ -14,7 +10,7 @@
       <img [src]="project?.imageUrl" alt="Project Image" />
       <div class="card-title">{{ project?.name }}</div>
       <div class="overlay">
-        <i class="ti ti-link"></i>
+        <i class="ti ti-plus"></i>
       </div>
     </div>
     }

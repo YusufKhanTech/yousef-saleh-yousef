@@ -68,6 +68,18 @@
   color: white;
   font-size: 16px;
 }
+.ti-plus{
+  padding: 20px;
+  background-color: white;
+  color: black;
+  font-size: 30px;
+  border-radius: 50%;
+  transition: 0.5s ease-in-out;
+}
+.ti-plus:hover{
+  background-color: var(--color-orange);
+  color: white;
+}
 @media (min-width: 1024px) and (max-width: 1540px) {
   .project-container{
     width: 85%;

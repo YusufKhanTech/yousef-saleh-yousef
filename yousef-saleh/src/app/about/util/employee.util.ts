@@ -12,7 +12,7 @@ export class EmployeeUtil {
         description: 'A journey of success always requires the quality of foresight, strategy and professionalism along with the power of trust.\n' +
           '        Our inspiration comes from your Trust and Willingness to believe in our capability to deliver.\n' +
           '        Commitment, hard work and attention have helped this company to be on par with international companies in terms of standards of performance and quality of projects.\n' +
-          '        <br><br>Yousef Saleh Yousef possesses a rich and diversified presence in the field of Construction and Infrastructure sectors especially at Eastern Provence Dammam and kingdom of Saudi Arabia.\n' +
+          '        Yousef Saleh Yousef possesses a rich and diversified presence in the field of Construction and Infrastructure sectors especially at Eastern Provence Dammam and kingdom of Saudi Arabia.\n' +
           '        Finally, I assure you that Yousef Saleh Yousef will re-dedicate itself towards its commitments and strive for continuous growth.',
         image:'/assets/img/employees/al-dossary.jpg',
         keyPoints: []

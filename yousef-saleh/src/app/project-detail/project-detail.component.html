@@ -43,7 +43,7 @@
       @if (project?.projectType) {
         <div class="related-item">
           <div class="title">Category:</div>
-          <div class="sub-title">{{ project?.projectType }}</div>
+          <div class="sub-title">{{ project?.projectType | titlecase}}</div>
         </div>
       }
       @if (project?.projectInfo?.startDate) {
