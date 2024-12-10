@@ -1,6 +1,8 @@
-<app-banner-content title="Contact Us"
-                    bannerHeight="400px"
-                    [breadcrumbTexts]="breadcrumbTexts">
+<app-banner-content
+  title="Contact Us"
+  bannerHeight="400px"
+  [breadcrumbTexts]="breadcrumbTexts"
+>
 </app-banner-content>
 <div class="contact-us-container">
   <div class="contact-form-contaner">
@@ -10,9 +12,7 @@
       </div>
       <div class="address-title">Address</div>
       <div class="address-sub-title">
-        P. O. Box No. 2077
-        Dammam-31451
-        Kingdom of Saudi Arabia.
+        P. O. Box No. 2077 Dammam-31451 Kingdom of Saudi Arabia.
       </div>
     </div>
     <div class="address-two">
@@ -34,13 +34,15 @@
   </div>
   <div class="form-container">
     <div class="map-container">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3572.596119472446!2d50.01559917555834!3d26.436507076934223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e360207ee2ea94d%3A0x5fcc1275d11fa6ec!2sYusuf%20Saleh%20Yusuf%20Cont.%20Est.!5e0!3m2!1sen!2ssa!4v1733584003614!5m2!1sen!2ssa"
-              width="600"
-              height="450"
-              style="border:0;"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3572.596119472446!2d50.01559917555834!3d26.436507076934223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e360207ee2ea94d%3A0x5fcc1275d11fa6ec!2sYusuf%20Saleh%20Yusuf%20Cont.%20Est.!5e0!3m2!1sen!2ssa!4v1733584003614!5m2!1sen!2ssa"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      >
       </iframe>
     </div>
     <div class="input-form-container">
@@ -55,9 +57,7 @@
         <button type="submit" class="send-message-cta">Send Message</button>
       </form>
       @if (isSubmitted) {
-      <div class="success-message">
-        Message sent successfully!
-      </div>
+      <div class="success-message">Message sent successfully!</div>
       }
     </div>
   </div>
