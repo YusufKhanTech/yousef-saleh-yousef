@@ -26,7 +26,12 @@
 
 .iso-award-track {
   display: flex;
-  gap: 60px;
+  gap: 26px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+  scrollbar-width: none;
+  cursor: pointer;
 }
 
 .p-award-track {
@@ -37,7 +42,7 @@
 }
 
 .award-item {
-  min-width: 250px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,14 +55,6 @@
   cursor: pointer;
   border: 2px solid #364d59;
   border-radius: 8px;
-}
-
-.iso-award-carousel:hover .award-track {
-  animation-play-state: paused;
-}
-
-.iso-award-carousel:hover .iso-award-track {
-  animation-play-state: paused;
 }
 
 .popup {
@@ -110,6 +107,10 @@
   cursor: pointer;
 }
 
+.a4-certificate-detail {
+  justify-content: center;
+}
+
 .certificate-detail img {
   border-radius: 8px;
   width: 366px;
@@ -142,6 +143,12 @@
   .project-detail,
   .related-info {
     flex: 0 0 100%;
+  }
+  .certificate-detail img {
+    width: 310px;
+  }
+  .award-item .award-logo {
+    min-width: 310px;
   }
 }
 
