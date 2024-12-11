@@ -71,6 +71,7 @@
   .service-container {
     flex-direction: column;
     align-items: center;
+    padding: 12px 10px 0 10px;
   }
   .services-list, .service-detail-view {
     max-width: 100%;
