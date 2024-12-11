@@ -9,17 +9,31 @@
 		</app-heading-content>
 		<div class="our-award-container">
 		  <div class="certificate-carousel">
-			<div class="certificate-detail" #carousel>
-			  @for(commercialCertificate of commercialCertificates; track commercialCertificate) {
-				<img [src]="commercialCertificate?.image"
-					 (click)="openPopup(commercialCertificate?.image)"/>
-			  }
-			</div>
-			<div class="carousel-button">
-			  <i class="ti ti-arrow-narrow-left" (click)="scrollLeft(CERTIFICATE_TYPE.COMMERCIAL)"></i>
-			  <i class="ti ti-arrow-narrow-right" (click)="scrollRight(CERTIFICATE_TYPE.COMMERCIAL)"></i>
-			</div>
+        <div class="certificate-detail" #carousel>
+          @for(commercialCertificate of commercialCertificates; track commercialCertificate) {
+          <img [src]="commercialCertificate?.image"
+             (click)="openPopup(commercialCertificate?.image)"/>
+          }
+        </div>
+        <div class="carousel-button">
+          <i class="ti ti-arrow-narrow-left" (click)="scrollLeft(CERTIFICATE_TYPE.COMMERCIAL)"></i>
+          <i class="ti ti-arrow-narrow-right" (click)="scrollRight(CERTIFICATE_TYPE.COMMERCIAL)"></i>
+        </div>
 		  </div>
+      <div class="certificate-carousel">
+        <div class="certificate-detail" #aFourCarousel>
+          @for(aFourCommercialCertificate of aFourCommercialCertificates; track aFourCommercialCertificate) {
+            <img [src]="aFourCommercialCertificate?.image"
+                 (click)="openPopup(aFourCommercialCertificate?.image)"/>
+          }
+        </div>
+        @if (isSmallScreen) {
+          <div class="carousel-button">
+            <i class="ti ti-arrow-narrow-left" (click)="scrollLeft(CERTIFICATE_TYPE.A_FOUR_COMMERCIAL)"></i>
+            <i class="ti ti-arrow-narrow-right" (click)="scrollRight(CERTIFICATE_TYPE.A_FOUR_COMMERCIAL)"></i>
+          </div>
+        }
+      </div>
 		</div>
 	</div>
 	<div>
@@ -28,18 +42,22 @@
 		</app-heading-content>
 		<div class="our-award-container">
 		  <div class="iso-award-carousel">
-			<div class="iso-award-track">
-			  @for(isoCertificate of isoCertificates; track isoCertificate?.certificateId; let i = $index){
-				<div class="award-item">
-				  <img
-					class="award-logo"
-					[src]="isoCertificate.image"
-					[alt]="isoCertificate.certificateName"
-					(click)="openPopup(isoCertificate?.image)"
-				  />
-				</div>
-			  }
-			</div>
+        <div class="iso-award-track" #isoCarousel>
+          @for(isoCertificate of isoCertificates; track isoCertificate?.certificateId; let i = $index){
+            <div class="award-item">
+              <img class="award-logo"
+                   [src]="isoCertificate.image"
+                   [alt]="isoCertificate.certificateName"
+                   (click)="openPopup(isoCertificate?.image)"/>
+            </div>
+          }
+        </div>
+        @if (isSmallScreen) {
+          <div class="carousel-button">
+            <i class="ti ti-arrow-narrow-left" (click)="scrollLeft(CERTIFICATE_TYPE.ISO)"></i>
+            <i class="ti ti-arrow-narrow-right" (click)="scrollRight(CERTIFICATE_TYPE.ISO)"></i>
+          </div>
+        }
 		  </div>
 		</div>
 	</div>
@@ -48,17 +66,33 @@
 							 subTitle="subTitle">
 		</app-heading-content>
 		<div class="our-award-container">
+      <div class="certificate-carousel">
+        <div class="certificate-detail">
+          @for(aFourRecognitionCertificate of aFourRecognitionCertificates; track aFourRecognitionCertificate) {
+            <img [src]="aFourRecognitionCertificate?.image"
+                 (click)="openPopup(aFourRecognitionCertificate?.image)"/>
+          }
+        </div>
+        @if (isSmallScreen) {
+          <div class="carousel-button">
+            <i class="ti ti-arrow-narrow-left" (click)="scrollLeft(CERTIFICATE_TYPE.A_FOUR_RECOGNITION)"></i>
+            <i class="ti ti-arrow-narrow-right" (click)="scrollRight(CERTIFICATE_TYPE.A_FOUR_RECOGNITION)"></i>
+          </div>
+        }
+      </div>
 		  <div class="certificate-carousel">
-			<div class="certificate-detail" #recognitionCarousel>
-			  @for(recognitionCertificate of recognitionCertificates; track recognitionCertificate) {
-				<img [src]="recognitionCertificate?.image"
-					 (click)="openPopup(recognitionCertificate?.image)"/>
-			  }
-			</div>
-			<div class="carousel-button">
-			  <i class="ti ti-arrow-narrow-left" (click)="scrollLeft(CERTIFICATE_TYPE.RECOGNITION)"></i>
-			  <i class="ti ti-arrow-narrow-right" (click)="scrollRight(CERTIFICATE_TYPE.RECOGNITION)"></i>
-			</div>
+        <div class="certificate-detail a4-certificate-detail">
+          @for(recognitionCertificate of recognitionCertificates; track recognitionCertificate) {
+          <img [src]="recognitionCertificate?.image"
+             (click)="openPopup(recognitionCertificate?.image)"/>
+          }
+        </div>
+        @if (isSmallScreen) {
+          <div class="carousel-button">
+            <i class="ti ti-arrow-narrow-left" (click)="scrollLeft(CERTIFICATE_TYPE.RECOGNITION)"></i>
+            <i class="ti ti-arrow-narrow-right" (click)="scrollRight(CERTIFICATE_TYPE.RECOGNITION)"></i>
+          </div>
+        }
 		  </div>
 		</div>
 	</div>
@@ -68,12 +102,18 @@
 		</app-heading-content>
 		<div class="our-award-container">
 		  <div class="certificate-carousel">
-			<div class="certificate-detail" #preCarousel>
+			<div class="certificate-detail a4-certificate-detail" #preCarousel>
 			  @for(preQualifiedCertificate of preQualifiedCertificates; track preQualifiedCertificate) {
 				<img [src]="preQualifiedCertificate?.image"
 					 (click)="openPopup(preQualifiedCertificate?.image)"/>
 			  }
 			</div>
+        @if (isSmallScreen) {
+          <div class="carousel-button">
+            <i class="ti ti-arrow-narrow-left" (click)="scrollLeft(CERTIFICATE_TYPE.PREQUALIFIED)"></i>
+            <i class="ti ti-arrow-narrow-right" (click)="scrollRight(CERTIFICATE_TYPE.PREQUALIFIED)"></i>
+          </div>
+        }
 		  </div>
 		</div>
 		<div *ngIf="isPopupOpen" class="popup" (click)="closePopup()">
