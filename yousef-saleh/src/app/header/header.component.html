@@ -1,7 +1,7 @@
 <div class="header-container">
   <div class="header">
     <div class="logo" routerLink="" (click)="navigateToHome()"><img [src]="logo" alt="" /></div>
-    <div class="hamburger" (click)="toggleMenu()">&#9776;</div>
+    <div class="hamburger ti ti-list-tree" (click)="toggleMenu()"></div>
     <ul [ngClass]="{ active: isMenuOpen }" class="nav-item">
       @for (item of navItems; track item?.name) {
       <li [routerLink]="[item?.link]"

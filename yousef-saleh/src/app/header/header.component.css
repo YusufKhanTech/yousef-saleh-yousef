@@ -164,11 +164,10 @@
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
 }
 .hamburger {
-  font-size: 24px;
-  cursor: pointer;
-  color: orange;
+  display: none;
+  color: var(--color-orange);
+  font-size: 30px;
 }
-
 .hamburger-two {
   font-size: 18px;
   color: black;
@@ -201,12 +200,6 @@
 @media (max-width: 1172px) {
   .header {
     padding: 10px;
-  }
-
-  .hamburger {
-    display: block;
-    color: gray;
-    font-size: 20px;
   }
 
   .nav-item {
@@ -245,5 +238,8 @@
 
   .logo {
     width: 200px;
+  }
+  .hamburger{
+    display: block;
   }
 }
