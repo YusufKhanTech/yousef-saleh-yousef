@@ -32,9 +32,9 @@ export class AwardAndCertificateUtil {
   ];
 
   public static  aFourRecognitionCertificates: AwardAndCertificate[] = [
-    { certificateId: 'arc01', certificateName: 'awards-saudi-electricity', image: '/assets/img/awards/awards-saudi-electricity.jpeg' },
     { certificateId: 'arc02', certificateName: 'national-grid', image: '/assets/img/awards/COA-national-grid.jpeg' },
     { certificateId: 'arc03', certificateName: 'zamil', image: '/assets/img/awards/COA-zamil.jpeg' },
+    { certificateId: 'arc01', certificateName: 'awards-saudi-electricity', image: '/assets/img/awards/awards-saudi-electricity.jpeg' }
   ];
 
   public static getCertificatesByCategory(category: string): AwardAndCertificate[] {
