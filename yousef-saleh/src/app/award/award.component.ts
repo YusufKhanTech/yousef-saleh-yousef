@@ -77,7 +77,7 @@ export class AwardComponent {
         targetCarousel = this.isoCarousel;
         break;
       case CERTIFICATE_TYPE.A_FOUR_RECOGNITION:
-        targetCarousel = this.aFourRecognitionCertificates;
+        targetCarousel = this.aFourRecognitionCarousel;
         break;
       default:
         targetCarousel = this.preCarousel;
