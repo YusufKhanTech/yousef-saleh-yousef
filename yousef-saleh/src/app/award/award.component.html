@@ -67,7 +67,7 @@
 		</app-heading-content>
 		<div class="our-award-container">
       <div class="certificate-carousel">
-        <div class="certificate-detail">
+        <div class="certificate-detail" #aFourRecognitionCarousel>
           @for(aFourRecognitionCertificate of aFourRecognitionCertificates; track aFourRecognitionCertificate) {
             <img [src]="aFourRecognitionCertificate?.image"
                  (click)="openPopup(aFourRecognitionCertificate?.image)"/>
@@ -81,7 +81,7 @@
         }
       </div>
 		  <div class="certificate-carousel">
-        <div class="certificate-detail a4-certificate-detail">
+        <div class="certificate-detail a4-certificate-detail" #recognitionCarousel>
           @for(recognitionCertificate of recognitionCertificates; track recognitionCertificate) {
           <img [src]="recognitionCertificate?.image"
              (click)="openPopup(recognitionCertificate?.image)"/>
