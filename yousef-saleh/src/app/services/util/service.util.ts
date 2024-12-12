@@ -357,112 +357,141 @@ export class ServicesUtil {
         serviceId: 0,
         serviceName: 'Civil Maintenance',
         serviceIcon: 'ti ti-solar-electricity',
-        serviceDescription: 'We specialize in electromechanical works that integrate electrical and mechanical systems for efficient, sustainable solutions. Our skilled team ensures reliable installation and maintenance, enhancing the performance of your infrastructure.',
+        serviceDescription: 'Civil Maintenance we offer expert civil maintenance services to ensure the longevity and functionality of your structures. Our services include repair, renovation, and upkeep of buildings, roads, and infrastructure, covering concrete works, masonry, painting, and more. We prioritize quality, safety, and efficiency to keep your assets in top condition.',
         serviceKeyPoints:
           [
-            {keyPoints: 'Comprehensive solutions for HVAC, electrical, and plumbing systems.', icon: ''},
-            {keyPoints: 'Integration of automation and safety systems for optimized performance.', icon: ''},
-            {keyPoints: 'Expert installation and maintenance services to ensure reliability.', icon: ''},
-            {keyPoints: 'Energy-efficient designs and compliance with international standards.', icon: ''},
+            {keyPoints: 'Structural repairs for buildings and infrastructure.', icon: ''},
+            {keyPoints: 'Masonry, concrete works, and surface finishing.', icon: ''},
+            {keyPoints: 'Painting and waterproofing solutions.', icon: ''},
+            {keyPoints: 'Road and pavement maintenance.', icon: ''},
+            {keyPoints: 'Renovation and refurbishment of old structures.', icon: ''},
           ],
         serviceIncludes:
           [
             {
-              serviceIncludeName: 'HVAC Systems',
-              serviceIncludeDescription: 'We design and install energy-efficient heating, ventilation, and air conditioning systems that enhance comfort and air quality in your buildings. Our approach ensures compliance with local regulations and international standards.'
+              serviceIncludeName: 'Building Repairs and Renovations',
+              serviceIncludeDescription: 'Structural repair for damaged buildings.\n' +
+                'Renovation and refurbishment of residential and commercial properties.\n'
             },
             {
-              serviceIncludeName: 'Electrical Installations',
-              serviceIncludeDescription: 'Our comprehensive electrical services cover everything from wiring and lighting design to power distribution and backup systems. We prioritize safety and efficiency, ensuring that all installations are carried out by qualified professionals.'
+              serviceIncludeName: 'Masonry and Concrete Work',
+              serviceIncludeDescription: 'Repair and maintenance of walls, floors, and foundations.\n' +
+                'Concrete restoration for durability and longevity.\n'
             },
             {
-              serviceIncludeName: 'Plumbing Solutions',
-              serviceIncludeDescription: 'We provide reliable plumbing services that include the installation and maintenance of pipes, fixtures, and drainage systems. Our focus is on ensuring a steady supply of water while effectively managing waste.'
+              serviceIncludeName: 'Painting and Finishing',
+              serviceIncludeDescription: 'Interior and exterior painting services\n' +
+                'Surface preparation and decorative finishes.\n'
             },
             {
-              serviceIncludeName: 'Safety Systems',
-              serviceIncludeDescription: 'Safety is our top priority. We integrate advanced fire alarm systems, surveillance, and safety measures into your projects, ensuring the protection of both personnel and property.'
+              serviceIncludeName: 'Waterproofing Solutions',
+              serviceIncludeDescription: 'Prevention and repair of water leaks\n' +
+                'Roof, wall, and basement waterproofing.\n'
             },
             {
-              serviceIncludeName: 'Automation',
-              serviceIncludeDescription: 'We specialize in smart building solutions, implementing automation and control systems that optimize energy consumption and enhance operational efficiency.'
+              serviceIncludeName: 'Road and Pavement Maintenance',
+              serviceIncludeDescription: 'Repair and resurfacing of roads, pathways, and driveways.\n' +
+                'Maintenance of concrete and asphalt surfaces.\n'
+            },
+            {
+              serviceIncludeName: 'Periodic Inspections and Preventive Maintenance',
+              serviceIncludeDescription: 'Regular assessments to identify potential issues.\n' +
+              'Maintenance plans to extend the life of structures.'
             }
           ],
-        images: ['assets/img/website-images/electro-mech.jpg']
+        images: ['assets/img/website-images/civil-maintenance.jpeg'],
       },
       {
         serviceId: 1,
         serviceName: 'Electrical Maintenance',
         serviceIcon: 'ti ti-solar-electricity',
-        serviceDescription: 'We specialize in electromechanical works that integrate electrical and mechanical systems for efficient, sustainable solutions. Our skilled team ensures reliable installation and maintenance, enhancing the performance of your infrastructure.',
+        serviceDescription: 'We provide reliable electrical maintenance services to ensure the safety and efficiency of your electrical systems. Our expertise includes troubleshooting, repairs, upgrades, and preventive care for wiring, lighting, panels, and equipment. We deliver solutions that prioritize safety, compliance, and uninterrupted performance.',
         serviceKeyPoints:
           [
-            {keyPoints: 'Comprehensive solutions for HVAC, electrical, and plumbing systems.', icon: ''},
-            {keyPoints: 'Integration of automation and safety systems for optimized performance.', icon: ''},
-            {keyPoints: 'Expert installation and maintenance services to ensure reliability.', icon: ''},
-            {keyPoints: 'Energy-efficient designs and compliance with international standards.', icon: ''},
+            {keyPoints: 'Repair and replacement of electrical components.', icon: ''},
+            {keyPoints: 'Maintenance of wiring, panels, and breakers.', icon: ''},
+            {keyPoints: 'Troubleshooting and diagnostics for power systems.', icon: ''},
+            {keyPoints: 'Lighting installation and maintenance.', icon: ''},
+            {keyPoints: 'Preventive care to avoid electrical faults.', icon: ''},
           ],
         serviceIncludes:
           [
             {
-              serviceIncludeName: 'HVAC Systems',
-              serviceIncludeDescription: 'We design and install energy-efficient heating, ventilation, and air conditioning systems that enhance comfort and air quality in your buildings. Our approach ensures compliance with local regulations and international standards.'
+              serviceIncludeName: 'Wiring and Cabling Maintenance',
+              serviceIncludeDescription: 'Inspection and repair of electrical wiring.Replacement of damaged cables and connectors.'
             },
             {
-              serviceIncludeName: 'Electrical Installations',
-              serviceIncludeDescription: 'Our comprehensive electrical services cover everything from wiring and lighting design to power distribution and backup systems. We prioritize safety and efficiency, ensuring that all installations are carried out by qualified professionals.'
+              serviceIncludeName: 'Panel and Circuit Maintenance',
+              serviceIncludeDescription: 'Servicing of electrical panels, circuit breakers, and fuses.Troubleshooting and resolving power distribution issues.'
             },
             {
-              serviceIncludeName: 'Plumbing Solutions',
-              serviceIncludeDescription: 'We provide reliable plumbing services that include the installation and maintenance of pipes, fixtures, and drainage systems. Our focus is on ensuring a steady supply of water while effectively managing waste.'
+              serviceIncludeName: 'Lighting Solutions',
+              serviceIncludeDescription: 'Installation and maintenance of lighting systems.Repair and replacement of indoor and outdoor lighting.'
             },
             {
-              serviceIncludeName: 'Safety Systems',
-              serviceIncludeDescription: 'Safety is our top priority. We integrate advanced fire alarm systems, surveillance, and safety measures into your projects, ensuring the protection of both personnel and property.'
+              serviceIncludeName: 'Power Systems Maintenance',
+              serviceIncludeDescription: 'Servicing generators, transformers, and UPS systems.Load balancing and power quality improvement.'
             },
             {
-              serviceIncludeName: 'Automation',
-              serviceIncludeDescription: 'We specialize in smart building solutions, implementing automation and control systems that optimize energy consumption and enhance operational efficiency.'
+              serviceIncludeName: 'Troubleshooting and Diagnostics',
+              serviceIncludeDescription: 'Identifying and fixing electrical faults and malfunctions.Using advanced tools for performance monitoring.'
+            },
+            {
+              serviceIncludeName: 'Preventive Maintenance',
+              serviceIncludeDescription: 'Scheduled inspections to avoid system failures.Testing and calibration of electrical systems.'
+            },
+            {
+              serviceIncludeName: 'Safety and Compliance',
+              serviceIncludeDescription: 'Ensuring systems meet regulatory and safety standards. Electrical hazard assessments and mitigation.'
             }
           ],
-        images: ['assets/img/website-images/electro-mech.jpg']
+        images: ['assets/img/website-images/electrical-maintenance.jpeg']
       },
       {
         serviceId: 2,
-        serviceName: 'Electro-Mechanical Repair / Maintenance',
+        serviceName: 'Electro-Mechanical Maintenance',
         serviceIcon: 'ti ti-solar-electricity',
-        serviceDescription: 'We specialize in electromechanical works that integrate electrical and mechanical systems for efficient, sustainable solutions. Our skilled team ensures reliable installation and maintenance, enhancing the performance of your infrastructure.',
+        serviceDescription: 'We specialize in electromechanical maintenance services, ensuring seamless operation of systems integrating electrical and mechanical components. From motors and pumps to control panels and HVAC systems, we provide inspections, repairs, and preventive care to maintain efficiency, reliability, and safety.',
         serviceKeyPoints:
           [
-            {keyPoints: 'Comprehensive solutions for HVAC, electrical, and plumbing systems.', icon: ''},
-            {keyPoints: 'Integration of automation and safety systems for optimized performance.', icon: ''},
-            {keyPoints: 'Expert installation and maintenance services to ensure reliability.', icon: ''},
-            {keyPoints: 'Energy-efficient designs and compliance with international standards.', icon: ''},
+            {keyPoints: 'Maintenance and repair of motors, pumps, and generators.', icon: ''},
+            {keyPoints: 'Servicing HVAC systems for reliable performance.', icon: ''},
+            {keyPoints: 'Troubleshooting automated systems and controls.', icon: ''},
+            {keyPoints: 'Calibration and optimization of sensors and actuators.', icon: ''},
+            {keyPoints: 'Inspection and servicing of hydraulic and pneumatic systems.', icon: ''},
           ],
         serviceIncludes:
           [
             {
-              serviceIncludeName: 'HVAC Systems',
-              serviceIncludeDescription: 'We design and install energy-efficient heating, ventilation, and air conditioning systems that enhance comfort and air quality in your buildings. Our approach ensures compliance with local regulations and international standards.'
+              serviceIncludeName: 'HVAC System Maintenance',
+              serviceIncludeDescription: 'Regular servicing and cleaning of heating, ventilation, and air conditioning systems.Troubleshooting and repair of mechanical and electrical components.'
             },
             {
-              serviceIncludeName: 'Electrical Installations',
-              serviceIncludeDescription: 'Our comprehensive electrical services cover everything from wiring and lighting design to power distribution and backup systems. We prioritize safety and efficiency, ensuring that all installations are carried out by qualified professionals.'
+              serviceIncludeName: 'Motor and Pump Maintenance',
+              serviceIncludeDescription: 'Inspection, repair, and replacement of motors and pumps.Bearing lubrication and alignment adjustments.'
             },
             {
-              serviceIncludeName: 'Plumbing Solutions',
-              serviceIncludeDescription: 'We provide reliable plumbing services that include the installation and maintenance of pipes, fixtures, and drainage systems. Our focus is on ensuring a steady supply of water while effectively managing waste.'
+              serviceIncludeName: 'Control System Maintenance',
+              serviceIncludeDescription: 'Calibration and testing of automated control systems, such as PLCs (Programmable Logic Controllers).Troubleshooting issues with sensors and actuators.'
             },
             {
-              serviceIncludeName: 'Safety Systems',
-              serviceIncludeDescription: 'Safety is our top priority. We integrate advanced fire alarm systems, surveillance, and safety measures into your projects, ensuring the protection of both personnel and property.'
+              serviceIncludeName: 'Generator Maintenance',
+              serviceIncludeDescription: 'Routine servicing, testing, and maintenance of generators and power systems.Load testing and fuel system checks.'
             },
             {
-              serviceIncludeName: 'Automation',
-              serviceIncludeDescription: 'We specialize in smart building solutions, implementing automation and control systems that optimize energy consumption and enhance operational efficiency.'
+              serviceIncludeName: 'Hydraulic and Pneumatic System Maintenance',
+              serviceIncludeDescription: 'Repair and maintenance of hydraulic and pneumatic equipment.Inspection of hoses, valves, and pumps for leaks and wear.'
+            },
+            {
+              serviceIncludeName: 'Predictive Maintenance',
+              serviceIncludeDescription: 'Using vibration analysis, thermography, and other tools to predict failures.Monitoring system performance to prevent breakdowns.'
+            },
+            {
+              serviceIncludeName: 'Safety Inspections',
+              serviceIncludeDescription: 'Ensuring electromechanical systems comply with safety regulations.Conducting risk assessments and implementing safety measures.'
             }
           ],
-        images: ['assets/img/website-images/electro-mech.jpg']
+        images: ['assets/img/website-images/electro-m-1.jpg']
       }
     ]
   }
