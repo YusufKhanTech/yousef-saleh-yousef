@@ -45,6 +45,7 @@
   line-height: 1.2;
 }
 .sub-title {
+  text-align: justify;
   font-size: 17px;
   font-weight: normal;
   color: #6a6a6a;

@@ -2,20 +2,33 @@
   <div class="custom-row">
     <div class="custom-col-right" data-aos="fade-up" data-aos-delay="200">
       <div class="title-large">{{service?.serviceName}}</div>
-      <div class="custom-col-left" data-aos="fade-up" data-aos-delay="100">
-        <img [src]="service?.images" alt="{{service?.serviceName}}" class="services-img">
-      </div>
-      <div class="text-content">{{service?.serviceDescription}}</div>
-      <div class="key-points">
-        <h3>Key Points:</h3>
-        <ul>
-          @for (serviceKeyPoint of service?.serviceKeyPoints; track service?.serviceId) {
-          <li>
-            <i class="ti ti-circle-check icon"></i>
-            <span>{{serviceKeyPoint?.keyPoints}}</span>
-          </li>
+      <div>
+        <div class="custom-col-left" data-aos="fade-up" data-aos-delay="100">
+          @for (serviceImageInfo of service?.serviceImageInfos; track serviceImageInfo?.id) {
+            @if (serviceImageInfo?.align === 'left') {
+              <div class="first-block">
+                <div class="text-content">{{serviceImageInfo?.description}}</div>
+                <div class="first-block-img">
+                  <img [src]="serviceImageInfo?.image" alt="{{serviceImageInfo?.name}}" class="services-img">
+                </div>
+              </div>
+            } @else {
+              <div class="second-block">
+                <img [src]="serviceImageInfo?.image" alt="{{serviceImageInfo?.name}}" class="services-img">
+                <div class="key-points">
+                  <ul>
+                    @for (serviceKeyPoint of serviceImageInfo?.keyPoints; track serviceKeyPoint?.keyPoints) {
+                      <li>
+                        <i class="ti ti-circle-check icon"></i>
+                        <span>{{serviceKeyPoint?.keyPoints}}</span>
+                      </li>
+                    }
+                  </ul>
+                </div>
+              </div>
+            }
           }
-        </ul>
+        </div>
       </div>
       <div class="services-list">
         <h3>Service includes:</h3>

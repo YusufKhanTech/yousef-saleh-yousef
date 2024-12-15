@@ -2,16 +2,19 @@ export class ServiceModel {
   serviceId?: number;
   serviceName?: string;
   serviceIcon?: string;
-  serviceDescription?: string;
-  serviceKeyPoints?: ServiceKeyPoints[];
   serviceIncludes?: ServiceIncludes[];
-  images?: string[];
+  serviceImageInfos?: ServiceImageInfo[];
 }
 
-export class ServiceCard {
-  heading?: string;
-  subHeading?: string;
+export class ServiceImageInfo {
+  id?: string;
+  name?: string;
+  description?: string;
+  image?: string;
+  keyPoints?: ServiceKeyPoints[];
+  align?:string;
 }
+
 export class ServiceKeyPoints {
   icon?: string;
   keyPoints?: string;

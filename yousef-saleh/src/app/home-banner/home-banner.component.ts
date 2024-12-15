@@ -22,12 +22,15 @@ export class HomeBannerComponent implements OnInit, OnDestroy {
   backgroundImageUrls = [
     { key: '/assets/img/website-images/home-bg-1.jpeg' },
     { key: '/assets/img/website-images/home-bg-2.jpg' },
+    { key: '/assets/img/website-images/home-railway-1.jpg' },
     { key: '/assets/img/website-images/home-bg-3.jpg' },
     { key: '/assets/img/website-images/home-bg-4.jpg' },
     { key: '/assets/img/website-images/home-bg-5.jpg' },
+    { key: '/assets/img/website-images/home-railway-3.jpeg' },
     { key: '/assets/img/website-images/home-bg-6.jpg' },
     { key: '/assets/img/website-images/substation-4.jpg' },
-    { key: '/assets/img/website-images/substation-switch-panel.jpg' }
+    { key: '/assets/img/website-images/substation-switch-panel.jpg' },
+    { key: '/assets/img/website-images/home-railway-2.jpeg' },
   ];
   activeIndex = 0;
   private intervalId: any;

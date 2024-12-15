@@ -1,16 +1,10 @@
-import {Component, Input, OnInit} from '@angular/core';
-import {BannerContentComponent} from '../banner-content/banner-content.component';
-import {ActivatedRoute} from '@angular/router';
-import {ServiceIncludes, ServiceKeyPoints, ServiceModel} from '../services/model/service.model';
-import {ServicesUtil} from '../services/util/service.util';
-import {JsonPipe} from '@angular/common';
+import { Component, Input } from '@angular/core';
+import { ServiceModel } from '../services/model/service.model';
 
 @Component({
   selector: 'app-service-detail',
   standalone: true,
-  imports: [
-    BannerContentComponent
-  ],
+  imports: [],
   templateUrl: './service-detail.component.html',
   styleUrl: './service-detail.component.css'
 })
