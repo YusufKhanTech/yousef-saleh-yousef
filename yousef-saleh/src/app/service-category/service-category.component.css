@@ -1,11 +1,12 @@
 .service-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   justify-content: center;
   align-items: flex-start;
   gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 20px;
+  padding: 100px 0;
 }
 
 .services-list {
@@ -51,10 +52,6 @@
 
 .services-list .service-detail a.active:hover {
   color: white;
-}
-
-.service-detail-view {
-  max-width: 700px;
 }
 
 .right-side-title {
