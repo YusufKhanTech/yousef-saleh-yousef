@@ -5,6 +5,7 @@ export class Project {
   image?: string;
   description?: string;
   subDescription?: string;
+  isFeaturedProject?: boolean;
   projectInfo?: ProjectInfo;
 }
 
