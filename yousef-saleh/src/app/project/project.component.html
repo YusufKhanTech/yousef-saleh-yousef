@@ -6,8 +6,8 @@
   </app-heading-content>
   <div class="project-card-content" data-aos="fade-right" data-aos-delay="400">
     @for(project of projects; track project){
-    <div class="project-card" (click)="navigateToProjectDetail(project.id)">
-      <img [src]="project?.imageUrl" alt="Project Image" />
+    <div class="project-card" (click)="navigateToProjectDetail(project?.id)">
+      <img [src]="project?.image" alt="Project Image" />
       <div class="card-title">{{ project?.name }}</div>
       <div class="overlay">
         <i class="ti ti-plus"></i>
