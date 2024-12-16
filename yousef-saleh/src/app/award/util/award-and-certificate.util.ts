@@ -26,11 +26,6 @@ export class AwardAndCertificateUtil {
     { certificateId: 'ic03', certificateName: '45001-2018', image: '/assets/img/awards/45001-2018.jpeg' },
   ];
 
-  public static  recognitionCertificates: AwardAndCertificate[] = [
-    { certificateId: 'rc01', certificateName: 'civil-defense', image: '/assets/img/awards/COA-civil-defense.jpeg' },
-    { certificateId: 'rc02', certificateName: 'nc', image: '/assets/img/awards/COA-nc.jpeg' },
-  ];
-
   public static  aFourRecognitionCertificates: AwardAndCertificate[] = [
     { certificateId: 'arc02', certificateName: 'national-grid', image: '/assets/img/awards/COA-national-grid.jpeg' },
     { certificateId: 'arc03', certificateName: 'zamil', image: '/assets/img/awards/COA-zamil.jpeg' },
@@ -47,8 +42,6 @@ export class AwardAndCertificateUtil {
         return this.preQualifiedCertificates;
       case CERTIFICATE_TYPE.ISO:
         return this.isoCertificates;
-      case CERTIFICATE_TYPE.RECOGNITION:
-        return this.recognitionCertificates;
       case CERTIFICATE_TYPE.A_FOUR_RECOGNITION:
         return this.aFourRecognitionCertificates;
       default:
@@ -60,8 +53,7 @@ export class AwardAndCertificateUtil {
     const allCertificates = [
       ...AwardAndCertificateUtil.commercialCertificates,
       ...AwardAndCertificateUtil.preQualifiedCertificates,
-      ...AwardAndCertificateUtil.isoCertificates,
-      ...AwardAndCertificateUtil.recognitionCertificates,
+      ...AwardAndCertificateUtil.isoCertificates
     ];
     const foundCertificate = allCertificates
       .find((certificate) => certificate.certificateId === id);
