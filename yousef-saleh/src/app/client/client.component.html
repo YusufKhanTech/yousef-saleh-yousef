@@ -14,5 +14,17 @@
       </div>
       }
     </div>
+    <div class="clients-track">
+      @for(clientImage of clientImages; track clientImage?.clientId; let i =
+        $index){
+        <div class="client-item">
+          <img
+            class="client-logo"
+            [src]="clientImage.logo"
+            [alt]="clientImage.clientName"
+          />
+        </div>
+      }
+    </div>
   </div>
 </div>
