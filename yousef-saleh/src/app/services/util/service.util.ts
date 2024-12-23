@@ -43,29 +43,45 @@ export class ServicesUtil {
         serviceIncludes:
           [
             {
-              serviceIncludeName: 'Substation Design',
-              serviceIncludeDescription: 'We offer tailored substation designs that meet your project’s power requirements, ensuring both efficiency and reliability.'
+              serviceIncludeName: 'Design and Engineering',
+              serviceIncludeDescription: 'Detailed substation layouts and power system design. Load analysis and capacity planning for optimal performance.'
             },
             {
-              serviceIncludeName: 'Installation and Commissioning',
-              serviceIncludeDescription: 'Our team handles the complete installation and commissioning of substations, ensuring they are operational and compliant with local regulations.'
+              serviceIncludeName: 'Civil Works',
+              serviceIncludeDescription: 'Site preparation, foundation construction, and fencing. Building control rooms and supporting structures.'
+            },
+            {
+              serviceIncludeName: 'Equipment Installation',
+              serviceIncludeDescription: 'Setup of transformers, switchgear, and circuit breakers. Installation of busbars, isolators, and relays.'
+            },
+            {
+              serviceIncludeName: 'Cable and Wiring',
+              serviceIncludeDescription: 'High-voltage cable laying and termination. Connection of control and communication systems.'
+            },
+            {
+              serviceIncludeName: 'Grounding and Lightning Protection',
+              serviceIncludeDescription: 'Installation of grounding grids and safety systems. Implementation of lightning arrestors.'
+            },
+            {
+              serviceIncludeName: 'Testing and Commissioning',
+              serviceIncludeDescription: 'Comprehensive testing of electrical systems. Ensuring operational safety, reliability, and compliance.'
+            },
+            {
+              serviceIncludeName: 'Automation and Control Integration',
+              serviceIncludeDescription: 'SCADA system setup for monitoring and control. Installation of protection relays and automation equipment.'
             },
             {
               serviceIncludeName: 'Maintenance and Upgrades',
-              serviceIncludeDescription: 'We provide ongoing maintenance and upgrades to ensure that your substation continues to operate at peak performance, minimizing downtime and extending its lifespan.'
-            },
-            {
-              serviceIncludeName: 'Safety Systems',
-              serviceIncludeDescription: 'We prioritize safety by integrating protective equipment and automation systems into every substation, ensuring compliance with international safety standards.'
+              serviceIncludeDescription: 'Routine maintenance for long-term reliability. Upgrading substations to meet evolving power needs.'
             }
           ],
         serviceImageInfos: [
           {
             id: 'm01',
             name: 'construction-1',
-            description: 'We specialize in the construction of electrical substations, ensuring the safe and efficient distribution of electrical power. Our experienced team handles all aspects of substation design,installation, and commissioning, adhering to industry standards and regulations.',
+            description: 'We provide end-to-end electrical substation construction services, including design, equipment installation, grounding, and testing. We ensure efficient power distribution with safe, reliable, and compliant solutions tailored to your project needs.',
             keyPoints: [],
-            image: '/assets/img/website-images/substation-2.jpg',
+            image: '/assets/img/website-images/electrical-subs-s-1.jpg',
             align: 'left',
           },
           {
@@ -73,10 +89,11 @@ export class ServicesUtil {
             name: 'construction-2',
             description: '',
             keyPoints: [
-              {keyPoints: 'Design, construction, and maintenance of high-efficiency substations.', icon: 'ti ti-solar-panel'},
-              {keyPoints: 'Compliance with safety and operational standards for reliable power distribution.', icon: 'ti ti-solar-panel'},
-              {keyPoints: 'Expertise in testing, commissioning, and preventive maintenance.', icon: 'ti ti-solar-panel'},
-              {keyPoints: 'Custom substation designs tailored to project-specific power needs.', icon: 'ti ti-solar-panel'}
+              {keyPoints: 'Custom design and engineering for optimized power distribution.', icon: 'ti ti-solar-panel'},
+              {keyPoints: 'Installation of transformers, switchgear, and protective equipment.', icon: 'ti ti-solar-panel'},
+              {keyPoints: 'Grounding and lightning protection systems.', icon: 'ti ti-solar-panel'},
+              {keyPoints: 'Testing and commissioning for operational reliability.', icon: 'ti ti-solar-panel'},
+              {keyPoints: 'Integration of automation and control systems like SCADA.', icon: 'ti ti-solar-panel'}
             ],
             align: 'right',
             image: '/assets/img/website-images/substation-4.jpg'
@@ -91,28 +108,44 @@ export class ServicesUtil {
           [
             {
               serviceIncludeName: 'Design and Planning',
-              serviceIncludeDescription: 'We work closely with clients to develop building designs that meet both their functional and aesthetic requirements. Our designs incorporate modern technology and sustainability principles.'
+              serviceIncludeDescription: 'Architectural design tailored to industrial and commercial needs. Structural engineering and space optimization planning.'
             },
             {
-              serviceIncludeName: 'Construction Management',
-              serviceIncludeDescription: 'We oversee every aspect of the construction process, ensuring that your project is completed on time, within budget, and to the highest standards of quality.'
+              serviceIncludeName: 'Site Preparation and Earthworks',
+              serviceIncludeDescription: 'Site clearing, grading, and excavation. Foundation construction and soil stabilization.'
             },
             {
-              serviceIncludeName: 'Safety and Compliance',
-              serviceIncludeDescription: 'Our team ensures that all construction projects comply with local building codes and safety regulations, protecting both workers and future occupants.'
+              serviceIncludeName: 'Structural Construction',
+              serviceIncludeDescription: 'Steel, concrete, and prefabricated structure construction. Erection of industrial warehouses, factories, and office spaces.'
             },
             {
-              serviceIncludeName: 'Fit-out and Customization',
-              serviceIncludeDescription: 'We offer interior fit-out services tailored to your specific business needs, ensuring that your space is optimized for productivity.'
+              serviceIncludeName: 'Mechanical, Electrical, and Plumbing (MEP) Services',
+              serviceIncludeDescription: 'Installation of HVAC systems, electrical wiring, and plumbing. Integration of fire safety systems and utilities.'
+            },
+            {
+              serviceIncludeName: 'Interior and Exterior Finishing',
+              serviceIncludeDescription: 'Flooring, painting, and ceiling installation. Facade design and landscaping for commercial appeal.'
+            },
+            {
+              serviceIncludeName: 'Specialized Facilities',
+              serviceIncludeDescription: 'Construction of loading bays, storage areas, and workshops. Integration of advanced automation systems for industrial buildings.'
+            },
+            {
+              serviceIncludeName: 'Safety and Regulatory Compliance',
+              serviceIncludeDescription: 'Ensuring adherence to local building codes and industry standards. Implementing advanced safety measures during and after construction.'
+            },
+            {
+              serviceIncludeName: 'Project Management and Delivery',
+              serviceIncludeDescription: 'End-to-end project management for seamless execution. On-time delivery with adherence to budget constraints.'
             }
           ],
         serviceImageInfos: [
           {
             id: 'm01',
             name: 'construction-1',
-            description: 'We specialize in delivering top-tier industrial and commercial construction services tailored to meet the needs of various industries. Our team ensures that each project is built to the highest standards, combining innovation, quality materials, and precision in execution.',
+            description: 'We deliver top-notch industrial and commercial building construction services, offering innovative designs, quality construction, and timely project delivery tailored to your business needs.',
             keyPoints: [],
-            image: 'assets/img/project-images/image186.jpg',
+            image: '/assets/img/website-images/industrial-s.jpg',
             align: 'left',
           },
           {
@@ -120,13 +153,14 @@ export class ServicesUtil {
             name: 'maintenance-2',
             description: '',
             keyPoints: [
-              {keyPoints: 'Custom construction of durable industrial and commercial buildings.', icon: 'ti ti-building-factory-2'},
-              {keyPoints: 'Expertise in warehouses, factories, office buildings, and retail spaces.', icon: 'ti ti-building-factory-2'},
-              {keyPoints: 'Efficient project management to ensure timely and cost-effective delivery.', icon: 'ti ti-building-factory-2'},
-              {keyPoints: 'Sustainable building practices for long-lasting, eco-friendly structures.', icon: 'ti ti-building-factory-2'}
+              {keyPoints: 'Customized design and planning for industrial and commercial spaces.', icon: 'ti ti-building-factory-2'},
+              {keyPoints: 'High-quality construction using durable materials.', icon: 'ti ti-building-factory-2'},
+              {keyPoints: 'Integration of modern facilities and sustainable practices.', icon: 'ti ti-building-factory-2'},
+              {keyPoints: 'Compliance with safety and regulatory standards.', icon: 'ti ti-building-factory-2'},
+              {keyPoints: 'Timely completion and cost-effective solutions.', icon: 'ti ti-building-factory-2'}
             ],
             align: 'right',
-            image: 'assets/img/project-images/30.jpg'
+            image: '/assets/img/website-images/industrial-s-1.jpg'
           }
         ],
       },
@@ -137,29 +171,45 @@ export class ServicesUtil {
         serviceIncludes:
           [
             {
-              serviceIncludeName: 'Design and Fabrication',
-              serviceIncludeDescription: 'We work with you to design custom pre-engineered steel buildings that meet your specific requirements. Our fabrication process ensures precision and high-quality materials.'
+              serviceIncludeName: 'Design and Engineering',
+              serviceIncludeDescription: 'Customized design based on client specifications. Structural analysis and optimization for durability and efficiency.'
             },
             {
-              serviceIncludeName: 'Quick Assembly',
-              serviceIncludeDescription: 'Pre-engineered buildings are designed for rapid assembly, minimizing construction time and reducing overall costs.'
+              serviceIncludeName: 'Fabrication and Material Supply',
+              serviceIncludeDescription: 'High-quality steel fabrication for all building components. Supply of pre-engineered materials like frames, panels, and fasteners.'
             },
             {
-              serviceIncludeName: 'Durability and Versatility',
-              serviceIncludeDescription: 'Our steel buildings are built to withstand harsh environmental conditions and are versatile enough for a wide range of applications.'
+              serviceIncludeName: 'Site Preparation and Foundation Construction',
+              serviceIncludeDescription: 'Ground leveling, excavation, and foundation installation. Ensuring a stable base for steel structures.'
             },
             {
-              serviceIncludeName: 'Maintenance and Expansion',
-              serviceIncludeDescription: 'We offer maintenance services to keep your steel buildings in top condition and provide options for future expansions as your business grows.'
+              serviceIncludeName: 'Steel Frame Erection',
+              serviceIncludeDescription: 'Assembly and installation of pre-fabricated steel frames. Accurate alignment for structural integrity.'
+            },
+            {
+              serviceIncludeName: 'Wall and Roof Installation',
+              serviceIncludeDescription: 'Installation of insulated panels, cladding, and roofing systems. Weatherproofing for enhanced durability and energy efficiency.'
+            },
+            {
+              serviceIncludeName: 'Integration of Facilities',
+              serviceIncludeDescription: 'Adding features like mezzanine floors, ventilation, and lighting. Space optimization for industrial, commercial, or agricultural use.'
+            },
+            {
+              serviceIncludeName: 'Maintenance and Repairs',
+              serviceIncludeDescription: 'Periodic inspections and preventive maintenance services. Repair and replacement of damaged components.'
+            },
+            {
+              serviceIncludeName: 'Project Management',
+              serviceIncludeDescription: 'End-to-end management for timely and efficient project completion. Coordination of all construction phases, ensuring quality and safety.'
             }
           ],
         serviceImageInfos: [
           {
             id: 'm01',
             name: 'construction-1',
-            description: 'Our pre-engineered steel buildings provide a versatile solution for various applications, including warehouses and industrial facilities. These structures are designed for durability, quick installation, and cost-effectiveness',
+            description: 'We specialize in constructing durable, cost-effective, and customizable pre-engineered steel buildings, offering efficient solutions for industrial, commercial, and agricultural projects.',
             keyPoints: [],
-            image: 'assets/img/website-images/steel-building.jpg',
+            image: '/assets/img/website-images/steel-s.jpg',
             align: 'left',
           },
           {
@@ -167,16 +217,16 @@ export class ServicesUtil {
             name: 'maintenance-2',
             description: '',
             keyPoints: [
-              {keyPoints:'Cost-effective and durable steel structures for industrial and commercial use.', icon: 'ti ti-building-estate'},
-              {keyPoints:'Fast and efficient assembly, reducing construction time and costs.', icon: 'ti ti-building-estate'},
-              {keyPoints:'Customizable designs to meet project-specific requirements.', icon: 'ti ti-building-estate'},
-              {keyPoints:'Long-lasting, low-maintenance solutions resistant to environmental factors.', icon: 'ti ti-building-estate'}
+              {keyPoints:'Cost-effective and quick to construct compared to traditional methods.', icon: 'ti ti-building-estate'},
+              {keyPoints:'Fully customizable design for diverse applications.', icon: 'ti ti-building-estate'},
+              {keyPoints:'High durability with corrosion-resistant materials.', icon: 'ti ti-building-estate'},
+              {keyPoints:'Environmentally friendly and energy-efficient solutions.', icon: 'ti ti-building-estate'},
+              {keyPoints:'Low maintenance requirements with long-lasting performance.', icon: 'ti ti-building-estate'}
             ],
             align: 'right',
             image: 'assets/img/website-images/steel-building.jpg'
           }
         ],
-        // images: ['assets/img/website-images/steel-building.jpg']
       },
       {
         serviceId: 3,
@@ -185,29 +235,45 @@ export class ServicesUtil {
         serviceIncludes:
           [
             {
-              serviceIncludeName: 'Cladding Systems',
-              serviceIncludeDescription: 'We provide a variety of cladding materials, including metal, stone, and composite panels, that offer both protection and style for your building’s exterior.'
+              serviceIncludeName: 'Design and Consultation',
+              serviceIncludeDescription: 'Customized cladding and glass design based on architectural needs. Expert consultation on material selection and finishes.'
             },
             {
-              serviceIncludeName: 'Glass Facades',
-              serviceIncludeDescription: 'Our glass facade systems are designed to create striking, light-filled spaces while ensuring energy efficiency and durability.'
+              serviceIncludeName: 'Cladding Installation',
+              serviceIncludeDescription: 'Installation of aluminum, composite, stone, or metal cladding. Weatherproofing and sealing to ensure durability.'
             },
             {
-              serviceIncludeName: 'Curtain Wall Systems',
-              serviceIncludeDescription: 'We specialize in curtain wall systems that combine glass and other materials to create sleek, modern exteriors.'
+              serviceIncludeName: 'Glass Facade Installation',
+              serviceIncludeDescription: 'Installation of energy-efficient glazing systems. Curtain walls, frameless glass facades, and structural glazing.'
             },
             {
-              serviceIncludeName: 'Maintenance and Repair',
-              serviceIncludeDescription: 'In addition to installation, we offer maintenance and repair services to keep your cladding and glass systems looking and performing their best.'
+              serviceIncludeName: 'Insulation and Thermal Efficiency',
+              serviceIncludeDescription: 'Integration of thermal insulation for energy efficiency. Double-glazing and low-emissivity glass options.'
+            },
+            {
+              serviceIncludeName: 'Skylights and Specialized Glass Structures',
+              serviceIncludeDescription: 'Installation of skylights, canopies, and glass partitions. Design and construction of unique glass architectural features.'
+            },
+            {
+              serviceIncludeName: 'Maintenance and Repairs',
+              serviceIncludeDescription: 'Cleaning, polishing, and sealing services for glass and cladding. Repair and replacement of damaged panels or glass.'
+            },
+            {
+              serviceIncludeName: 'Safety and Compliance',
+              serviceIncludeDescription: 'Installation of fire-rated glass and cladding systems. Ensuring compliance with building codes and safety standards.'
+            },
+            {
+              serviceIncludeName: 'Project Management',
+              serviceIncludeDescription: 'End-to-end management for seamless execution of cladding and glass projects. Coordination between design, fabrication, and installation teams.'
             }
           ],
         serviceImageInfos: [
           {
             id: 'm01',
             name: 'construction-1',
-            description: 'we offer comprehensive Cladding and Glass Solutions designed to transform buildings with a modern and sleek look.Our focus on quality materials like aluminium cladding and glass panels ensures not only aesthetic excellence but also long-term durability and protection against environmental factors.',
+            description: 'We provide advanced cladding and glass solutions, offering durable, aesthetically pleasing, and energy-efficient designs tailored to enhance the appearance and performance of buildings.',
             keyPoints: [],
-            image: 'assets/img/website-images/cladding-and-glass.jpg',
+            image: '/assets/img/website-images/glass-s.jpg',
             align: 'left',
           },
           {
@@ -215,10 +281,11 @@ export class ServicesUtil {
             name: 'maintenance-2',
             description: '',
             keyPoints: [
-              {keyPoints: 'Aesthetic cladding systems for enhanced weather protection and insulation.', icon: 'ti ti-building'},
-              {keyPoints: 'Sleek glass facades that maximize natural light and energy efficiency.', icon: 'ti ti-building'},
-              {keyPoints: 'Customizable designs to meet architectural visions.', icon: 'ti ti-building'},
-              {keyPoints: 'Sustainable materials that improve building performance and reduce energy costs.', icon: 'ti ti-building'}
+              {keyPoints: 'Aesthetic enhancement with modern and sleek designs.', icon: 'ti ti-building'},
+              {keyPoints: 'Improved energy efficiency through thermal insulation and glazing.', icon: 'ti ti-building'},
+              {keyPoints: 'Durable and weather-resistant materials for long-term performance.', icon: 'ti ti-building'},
+              {keyPoints: 'Customizable options to suit architectural requirements.', icon: 'ti ti-building'},
+              {keyPoints: 'Ensures compliance with safety and building standards.', icon: 'ti ti-building'}
             ],
             align: 'right',
             image: 'assets/img/website-images/cladding-and-glass.jpg'
@@ -232,29 +299,45 @@ export class ServicesUtil {
         serviceIncludes:
           [
             {
-              serviceIncludeName: 'Paving Solutions',
-              serviceIncludeDescription: 'Our asphalting services cover everything from small parking lots to large roadways. We use premium materials and proven techniques to deliver a smooth, durable surface.'
-            },
-            {
-              serviceIncludeName: 'Maintenance Services',
-              serviceIncludeDescription: 'We provide regular maintenance and repair services for asphalt surfaces, ensuring they remain in excellent condition and extend their lifespan.'
+              serviceIncludeName: 'Road Design and Planning',
+              serviceIncludeDescription: 'Surveying and engineering design for road layouts. Traffic flow analysis and drainage system integration.'
             },
             {
               serviceIncludeName: 'Site Preparation',
-              serviceIncludeDescription: 'Comprehensive site assessments and preparation are critical for successful asphalting. Our team ensures that the site is adequately prepared to achieve optimal results.'
+              serviceIncludeDescription: 'Clearing, excavation, and grading for road foundations. Soil stabilization and base course construction.'
             },
             {
-              serviceIncludeName: 'Environmental Compliance',
-              serviceIncludeDescription: 'We adhere to local regulations and sustainability practices, ensuring our asphalting processes minimize environmental impact.'
-            }
+              serviceIncludeName: 'Asphalting and Paving',
+              serviceIncludeDescription: 'Laying high-quality asphalt for roads, driveways, and parking lots. Precision paving to ensure smooth, even surfaces.'
+            },
+            {
+              serviceIncludeName: 'Road Resurfacing and Repairs',
+              serviceIncludeDescription: 'Asphalt resurfacing to extend the lifespan of existing roads. Pothole repair, crack sealing, and overlay services.'
+            },
+            {
+              serviceIncludeName: 'Markings and Signage Installation',
+              serviceIncludeDescription: 'Road line markings and safety signs for traffic management. Installation of reflective markers for enhanced visibility.'
+            },
+            {
+              serviceIncludeName: 'Drainage and Utility Integration',
+              serviceIncludeDescription: 'Construction of drainage systems to prevent waterlogging. Coordination of road construction with utility installations.'
+            },
+            {
+              serviceIncludeName: 'Maintenance Services',
+              serviceIncludeDescription: 'Regular maintenance of roads and pavements. Inspections and timely repairs to ensure durability.'
+            },
+            {
+            serviceIncludeName: 'Specialized Road Works',
+            serviceIncludeDescription: 'Construction of walkways, cycle paths, and speed humps. Asphalt solutions for industrial and commercial areas.'
+          },
           ],
         serviceImageInfos: [
           {
             id: 'm01',
             name: 'construction-1',
-            description: 'We offer professional asphalting and road work services, ensuring high-quality surface finishes that stand the test of time. Our experienced team is committed to delivering durable solutions for roadways, parking lots, and other essential infrastructures.',
+            description: 'We deliver professional asphalting and road construction services, providing durable, high-quality roads and pavements with a focus on safety, efficiency, and long-lasting performance.',
             keyPoints: [],
-            image: 'assets/img/project-images/image209.jpg',
+            image: '/assets/img/website-images/asphalting-s.jpg',
             align: 'left',
           },
           {
@@ -262,10 +345,11 @@ export class ServicesUtil {
             name: 'maintenance-2',
             description: '',
             keyPoints: [
-              {keyPoints: 'High-quality paving solutions for roads, parking lots, and other surfaces.', icon: ''},
-              {keyPoints: 'Regular maintenance and repair services to extend surface life.', icon: ''},
-              {keyPoints: 'Site preparation to ensure optimal asphalting results.', icon: ''},
-              {keyPoints: 'Compliance with environmental and sustainability standards.', icon: ''},
+              {keyPoints: 'Comprehensive road construction, from planning to completion.', icon: ''},
+              {keyPoints: 'Durable asphalting solutions for high-traffic areas.', icon: ''},
+              {keyPoints: 'Expertise in paving, resurfacing, and maintenance.', icon: ''},
+              {keyPoints: 'Use of high-quality materials to ensure longevity.', icon: ''},
+              {keyPoints: 'Adherence to safety and regulatory standards.', icon: ''},
             ],
             align: 'right',
             image: 'assets/img/project-images/image208.jpg'
@@ -279,31 +363,39 @@ export class ServicesUtil {
         serviceIncludes:
           [
             {
-              serviceIncludeName: 'Custom Fencing Solutions',
-              serviceIncludeDescription: 'We offer a range of fencing options, including chain-link, barbed wire, and decorative fencing, tailored to fit the unique requirements of your site. Our team will assess your security needs and recommend the best solution.'
+              serviceIncludeName: 'Design and Consultation',
+              serviceIncludeDescription: 'Customized fence design based on property requirements. Expert consultation to recommend the best materials and styles.'
             },
             {
-              serviceIncludeName: 'Site Organization',
-              serviceIncludeDescription: 'Effective organization of your construction site is essential for productivity and safety. We help plan and implement site layouts that optimize space usage while maintaining safety and security.'
+              serviceIncludeName: 'Installation of Security Fencing',
+              serviceIncludeDescription: 'Installation of chain link, mesh, barbed wire, or wrought iron fences. Secure placement for residential, commercial, and industrial properties.'
             },
             {
-              serviceIncludeName: 'Maintenance Services',
-              serviceIncludeDescription: 'We provide ongoing maintenance for installed fencing systems, ensuring they remain secure and effective throughout your project’s duration.'
+              serviceIncludeName: 'Gates and Access Control Systems',
+              serviceIncludeDescription: 'Installation of automated or manual gates for restricted access. Integration of access control systems such as keypads, card readers, or biometric systems.'
             },
             {
-              serviceIncludeName: 'Access Control',
-              serviceIncludeDescription: 'We implement access control measures, including gates and entry systems, to manage who can enter and exit your site. This ensures that only authorized personnel have access to critical areas.'
+              serviceIncludeName: 'Surveillance and Security Features',
+              serviceIncludeDescription: 'Installation of surveillance cameras and motion detectors. Integration of lighting systems for added visibility and security.'
             },
             {
-              serviceIncludeName: 'Consultation and Planning',
-              serviceIncludeDescription: 'Our experienced team offers consultation services to assess your security needs and develop a comprehensive plan tailored to your project.'
+              serviceIncludeName: 'Maintenance and Repairs',
+              serviceIncludeDescription: 'Regular maintenance services to ensure the integrity of the fence. Repair services for damaged or deteriorated security fences.'
+            },
+            {
+              serviceIncludeName: 'Site Preparation and Groundworks',
+              serviceIncludeDescription: 'Land clearing and excavation for proper fence installation. Soil and foundation preparation for fence stability.'
+            },
+            {
+              serviceIncludeName: 'Specialized Security Solutions',
+              serviceIncludeDescription: 'Installation of anti-climb fences, electric fences, and other specialized security measures. Solutions for perimeter security, private properties, and high-risk areas.'
             }
           ],
         serviceImageInfos: [
           {
             id: 'm01',
             name: 'construction-1',
-            description: 'Our comprehensive security fencing installation services safeguard your construction site while enhancing site organization. We offer custom solutions tailored to your needs, ensuring your project remains secure and well-structured.',
+            description: 'We specialize in the installation of high-quality security fencing, providing reliable and durable solutions for property protection. Our services include designing, installing, and maintaining security fences to ensure maximum safety and privacy.',
             keyPoints: [],
             image: 'assets/img/website-images/fencing.jpg',
             align: 'left',
@@ -313,10 +405,11 @@ export class ServicesUtil {
             name: 'maintenance-2',
             description: '',
             keyPoints: [
-              {keyPoints: 'Custom fencing solutions for enhanced site security and access control.', icon: ''},
-              {keyPoints: 'Comprehensive site organization services to maximize safety and efficiency.', icon: ''},
-              {keyPoints: 'Ongoing maintenance to ensure fencing systems remain effective.', icon: ''},
-              {keyPoints: 'Expertise in access control systems to manage site entry and exit.', icon: ''}
+              {keyPoints: 'Customizable security fence solutions for residential, commercial, and industrial properties.', icon: ''},
+              {keyPoints: 'Use of durable, high-quality materials for enhanced security.', icon: ''},
+              {keyPoints: 'Installation of various types of fences, including chain link, barbed wire, and wrought iron.', icon: ''},
+              {keyPoints: 'Integration of gates, access control systems, and surveillance features.', icon: ''},
+              {keyPoints: 'Focus on safety, privacy, and long-lasting performance.', icon: ''}
             ],
             align: 'right',
             image: 'assets/img/project-images/image186.jpg'
@@ -330,29 +423,45 @@ export class ServicesUtil {
         serviceIncludes:
           [
             {
-              serviceIncludeName: 'Crack Repair',
-              serviceIncludeDescription: 'We utilize specialized techniques to address cracks and surface imperfections, preventing further deterioration and restoring structural integrity.'
+              serviceIncludeName: 'Crack Repair and Sealing',
+              serviceIncludeDescription: 'Identification and sealing of surface cracks in concrete. Use of injection techniques and epoxy resins for long-lasting results.'
             },
             {
-              serviceIncludeName: 'Surface Restoration',
-              serviceIncludeDescription: 'Our team employs advanced methods to restore the appearance and durability of concrete surfaces, enhancing both aesthetics and functionality.'
+              serviceIncludeName: 'Concrete Surface Restoration',
+              serviceIncludeDescription: 'Surface cleaning, resurfacing, and retexturing. Application of protective coatings to prevent further damage.'
             },
             {
-              serviceIncludeName: 'Reinforcement',
-              serviceIncludeDescription: 'We provide reinforcement solutions that improve the load-bearing capacity of your structures, ensuring they meet safety standards and regulations.'
+              serviceIncludeName: 'Corrosion Protection',
+              serviceIncludeDescription: 'Treatment of reinforcement corrosion with specialized coatings and inhibitors. Cathodic protection systems to prevent future corrosion.'
             },
             {
-              serviceIncludeName: 'Preventive Maintenance',
-              serviceIncludeDescription: 'Our preventive maintenance strategies are designed to prolong the lifespan of your concrete structures, reducing the need for costly repairs in the future.'
+              serviceIncludeName: 'Structural Strengthening and Reinforcement',
+              serviceIncludeDescription: 'Reinforcement using carbon fiber, steel plates, or other materials. Strengthening of beams, columns, and foundations.'
+            },
+            {
+              serviceIncludeName: 'Concrete Jacketing',
+              serviceIncludeDescription: 'Application of additional concrete layers to enhance structural load-bearing capacity. Suitable for columns, beams, and structural elements.'
+            },
+            {
+              serviceIncludeName: 'Waterproofing and Moisture Control',
+              serviceIncludeDescription: 'Installation of waterproof membranes to prevent water penetration. Moisture barrier solutions to protect against water damage.'
+            },
+            {
+              serviceIncludeName: 'Foundation and Basement Repair',
+              serviceIncludeDescription: 'Repair of damaged foundations and basement walls. Stabilization of settling or shifting foundations.'
+            },
+            {
+              serviceIncludeName: 'Evaluation and Inspection',
+              serviceIncludeDescription: 'Thorough inspection to assess the extent of damage. Detailed evaluation reports and recommendations for repairs.'
             }
           ],
         serviceImageInfos: [
           {
             id: 'm01',
             name: 'construction-1',
-            description: 'At Yousef Saleh Yousef, we specialize in concrete repair and rehabilitation services that extend the lifespan of your structures. Our expert team utilizes advanced techniques to restore integrity and functionality, ensuring safety and durability.',
+            description: 'We offer expert concrete repair and rehabilitation services, ensuring the restoration of structural integrity and extending the lifespan of concrete structures. Our solutions address cracks, corrosion, and deterioration, enhancing durability and safety.',
             keyPoints: [],
-            image: 'assets/img/project-images/25.jpg',
+            image: '/assets/img/website-images/concrete-s.jpg',
             align: 'left',
           },
           {
@@ -360,16 +469,16 @@ export class ServicesUtil {
             name: 'maintenance-2',
             description: '',
             keyPoints: [
-              {keyPoints: 'Expert crack repair and surface restoration for damaged concrete.', icon: ''},
-              {keyPoints: 'Reinforcement solutions to improve load-bearing capacity.', icon: ''},
-              {keyPoints: 'Preventive maintenance strategies to extend the lifespan of structures.', icon: ''},
-              {keyPoints: 'Consultation services to develop tailored rehabilitation plans.', icon: ''},
+              {keyPoints: 'Expertise in repairing damaged concrete structures.', icon: ''},
+              {keyPoints: 'Solutions for cracks, surface wear, and structural issues.', icon: ''},
+              {keyPoints: 'Use of advanced materials and techniques for durable repairs.', icon: ''},
+              {keyPoints: 'Restoration of concrete’s aesthetic and functional properties.', icon: ''},
+              {keyPoints: 'Compliance with safety and regulatory standards for long-lasting results.', icon: ''},
             ],
             align: 'right',
-            image: 'assets/img/project-images/26.jpg'
+            image: '/assets/img/website-images/concrete-s-1.jpg'
           }
         ]
-        // images: ['assets/img/website-images/concrete.jpg']
       },
       {
         serviceId: 7,
@@ -378,33 +487,45 @@ export class ServicesUtil {
         serviceIncludes:
           [
             {
-              serviceIncludeName: 'HVAC Systems',
-              serviceIncludeDescription: 'We design and install energy-efficient heating, ventilation, and air conditioning systems that enhance comfort and air quality in your buildings. Our approach ensures compliance with local regulations and international standards.'
+              serviceIncludeName: 'Electrical System Installation',
+              serviceIncludeDescription: 'Installation of power distribution systems, electrical panels, and wiring. Setup of lighting, control systems, and energy-efficient solutions.'
             },
             {
-              serviceIncludeName: 'Electrical Installations',
-              serviceIncludeDescription: 'Our comprehensive electrical services cover everything from wiring and lighting design to power distribution and backup systems. We prioritize safety and efficiency, ensuring that all installations are carried out by qualified professionals.'
+              serviceIncludeName: 'Mechanical System Installation',
+              serviceIncludeDescription: 'Installation of HVAC (Heating, Ventilation, and Air Conditioning) systems. Plumbing, piping, and mechanical equipment installation for buildings and industrial setups.'
             },
             {
-              serviceIncludeName: 'Plumbing Solutions',
-              serviceIncludeDescription: 'We provide reliable plumbing services that include the installation and maintenance of pipes, fixtures, and drainage systems. Our focus is on ensuring a steady supply of water while effectively managing waste.'
+              serviceIncludeName: 'Maintenance and Repairs',
+              serviceIncludeDescription: 'Routine maintenance of electrical and mechanical systems. Emergency repairs and troubleshooting to ensure system reliability.'
             },
             {
-              serviceIncludeName: 'Safety Systems',
-              serviceIncludeDescription: 'Safety is our top priority. We integrate advanced fire alarm systems, surveillance, and safety measures into your projects, ensuring the protection of both personnel and property.'
+              serviceIncludeName: 'Automation and Control Systems',
+              serviceIncludeDescription: 'Installation of automated systems for energy management and operational efficiency. Integration of sensors, controllers, and monitoring systems.'
             },
             {
-              serviceIncludeName: 'Automation',
-              serviceIncludeDescription: 'We specialize in smart building solutions, implementing automation and control systems that optimize energy consumption and enhance operational efficiency.'
+              serviceIncludeName: 'Power Generation and Distribution',
+              serviceIncludeDescription: 'Installation of backup generators, transformers, and switchgears. Management of power distribution networks for consistent electricity supply.'
+            },
+            {
+              serviceIncludeName: 'Pump and Valve Installation',
+              serviceIncludeDescription: 'Installation of pumps and valve systems for water, fluid, and gas control. Maintenance and repair of pumping stations and associated equipment.'
+            },
+            {
+              serviceIncludeName: 'Fire Fighting and Safety Systems',
+              serviceIncludeDescription: 'Installation of fire alarm systems, sprinklers, and extinguishers. Integration of safety systems, including emergency lighting and exit signage.'
+            },
+            {
+              serviceIncludeName: 'Testing and Commissioning',
+              serviceIncludeDescription: 'Thorough testing of electrical and mechanical systems to ensure proper functionality. Commissioning services for new installations to meet operational standards.'
             }
           ],
         serviceImageInfos: [
           {
             id: 'm01',
             name: 'construction-1',
-            description: 'We specialize in electromechanical works that integrate electrical and mechanical systems for efficient, sustainable solutions. Our skilled team ensures reliable installation and maintenance, enhancing the performance of your infrastructure.',
+            description: 'We specialize in electro-mechanical works, providing integrated solutions for electrical and mechanical systems in industrial, commercial, and residential projects. Our services include the installation, maintenance, and repair of advanced electrical and mechanical systems to ensure smooth and efficient operations.',
             keyPoints: [],
-            image: 'assets/img/website-images/electro-mech.jpg',
+            image: 'assets/img/website-images/electro-m-1.jpg',
             align: 'left',
           },
           {
@@ -412,50 +533,63 @@ export class ServicesUtil {
             name: 'maintenance-2',
             description: '',
             keyPoints: [
-              {keyPoints: 'Comprehensive solutions for HVAC, electrical, and plumbing systems.', icon: ''},
-              {keyPoints: 'Integration of automation and safety systems for optimized performance.', icon: ''},
-              {keyPoints: 'Expert installation and maintenance services to ensure reliability.', icon: ''},
-              {keyPoints: 'Energy-efficient designs and compliance with international standards.', icon: ''}
+              {keyPoints: 'Integration of electrical and mechanical systems for optimal performance.', icon: ''},
+              {keyPoints: 'Expertise in designing, installing, and maintaining complex systems.', icon: ''},
+              {keyPoints: 'Focus on energy efficiency, safety, and system longevity.', icon: ''},
+              {keyPoints: 'Specialized solutions for a wide range of industries..', icon: ''},
+              {keyPoints: 'Skilled team providing reliable, high-quality services for diverse projects..', icon: ''}
             ],
             align: 'right',
-            image: 'assets/img/website-images/electro-mech.jpg'
+            image: 'assets/img/website-images/electro-m.jpg'
           }
         ]
       },
       {
         serviceId: 8,
-        serviceName: 'Portable office & Accomodation',
+        serviceName: 'Portable office & Accommodation',
         serviceIcon: 'ti ti-building-skyscraper',
         serviceIncludes:
           [
             {
-              serviceIncludeName: 'Portable Office Units',
-              serviceIncludeDescription: 'Our portable offices are equipped with essential amenities, including furniture, internet access, and climate control. They are designed for ease of setup and relocation, making them perfect for temporary job sites.'
+              serviceIncludeName: 'Portable Office Design and Setup',
+              serviceIncludeDescription: 'Design and setup of temporary office spaces with necessary facilities. Custom layouts to include workstations, meeting rooms, and storage.'
             },
             {
-              serviceIncludeName: 'Accommodation Units',
-              serviceIncludeDescription: 'Our comfortable living quarters offer a homely atmosphere for workers on long-term projects. Each unit is furnished and equipped with essential utilities, ensuring a restful stay for your team.'
+              serviceIncludeName: 'Worker Accommodation Units',
+              serviceIncludeDescription: 'Provision of portable accommodation for workers, with sleeping quarters, sanitation, and common areas. Fully furnished and equipped for comfort and privacy.'
             },
             {
-              serviceIncludeName: 'Custom Solutions',
-              serviceIncludeDescription: 'We understand that every project has unique requirements. Our team works closely with you to customize units according to your specifications, including layout, size, and features.'
+              serviceIncludeName: 'Mobile Units for Remote Locations',
+              serviceIncludeDescription: 'Setup of mobile offices and accommodations for projects in remote or construction sites. Includes integrated systems such as electricity, water, and waste management.'
             },
             {
-              serviceIncludeName: 'Rapid Deployment',
-              serviceIncludeDescription: 'We pride ourselves on our ability to deliver and set up portable offices and accommodation units quickly, minimizing disruption to your project timeline.'
+              serviceIncludeName: 'Modular Units',
+              serviceIncludeDescription: 'Modular designs for scalable solutions, allowing easy expansion or reconfiguration. Units can be stacked or joined to create larger spaces.'
             },
             {
-              serviceIncludeName: 'Sustainability',
-              serviceIncludeDescription: 'Our portable solutions are built with eco-friendly materials and energy-efficient designs to reduce your project\'s environmental impact. We are committed to promoting sustainability in all our offerings.'
+              serviceIncludeName: 'Utility and Support Systems',
+              serviceIncludeDescription: 'Installation of power, water, HVAC (heating, ventilation, air conditioning), and waste management systems. Solar-powered and energy-efficient options available for sustainable solutions.'
+            },
+            {
+              serviceIncludeName: 'Transportation and Relocation',
+              serviceIncludeDescription: 'Delivery and transportation of portable units to project sites. Quick relocation services for changing site requirements.'
+            },
+            {
+              serviceIncludeName: 'Maintenance and Repairs',
+              serviceIncludeDescription: 'Routine maintenance of portable office and accommodation units. Repairs and upgrades as necessary to maintain functionality and comfort.'
+            },
+            {
+              serviceIncludeName: 'Customization and Branding',
+              serviceIncludeDescription: 'Customization of units with company logos, colors, and specific design features. Optional additions such as furniture, IT infrastructure, and communication systems.'
             }
           ],
         serviceImageInfos: [
           {
             id: 'm01',
             name: 'construction-1',
-            description: 'We provide innovative portable office and accommodation solutions designed for the construction industry. Our mobile structures offer comfort and functionality, ensuring your team has a productive workspace and restful living quarters on-site.',
+            description: 'We offer high-quality portable office and accommodation solutions designed for temporary or mobile use. These units provide a cost-effective, flexible, and comfortable alternative for on-site offices, worker accommodations, or remote project locations.',
             keyPoints: [],
-            image: 'assets/img/website-images/portable-office.jpg',
+            image: 'assets/img/website-images/portable-s.jpg',
             align: 'left',
           },
           {
@@ -463,10 +597,11 @@ export class ServicesUtil {
             name: 'maintenance-2',
             description: '',
             keyPoints: [
-              {keyPoints: 'Quick and efficient setup of fully equipped portable offices.', icon: ''},
-              {keyPoints: 'Comfortable, furnished accommodation units for workers on long-term projects.', icon: ''},
-              {keyPoints: 'Customizable designs to meet specific project requirements.', icon: ''},
-              {keyPoints: 'Built for sustainability with eco-friendly materials and energy-efficient systems.', icon: ''},
+              {keyPoints: 'Customizable portable units for office and living spaces.', icon: ''},
+              {keyPoints: 'Quick setup and relocation for temporary needs.', icon: ''},
+              {keyPoints: 'Energy-efficient and well-insulated for comfort.', icon: ''},
+              {keyPoints: 'Flexible design options to suit project requirements.', icon: ''},
+              {keyPoints: 'Durable and secure structures for various industries and applications.', icon: ''},
             ],
             align: 'right',
             image: 'assets/img/website-images/portable-office.jpg'
@@ -596,6 +731,7 @@ export class ServicesUtil {
               {keyPoints: 'Preventive care to avoid electrical faults.', icon: ''},
             ],
             align: 'right',
+            image: 'assets/img/website-images/electrical-maintenance-1.jpeg',
           }
         ]
       },
@@ -671,20 +807,38 @@ export class ServicesUtil {
         serviceIncludes:
           [
             {
-              serviceIncludeName: 'Roof and Wall Waterproofing',
-              serviceIncludeDescription: 'We apply advanced waterproofing membranes to protect roofs, walls, and basements from water infiltration, ensuring your building remains dry and secure.'
+              serviceIncludeName: 'Roof Waterproofing',
+              serviceIncludeDescription: 'Installation of protective coatings and membranes to prevent leaks. Solutions for flat, pitched, and sloped roofs to protect from rain and humidity.'
             },
             {
-              serviceIncludeName: 'Roof Insulation',
-              serviceIncludeDescription: 'Our insulation services ensure that your building is energy-efficient, keeping interiors comfortable and reducing heating and cooling costs.'
+              serviceIncludeName: 'Basement Waterproofing',
+              serviceIncludeDescription: 'Waterproofing of basement walls and floors to prevent water seepage. Installation of drainage systems and vapor barriers for added protection.'
             },
             {
-              serviceIncludeName: 'Moisture Control Solutions',
-              serviceIncludeDescription: 'We offer moisture management systems that prevent mold and dampness, enhancing the health and safety of your buildings.'
+              serviceIncludeName: 'Foundation Waterproofing',
+              serviceIncludeDescription: 'Treatment of foundation walls and surfaces to block water ingress. Installation of exterior and interior drainage systems to manage water flow.'
+            },
+            {
+              serviceIncludeName: 'Wall and Surface Waterproofing',
+              serviceIncludeDescription: 'Application of sealants, coatings, and membranes for external and internal walls. Protection against moisture, mold, and mildew buildup.'
             },
             {
               serviceIncludeName: 'Thermal Insulation',
-              serviceIncludeDescription: 'We install high-performance thermal insulation systems that enhance energy efficiency while reducing environmental impact.'
+              serviceIncludeDescription: 'Installation of insulation materials to improve thermal efficiency. Solutions for walls, ceilings, floors, and roofs to reduce energy costs.'
+            },
+            {
+              serviceIncludeName: 'Pipe and Plumbing Insulation',
+              serviceIncludeDescription: 'Insulation for water pipes, HVAC ducts, and plumbing systems to prevent energy loss.Protection against freezing in colder climates.'
+            },
+            {
+              serviceIncludeName: 'Sound Insulation',
+              serviceIncludeDescription: 'Installation of soundproofing materials to reduce noise pollution. Effective insulation for walls, floors, and ceilings to improve acoustic comfort.'
+            },{
+              serviceIncludeName: 'Moisture and Dampness Control',
+              serviceIncludeDescription: 'Damp-proofing treatment for areas prone to excess moisture. Solutions for moisture control in commercial and residential properties.'
+            },{
+              serviceIncludeName: 'Insulation for Industrial and Commercial Projects',
+              serviceIncludeDescription: 'Customized insulation solutions for warehouses, factories, and office buildings. High-performance materials for energy efficiency and temperature regulation.'
             },
 
           ],
@@ -692,7 +846,7 @@ export class ServicesUtil {
           {
             id: 'm01',
             name: 'maintenance-1',
-            description: 'We provide comprehensive waterproofing and insulation services to protect your structures from moisture damage and improve energy efficiency',
+            description: 'We offer professional waterproofing and insulation services to protect buildings from water damage and ensure energy efficiency. Our services help extend the lifespan of structures by preventing moisture infiltration and improving thermal comfort.',
             keyPoints: [],
             image: 'assets/img/website-images/water-proofing.jpeg',
             align: 'left',
@@ -702,404 +856,17 @@ export class ServicesUtil {
             name: 'maintenance-2',
             description: '',
             keyPoints: [
-              {keyPoints: 'Advanced waterproofing solutions for roofs, walls, and basements.', icon: ''},
-              {keyPoints: 'Thermal insulation services to improve energy efficiency and comfort.', icon: ''},
-              {keyPoints: 'Moisture control systems to prevent mold and dampness.', icon: ''},
-              {keyPoints: 'Custom solutions designed to protect buildings from environmental damage.', icon: ''}
+              {keyPoints: 'Expert solutions for preventing water damage and moisture penetration.', icon: ''},
+              {keyPoints: 'Energy-efficient insulation for temperature control and cost savings.', icon: ''},
+              {keyPoints: 'Comprehensive protection for roofs, basements, foundations, and walls.', icon: ''},
+              {keyPoints: 'Use of advanced materials and techniques for long-lasting results.', icon: ''},
+              {keyPoints: 'Enhancing building durability and comfort.', icon: ''}
             ],
             align: 'right',
-            image: 'assets/img/website-images/water-proofing.jpeg'
+            image: 'assets/img/website-images/water-s.jpg'
           }
         ]
       }
     ]
   }
-
-  /*
-    public static getServiceSubCategory(): ServiceModel[] {
-    return [
-      {
-        serviceId: 0,
-        serviceName: 'Electrical Substation Construction',
-        serviceIcon: 'ti ti-solar-panel',
-        serviceDescription: 'We specialize in the construction of electrical substations, ensuring the safe and efficient\n' +
-          '          distribution of electrical power. Our experienced team handles all aspects of substation design,\n' +
-          '          installation, and commissioning, adhering to industry standards and regulations.',
-        serviceKeyPoints: [
-          {keyPoints: 'Design, construction, and maintenance of high-efficiency substations.', icon: 'ti ti-solar-panel'},
-          {keyPoints: 'Compliance with safety and operational standards for reliable power distribution.', icon: 'ti ti-solar-panel'},
-          {keyPoints: 'Expertise in testing, commissioning, and preventive maintenance.', icon: 'ti ti-solar-panel'},
-          {keyPoints: 'Custom substation designs tailored to project-specific power needs.', icon: 'ti ti-solar-panel'}
-        ],
-        serviceIncludes:
-          [
-            {
-              serviceIncludeName: 'Substation Design',
-              serviceIncludeDescription: 'We offer tailored substation designs that meet your project’s power requirements, ensuring both efficiency and reliability.'
-            },
-            {
-              serviceIncludeName: 'Installation and Commissioning',
-              serviceIncludeDescription: 'Our team handles the complete installation and commissioning of substations, ensuring they are operational and compliant with local regulations.'
-            },
-            {
-              serviceIncludeName: 'Maintenance and Upgrades',
-              serviceIncludeDescription: 'We provide ongoing maintenance and upgrades to ensure that your substation continues to operate at peak performance, minimizing downtime and extending its lifespan.'
-            },
-            {
-              serviceIncludeName: 'Safety Systems',
-              serviceIncludeDescription: 'We prioritize safety by integrating protective equipment and automation systems into every substation, ensuring compliance with international safety standards.'
-            }
-          ],
-        images: ['assets/img/website-images/electric-substation.jpg']
-      },
-      {
-        serviceId: 1,
-        serviceName: 'Industrial and Commercial Building Construction',
-        serviceIcon: 'ti ti-building-factory-2',
-        serviceDescription: 'We specialize in delivering top-tier industrial and commercial construction services tailored to meet the needs of various industries.\n' +
-          'Our team ensures that each project is built to the highest standards, combining innovation, quality materials, and precision in execution.',
-        serviceKeyPoints: [
-          {keyPoints: 'Custom construction of durable industrial and commercial buildings.', icon: 'ti ti-building-factory-2'},
-          {keyPoints: 'Expertise in warehouses, factories, office buildings, and retail spaces.', icon: 'ti ti-building-factory-2'},
-          {keyPoints: 'Efficient project management to ensure timely and cost-effective delivery.', icon: 'ti ti-building-factory-2'},
-          {keyPoints: 'Sustainable building practices for long-lasting, eco-friendly structures.', icon: 'ti ti-building-factory-2'}
-        ],
-        serviceIncludes:
-          [
-            {
-              serviceIncludeName: 'Design and Planning',
-              serviceIncludeDescription: 'We work closely with clients to develop building designs that meet both their functional and aesthetic requirements. Our designs incorporate modern technology and sustainability principles.'
-            },
-            {
-              serviceIncludeName: 'Construction Management',
-              serviceIncludeDescription: 'We oversee every aspect of the construction process, ensuring that your project is completed on time, within budget, and to the highest standards of quality.'
-            },
-            {
-              serviceIncludeName: 'Safety and Compliance',
-              serviceIncludeDescription: 'Our team ensures that all construction projects comply with local building codes and safety regulations, protecting both workers and future occupants.'
-            },
-            {
-              serviceIncludeName: 'Fit-out and Customization',
-              serviceIncludeDescription: 'We offer interior fit-out services tailored to your specific business needs, ensuring that your space is optimized for productivity.'
-            }
-          ],
-        images: ['assets/img/website-images/industrial.jpg']
-      },
-      {
-        serviceId: 2,
-        serviceName: 'Residential Building Construction',
-        serviceIcon: 'ti ti-home-check',
-        serviceDescription: 'We construct high-quality residential buildings, including single-family homes, apartments, and \n' +
-          'villas. Our commitment to excellence ensures that every project is completed on time and meets\n' +
-          'the unique preferences of our clients.',
-        serviceKeyPoints: [
-          {keyPoints: 'Custom home design and construction tailored to client preferences.', icon: 'ti ti-home-check'},
-          {keyPoints: 'Expertise in multi-unit residential complexes and apartment buildings.', icon: 'ti ti-home-check'},
-          {keyPoints: 'Sustainable materials and energy-efficient systems for modern living.', icon: 'ti ti-home-check'},
-          {keyPoints: 'Focus on combining aesthetics with functionality for high-quality homes.', icon: 'ti ti-home-check'}
-        ],
-        serviceIncludes:
-          [
-            {
-              serviceIncludeName: 'Custom Home Design',
-              serviceIncludeDescription: 'We work closely with homeowners to create personalized home designs that reflect their vision and lifestyle, incorporating modern conveniences and sustainable practices.'
-            },
-            {
-              serviceIncludeName: 'Construction Management',
-              serviceIncludeDescription: 'Our team manages the entire construction process, ensuring timely completion and attention to detail at every stage.'
-            },
-            {
-              serviceIncludeName: 'Sustainable Building Practices',
-              serviceIncludeDescription: 'We integrate eco-friendly materials and energy-efficient technologies into our builds, helping homeowners reduce their environmental footprint.'
-            },
-            {
-              serviceIncludeName: 'Renovation and Remodeling',
-              serviceIncludeDescription: 'We also offer renovation and remodeling services to upgrade existing homes, ensuring they meet modern standards of comfort and efficiency.'
-            },
-
-          ],
-        images: ['assets/img/website-images/residential-cons.jpg']
-      },
-      {
-        serviceId: 3,
-        serviceName: 'Pre-engineered Steel Buildings',
-        serviceIcon: 'ti ti-building-estate',
-        serviceDescription: 'Our pre-engineered steel buildings provide a versatile solution for various applications, including\n' +
-          'warehouses and industrial facilities. These structures are designed for durability, quick installation,\n' +
-          'and cost-effectiveness',
-        serviceKeyPoints: [
-          {keyPoints:'Cost-effective and durable steel structures for industrial and commercial use.', icon: 'ti ti-building-estate'},
-          {keyPoints:'Fast and efficient assembly, reducing construction time and costs.', icon: 'ti ti-building-estate'},
-          {keyPoints:'Customizable designs to meet project-specific requirements.', icon: 'ti ti-building-estate'},
-          {keyPoints:'Long-lasting, low-maintenance solutions resistant to environmental factors.', icon: 'ti ti-building-estate'}
-        ],
-        serviceIncludes:
-          [
-            {
-              serviceIncludeName: 'Design and Fabrication',
-              serviceIncludeDescription: 'We work with you to design custom pre-engineered steel buildings that meet your specific requirements. Our fabrication process ensures precision and high-quality materials.'
-            },
-            {
-              serviceIncludeName: 'Quick Assembly',
-              serviceIncludeDescription: 'Pre-engineered buildings are designed for rapid assembly, minimizing construction time and reducing overall costs.'
-            },
-            {
-              serviceIncludeName: 'Durability and Versatility',
-              serviceIncludeDescription: 'Our steel buildings are built to withstand harsh environmental conditions and are versatile enough for a wide range of applications.'
-            },
-            {
-              serviceIncludeName: 'Maintenance and Expansion',
-              serviceIncludeDescription: 'We offer maintenance services to keep your steel buildings in top condition and provide options for future expansions as your business grows.'
-            }
-          ],
-        images: ['assets/img/website-images/steel-building.jpg']
-      },
-      {
-        serviceId: 4,
-        serviceName: 'Cladding and Glass Solutions',
-        serviceIcon: 'ti ti-building',
-        serviceDescription: 'we offer comprehensive Cladding and Glass Solutions designed to transform buildings with a modern and sleek look.\n' +
-          'Our focus on quality materials like aluminium cladding and glass panels ensures not only aesthetic excellence\n' +
-          'but also long-term durability and protection against environmental factors.',
-        serviceKeyPoints: [
-          {keyPoints: 'Aesthetic cladding systems for enhanced weather protection and insulation.', icon: 'ti ti-building'},
-          {keyPoints: 'Sleek glass facades that maximize natural light and energy efficiency.', icon: 'ti ti-building'},
-          {keyPoints: 'Customizable designs to meet architectural visions.', icon: 'ti ti-building'},
-          {keyPoints: 'Sustainable materials that improve building performance and reduce energy costs.', icon: 'ti ti-building'},
-        ],
-        serviceIncludes:
-          [
-            {
-              serviceIncludeName: 'Cladding Systems',
-              serviceIncludeDescription: 'We provide a variety of cladding materials, including metal, stone, and composite panels, that offer both protection and style for your building’s exterior.'
-            },
-            {
-              serviceIncludeName: 'Glass Facades',
-              serviceIncludeDescription: 'Our glass facade systems are designed to create striking, light-filled spaces while ensuring energy efficiency and durability.'
-            },
-            {
-              serviceIncludeName: 'Curtain Wall Systems',
-              serviceIncludeDescription: 'We specialize in curtain wall systems that combine glass and other materials to create sleek, modern exteriors.'
-            },
-            {
-              serviceIncludeName: 'Maintenance and Repair',
-              serviceIncludeDescription: 'In addition to installation, we offer maintenance and repair services to keep your cladding and glass systems looking and performing their best.'
-            }
-          ],
-        images: ['assets/img/website-images/cladding-and-glass.jpg']
-      },
-      {
-        serviceId: 5,
-        serviceName: 'Waterproofing and Insulation Services',
-        serviceIcon: 'ti ti-beach',
-        serviceDescription: 'We provide comprehensive waterproofing and insulation services to protect your structures\n' +
-          'from moisture damage and improve energy efficiency',
-        serviceKeyPoints: [
-          {keyPoints: 'Advanced waterproofing solutions for roofs, walls, and basements.', icon: ''},
-          {keyPoints: 'Thermal insulation services to improve energy efficiency and comfort.', icon: ''},
-          {keyPoints: 'Moisture control systems to prevent mold and dampness.', icon: ''},
-          {keyPoints: 'Custom solutions designed to protect buildings from environmental damage.', icon: ''},
-        ],
-        serviceIncludes:
-          [
-            {
-              serviceIncludeName: 'Roof and Wall Waterproofing',
-              serviceIncludeDescription: 'We apply advanced waterproofing membranes to protect roofs, walls, and basements from water infiltration, ensuring your building remains dry and secure.'
-            },
-            {
-              serviceIncludeName: 'Roof Insulation',
-              serviceIncludeDescription: 'Our insulation services ensure that your building is energy-efficient, keeping interiors comfortable and reducing heating and cooling costs.'
-            },
-            {
-              serviceIncludeName: 'Moisture Control Solutions',
-              serviceIncludeDescription: 'We offer moisture management systems that prevent mold and dampness, enhancing the health and safety of your buildings.'
-            },
-            {
-              serviceIncludeName: 'Thermal Insulation',
-              serviceIncludeDescription: 'We install high-performance thermal insulation systems that enhance energy efficiency while reducing environmental impact.'
-            },
-
-          ],
-        images: ['assets/img/website-images/water-proofing.jpeg']
-      },
-      {
-        serviceId: 6,
-        serviceName: 'Electro Mechanical Works',
-        serviceIcon: 'ti ti-solar-electricity',
-        serviceDescription: 'We specialize in electromechanical works that integrate electrical and mechanical systems for efficient, sustainable solutions. Our skilled team ensures reliable installation and maintenance, enhancing the performance of your infrastructure.',
-        serviceKeyPoints:
-          [
-            {keyPoints: 'Comprehensive solutions for HVAC, electrical, and plumbing systems.', icon: ''},
-            {keyPoints: 'Integration of automation and safety systems for optimized performance.', icon: ''},
-            {keyPoints: 'Expert installation and maintenance services to ensure reliability.', icon: ''},
-            {keyPoints: 'Energy-efficient designs and compliance with international standards.', icon: ''},
-          ],
-        serviceIncludes:
-          [
-            {
-              serviceIncludeName: 'HVAC Systems',
-              serviceIncludeDescription: 'We design and install energy-efficient heating, ventilation, and air conditioning systems that enhance comfort and air quality in your buildings. Our approach ensures compliance with local regulations and international standards.'
-            },
-            {
-              serviceIncludeName: 'Electrical Installations',
-              serviceIncludeDescription: 'Our comprehensive electrical services cover everything from wiring and lighting design to power distribution and backup systems. We prioritize safety and efficiency, ensuring that all installations are carried out by qualified professionals.'
-            },
-            {
-              serviceIncludeName: 'Plumbing Solutions',
-              serviceIncludeDescription: 'We provide reliable plumbing services that include the installation and maintenance of pipes, fixtures, and drainage systems. Our focus is on ensuring a steady supply of water while effectively managing waste.'
-            },
-            {
-              serviceIncludeName: 'Safety Systems',
-              serviceIncludeDescription: 'Safety is our top priority. We integrate advanced fire alarm systems, surveillance, and safety measures into your projects, ensuring the protection of both personnel and property.'
-            },
-            {
-              serviceIncludeName: 'Automation',
-              serviceIncludeDescription: 'We specialize in smart building solutions, implementing automation and control systems that optimize energy consumption and enhance operational efficiency.'
-            }
-          ],
-        images: ['assets/img/website-images/electro-mech.jpg']
-      },
-      {
-        serviceId: 7,
-        serviceName: 'Portable office & Accomodation',
-        serviceIcon: 'ti ti-building-skyscraper',
-        serviceDescription: 'We provide innovative portable office and accommodation solutions designed for the construction industry. Our mobile structures offer comfort and functionality, ensuring your team has a productive workspace and restful living quarters on-site.',
-        serviceKeyPoints:
-          [
-            {keyPoints: 'Quick and efficient setup of fully equipped portable offices.', icon: ''},
-            {keyPoints: 'Comfortable, furnished accommodation units for workers on long-term projects.', icon: ''},
-            {keyPoints: 'Customizable designs to meet specific project requirements.', icon: ''},
-            {keyPoints: 'Built for sustainability with eco-friendly materials and energy-efficient systems.', icon: ''},
-          ],
-        serviceIncludes:
-          [
-            {
-              serviceIncludeName: 'Portable Office Units',
-              serviceIncludeDescription: 'Our portable offices are equipped with essential amenities, including furniture, internet access, and climate control. They are designed for ease of setup and relocation, making them perfect for temporary job sites.'
-            },
-            {
-              serviceIncludeName: 'Accommodation Units',
-              serviceIncludeDescription: 'Our comfortable living quarters offer a homely atmosphere for workers on long-term projects. Each unit is furnished and equipped with essential utilities, ensuring a restful stay for your team.'
-            },
-            {
-              serviceIncludeName: 'Custom Solutions',
-              serviceIncludeDescription: 'We understand that every project has unique requirements. Our team works closely with you to customize units according to your specifications, including layout, size, and features.'
-            },
-            {
-              serviceIncludeName: 'Rapid Deployment',
-              serviceIncludeDescription: 'We pride ourselves on our ability to deliver and set up portable offices and accommodation units quickly, minimizing disruption to your project timeline.'
-            },
-            {
-              serviceIncludeName: 'Sustainability',
-              serviceIncludeDescription: 'Our portable solutions are built with eco-friendly materials and energy-efficient designs to reduce your project\'s environmental impact. We are committed to promoting sustainability in all our offerings.'
-            }
-          ],
-        images: ['assets/img/website-images/portable-office.jpg']
-      },
-      {
-        serviceId: 8,
-        serviceName: 'Security fencing installation & general work',
-        serviceIcon: 'ti ti-shield-lock',
-        serviceDescription: 'Our comprehensive security fencing installation services safeguard your construction site while enhancing site organization. We offer custom solutions tailored to your needs, ensuring your project remains secure and well-structured.',
-        serviceKeyPoints:
-          [
-            {keyPoints: 'Custom fencing solutions for enhanced site security and access control.', icon: ''},
-            {keyPoints: 'Comprehensive site organization services to maximize safety and efficiency.', icon: ''},
-            {keyPoints: 'Ongoing maintenance to ensure fencing systems remain effective.\n', icon: ''},
-            {keyPoints: 'Expertise in access control systems to manage site entry and exit.\n', icon: ''},
-          ],
-        serviceIncludes:
-          [
-            {
-              serviceIncludeName: 'Custom Fencing Solutions',
-              serviceIncludeDescription: 'We offer a range of fencing options, including chain-link, barbed wire, and decorative fencing, tailored to fit the unique requirements of your site. Our team will assess your security needs and recommend the best solution.'
-            },
-            {
-              serviceIncludeName: 'Site Organization',
-              serviceIncludeDescription: 'Effective organization of your construction site is essential for productivity and safety. We help plan and implement site layouts that optimize space usage while maintaining safety and security.'
-            },
-            {
-              serviceIncludeName: 'Maintenance Services',
-              serviceIncludeDescription: 'We provide ongoing maintenance for installed fencing systems, ensuring they remain secure and effective throughout your project’s duration.'
-            },
-            {
-              serviceIncludeName: 'Access Control',
-              serviceIncludeDescription: 'We implement access control measures, including gates and entry systems, to manage who can enter and exit your site. This ensures that only authorized personnel have access to critical areas.'
-            },
-            {
-              serviceIncludeName: 'Consultation and Planning',
-              serviceIncludeDescription: 'Our experienced team offers consultation services to assess your security needs and develop a comprehensive plan tailored to your project.'
-            }
-          ],
-        images: ['assets/img/website-images/fencing.jpg']
-      },
-      {
-        serviceId: 9,
-        serviceName: 'Concrete repair and Rehabilitation',
-        serviceIcon: 'ti ti-geometry',
-        serviceDescription: 'At Yousef Saleh Yousef, we specialize in concrete repair and rehabilitation services that extend the lifespan of your structures. Our expert team utilizes advanced techniques to restore integrity and functionality, ensuring safety and durability.',
-        serviceKeyPoints:
-          [
-            {keyPoints: 'Expert crack repair and surface restoration for damaged concrete.', icon: ''},
-            {keyPoints: 'Reinforcement solutions to improve load-bearing capacity.', icon: ''},
-            {keyPoints: 'Preventive maintenance strategies to extend the lifespan of structures.', icon: ''},
-            {keyPoints: 'Consultation services to develop tailored rehabilitation plans.', icon: ''},
-          ],
-        serviceIncludes:
-          [
-            {
-              serviceIncludeName: 'Crack Repair',
-              serviceIncludeDescription: 'We utilize specialized techniques to address cracks and surface imperfections, preventing further deterioration and restoring structural integrity.'
-            },
-            {
-              serviceIncludeName: 'Surface Restoration',
-              serviceIncludeDescription: 'Our team employs advanced methods to restore the appearance and durability of concrete surfaces, enhancing both aesthetics and functionality.'
-            },
-            {
-              serviceIncludeName: 'Reinforcement',
-              serviceIncludeDescription: 'We provide reinforcement solutions that improve the load-bearing capacity of your structures, ensuring they meet safety standards and regulations.'
-            },
-            {
-              serviceIncludeName: 'Preventive Maintenance',
-              serviceIncludeDescription: 'Our preventive maintenance strategies are designed to prolong the lifespan of your concrete structures, reducing the need for costly repairs in the future.'
-            }
-          ],
-        images: ['assets/img/website-images/concrete.jpg']
-      },
-      {
-        serviceId: 10,
-        serviceName: 'Asphalting & Road Works',
-        serviceIcon: 'ti ti-backhoe',
-        serviceDescription: 'We offer professional asphalting and road work services, ensuring high-quality surface finishes that stand the test of time. Our experienced team is committed to delivering durable solutions for roadways, parking lots, and other essential infrastructures.',
-        serviceKeyPoints:
-          [
-            {keyPoints: 'High-quality paving solutions for roads, parking lots, and other surfaces.', icon: ''},
-            {keyPoints: 'Regular maintenance and repair services to extend surface life.', icon: ''},
-            {keyPoints: 'Site preparation to ensure optimal asphalting results.', icon: ''},
-            {keyPoints: 'Compliance with environmental and sustainability standards.', icon: ''},
-          ],
-        serviceIncludes:
-          [
-            {
-              serviceIncludeName: 'Paving Solutions',
-              serviceIncludeDescription: 'Our asphalting services cover everything from small parking lots to large roadways. We use premium materials and proven techniques to deliver a smooth, durable surface.'
-            },
-            {
-              serviceIncludeName: 'Maintenance Services',
-              serviceIncludeDescription: 'We provide regular maintenance and repair services for asphalt surfaces, ensuring they remain in excellent condition and extend their lifespan.'
-            },
-            {
-              serviceIncludeName: 'Site Preparation',
-              serviceIncludeDescription: 'Comprehensive site assessments and preparation are critical for successful asphalting. Our team ensures that the site is adequately prepared to achieve optimal results.'
-            },
-            {
-              serviceIncludeName: 'Environmental Compliance',
-              serviceIncludeDescription: 'We adhere to local regulations and sustainability practices, ensuring our asphalting processes minimize environmental impact.'
-            }
-          ],
-        images: ['assets/img/website-images/asphalting.jpg']
-      }
-    ]
-  }
-  */
 }
