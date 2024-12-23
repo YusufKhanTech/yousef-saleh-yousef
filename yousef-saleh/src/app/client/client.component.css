@@ -4,6 +4,7 @@
 }
 
 .clients-carousel {
+  margin-top: 40px;
   white-space: nowrap;
   display: flex;
   width: 100%;
