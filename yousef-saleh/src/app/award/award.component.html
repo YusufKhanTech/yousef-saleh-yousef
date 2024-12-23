@@ -3,6 +3,31 @@
                     [breadcrumbTexts]="breadcrumbTexts">
 </app-banner-content>
 <div class="award-columns">
+  <div>
+    <app-heading-content title="Awards and Certificates"
+                         subTitle="subTitle">
+    </app-heading-content>
+    <div class="our-award-container">
+      <div class="iso-award-carousel">
+        <div class="iso-award-track" #aFourRecognitionCarousel>
+          @for(aFourRecognitionCertificate of aFourRecognitionCertificates; track aFourRecognitionCertificate?.certificateId; let i = $index){
+            <div class="award-item">
+              <img class="award-logo"
+                   [src]="aFourRecognitionCertificate.image"
+                   [alt]="aFourRecognitionCertificate.certificateName"
+                   (click)="openPopup(aFourRecognitionCertificate?.image)"/>
+            </div>
+          }
+        </div>
+        @if (isSmallScreen) {
+          <div class="carousel-button">
+            <i class="ti ti-arrow-narrow-left" (click)="scrollLeft(CERTIFICATE_TYPE.A_FOUR_COMMERCIAL)"></i>
+            <i class="ti ti-arrow-narrow-right" (click)="scrollRight(CERTIFICATE_TYPE.A_FOUR_COMMERCIAL)"></i>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
 	<div>
 		<app-heading-content title="Commercial Certificates"
                          subTitle="subTitle">
@@ -10,9 +35,9 @@
 		<div class="our-award-container">
 		  <div class="certificate-carousel">
         <div class="certificate-detail" #carousel>
-          @for(commercialCertificate of commercialCertificates; track commercialCertificate) {
-          <img [src]="commercialCertificate?.image"
-             (click)="openPopup(commercialCertificate?.image)"/>
+          @for(commercialCertificate of commercialCertificates; track commercialCertificate?.certificateId) {
+            <img [src]="commercialCertificate?.image"
+               (click)="openPopup(commercialCertificate?.image)"/>
           }
         </div>
         @if(isSmallScreen){
@@ -66,31 +91,6 @@
           </div>
         }
 		  </div>
-		</div>
-	</div>
-	<div>
-		<app-heading-content title="Awards and Certificates"
-                         subTitle="subTitle">
-		</app-heading-content>
-		<div class="our-award-container">
-      <div class="iso-award-carousel">
-        <div class="iso-award-track" #aFourRecognitionCarousel>
-          @for(aFourRecognitionCertificate of aFourRecognitionCertificates; track aFourRecognitionCertificate?.certificateId; let i = $index){
-            <div class="award-item">
-              <img class="award-logo"
-                   [src]="aFourRecognitionCertificate.image"
-                   [alt]="aFourRecognitionCertificate.certificateName"
-                   (click)="openPopup(aFourRecognitionCertificate?.image)"/>
-            </div>
-          }
-        </div>
-        @if (isSmallScreen) {
-          <div class="carousel-button">
-            <i class="ti ti-arrow-narrow-left" (click)="scrollLeft(CERTIFICATE_TYPE.A_FOUR_COMMERCIAL)"></i>
-            <i class="ti ti-arrow-narrow-right" (click)="scrollRight(CERTIFICATE_TYPE.A_FOUR_COMMERCIAL)"></i>
-          </div>
-        }
-      </div>
 		</div>
 	</div>
 	<div>
