@@ -20,7 +20,6 @@ export class AwardComponent {
 
   @ViewChild('carousel', { static: false }) carousel!: ElementRef;
   @ViewChild('aFourCarousel', { static: false }) aFourCarousel!: ElementRef;
-  // @ViewChild('recognitionCarousel', { static: false }) recognitionCarousel!: ElementRef;
   @ViewChild('isoCarousel', { static: false }) isoCarousel!: ElementRef;
   @ViewChild('aFourRecognitionCarousel', { static: false }) aFourRecognitionCarousel!: ElementRef;
   @ViewChild('preCarousel', { static: false }) preCarousel!: ElementRef;
@@ -39,8 +38,9 @@ export class AwardComponent {
   @HostListener('window:resize', [])
   onResize(): void {
     this.isSmallScreen = window.innerWidth <= 768;
-    this.scrollAmount = 360;
+    this.scrollAmount = 400;
   }
+
   openPopup(src: string | undefined): void {
     this.popupImageSrc = src;
     this.isPopupOpen = true;
