@@ -38,7 +38,7 @@ export class AwardComponent {
   @HostListener('window:resize', [])
   onResize(): void {
     this.isSmallScreen = window.innerWidth <= 768;
-    this.scrollAmount = 400;
+    this.scrollAmount = 358;
   }
 
   openPopup(src: string | undefined): void {
