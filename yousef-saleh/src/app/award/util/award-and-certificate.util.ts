@@ -5,30 +5,24 @@ export class AwardAndCertificateUtil {
   public static commercialCertificates: AwardAndCertificate[] = [
     { certificateId: 'cc01', certificateName: 'registeration', image: '/assets/img/awards/cc-registeration.jpeg' },
     { certificateId: 'cc02', certificateName: 'rcjy-logo', image: '/assets/img/awards/cc-1.jpeg' },
-    { certificateId: 'cc03', certificateName: 'chamber', image: '/assets/img/awards/cc-chamber.jpeg' },
-    { certificateId: 'cc04', certificateName: 'monshaat', image: '/assets/img/awards/cc-monshaat.jpeg' }
+    { certificateId: 'cc03', certificateName: 'chamber', image: '/assets/img/awards/cc-chamber.jpeg' }
   ];
 
   public static aFourCommercialCertificates: AwardAndCertificate[] = [
     { certificateId: 'acc01', certificateName: 'vat', image: '/assets/img/awards/cc-vat.jpeg' },
     { certificateId: 'acc02', certificateName: 'zakat-1', image: '/assets/img/awards/cc-zakat-1.jpeg' },
-    { certificateId: 'acc03', certificateName: 'zakat', image: '/assets/img/awards/cc-zakat.jpeg' },
+    { certificateId: 'acc03', certificateName: 'zakat', image: '/assets/img/awards/cc-zakat.jpeg' }
   ];
 
   public static preQualifiedCertificates: AwardAndCertificate[] = [
     { certificateId: 'pqc01', certificateName: 'saudi-electricity', image: '/assets/img/awards/pq-saudi-electricity.jpeg' },
-    { certificateId: 'pqc02', certificateName: 'saudi-electricity-1', image: '/assets/img/awards/pq-saudi-electricity-1.jpeg' },
+    { certificateId: 'pqc02', certificateName: 'saudi-electricity-1', image: '/assets/img/awards/pq-saudi-electricity-1.jpeg' }
   ];
 
   public static  isoCertificates: AwardAndCertificate[] = [
     { certificateId: 'ic01', certificateName: '9001-2015', image: '/assets/img/awards/9001-2015.jpeg' },
     { certificateId: 'ic02', certificateName: '14001-2015', image: '/assets/img/awards/14001-2015.jpeg' },
-    { certificateId: 'ic03', certificateName: '45001-2018', image: '/assets/img/awards/45001-2018.jpeg' },
-  ];
-
-  public static  recognitionCertificates: AwardAndCertificate[] = [
-    { certificateId: 'rc01', certificateName: 'civil-defense', image: '/assets/img/awards/COA-civil-defense.jpeg' },
-    { certificateId: 'rc02', certificateName: 'nc', image: '/assets/img/awards/COA-nc.jpeg' },
+    { certificateId: 'ic03', certificateName: '45001-2018', image: '/assets/img/awards/45001-2018.jpeg' }
   ];
 
   public static  aFourRecognitionCertificates: AwardAndCertificate[] = [
@@ -47,24 +41,10 @@ export class AwardAndCertificateUtil {
         return this.preQualifiedCertificates;
       case CERTIFICATE_TYPE.ISO:
         return this.isoCertificates;
-      case CERTIFICATE_TYPE.RECOGNITION:
-        return this.recognitionCertificates;
       case CERTIFICATE_TYPE.A_FOUR_RECOGNITION:
         return this.aFourRecognitionCertificates;
       default:
         return [];
     }
-  }
-
-  getCertificateById(id: string): AwardAndCertificate[] {
-    const allCertificates = [
-      ...AwardAndCertificateUtil.commercialCertificates,
-      ...AwardAndCertificateUtil.preQualifiedCertificates,
-      ...AwardAndCertificateUtil.isoCertificates,
-      ...AwardAndCertificateUtil.recognitionCertificates,
-    ];
-    const foundCertificate = allCertificates
-      .find((certificate) => certificate.certificateId === id);
-    return foundCertificate ? [foundCertificate] : [];
   }
 }

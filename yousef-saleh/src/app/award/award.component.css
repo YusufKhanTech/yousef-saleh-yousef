@@ -1,5 +1,5 @@
 .our-award-container {
-  width: 80%;
+  width: 85%;
   margin: 20px auto;
 }
 
@@ -31,7 +31,6 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .award-logo {
@@ -79,7 +78,6 @@
 
 .certificate-carousel {
   overflow: hidden;
-  margin-top: 50px;
   position: relative;
 }
 
@@ -100,8 +98,8 @@
 
 .certificate-detail img {
   border-radius: 8px;
-  width: 366px;
-  height: auto;
+  width: 306px;
+  height: 212px;
   border: 2px solid #364d59;
 }
 
@@ -125,14 +123,22 @@
   border-radius: 50%;
   margin: 22px;
 }
-
+@media (min-width: 1541px) {
+  .our-award-container {
+    width: 70%;
+  }
+  .certificate-image{
+    margin-top: 24px;
+    width: 426px !important;
+    height: auto !important;
+  }
+}
 @media (max-width: 768px) {
   .certificate-detail img {
-    width: 306px;
+    /*width: 100% !important;*/
   }
-
   .award-item .award-logo {
-    min-width: 306px;
+    min-width: 330px;
   }
 
   .a4-certificate-detail {

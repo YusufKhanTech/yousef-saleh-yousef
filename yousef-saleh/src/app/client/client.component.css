@@ -4,15 +4,19 @@
 }
 
 .clients-carousel {
+  margin-top: 40px;
+  white-space: nowrap;
+  display: flex;
   width: 100%;
   overflow: hidden;
   position: relative;
 }
 
 .clients-track {
-  display: flex;
+  margin-right: 60px;
+  display: inline-flex;
   gap: 60px;
-  animation: scroll 20s linear infinite;
+  animation: 35s scroll infinite linear;
 }
 
 .client-item {
