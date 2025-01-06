@@ -69,87 +69,15 @@ export class EmployeeUtil {
       },
       {
         id: 'tm02',
-        name: 'Emad Mohamed Murtada',
+        name: 'Emad Mohamed',
         designation: 'HR',
         image: 'assets/img/employees/emad.jpeg'
-      },
-      // {
-      //   id: 'tm03',
-      //   name: 'Saqib Naseer',
-      //   designation: 'Document Controller',
-      //   image: 'assets/img/employees/saqib.jpeg'
-      // },
-      {
-        id: 'tm04',
-        name: 'Mohammed Samid bashir Ulde',
-        designation: 'AutoCAD Draftsman & Supervisor',
-        image: 'assets/img/employees/samid.jpeg'
       },
       {
         id: 'tm05',
         name: 'Mohammad Arif Khan',
         designation: 'Project Engineer',
         image: 'assets/img/employees/arif.jpeg'
-      },
-      {
-        id: 'tm06',
-        name: 'Serajuddin Khan',
-        designation: 'Quantity Surveyor & Site Engineer',
-        image: 'assets/img/employees/serajuddin.jpeg'
-      },
-      {
-        id: 'tm07',
-        name: 'Mohd Kaleem ',
-        designation: 'Site Engineer',
-        image: 'assets/img/employees/kaleem.jpeg'
-      },
-      {
-        id: 'tm08',
-        name: 'Ali Tahir',
-        designation: 'Site Engineer',
-        image: 'assets/img/employees/ali.jpeg'
-      },
-      {
-        id: 'tm09',
-        name: 'Rethal Arabi',
-        designation: 'Site Engineer',
-        image: 'assets/img/employees/rethal.jpeg'
-      },
-      {
-        id: 'tm010',
-        name: 'Mohamed Yoosuf Asan Kani',
-        designation: 'Site Engineer',
-        image: 'assets/img/employees/yoosuf.jpeg'
-      },
-      {
-        id: 'tm011',
-        name: 'Vidhadhar Jangio',
-        designation: 'Site Engineer',
-        image: 'assets/img/employees/vidhadhar.jpeg'
-      },
-      {
-        id: 'tm012',
-        name: 'Mohammad Mustafa Jamil Ahmad',
-        designation: 'Site Engineer',
-        image: 'assets/img/employees/mustafa.jpeg'
-      },
-      {
-        id: 'tm013',
-        name: 'Ayum Kabari Sabila Khatun',
-        designation: 'Site Engineer',
-        image: 'assets/img/employees/ayyum.jpeg'
-      },
-      {
-        id: 'tm014',
-        name: 'Muhammad Asif Muhammad Arshad',
-        designation: 'Site Engineer',
-        image: 'assets/img/employees/asif.jpeg'
-      },
-      {
-        id: 'tm05',
-        name: 'Mohammad Irfan Alam',
-        designation: 'Safety Supervisor',
-        image: 'assets/img/employees/irfan.jpeg'
       }
     ]
   }
