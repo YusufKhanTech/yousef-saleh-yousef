@@ -28,9 +28,12 @@
     <div class="team-card" data-aos="fade-up" data-aos-delay="200">
       <div class="grid-item">
         <img [src]="team?.image" />
+        <div class="team-overlay-card">
+          <div class="title-name">{{ team?.name }}</div>
+          <div class="sub-title-name">{{ team?.designation }}</div>
+        </div>
       </div>
-      <div class="title-name">{{ team?.name }}</div>
-      <div class="sub-title-name">{{ team?.designation }}</div>
+     
     </div>
     }
   </div>
