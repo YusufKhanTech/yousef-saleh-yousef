@@ -28,6 +28,21 @@
     }
 </div> -->
 <div class="service-container">
+  <div class="category-container">
+    <div class="category-content">
+      @for (allService of allServices; track allService?.serviceId) {
+      <div
+        class="category-list"
+        (click)="selectService($event, allService)"
+        [class.active]="selectedService?.serviceName === allService?.serviceName">
+        <div class="category-list-content">
+          <div class="category-title">{{ allService.serviceName }}</div>
+          <i class="ti ti-arrow-narrow-right icon"></i>
+        </div>
+      </div>
+      }
+    </div>
+  </div>
   <div class="service-image-container">
     <img
       src="https://www.ysy.com.sa/assets/img/website-images/civil-maintenance.jpeg"
@@ -72,19 +87,5 @@
       bibendum nibh non turpis vestibulum pellentesque.
     </div>
   </div>
-  <div class="category-container">
-    <div class="category-content">
-      @for (allService of allServices; track allService?.serviceId) {
-      <div
-        class="category-list"
-        (click)="selectService($event, allService)"
-        [class.active]="selectedService?.serviceName === allService?.serviceName">
-        <div class="category-list-content">
-          <div class="category-title">{{ allService.serviceName }}</div>
-          <i class="ti ti-arrow-narrow-right icon"></i>
-        </div>
-      </div>
-      }
-    </div>
-  </div>
+ 
 </div>

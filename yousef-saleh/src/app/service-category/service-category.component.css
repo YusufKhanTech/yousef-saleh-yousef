@@ -167,4 +167,5 @@ p {
 }
 .active{
   background-color: var(--color-orange) !important;
+  color: white !important;
 }
