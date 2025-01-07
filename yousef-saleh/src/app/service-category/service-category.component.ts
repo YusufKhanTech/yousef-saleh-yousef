@@ -3,15 +3,13 @@ import {BannerContentComponent} from '../banner-content/banner-content.component
 import {ServiceModel} from '../services/model/service.model';
 import {ServicesUtil} from '../services/util/service.util';
 import {ActivatedRoute, RouterOutlet} from '@angular/router';
-import {ServiceDetailComponent} from '../service-detail/service-detail.component';
 
 @Component({
   selector: 'app-service-category',
   standalone: true,
   imports: [
-    BannerContentComponent,
-    ServiceDetailComponent
-  ],
+    BannerContentComponent
+],
   templateUrl: './service-category.component.html',
   styleUrl: './service-category.component.css'
 })
@@ -35,6 +33,8 @@ export class ServiceCategoryComponent implements OnInit {
   selectService(event: Event, service: ServiceModel): void {
     event.preventDefault();
     this.selectedService = service;
+    console.log("hellow");
+    
   }
 
   private setCategoryId(): void {

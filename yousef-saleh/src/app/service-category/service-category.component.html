@@ -1,10 +1,12 @@
 <div>
-  <app-banner-content title="Service category"
-                      bannerHeight="400px"
-                      [breadcrumbTexts]="breadcrumbTexts">
+  <app-banner-content
+    title="Service category"
+    bannerHeight="400px"
+    [breadcrumbTexts]="breadcrumbTexts"
+  >
   </app-banner-content>
 </div>
-<div class="service-container">
+<!-- <div class="service-container">
   <div>
     <h4 class="right-side-title">Categories</h4>
     <div class="services-list">
@@ -24,4 +26,65 @@
         <app-service-detail [service]="selectedService"></app-service-detail>
       </div>
     }
+</div> -->
+<div class="service-container">
+  <div class="service-image-container">
+    <img
+      src="https://www.ysy.com.sa/assets/img/website-images/civil-maintenance.jpeg"
+    />
+    <div class="service-title">We Ensure Best Service</div>
+    <div class="service-paragraph">
+      Cras enim urna, interdum nec porttitor vitae, sollicitudin eu eros.
+      Praesent eget mollis nulla, non lacinia urna. Donec sit amet neque auctor,
+      ornare dui rutrum, condimentum justo. Duis dictum, ex accumsan eleifend
+      eleifend, ex justo aliquam nunc, in ultrices ante quam eget massa. Sed
+      scelerisque, odio eu tempor pulvinar, magna tortor finibus lorem, ut
+      mattis tellus nunc ut quam. Curabitur quis ornare leo. Suspendisse
+      bibendum nibh non turpis vestibulum pellentesque.
+    </div>
+    <div class="service-sub-title">
+      <div class="service-content">
+        <i class="ti ti-check service-icon"></i>
+        <div class="service-content-title">
+          Sed ut perspiciatis unde omnis iste natus error
+        </div>
+      </div>
+    </div>
+    <div class="satisfied-clients">
+      <div class="clients-container back-shadow">
+        <i class="ti ti-user client"></i>
+        <h1>323 +</h1>
+        <p>Satisfied clients</p>
+      </div>
+      <div class="success-works back-shadow">
+        <i class="ti ti-user client"></i>
+        <h1>323 +</h1>
+        <p>Satisfied clients</p>
+      </div>
+    </div>
+    <div class="service-paragraph">
+      Cras enim urna, interdum nec porttitor vitae, sollicitudin eu eros.
+      Praesent eget mollis nulla, non lacinia urna. Donec sit amet neque auctor,
+      ornare dui rutrum, condimentum justo. Duis dictum, ex accumsan eleifend
+      eleifend, ex justo aliquam nunc, in ultrices ante quam eget massa. Sed
+      scelerisque, odio eu tempor pulvinar, magna tortor finibus lorem, ut
+      mattis tellus nunc ut quam. Curabitur quis ornare leo. Suspendisse
+      bibendum nibh non turpis vestibulum pellentesque.
+    </div>
+  </div>
+  <div class="category-container">
+    <div class="category-content">
+      @for (allService of allServices; track allService?.serviceId) {
+      <div
+        class="category-list"
+        (click)="selectService($event, allService)"
+        [class.active]="selectedService?.serviceName === allService?.serviceName">
+        <div class="category-list-content">
+          <div class="category-title">{{ allService.serviceName }}</div>
+          <i class="ti ti-arrow-narrow-right icon"></i>
+        </div>
+      </div>
+      }
+    </div>
+  </div>
 </div>
