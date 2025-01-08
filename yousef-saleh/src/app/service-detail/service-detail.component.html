@@ -34,9 +34,9 @@
         <h3>Service includes:</h3>
         @for (serviceInclude of service?.serviceIncludes; track serviceInclude?.serviceIncludeName) {
         <div class="service-list-content" (click)="selectService($event, serviceInclude?.serviceIncludeName)">
-       <div [class.active]="selectedService === serviceInclude.serviceIncludeName" class="active-continer">
-        {{serviceInclude?.serviceIncludeName}}
-      </div>
+          <div [class.active]="selectedService === serviceInclude.serviceIncludeName" class="active-continer">
+            {{serviceInclude?.serviceIncludeName}}
+          </div>
           @if (selectedService === serviceInclude.serviceIncludeName) {
           <div class="service-content">
             {{serviceInclude?.serviceIncludeDescription}}
