@@ -40,6 +40,17 @@ export class ServicesUtil {
         serviceId: 0,
         serviceName: 'Electrical Substation Construction',
         serviceIcon: 'ti ti-solar-panel',
+        image: '/assets/img/website-images/substation-4.jpg',
+        satisfiedClientCount: 112,
+        completedProjectCount: 120,
+        description: 'We provide end-to-end electrical substation construction services, including design, equipment installation, grounding, and testing. We ensure efficient power distribution with safe, reliable, and compliant solutions tailored to your project needs.',
+        keyPoints: [
+          {keyPoints: 'Custom design and engineering for optimized power distribution.', icon: 'ti ti-solar-panel'},
+          {keyPoints: 'Installation of transformers, switchgear, and protective equipment.', icon: 'ti ti-solar-panel'},
+          {keyPoints: 'Grounding and lightning protection systems.', icon: 'ti ti-solar-panel'},
+          {keyPoints: 'Testing and commissioning for operational reliability.', icon: 'ti ti-solar-panel'},
+          {keyPoints: 'Integration of automation and control systems like SCADA.', icon: 'ti ti-solar-panel'}
+        ],
         serviceIncludes:
           [
             {
@@ -75,35 +86,22 @@ export class ServicesUtil {
               serviceIncludeDescription: 'Routine maintenance for long-term reliability. Upgrading substations to meet evolving power needs.'
             }
           ],
-        serviceImageInfos: [
-          {
-            id: 'm01',
-            name: 'construction-1',
-            description: 'We provide end-to-end electrical substation construction services, including design, equipment installation, grounding, and testing. We ensure efficient power distribution with safe, reliable, and compliant solutions tailored to your project needs.',
-            keyPoints: [],
-            image: '/assets/img/website-images/electrical-subs-s-1.jpg',
-            align: 'left',
-          },
-          {
-            id: 'm02',
-            name: 'construction-2',
-            description: '',
-            keyPoints: [
-              {keyPoints: 'Custom design and engineering for optimized power distribution.', icon: 'ti ti-solar-panel'},
-              {keyPoints: 'Installation of transformers, switchgear, and protective equipment.', icon: 'ti ti-solar-panel'},
-              {keyPoints: 'Grounding and lightning protection systems.', icon: 'ti ti-solar-panel'},
-              {keyPoints: 'Testing and commissioning for operational reliability.', icon: 'ti ti-solar-panel'},
-              {keyPoints: 'Integration of automation and control systems like SCADA.', icon: 'ti ti-solar-panel'}
-            ],
-            align: 'right',
-            image: '/assets/img/website-images/substation-4.jpg'
-          }
-        ],
       },
       {
         serviceId: 1,
         serviceName: 'Industrial and Commercial Building Construction',
         serviceIcon: 'ti ti-building-factory-2',
+        image: '/assets/img/website-images/industrial-s.jpg',
+        satisfiedClientCount: 322,
+        completedProjectCount: 320,
+        description: 'We deliver top-notch industrial and commercial building construction services, offering innovative designs, quality construction, and timely project delivery tailored to your business needs.',
+        keyPoints: [
+          {keyPoints: 'Customized design and planning for industrial and commercial spaces.', icon: 'ti ti-building-factory-2'},
+          {keyPoints: 'High-quality construction using durable materials.', icon: 'ti ti-building-factory-2'},
+          {keyPoints: 'Integration of modern facilities and sustainable practices.', icon: 'ti ti-building-factory-2'},
+          {keyPoints: 'Compliance with safety and regulatory standards.', icon: 'ti ti-building-factory-2'},
+          {keyPoints: 'Timely completion and cost-effective solutions.', icon: 'ti ti-building-factory-2'}
+        ],
         serviceIncludes:
           [
             {
@@ -139,35 +137,22 @@ export class ServicesUtil {
               serviceIncludeDescription: 'End-to-end project management for seamless execution. On-time delivery with adherence to budget constraints.'
             }
           ],
-        serviceImageInfos: [
-          {
-            id: 'm01',
-            name: 'construction-1',
-            description: 'We deliver top-notch industrial and commercial building construction services, offering innovative designs, quality construction, and timely project delivery tailored to your business needs.',
-            keyPoints: [],
-            image: '/assets/img/website-images/industrial-s.jpg',
-            align: 'left',
-          },
-          {
-            id: 'm02',
-            name: 'maintenance-2',
-            description: '',
-            keyPoints: [
-              {keyPoints: 'Customized design and planning for industrial and commercial spaces.', icon: 'ti ti-building-factory-2'},
-              {keyPoints: 'High-quality construction using durable materials.', icon: 'ti ti-building-factory-2'},
-              {keyPoints: 'Integration of modern facilities and sustainable practices.', icon: 'ti ti-building-factory-2'},
-              {keyPoints: 'Compliance with safety and regulatory standards.', icon: 'ti ti-building-factory-2'},
-              {keyPoints: 'Timely completion and cost-effective solutions.', icon: 'ti ti-building-factory-2'}
-            ],
-            align: 'right',
-            image: '/assets/img/website-images/industrial-s-1.jpg'
-          }
-        ],
       },
       {
         serviceId: 2,
         serviceName: 'Pre-engineered Steel Buildings',
         serviceIcon: 'ti ti-building-estate',
+        image: '/assets/img/website-images/steel-s.jpg',
+        satisfiedClientCount: 222,
+        completedProjectCount: 150,
+        description: 'We specialize in constructing durable, cost-effective, and customizable pre-engineered steel buildings, offering efficient solutions for industrial, commercial, and agricultural projects.',
+        keyPoints: [
+          {keyPoints:'Cost-effective and quick to construct compared to traditional methods.', icon: 'ti ti-building-estate'},
+          {keyPoints:'Fully customizable design for diverse applications.', icon: 'ti ti-building-estate'},
+          {keyPoints:'High durability with corrosion-resistant materials.', icon: 'ti ti-building-estate'},
+          {keyPoints:'Environmentally friendly and energy-efficient solutions.', icon: 'ti ti-building-estate'},
+          {keyPoints:'Low maintenance requirements with long-lasting performance.', icon: 'ti ti-building-estate'}
+        ],
         serviceIncludes:
           [
             {
@@ -203,35 +188,22 @@ export class ServicesUtil {
               serviceIncludeDescription: 'End-to-end management for timely and efficient project completion. Coordination of all construction phases, ensuring quality and safety.'
             }
           ],
-        serviceImageInfos: [
-          {
-            id: 'm01',
-            name: 'construction-1',
-            description: 'We specialize in constructing durable, cost-effective, and customizable pre-engineered steel buildings, offering efficient solutions for industrial, commercial, and agricultural projects.',
-            keyPoints: [],
-            image: '/assets/img/website-images/steel-s.jpg',
-            align: 'left',
-          },
-          {
-            id: 'm02',
-            name: 'maintenance-2',
-            description: '',
-            keyPoints: [
-              {keyPoints:'Cost-effective and quick to construct compared to traditional methods.', icon: 'ti ti-building-estate'},
-              {keyPoints:'Fully customizable design for diverse applications.', icon: 'ti ti-building-estate'},
-              {keyPoints:'High durability with corrosion-resistant materials.', icon: 'ti ti-building-estate'},
-              {keyPoints:'Environmentally friendly and energy-efficient solutions.', icon: 'ti ti-building-estate'},
-              {keyPoints:'Low maintenance requirements with long-lasting performance.', icon: 'ti ti-building-estate'}
-            ],
-            align: 'right',
-            image: 'assets/img/website-images/steel-building.jpg'
-          }
-        ],
       },
       {
         serviceId: 3,
         serviceName: 'Cladding and Glass Solutions',
         serviceIcon: 'ti ti-building',
+        image: '/assets/img/website-images/glass-s.jpg',
+        satisfiedClientCount: 112,
+        completedProjectCount: 120,
+        description: 'We provide advanced cladding and glass solutions, offering durable, aesthetically pleasing, and energy-efficient designs tailored to enhance the appearance and performance of buildings.',
+        keyPoints: [
+          {keyPoints: 'Aesthetic enhancement with modern and sleek designs.', icon: 'ti ti-building'},
+          {keyPoints: 'Improved energy efficiency through thermal insulation and glazing.', icon: 'ti ti-building'},
+          {keyPoints: 'Durable and weather-resistant materials for long-term performance.', icon: 'ti ti-building'},
+          {keyPoints: 'Customizable options to suit architectural requirements.', icon: 'ti ti-building'},
+          {keyPoints: 'Ensures compliance with safety and building standards.', icon: 'ti ti-building'}
+        ],
         serviceIncludes:
           [
             {
@@ -267,35 +239,22 @@ export class ServicesUtil {
               serviceIncludeDescription: 'End-to-end management for seamless execution of cladding and glass projects. Coordination between design, fabrication, and installation teams.'
             }
           ],
-        serviceImageInfos: [
-          {
-            id: 'm01',
-            name: 'construction-1',
-            description: 'We provide advanced cladding and glass solutions, offering durable, aesthetically pleasing, and energy-efficient designs tailored to enhance the appearance and performance of buildings.',
-            keyPoints: [],
-            image: '/assets/img/website-images/glass-s.jpg',
-            align: 'left',
-          },
-          {
-            id: 'm02',
-            name: 'maintenance-2',
-            description: '',
-            keyPoints: [
-              {keyPoints: 'Aesthetic enhancement with modern and sleek designs.', icon: 'ti ti-building'},
-              {keyPoints: 'Improved energy efficiency through thermal insulation and glazing.', icon: 'ti ti-building'},
-              {keyPoints: 'Durable and weather-resistant materials for long-term performance.', icon: 'ti ti-building'},
-              {keyPoints: 'Customizable options to suit architectural requirements.', icon: 'ti ti-building'},
-              {keyPoints: 'Ensures compliance with safety and building standards.', icon: 'ti ti-building'}
-            ],
-            align: 'right',
-            image: 'assets/img/website-images/cladding-and-glass.jpg'
-          }
-        ]
       },
       {
         serviceId: 4,
         serviceName: 'Asphalting & Road Works',
         serviceIcon: 'ti ti-backhoe',
+        image: '/assets/img/website-images/asphalting-s.jpg',
+        satisfiedClientCount: 112,
+        completedProjectCount: 120,
+        description: 'We deliver professional asphalting and road construction services, providing durable, high-quality roads and pavements with a focus on safety, efficiency, and long-lasting performance.',
+        keyPoints: [
+          {keyPoints: 'Comprehensive road construction, from planning to completion.', icon: ''},
+          {keyPoints: 'Durable asphalting solutions for high-traffic areas.', icon: ''},
+          {keyPoints: 'Expertise in paving, resurfacing, and maintenance.', icon: ''},
+          {keyPoints: 'Use of high-quality materials to ensure longevity.', icon: ''},
+          {keyPoints: 'Adherence to safety and regulatory standards.', icon: ''},
+        ],
         serviceIncludes:
           [
             {
@@ -331,35 +290,22 @@ export class ServicesUtil {
             serviceIncludeDescription: 'Construction of walkways, cycle paths, and speed humps. Asphalt solutions for industrial and commercial areas.'
           },
           ],
-        serviceImageInfos: [
-          {
-            id: 'm01',
-            name: 'construction-1',
-            description: 'We deliver professional asphalting and road construction services, providing durable, high-quality roads and pavements with a focus on safety, efficiency, and long-lasting performance.',
-            keyPoints: [],
-            image: '/assets/img/website-images/asphalting-s.jpg',
-            align: 'left',
-          },
-          {
-            id: 'm02',
-            name: 'maintenance-2',
-            description: '',
-            keyPoints: [
-              {keyPoints: 'Comprehensive road construction, from planning to completion.', icon: ''},
-              {keyPoints: 'Durable asphalting solutions for high-traffic areas.', icon: ''},
-              {keyPoints: 'Expertise in paving, resurfacing, and maintenance.', icon: ''},
-              {keyPoints: 'Use of high-quality materials to ensure longevity.', icon: ''},
-              {keyPoints: 'Adherence to safety and regulatory standards.', icon: ''},
-            ],
-            align: 'right',
-            image: 'assets/img/project-images/image208.jpg'
-          }
-        ]
       },
       {
         serviceId: 5,
         serviceName: 'Security fencing installation & general work',
         serviceIcon: 'ti ti-shield-lock',
+        image: 'assets/img/website-images/fencing.jpg',
+        satisfiedClientCount: 912,
+        completedProjectCount: 820,
+        description: 'We specialize in the installation of high-quality security fencing, providing reliable and durable solutions for property protection. Our services include designing, installing, and maintaining security fences to ensure maximum safety and privacy.',
+        keyPoints: [
+          {keyPoints: 'Customizable security fence solutions for residential, commercial, and industrial properties.', icon: ''},
+          {keyPoints: 'Use of durable, high-quality materials for enhanced security.', icon: ''},
+          {keyPoints: 'Installation of various types of fences, including chain link, barbed wire, and wrought iron.', icon: ''},
+          {keyPoints: 'Integration of gates, access control systems, and surveillance features.', icon: ''},
+          {keyPoints: 'Focus on safety, privacy, and long-lasting performance.', icon: ''}
+        ],
         serviceIncludes:
           [
             {
@@ -391,35 +337,22 @@ export class ServicesUtil {
               serviceIncludeDescription: 'Installation of anti-climb fences, electric fences, and other specialized security measures. Solutions for perimeter security, private properties, and high-risk areas.'
             }
           ],
-        serviceImageInfos: [
-          {
-            id: 'm01',
-            name: 'construction-1',
-            description: 'We specialize in the installation of high-quality security fencing, providing reliable and durable solutions for property protection. Our services include designing, installing, and maintaining security fences to ensure maximum safety and privacy.',
-            keyPoints: [],
-            image: 'assets/img/website-images/fencing.jpg',
-            align: 'left',
-          },
-          {
-            id: 'm02',
-            name: 'maintenance-2',
-            description: '',
-            keyPoints: [
-              {keyPoints: 'Customizable security fence solutions for residential, commercial, and industrial properties.', icon: ''},
-              {keyPoints: 'Use of durable, high-quality materials for enhanced security.', icon: ''},
-              {keyPoints: 'Installation of various types of fences, including chain link, barbed wire, and wrought iron.', icon: ''},
-              {keyPoints: 'Integration of gates, access control systems, and surveillance features.', icon: ''},
-              {keyPoints: 'Focus on safety, privacy, and long-lasting performance.', icon: ''}
-            ],
-            align: 'right',
-            image: 'assets/img/project-images/image186.jpg'
-          }
-        ]
       },
       {
         serviceId: 6,
         serviceName: 'Concrete repair and Rehabilitation',
         serviceIcon: 'ti ti-geometry',
+        image: '/assets/img/website-images/concrete-s.jpg',
+        satisfiedClientCount: 612,
+        completedProjectCount: 220,
+        description: 'We offer expert concrete repair and rehabilitation services, ensuring the restoration of structural integrity and extending the lifespan of concrete structures. Our solutions address cracks, corrosion, and deterioration, enhancing durability and safety.',
+        keyPoints: [
+          {keyPoints: 'Expertise in repairing damaged concrete structures.', icon: ''},
+          {keyPoints: 'Solutions for cracks, surface wear, and structural issues.', icon: ''},
+          {keyPoints: 'Use of advanced materials and techniques for durable repairs.', icon: ''},
+          {keyPoints: 'Restoration of concrete’s aesthetic and functional properties.', icon: ''},
+          {keyPoints: 'Compliance with safety and regulatory standards for long-lasting results.', icon: ''},
+        ],
         serviceIncludes:
           [
             {
@@ -455,35 +388,22 @@ export class ServicesUtil {
               serviceIncludeDescription: 'Thorough inspection to assess the extent of damage. Detailed evaluation reports and recommendations for repairs.'
             }
           ],
-        serviceImageInfos: [
-          {
-            id: 'm01',
-            name: 'construction-1',
-            description: 'We offer expert concrete repair and rehabilitation services, ensuring the restoration of structural integrity and extending the lifespan of concrete structures. Our solutions address cracks, corrosion, and deterioration, enhancing durability and safety.',
-            keyPoints: [],
-            image: '/assets/img/website-images/concrete-s.jpg',
-            align: 'left',
-          },
-          {
-            id: 'm02',
-            name: 'maintenance-2',
-            description: '',
-            keyPoints: [
-              {keyPoints: 'Expertise in repairing damaged concrete structures.', icon: ''},
-              {keyPoints: 'Solutions for cracks, surface wear, and structural issues.', icon: ''},
-              {keyPoints: 'Use of advanced materials and techniques for durable repairs.', icon: ''},
-              {keyPoints: 'Restoration of concrete’s aesthetic and functional properties.', icon: ''},
-              {keyPoints: 'Compliance with safety and regulatory standards for long-lasting results.', icon: ''},
-            ],
-            align: 'right',
-            image: '/assets/img/website-images/concrete-s-1.jpg'
-          }
-        ]
       },
       {
         serviceId: 7,
         serviceName: 'Electro Mechanical Works',
         serviceIcon: 'ti ti-solar-electricity',
+        image: 'assets/img/website-images/electro-m-1.jpg',
+        satisfiedClientCount: 112,
+        completedProjectCount: 120,
+        description: 'We specialize in electro-mechanical works, providing integrated solutions for electrical and mechanical systems in industrial, commercial, and residential projects. Our services include the installation, maintenance, and repair of advanced electrical and mechanical systems to ensure smooth and efficient operations.',
+        keyPoints: [
+          {keyPoints: 'Integration of electrical and mechanical systems for optimal performance.', icon: ''},
+          {keyPoints: 'Expertise in designing, installing, and maintaining complex systems.', icon: ''},
+          {keyPoints: 'Focus on energy efficiency, safety, and system longevity.', icon: ''},
+          {keyPoints: 'Specialized solutions for a wide range of industries..', icon: ''},
+          {keyPoints: 'Skilled team providing reliable, high-quality services for diverse projects..', icon: ''}
+        ],
         serviceIncludes:
           [
             {
@@ -519,35 +439,22 @@ export class ServicesUtil {
               serviceIncludeDescription: 'Thorough testing of electrical and mechanical systems to ensure proper functionality. Commissioning services for new installations to meet operational standards.'
             }
           ],
-        serviceImageInfos: [
-          {
-            id: 'm01',
-            name: 'construction-1',
-            description: 'We specialize in electro-mechanical works, providing integrated solutions for electrical and mechanical systems in industrial, commercial, and residential projects. Our services include the installation, maintenance, and repair of advanced electrical and mechanical systems to ensure smooth and efficient operations.',
-            keyPoints: [],
-            image: 'assets/img/website-images/electro-m-1.jpg',
-            align: 'left',
-          },
-          {
-            id: 'm02',
-            name: 'maintenance-2',
-            description: '',
-            keyPoints: [
-              {keyPoints: 'Integration of electrical and mechanical systems for optimal performance.', icon: ''},
-              {keyPoints: 'Expertise in designing, installing, and maintaining complex systems.', icon: ''},
-              {keyPoints: 'Focus on energy efficiency, safety, and system longevity.', icon: ''},
-              {keyPoints: 'Specialized solutions for a wide range of industries..', icon: ''},
-              {keyPoints: 'Skilled team providing reliable, high-quality services for diverse projects..', icon: ''}
-            ],
-            align: 'right',
-            image: 'assets/img/website-images/electro-m.jpg'
-          }
-        ]
       },
       {
         serviceId: 8,
         serviceName: 'Portable office & Accommodation',
         serviceIcon: 'ti ti-building-skyscraper',
+        image: 'assets/img/website-images/portable-s.jpg',
+        satisfiedClientCount: 112,
+        completedProjectCount: 120,
+        description: 'We offer high-quality portable office and accommodation solutions designed for temporary or mobile use. These units provide a cost-effective, flexible, and comfortable alternative for on-site offices, worker accommodations, or remote project locations.',
+        keyPoints: [
+          {keyPoints: 'Customizable portable units for office and living spaces.', icon: ''},
+          {keyPoints: 'Quick setup and relocation for temporary needs.', icon: ''},
+          {keyPoints: 'Energy-efficient and well-insulated for comfort.', icon: ''},
+          {keyPoints: 'Flexible design options to suit project requirements.', icon: ''},
+          {keyPoints: 'Durable and secure structures for various industries and applications.', icon: ''},
+        ],
         serviceIncludes:
           [
             {
@@ -583,30 +490,6 @@ export class ServicesUtil {
               serviceIncludeDescription: 'Customization of units with company logos, colors, and specific design features. Optional additions such as furniture, IT infrastructure, and communication systems.'
             }
           ],
-        serviceImageInfos: [
-          {
-            id: 'm01',
-            name: 'construction-1',
-            description: 'We offer high-quality portable office and accommodation solutions designed for temporary or mobile use. These units provide a cost-effective, flexible, and comfortable alternative for on-site offices, worker accommodations, or remote project locations.',
-            keyPoints: [],
-            image: 'assets/img/website-images/portable-s.jpg',
-            align: 'left',
-          },
-          {
-            id: 'm02',
-            name: 'maintenance-2',
-            description: '',
-            keyPoints: [
-              {keyPoints: 'Customizable portable units for office and living spaces.', icon: ''},
-              {keyPoints: 'Quick setup and relocation for temporary needs.', icon: ''},
-              {keyPoints: 'Energy-efficient and well-insulated for comfort.', icon: ''},
-              {keyPoints: 'Flexible design options to suit project requirements.', icon: ''},
-              {keyPoints: 'Durable and secure structures for various industries and applications.', icon: ''},
-            ],
-            align: 'right',
-            image: 'assets/img/website-images/portable-office.jpg'
-          }
-        ]
       },
     ]
   }
@@ -617,6 +500,17 @@ export class ServicesUtil {
         serviceId: 0,
         serviceName: 'Civil Maintenance',
         serviceIcon: 'ti ti-solar-electricity',
+        image: 'assets/img/website-images/civil-maintenance.jpeg',
+        satisfiedClientCount: 112,
+        completedProjectCount: 120,
+        description: 'Civil Maintenance we offer expert civil maintenance services to ensure the longevity and functionality of your structures. Our services include repair, renovation, and upkeep of buildings, roads, and infrastructure, covering concrete works, masonry, painting, and more. We prioritize quality, safety, and efficiency to keep your assets in top condition.',
+        keyPoints: [
+          {keyPoints: 'Structural repairs for buildings and infrastructure.', icon: ''},
+          {keyPoints: 'Masonry, concrete works, and surface finishing.', icon: ''},
+          {keyPoints: 'Painting and waterproofing solutions.', icon: ''},
+          {keyPoints: 'Road and pavement maintenance.', icon: ''},
+          {keyPoints: 'Renovation and refurbishment of old structures.', icon: ''},
+        ],
         serviceIncludes:
           [
             {
@@ -650,35 +544,22 @@ export class ServicesUtil {
               'Maintenance plans to extend the life of structures.'
             }
           ],
-        serviceImageInfos: [
-          {
-            id: 'm01',
-            name: 'maintenance-1',
-            description: 'Civil Maintenance we offer expert civil maintenance services to ensure the longevity and functionality of your structures. Our services include repair, renovation, and upkeep of buildings, roads, and infrastructure, covering concrete works, masonry, painting, and more. We prioritize quality, safety, and efficiency to keep your assets in top condition.',
-            keyPoints: [],
-            image: 'assets/img/website-images/civil-maintenance.jpeg',
-            align: 'left',
-          },
-          {
-            id: 'm02',
-            name: 'maintenance-2',
-            description: '',
-            keyPoints: [
-              {keyPoints: 'Structural repairs for buildings and infrastructure.', icon: ''},
-              {keyPoints: 'Masonry, concrete works, and surface finishing.', icon: ''},
-              {keyPoints: 'Painting and waterproofing solutions.', icon: ''},
-              {keyPoints: 'Road and pavement maintenance.', icon: ''},
-              {keyPoints: 'Renovation and refurbishment of old structures.', icon: ''},
-            ],
-            align: 'right',
-            image: 'assets/img/website-images/civil-m-1.jpg'
-            }
-        ]
       },
       {
         serviceId: 1,
         serviceName: 'Electrical Maintenance',
         serviceIcon: 'ti ti-solar-electricity',
+        image: 'assets/img/website-images/electrical-maintenance.jpeg',
+        satisfiedClientCount: 112,
+        completedProjectCount: 120,
+        description: 'We provide reliable electrical maintenance services to ensure the safety and efficiency of your electrical systems. Our expertise includes troubleshooting, repairs, upgrades, and preventive care for wiring, lighting, panels, and equipment. We deliver solutions that prioritize safety, compliance, and uninterrupted performance.',
+        keyPoints: [
+          {keyPoints: 'Repair and replacement of electrical components.', icon: ''},
+          {keyPoints: 'Maintenance of wiring, panels, and breakers.', icon: ''},
+          {keyPoints: 'Troubleshooting and diagnostics for power systems.', icon: ''},
+          {keyPoints: 'Lighting installation and maintenance.', icon: ''},
+          {keyPoints: 'Preventive care to avoid electrical faults.', icon: ''},
+        ],
         serviceIncludes:
           [
             {
@@ -710,35 +591,22 @@ export class ServicesUtil {
               serviceIncludeDescription: 'Ensuring systems meet regulatory and safety standards. Electrical hazard assessments and mitigation.'
             }
           ],
-        serviceImageInfos: [
-          {
-            id: 'm01',
-            name: 'maintenance-1',
-            description: 'We provide reliable electrical maintenance services to ensure the safety and efficiency of your electrical systems. Our expertise includes troubleshooting, repairs, upgrades, and preventive care for wiring, lighting, panels, and equipment. We deliver solutions that prioritize safety, compliance, and uninterrupted performance.',
-            keyPoints: [],
-            image: 'assets/img/website-images/electrical-maintenance.jpeg',
-            align: 'left',
-          },
-          {
-            id: 'm02',
-            name: 'maintenance-2',
-            description: '',
-            keyPoints: [
-              {keyPoints: 'Repair and replacement of electrical components.', icon: ''},
-              {keyPoints: 'Maintenance of wiring, panels, and breakers.', icon: ''},
-              {keyPoints: 'Troubleshooting and diagnostics for power systems.', icon: ''},
-              {keyPoints: 'Lighting installation and maintenance.', icon: ''},
-              {keyPoints: 'Preventive care to avoid electrical faults.', icon: ''},
-            ],
-            align: 'right',
-            image: 'assets/img/website-images/electrical-maintenance-1.jpeg',
-          }
-        ]
       },
       {
         serviceId: 2,
         serviceName: 'Electro-Mechanical Maintenance',
         serviceIcon: 'ti ti-solar-electricity',
+        image: 'assets/img/website-images/electro-m-1.jpg',
+        satisfiedClientCount: 412,
+        completedProjectCount: 520,
+        description: 'We specialize in electromechanical maintenance services, ensuring seamless operation of systems integrating electrical and mechanical components. From motors and pumps to control panels and HVAC systems, we provide inspections, repairs, and preventive care to maintain efficiency, reliability, and safety.',
+        keyPoints: [
+          {keyPoints: 'Maintenance and repair of motors, pumps, and generators.', icon: ''},
+          {keyPoints: 'Servicing HVAC systems for reliable performance.', icon: ''},
+          {keyPoints: 'Troubleshooting automated systems and controls.', icon: ''},
+          {keyPoints: 'Calibration and optimization of sensors and actuators.', icon: ''},
+          {keyPoints: 'Inspection and servicing of hydraulic and pneumatic systems.', icon: ''}
+        ],
         serviceIncludes:
           [
             {
@@ -770,30 +638,6 @@ export class ServicesUtil {
               serviceIncludeDescription: 'Ensuring electromechanical systems comply with safety regulations.Conducting risk assessments and implementing safety measures.'
             }
           ],
-        serviceImageInfos: [
-          {
-            id: 'm01',
-            name: 'maintenance-1',
-            description: 'We specialize in electromechanical maintenance services, ensuring seamless operation of systems integrating electrical and mechanical components. From motors and pumps to control panels and HVAC systems, we provide inspections, repairs, and preventive care to maintain efficiency, reliability, and safety.',
-            keyPoints: [],
-            image: 'assets/img/website-images/electro-m-1.jpg',
-            align: 'left',
-          },
-          {
-            id: 'm02',
-            name: 'maintenance-2',
-            description: '',
-            keyPoints: [
-              {keyPoints: 'Maintenance and repair of motors, pumps, and generators.', icon: ''},
-              {keyPoints: 'Servicing HVAC systems for reliable performance.', icon: ''},
-              {keyPoints: 'Troubleshooting automated systems and controls.', icon: ''},
-              {keyPoints: 'Calibration and optimization of sensors and actuators.', icon: ''},
-              {keyPoints: 'Inspection and servicing of hydraulic and pneumatic systems.', icon: ''}
-            ],
-            align: 'right',
-            image: 'assets/img/website-images/electro-m.jpg'
-          }
-        ]
       }
     ]
   }
@@ -804,6 +648,17 @@ export class ServicesUtil {
         serviceId: 0,
         serviceName: 'Waterproofing and Insulation Services',
         serviceIcon: 'ti ti-beach',
+        image: 'assets/img/website-images/water-proofing.jpeg',
+        satisfiedClientCount: 312,
+        completedProjectCount: 420,
+        description: 'We offer professional waterproofing and insulation services to protect buildings from water damage and ensure energy efficiency. Our services help extend the lifespan of structures by preventing moisture infiltration and improving thermal comfort.',
+        keyPoints: [
+          {keyPoints: 'Expert solutions for preventing water damage and moisture penetration.', icon: ''},
+          {keyPoints: 'Energy-efficient insulation for temperature control and cost savings.', icon: ''},
+          {keyPoints: 'Comprehensive protection for roofs, basements, foundations, and walls.', icon: ''},
+          {keyPoints: 'Use of advanced materials and techniques for long-lasting results.', icon: ''},
+          {keyPoints: 'Enhancing building durability and comfort.', icon: ''}
+        ],
         serviceIncludes:
           [
             {
@@ -842,30 +697,6 @@ export class ServicesUtil {
             },
 
           ],
-        serviceImageInfos: [
-          {
-            id: 'm01',
-            name: 'maintenance-1',
-            description: 'We offer professional waterproofing and insulation services to protect buildings from water damage and ensure energy efficiency. Our services help extend the lifespan of structures by preventing moisture infiltration and improving thermal comfort.',
-            keyPoints: [],
-            image: 'assets/img/website-images/water-proofing.jpeg',
-            align: 'left',
-          },
-          {
-            id: 'm02',
-            name: 'maintenance-2',
-            description: '',
-            keyPoints: [
-              {keyPoints: 'Expert solutions for preventing water damage and moisture penetration.', icon: ''},
-              {keyPoints: 'Energy-efficient insulation for temperature control and cost savings.', icon: ''},
-              {keyPoints: 'Comprehensive protection for roofs, basements, foundations, and walls.', icon: ''},
-              {keyPoints: 'Use of advanced materials and techniques for long-lasting results.', icon: ''},
-              {keyPoints: 'Enhancing building durability and comfort.', icon: ''}
-            ],
-            align: 'right',
-            image: 'assets/img/website-images/water-s.jpg'
-          }
-        ]
       }
     ]
   }

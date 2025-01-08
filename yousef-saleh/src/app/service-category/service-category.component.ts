@@ -2,15 +2,13 @@ import {Component, OnInit} from '@angular/core';
 import {BannerContentComponent} from '../banner-content/banner-content.component';
 import {ServiceModel} from '../services/model/service.model';
 import {ServicesUtil} from '../services/util/service.util';
-import {ActivatedRoute, RouterOutlet} from '@angular/router';
-import {ServiceDetailComponent} from '../service-detail/service-detail.component';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-service-category',
   standalone: true,
   imports: [
-    BannerContentComponent,
-    ServiceDetailComponent
+    BannerContentComponent
   ],
   templateUrl: './service-category.component.html',
   styleUrl: './service-category.component.css'
@@ -18,6 +16,7 @@ import {ServiceDetailComponent} from '../service-detail/service-detail.component
 export class ServiceCategoryComponent implements OnInit {
 
   selectedService?: ServiceModel;
+  selectedServiceInclude?: string;
   serviceCategoryId?: number;
   allServices?: ServiceModel[] | undefined = [];
   breadcrumbTexts= ['Home', 'Service Category'];
@@ -37,9 +36,14 @@ export class ServiceCategoryComponent implements OnInit {
     this.selectedService = service;
   }
 
+  selectServiceInclude(event: Event, serviceInclude: string | undefined): void {
+    event.preventDefault();
+    this.selectedServiceInclude = serviceInclude;
+  }
+
   private setCategoryId(): void {
     this.activatedRoute.params.subscribe(params => {
-      this.serviceCategoryId = +params['serviceCategoryId']; // Convert serviceId to a number
+      this.serviceCategoryId = +params['serviceCategoryId'];
       this.allServices = ServicesUtil.getAllServices().find(s=> s?.serviceCategoryId === this.serviceCategoryId)?.serviceSubCategories;
     });
   }
