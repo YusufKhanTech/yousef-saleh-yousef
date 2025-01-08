@@ -2,17 +2,10 @@ export class ServiceModel {
   serviceId?: number;
   serviceName?: string;
   serviceIcon?: string;
-  serviceIncludes?: ServiceIncludes[];
-  serviceImageInfos?: ServiceImageInfo[];
-}
-
-export class ServiceImageInfo {
-  id?: string;
-  name?: string;
-  description?: string;
   image?: string;
+  description?: string;
   keyPoints?: ServiceKeyPoints[];
-  align?:string;
+  serviceIncludes?: ServiceIncludes[];
 }
 
 export class ServiceKeyPoints {
