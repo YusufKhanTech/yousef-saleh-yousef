@@ -5,23 +5,66 @@
   </app-banner-content>
 </div>
 <div class="service-container">
-  <div>
-    <h4 class="right-side-title">Categories</h4>
-    <div class="services-list">
+  <div class="category-container">
+    <div class="category-content">
       @for (allService of allServices; track allService?.serviceId) {
-        <div class="service-detail">
-          <a href="#"
-             (click)="selectService($event, allService)"
-             [class.active]="selectedService?.serviceName === allService?.serviceName">
-            {{ allService.serviceName }}
-          </a>
+      <div class="category-list"
+           [class.active]="selectedService?.serviceName === allService?.serviceName"
+           (click)="selectService($event,allService)">
+          <div class="category-list-content">
+            <div class="category-title">{{ allService.serviceName }}</div>
+            <i class="ti ti-arrow-narrow-right icon"></i>
+          </div>
         </div>
+      }
+    </div>
+  </div>
+  <div class="service-image-container">
+    <img [src]="selectedService?.image"/>
+    <div class="service-title">{{selectedService?.serviceName}}</div>
+    <div class="service-paragraph">
+      {{selectedService?.description}}
+    </div>
+    <div class="service-sub-title">
+      <div class="service-content">
+        @for (serviceKeyPoint of selectedService?.keyPoints; track serviceKeyPoint?.keyPoints) {
+          <div class="service-key-point">
+            <i class="ti ti-check service-icon"></i>
+            <div class="service-content-title">
+              {{serviceKeyPoint?.keyPoints}}
+            </div>
+          </div>
         }
       </div>
     </div>
-    @if (selectedService) {
-      <div class="service-detail-view">
-        <app-service-detail [service]="selectedService"></app-service-detail>
+    <div class="satisfied-clients">
+      <div class="clients-container back-shadow">
+        <i class="ti ti-user-check client"></i>
+        <h1>{{selectedService?.satisfiedClientCount}}+</h1>
+        <p>Satisfied clients</p>
       </div>
-    }
+      <div class="success-works back-shadow">
+        <i class="ti ti-building-bank client"></i>
+        <h1>{{selectedService?.completedProjectCount}}+</h1>
+        <p>Success of works</p>
+      </div>
+    </div>
+    <div class="services-list">
+      <h3>Service includes:</h3>
+      @for (serviceInclude of selectedService?.serviceIncludes; track serviceInclude?.serviceIncludeName) {
+        <div class="service-list-content"
+             (click)="selectServiceInclude($event, serviceInclude?.serviceIncludeName)">
+          <div class="active-container"
+               [class.active]="selectedServiceInclude === serviceInclude.serviceIncludeName">
+            {{serviceInclude?.serviceIncludeName}}
+          </div>
+          @if (selectedServiceInclude === serviceInclude.serviceIncludeName) {
+            <div class="service-content">
+              {{serviceInclude?.serviceIncludeDescription}}
+            </div>
+          }
+        </div>
+      }
+    </div>
+  </div>
 </div>
