@@ -81,11 +81,11 @@
   transition: background-color 0.3s;
 }
 
-.active-continer {
+.active-container {
   padding: 12px;
 }
-.services-list .active-continer.active,
-.services-list .active-continer:hover {
+.services-list .active-container.active,
+.services-list .active-container:hover {
   background-color: var(--color-orange);
   color: white;
 }
