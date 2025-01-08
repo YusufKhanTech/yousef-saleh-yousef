@@ -4,6 +4,8 @@ export class ServiceModel {
   serviceIcon?: string;
   image?: string;
   description?: string;
+  satisfiedClientCount?: number;
+  completedProjectCount?: number;
   keyPoints?: ServiceKeyPoints[];
   serviceIncludes?: ServiceIncludes[];
 }
