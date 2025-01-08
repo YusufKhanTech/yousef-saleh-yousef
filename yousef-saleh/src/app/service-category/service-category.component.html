@@ -21,7 +21,7 @@
   </div>
   <div class="service-image-container">
     <img [src]="selectedService?.image"/>
-    <div class="service-title">We Ensure Best Service</div>
+    <div class="service-title">{{selectedService?.serviceName}}</div>
     <div class="service-paragraph">
       {{selectedService?.description}}
     </div>
@@ -39,14 +39,14 @@
     </div>
     <div class="satisfied-clients">
       <div class="clients-container back-shadow">
-        <i class="ti ti-user client"></i>
-        <h1>323 +</h1>
+        <i class="ti ti-user-check client"></i>
+        <h1>{{selectedService?.satisfiedClientCount}}+</h1>
         <p>Satisfied clients</p>
       </div>
       <div class="success-works back-shadow">
-        <i class="ti ti-user client"></i>
-        <h1>323 +</h1>
-        <p>Satisfied clients</p>
+        <i class="ti ti-building-bank client"></i>
+        <h1>{{selectedService?.completedProjectCount}}+</h1>
+        <p>Success of works</p>
       </div>
     </div>
     <div class="services-list">
