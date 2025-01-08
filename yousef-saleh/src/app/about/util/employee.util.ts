@@ -69,9 +69,9 @@ export class EmployeeUtil {
       },
       {
         id: 'tm02',
-        name: 'Emad Mohamed',
+        name: 'Yahya ',
         designation: 'HR',
-        image: 'assets/img/employees/emad.jpeg'
+        image: 'assets/img/employees/yahya.jpeg'
       },
       {
         id: 'tm05',
