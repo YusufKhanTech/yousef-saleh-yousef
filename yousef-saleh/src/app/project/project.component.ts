@@ -11,8 +11,7 @@ import {ProjectUtil} from './util/project.util';
   styleUrl: './project.component.css',
 })
 export class ProjectComponent {
-  projects = ProjectUtil.getAllProjects().filter(project => project?.isFeaturedProject);
-
+  projects = ProjectUtil.getAllProjects();
   constructor(private router: Router) {
   }
 
