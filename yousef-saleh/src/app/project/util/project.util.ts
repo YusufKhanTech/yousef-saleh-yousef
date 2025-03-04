@@ -18,7 +18,8 @@ export class ProjectUtil {
         name: 'Power supply to Khafji Joint operation 115/13.8 KV Substation',
         projectType: PROJECT_TYPE.CONSTRUCTIONS,
         image: 'assets/img/project-images/P2.jpeg',
-        description: '',
+        description: 'Power Supply to Khafji Joint Operation 115/13.8 KV Substation\n' +
+          'Yousef Saleh Yousef Contracting & Establishment played a vital role in enhancing the power infrastructure for the Khafji Joint Operation (KJO) by delivering a robust 115/13.8KV substation power supply. Our scope included the installation of high-voltage transmission lines, transformers, and advanced protection systems, ensuring seamless energy distribution to critical operational facilities. The project was executed with precision, adhering to the highest safety and quality standards to support the growing energy demands of the region.',
         isFeaturedProject: false,
         projectInfo: {
           id: 1,
