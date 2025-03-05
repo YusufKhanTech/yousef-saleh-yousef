@@ -21,7 +21,7 @@
   background: #fff;
   border-radius: 50%;
   overflow: hidden;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.35), /* Increased opacity for a darker shadow */ 0 4px 6px rgba(0, 0, 0, 0.3); /* Increased opacity for a darker shadow */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   width: 200px;
   height: 200px;
