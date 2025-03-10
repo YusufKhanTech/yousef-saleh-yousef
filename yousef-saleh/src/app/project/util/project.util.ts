@@ -18,7 +18,7 @@ export class ProjectUtil {
         name: 'Power supply to Khafji Joint operation 115/13.8 KV Substation',
         projectType: PROJECT_TYPE.CONSTRUCTIONS,
         image: 'assets/img/project-images/P2.jpeg',
-        description: '',
+        description: 'Yousef Saleh Yousef Contracting & Establishment played a vital role in enhancing the power infrastructure for the Khafji Joint Operation (KJO) by delivering a robust 115/13.8KV substation power supply. Our scope included the installation of high-voltage transmission lines, transformers, and advanced protection systems, ensuring seamless energy distribution to critical operational facilities. The project was executed with precision, adhering to the highest safety and quality standards to support the growing energy demands of the region.',
         isFeaturedProject: false,
         projectInfo: {
           id: 1,
@@ -38,7 +38,7 @@ export class ProjectUtil {
         name: 'As-Sarrar-2, 115/33/13.8KV Substation',
         projectType: PROJECT_TYPE.CONSTRUCTIONS,
         image: 'assets/img/project-images/image010.jpg',
-        description: '',
+        description: 'Our team successfully executed the construction and commissioning of the As-Sarrar-2 substation, a crucial addition to the region’s power grid. This 115/33/13.8KV facility enhances electricity transmission efficiency, providing a stable power supply to residential, commercial, and industrial zones. The project involved state-of-the-art GIS technology, power transformers, and SCADA integration to ensure real-time monitoring and operational reliability.',
         isFeaturedProject: false,
         projectInfo: {
           id: 2,
@@ -73,7 +73,7 @@ export class ProjectUtil {
         name: 'Construction of Pump Room',
         projectType: PROJECT_TYPE.CONSTRUCTIONS,
         image: 'assets/img/project-images/30.jpg',
-        description: '',
+        description: 'As part of our expertise in infrastructure development, YSY Contracting & Establishment efficiently designed and constructed a pump room tailored to meet the water management needs of the project site. The facility includes high-capacity pumps, advanced filtration systems, and automated controls, ensuring efficient water distribution for industrial and municipal applications. The structure was built to withstand harsh environmental conditions while maintaining optimal performance.',
         isFeaturedProject: false,
         projectInfo: {
           id: 3,
@@ -112,7 +112,7 @@ export class ProjectUtil {
         name: 'Substation Pre-Cast Boundary Wall',
         projectType: PROJECT_TYPE.CONSTRUCTIONS,
         image: 'assets/img/project-images/image186.jpg',
-        description: '',
+        description: 'Security and durability were the priorities in constructing the pre-cast boundary wall for a high-voltage substation. YSY provided a reinforced concrete perimeter solution, offering protection against external threats while maintaining accessibility for maintenance and operations. Our innovative pre-cast technology allowed for rapid installation, reduced construction time, and enhanced structural integrity, ensuring long-term reliability.',
         isFeaturedProject: false,
         projectInfo: {
           id: 4,
@@ -145,7 +145,7 @@ export class ProjectUtil {
         name: 'Asphalting',
         projectType: PROJECT_TYPE.CONSTRUCTIONS,
         image: 'assets/img/project-images/image208.jpg',
-        description: '',
+        description: 'YSY Contracting & Establishment took charge of high-quality asphalting works, improving road infrastructure to support transportation and logistics. Our process involved grading, compaction, and application of premium-grade asphalt, ensuring a smooth, durable, and weather-resistant surface. The project was completed with strict adherence to traffic safety standards, providing enhanced connectivity for the surrounding areas.',
         isFeaturedProject: false,
         projectInfo: {
           id: 5,

@@ -18,7 +18,8 @@
 }
 
 .iso-award-track {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto auto;
   gap: 26px;
   overflow-x: auto;
   scroll-behavior: smooth;
