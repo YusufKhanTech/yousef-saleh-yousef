@@ -62,19 +62,19 @@ export class EmployeeUtil {
   public static getAllTeamMembers(): TeamMember[] {
     return [
       {
-        id: 'tm01',
+        id: 'emp01',
         name: 'Afifi Farag',
         designation: 'Financial Advisor',
         image: 'assets/img/employees/afifi.jpeg'
       },
       {
-        id: 'tm02',
-        name: 'Emad Mohamed',
-        designation: 'HR',
-        image: 'assets/img/employees/emad.jpeg'
+        id: 'emp02',
+        name: 'Yahya',
+        designation: 'HR Manager',
+        image: 'assets/img/employees/yahya.jpeg'
       },
       {
-        id: 'tm05',
+        id: 'emp03',
         name: 'Mohammad Arif Khan',
         designation: 'Project Engineer',
         image: 'assets/img/employees/arif.jpeg'
