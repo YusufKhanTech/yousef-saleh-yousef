@@ -116,10 +116,6 @@
 }
 
 @media (max-width: 480px) {
-  .certificate-content {
-    display: block;
-  }
-
   .certificate-card {
     margin-top: 22px;
   }
