@@ -142,7 +142,11 @@
        </div>
      </div>
     }
-
+  </div>
+  <app-heading-content title="Commercial Certificates"
+                       subTitle="Highlighting our expertise with esteemed commercial certificates.">
+  </app-heading-content>
+  <div class="certificate-content">
     @for(commercialCertificate of commercialCertificates; track commercialCertificate?.certificateId) {
       <div class="certificate-card">
       <div class="certificate-content-card">
@@ -155,7 +159,11 @@
         </div>
       </div>
     }
-
+  </div>
+  <app-heading-content title="Awards and Certificates"
+                       subTitle="Showcasing excellence through our awards and certificates in the construction industry.">
+  </app-heading-content>
+  <div class="certificate-content">
     @for(aFourCommercialCertificate of aFourCommercialCertificates; track aFourCommercialCertificate?.certificateId; let i = $index){
       <div class="certificate-card">
       <div class="certificate-content-card">
@@ -169,7 +177,11 @@
         </div>
       </div>
     }
-
+  </div>
+  <app-heading-content title="ISO Certification"
+                       subTitle="Demonstrating quality standards with our ISO certifications.">
+  </app-heading-content>
+  <div class="certificate-content">
     @for(isoCertificate of isoCertificates; track isoCertificate?.certificateId; let i = $index){
       <div class="certificate-card">
       <div class="certificate-content-card">
@@ -183,7 +195,11 @@
         </div>
       </div>
     }
-
+  </div>
+  <app-heading-content title="Pre-Qualified Certification"
+                       subTitle="Building trust through our pre-qualified certifications.">
+  </app-heading-content>
+  <div class="certificate-content">
     @for(preQualifiedCertificate of preQualifiedCertificates; track preQualifiedCertificate?.certificateId; let i = $index){
       <div class="certificate-card">
       <div class="certificate-content-card">
@@ -197,5 +213,9 @@
         </div>
       </div>
     }
+  </div>
+  <div *ngIf="isPopupOpen" class="popup" (click)="closePopup()">
+      <span class="close" (click)="closePopup()">&times;</span>
+      <img [src]="popupImageSrc" class="popup-content" alt="Popup Image">
   </div>
 </div>
