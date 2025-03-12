@@ -4,18 +4,12 @@ export class AwardAndCertificateUtil {
 
   public static commercialCertificates: AwardAndCertificate[] = [
     { certificateId: 'cc01', certificateName: 'CR', image: '/assets/img/awards/ministry-of-commerce.png', showImage: '/assets/img/awards/cr-registration.png' },
-    { certificateId: 'cc02', certificateName: 'saudi-contractor-classification', image: '/assets/img/awards/cc-1.jpeg', showImage: '/assets/img/awards/contractor-classification.png' },
+    { certificateId: 'cc02', certificateName: 'saudi-contractor-classification', image: '/assets/img/awards/saudi-contractor-authority.jpeg', showImage: '/assets/img/awards/contractor-classification.png' },
     { certificateId: 'cc03', certificateName: 'chamber', image: '/assets/img/awards/asharqia-chamber.svg', showImage: '/assets/img/awards/cc-chamber.png' },
     { certificateId: 'cc04', certificateName: 'national-address', image: '/assets/img/awards/national-address.svg', showImage: '/assets/img/awards/cc-chamber.jpeg' },
     { certificateId: 'cc05', certificateName: 'gosi-certification', image: '/assets/img/awards/gosi.svg', showImage: '/assets/img/awards/cc-chamber.jpeg' },
     { certificateId: 'cc06', certificateName: 'vat-certification', image: '/assets/img/awards/zakat.png', showImage: '/assets/img/awards/cc-vat.jpeg' },
     { certificateId: 'cc07', certificateName: 'zakat-certification', image: '/assets/img/awards/zakat.png' , showImage: '/assets/img/awards/cc-zakat-1.jpeg' }
-  ];
-
-  public static aFourCommercialCertificates: AwardAndCertificate[] = [
-    { certificateId: 'acc01', certificateName: 'vat', image: '/assets/img/awards/cc-vat.jpeg' },
-    { certificateId: 'acc02', certificateName: 'zakat-1', image: '/assets/img/awards/cc-zakat-1.jpeg' },
-    { certificateId: 'acc03', certificateName: 'zakat', image: '/assets/img/awards/cc-zakat.jpeg' }
   ];
 
   public static preQualifiedCertificates: AwardAndCertificate[] = [
