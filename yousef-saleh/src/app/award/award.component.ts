@@ -1,17 +1,17 @@
 import {Component, ElementRef, HostListener, ViewChild} from '@angular/core';
-import {BannerContentComponent} from "../banner-content/banner-content.component";
-import { NgIf } from '@angular/common';
 import {HeadingContentComponent} from "../heading-content/heading-content.component";
-import { CERTIFICATE_TYPE} from "./model/award-and-certification.model";
+import {AwardAndCertificate, CERTIFICATE_TYPE} from "./model/award-and-certification.model";
 import {AwardAndCertificateUtil} from "./util/award-and-certificate.util";
+import {NgIf} from '@angular/common';
+import {BannerContentComponent} from '../banner-content/banner-content.component';
 
 @Component({
   selector: 'app-award',
   standalone: true,
   imports: [
-    BannerContentComponent,
-    NgIf,
     HeadingContentComponent,
+    NgIf,
+    BannerContentComponent,
   ],
   templateUrl: './award.component.html',
   styleUrl: './award.component.css'
@@ -29,11 +29,9 @@ export class AwardComponent {
   isPopupOpen = false;
   popupImageSrc: string | undefined;
   commercialCertificates = AwardAndCertificateUtil.getCertificatesByCategory(CERTIFICATE_TYPE.COMMERCIAL);
-  aFourCommercialCertificates = AwardAndCertificateUtil.getCertificatesByCategory(CERTIFICATE_TYPE.A_FOUR_COMMERCIAL);
   preQualifiedCertificates = AwardAndCertificateUtil.getCertificatesByCategory(CERTIFICATE_TYPE.PREQUALIFIED);
   isoCertificates = AwardAndCertificateUtil.getCertificatesByCategory(CERTIFICATE_TYPE.ISO);
   aFourRecognitionCertificates = AwardAndCertificateUtil.getCertificatesByCategory(CERTIFICATE_TYPE.A_FOUR_RECOGNITION);
-  protected readonly CERTIFICATE_TYPE = CERTIFICATE_TYPE;
 
   @HostListener('window:resize', [])
   onResize(): void {
@@ -61,6 +59,33 @@ export class AwardComponent {
     });
   }
 
+  downloadImage(awardAndCertificate?: AwardAndCertificate) {
+    if (awardAndCertificate?.showImage) {
+      fetch(awardAndCertificate?.showImage)
+        .then((response) => response.blob())
+        .then((blob) => {
+          const link = document.createElement('a');
+          link.href = URL.createObjectURL(blob);
+          link.download = awardAndCertificate?.certificateName +'.jpg';
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+          URL.revokeObjectURL(link.href);
+        })
+        .catch((error) => {
+          console.error('Error downloading image:', error);
+        });
+    }
+  }
+
+  scrollLeft(awardType: string): void {
+    this.scroll(awardType, 'left');
+  }
+
+  scrollRight(awardType: string): void {
+    this.scroll(awardType, 'right');
+  }
+
   private getCarouselByCertificateType(awardType: string, targetCarousel: any) {
     switch (awardType) {
       case CERTIFICATE_TYPE.COMMERCIAL:
@@ -80,14 +105,6 @@ export class AwardComponent {
         break;
     }
     return targetCarousel;
-  }
-
-  scrollLeft(awardType: string): void {
-    this.scroll(awardType, 'left');
-  }
-
-  scrollRight(awardType: string): void {
-    this.scroll(awardType, 'right');
   }
 
 }
