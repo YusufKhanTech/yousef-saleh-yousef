@@ -2,6 +2,7 @@ export interface AwardAndCertificate {
   certificateId: string;
   certificateName: string;
   image: string;
+  showImage?: string;
 }
 
 export enum CERTIFICATE_TYPE {
