@@ -1,17 +1,15 @@
 import {Component, ElementRef, HostListener, ViewChild} from '@angular/core';
-import {BannerContentComponent} from "../banner-content/banner-content.component";
-import { NgIf } from '@angular/common';
 import {HeadingContentComponent} from "../heading-content/heading-content.component";
 import { CERTIFICATE_TYPE} from "./model/award-and-certification.model";
 import {AwardAndCertificateUtil} from "./util/award-and-certificate.util";
+import {NgIf} from '@angular/common';
 
 @Component({
   selector: 'app-award',
   standalone: true,
   imports: [
-    BannerContentComponent,
-    NgIf,
     HeadingContentComponent,
+    NgIf,
   ],
   templateUrl: './award.component.html',
   styleUrl: './award.component.css'
