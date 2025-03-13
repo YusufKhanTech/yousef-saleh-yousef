@@ -22,7 +22,7 @@ export class EmployeeUtil {
         name: 'Yousef Saleh Al Dossary',
         designation: 'Chairman',
         alignment: EmployeeAlignment.RIGHT,
-        description: 'As Chairman of Yousef Saleh Yousef Contracting and Establishment, I am proud to lead an organization known for quality, integrity, and professionalism. Our commitment to delivering exceptional services and innovative solutions is at the core of our success. We prioritize safety, efficiency, and customer satisfaction in every project. Together with our dedicated team, we continue to set the standard for excellence and build a brighter future for our communities.',
+        description: 'At Yousef Saleh Yousef Contracting & Establishment (YSY), our foundation is built on trust, excellence, and innovation. With strong values and a commitment to integrity, we continue to grow and evolve, ensuring a sustainable and prosperous future for our company and stakeholders.',
         image: '/assets/img/employees/yousef.png',
         keyPoints: [
           {id: 'ek001', value: 'Committed to delivering exceptional services with integrity and innovation.'},
@@ -35,7 +35,7 @@ export class EmployeeUtil {
         name: 'Khalifa Al Dossary',
         designation:'Vice Chairman',
         alignment: EmployeeAlignment.LEFT,
-        description: 'As Vice Chairman, I am honored to help steer Yousef Saleh Yousef Contracting and Establishment’s strategic direction. Our focus is on operational excellence, timely project delivery, and maintaining high-quality standards. We are committed to integrity, transparency, and building strong relationships with clients and partners. With a forward-looking approach, we are prepared to navigate future challenges and contribute to the development of Saudi Arabia.',
+        description: 'YSY stands for integrity, dedication, and progress. Our success is driven by strong leadership, a skilled workforce, and an unwavering commitment to excellence. We believe in fostering a culture of trust and collaboration, ensuring long-term success and meaningful contributions to region.',
         image:'/assets/img/employees/khalifa.jpeg',
         keyPoints: [
           {id: 'ek001', value: 'Driving operational excellence and ensuring timely, high-quality project delivery.'},
@@ -62,19 +62,19 @@ export class EmployeeUtil {
   public static getAllTeamMembers(): TeamMember[] {
     return [
       {
-        id: 'tm01',
+        id: 'emp01',
         name: 'Afifi Farag',
         designation: 'Financial Advisor',
         image: 'assets/img/employees/afifi.jpeg'
       },
       {
-        id: 'tm02',
-        name: 'Emad Mohamed',
-        designation: 'HR',
-        image: 'assets/img/employees/emad.jpeg'
+        id: 'emp02',
+        name: 'Yahya',
+        designation: 'HR Manager',
+        image: 'assets/img/employees/yahya.jpeg'
       },
       {
-        id: 'tm05',
+        id: 'emp03',
         name: 'Mohammad Arif Khan',
         designation: 'Project Engineer',
         image: 'assets/img/employees/arif.jpeg'
