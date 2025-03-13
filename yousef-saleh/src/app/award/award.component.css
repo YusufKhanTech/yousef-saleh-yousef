@@ -4,21 +4,19 @@
 }
 
 .certificate-content {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  margin: 30px auto;
-  max-width: 75%;
-}
-
-.certificate-content:has(.certificate-card:nth-child(3):last-child),
-.certificate-content:has(.certificate-card:nth-child(2):last-child),
-.certificate-content:has(.certificate-card:nth-child(1):last-child),
-.certificate-content:has(.certificate-card:nth-child(5)) {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
+
+/*.certificate-content:has(.certificate-card:nth-child(3):last-child),*/
+/*.certificate-content:has(.certificate-card:nth-child(2):last-child),*/
+/*.certificate-content:has(.certificate-card:nth-child(1):last-child),*/
+/*.certificate-content:has(.certificate-card:nth-child(5)) {*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*  flex-wrap: wrap;*/
+/*}*/
 
 .certificate-card {
   display: flex;
@@ -112,21 +110,36 @@
 .close:focus {
   color: #f1f1f1;
 }
-
-@media (max-width: 768px) {
+@media (min-width: 1541px) {
+  .certificate-section {
+    max-width: 80%;
+  }
   .certificate-content {
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 90%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+  }
+  .certificate-content:has(.certificate-card:nth-child(3):last-child),
+  .certificate-content:has(.certificate-card:nth-child(2):last-child),
+  .certificate-content:has(.certificate-card:nth-child(1):last-child),
+  .certificate-content:has(.certificate-card:nth-child(5)) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
-
-/* Mobile View (2 Cards per Row) */
-@media (max-width: 480px) {
+@media(max-width:600px) {
+  .certificate-content{
+    gap: 20px;
+  }
   .certificate-card {
-    margin-top: 0;
+    padding: 10px;
+    margin-bottom: 30px;
   }
-  .certificate-content {
-    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
-    max-width: 90%;
+  .certificate-content-card{
+    width:150px;
+    height: 150px;
   }
+  .download-icon {
+    position: absolute;
+    top: 100%;}
 }
