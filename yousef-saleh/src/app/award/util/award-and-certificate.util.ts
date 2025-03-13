@@ -24,11 +24,11 @@ export class AwardAndCertificateUtil {
   ];
 
   public static  aFourRecognitionCertificates: AwardAndCertificate[] = [
+    { certificateId: 'arc01', certificateName: 'national-grid-award',image: '/assets/img/clients/saudi-electricity-logo.png', showImage: '/assets/img/awards/sec-approval-app.png' },
     { certificateId: 'arc02', certificateName: 'national-grid', image: '/assets/img/clients/national-grid-logo.png', showImage: '/assets/img/awards/national-grid-app-certificate.png' },
-    { certificateId: 'arc03', certificateName: 'zamil-coolcare', image: '/assets/img/clients/national-grid-logo.png',showImage: '/assets/img/awards/zamil-app-certificate.png' },
-    { certificateId: 'arc01', certificateName: 'national-grid-award',image: '/assets/img/clients/national-grid-logo.png', showImage: '/assets/img/awards/sec-approval-app.png' },
-    { certificateId: 'arc04', certificateName: 'awards-saudi-electricity', image: '/assets/img/clients/national-grid-logo.png', showImage: '/assets/img/awards/sec-work-progress-certificate.png' },
-    { certificateId: 'arc05', certificateName: 'awards-saudi-electricity', image: '/assets/img/clients/national-grid-logo.png', showImage: '/assets/img/awards/sec-approval-certificate.png' },
+    { certificateId: 'arc04', certificateName: 'awards-saudi-electricity', image: '/assets/img/clients/saudi-electricity-logo.png', showImage: '/assets/img/awards/sec-work-progress-certificate.png' },
+    { certificateId: 'arc03', certificateName: 'zamil-coolcare', image: '/assets/img/awards/zamil-logo.png',showImage: '/assets/img/awards/zamil-app-certificate.png' },
+    { certificateId: 'arc05', certificateName: 'awards-saudi-electricity', image: '/assets/img/clients/saudi-electricity-logo.png', showImage: '/assets/img/awards/sec-approval-certificate.png' },
     { certificateId: 'arc06', certificateName: 'awards-saudi-electricity', image: '/assets/img/clients/national-grid-logo.png', showImage: '/assets/img/awards/awards-saudi-electricity.jpeg' },
   ];
 
