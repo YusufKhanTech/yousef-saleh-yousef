@@ -18,11 +18,11 @@ import {BannerContentComponent} from '../banner-content/banner-content.component
 })
 export class AwardComponent {
 
-  @ViewChild('carousel', { static: false }) carousel!: ElementRef;
-  @ViewChild('aFourCarousel', { static: false }) aFourCarousel!: ElementRef;
-  @ViewChild('isoCarousel', { static: false }) isoCarousel!: ElementRef;
-  @ViewChild('aFourRecognitionCarousel', { static: false }) aFourRecognitionCarousel!: ElementRef;
-  @ViewChild('preCarousel', { static: false }) preCarousel!: ElementRef;
+  @ViewChild('carousel', {static: false}) carousel!: ElementRef;
+  @ViewChild('aFourCarousel', {static: false}) aFourCarousel!: ElementRef;
+  @ViewChild('isoCarousel', {static: false}) isoCarousel!: ElementRef;
+  @ViewChild('aFourRecognitionCarousel', {static: false}) aFourRecognitionCarousel!: ElementRef;
+  @ViewChild('preCarousel', {static: false}) preCarousel!: ElementRef;
   scrollAmount = 400;
   isSmallScreen = window.innerWidth <= 768;
   breadcrumbTexts = ['Home', 'Awards'];
@@ -49,16 +49,6 @@ export class AwardComponent {
     this.popupImageSrc = undefined;
   }
 
-  scroll(awardType: string, direction: 'left' | 'right'): void {
-    const scrollAmount = direction === 'left' ? -this.scrollAmount : this.scrollAmount;
-    let targetCarousel: any;
-    targetCarousel = this.getCarouselByCertificateType(awardType, targetCarousel);
-    targetCarousel.nativeElement.scrollBy({
-      left: scrollAmount,
-      behavior: 'smooth',
-    });
-  }
-
   downloadImage(awardAndCertificate?: AwardAndCertificate) {
     if (awardAndCertificate?.showImage) {
       fetch(awardAndCertificate?.showImage)
@@ -66,7 +56,7 @@ export class AwardComponent {
         .then((blob) => {
           const link = document.createElement('a');
           link.href = URL.createObjectURL(blob);
-          link.download = awardAndCertificate?.certificateName +'.jpg';
+          link.download = awardAndCertificate?.certificateName + '.jpg';
           document.body.appendChild(link);
           link.click();
           document.body.removeChild(link);
@@ -78,33 +68,45 @@ export class AwardComponent {
     }
   }
 
-  scrollLeft(awardType: string): void {
-    this.scroll(awardType, 'left');
-  }
+  // scroll(awardType: string, direction: 'left' | 'right'): void {
+  //   const scrollAmount = direction === 'left' ? -this.scrollAmount : this.scrollAmount;
+  //   let targetCarousel: any;
+  //   targetCarousel = this.getCarouselByCertificateType(awardType, targetCarousel);
+  //   targetCarousel.nativeElement.scrollBy({
+  //     left: scrollAmount,
+  //     behavior: 'smooth',
+  //   });
+  // }
 
-  scrollRight(awardType: string): void {
-    this.scroll(awardType, 'right');
-  }
+  // scrollLeft(awardType: string): void {
 
-  private getCarouselByCertificateType(awardType: string, targetCarousel: any) {
-    switch (awardType) {
-      case CERTIFICATE_TYPE.COMMERCIAL:
-        targetCarousel = this.carousel;
-        break;
-      case CERTIFICATE_TYPE.A_FOUR_COMMERCIAL:
-        targetCarousel = this.aFourCarousel;
-        break;
-      case CERTIFICATE_TYPE.ISO:
-        targetCarousel = this.isoCarousel;
-        break;
-      case CERTIFICATE_TYPE.A_FOUR_RECOGNITION:
-        targetCarousel = this.aFourRecognitionCarousel;
-        break;
-      default:
-        targetCarousel = this.preCarousel;
-        break;
-    }
-    return targetCarousel;
-  }
+  //   this.scroll(awardType, 'left');
+  // }
+  //
+  // scrollRight(awardType: string): void {
+  //   this.scroll(awardType, 'right');
+  // }
 
+  // private getCarouselByCertificateType(awardType: string, targetCarousel: any) {
+  //   switch (awardType) {
+  //     case CERTIFICATE_TYPE.COMMERCIAL:
+  //       targetCarousel = this.carousel;
+  //       break;
+  //     case CERTIFICATE_TYPE.A_FOUR_COMMERCIAL:
+  //       targetCarousel = this.aFourCarousel;
+  //       break;
+  //     case CERTIFICATE_TYPE.ISO:
+  //       targetCarousel = this.isoCarousel;
+  //       break;
+  //     case CERTIFICATE_TYPE.A_FOUR_RECOGNITION:
+  //       targetCarousel = this.aFourRecognitionCarousel;
+  //       break;
+  //     default:
+  //       targetCarousel = this.preCarousel;
+  //       break;
+  //   }
+  //   return targetCarousel;
+  // }
 }
+
+
