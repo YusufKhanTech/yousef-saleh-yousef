@@ -6,8 +6,8 @@ export class AwardAndCertificateUtil {
     { certificateId: 'cc01', certificateName: 'CR', image: '/assets/img/awards/ministry-of-commerce.png', showImage: '/assets/img/awards/cr-registration.png' },
     { certificateId: 'cc02', certificateName: 'saudi-contractor-classification', image: '/assets/img/awards/saudi-contractor-authority.jpeg', showImage: '/assets/img/awards/contractor-classification.png' },
     { certificateId: 'cc03', certificateName: 'chamber', image: '/assets/img/awards/asharqia-chamber.svg', showImage: '/assets/img/awards/cc-chamber.png' },
-    { certificateId: 'cc04', certificateName: 'national-address', image: '/assets/img/awards/national-address.svg', showImage: '/assets/img/awards/cc-chamber.jpeg' },
-    { certificateId: 'cc05', certificateName: 'gosi-certification', image: '/assets/img/awards/gosi.svg', showImage: '/assets/img/awards/cc-chamber.jpeg' },
+    { certificateId: 'cc04', certificateName: 'national-address', image: '/assets/img/awards/national-address.svg', showImage: '/assets/img/awards/national-address.png' },
+    { certificateId: 'cc05', certificateName: 'gosi-certification', image: '/assets/img/awards/gosi.svg', showImage: '/assets/img/awards/gosi-certificate.png' },
     { certificateId: 'cc06', certificateName: 'vat-certification', image: '/assets/img/awards/zakat.png', showImage: '/assets/img/awards/cc-vat.jpeg' },
     { certificateId: 'cc07', certificateName: 'zakat-certification', image: '/assets/img/awards/zakat.png' , showImage: '/assets/img/awards/cc-zakat-1.jpeg' }
   ];
@@ -27,9 +27,9 @@ export class AwardAndCertificateUtil {
     { certificateId: 'arc02', certificateName: 'national-grid', image: '/assets/img/clients/national-grid-logo.png', showImage: '/assets/img/awards/national-grid-app-certificate.png' },
     { certificateId: 'arc03', certificateName: 'zamil-coolcare', image: '/assets/img/clients/national-grid-logo.png',showImage: '/assets/img/awards/zamil-app-certificate.png' },
     { certificateId: 'arc01', certificateName: 'national-grid-award',image: '/assets/img/clients/national-grid-logo.png', showImage: '/assets/img/awards/sec-approval-app.png' },
-    { certificateId: 'arc01', certificateName: 'awards-saudi-electricity', image: '/assets/img/clients/national-grid-logo.png', showImage: '/assets/img/awards/sec-work-progress-certificate.png' },
-    { certificateId: 'arc01', certificateName: 'awards-saudi-electricity', image: '/assets/img/clients/national-grid-logo.png', showImage: '/assets/img/awards/sec-approval-certificate.png' },
-    { certificateId: 'arc01', certificateName: 'awards-saudi-electricity', image: '/assets/img/clients/national-grid-logo.png', showImage: '/assets/img/awards/awards-saudi-electricity.jpeg' },
+    { certificateId: 'arc04', certificateName: 'awards-saudi-electricity', image: '/assets/img/clients/national-grid-logo.png', showImage: '/assets/img/awards/sec-work-progress-certificate.png' },
+    { certificateId: 'arc05', certificateName: 'awards-saudi-electricity', image: '/assets/img/clients/national-grid-logo.png', showImage: '/assets/img/awards/sec-approval-certificate.png' },
+    { certificateId: 'arc06', certificateName: 'awards-saudi-electricity', image: '/assets/img/clients/national-grid-logo.png', showImage: '/assets/img/awards/awards-saudi-electricity.jpeg' },
   ];
 
   public static getCertificatesByCategory(category: string): AwardAndCertificate[] {
