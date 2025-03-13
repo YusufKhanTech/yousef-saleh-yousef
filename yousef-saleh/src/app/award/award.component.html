@@ -27,12 +27,11 @@
   </app-heading-content>
   <div class="certificate-content">
     @for(commercialCertificate of commercialCertificates; track commercialCertificate?.certificateId) {
-      <div class="certificate-card">
-      <div class="certificate-content-card">
-        <img class="award-logo"
-             [src]="commercialCertificate?.image"
-             (click)="openPopup(commercialCertificate?.showImage)"/>
-      </div>
+      <div class="certificate-card" (click)="openPopup(commercialCertificate?.showImage)">
+        <div class="certificate-content-card" >
+          <img class="award-logo"
+               [src]="commercialCertificate?.image"/>
+        </div>
         <div class="download-icon">
           <i class="ti ti-download" (click)="downloadImage(commercialCertificate)"></i>
         </div>
@@ -44,13 +43,12 @@
   </app-heading-content>
   <div class="certificate-content">
     @for(isoCertificate of isoCertificates; track isoCertificate?.certificateId; let i = $index){
-      <div class="certificate-card">
-      <div class="certificate-content-card">
-        <img class="award-logo"
-             [src]="isoCertificate.image"
-             [alt]="isoCertificate.certificateName"
-             (click)="openPopup(isoCertificate?.showImage)"/>
-      </div>
+      <div class="certificate-card" (click)="openPopup(isoCertificate?.showImage)">
+        <div class="certificate-content-card">
+          <img class="award-logo"
+               [src]="isoCertificate.image"
+               [alt]="isoCertificate.certificateName"/>
+        </div>
         <div class="download-icon">
           <i class="ti ti-download" (click)="downloadImage(isoCertificate)"></i>
         </div>
@@ -62,13 +60,12 @@
   </app-heading-content>
   <div class="certificate-content">
     @for(preQualifiedCertificate of preQualifiedCertificates; track preQualifiedCertificate?.certificateId; let i = $index){
-      <div class="certificate-card">
-      <div class="certificate-content-card">
-        <img class="award-logo"
-             [src]="preQualifiedCertificate.image"
-             [alt]="preQualifiedCertificate.certificateName"
-             (click)="openPopup(preQualifiedCertificate?.showImage)"/>
-      </div>
+      <div class="certificate-card" (click)="openPopup(preQualifiedCertificate?.showImage)">
+        <div class="certificate-content-card">
+          <img class="award-logo"
+               [src]="preQualifiedCertificate.image"
+               [alt]="preQualifiedCertificate.certificateName"/>
+        </div>
         <div class="download-icon">
           <i class="ti ti-download" (click)="downloadImage(preQualifiedCertificate)"></i>
         </div>
