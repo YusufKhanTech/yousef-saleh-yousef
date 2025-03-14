@@ -34,6 +34,7 @@ export class ServiceCategoryComponent implements OnInit {
   selectService(event: Event, service: ServiceModel): void {
     event.preventDefault();
     this.selectedService = service;
+    window.scrollTo({ top: 420, behavior: "smooth" });
   }
 
   selectServiceInclude(event: Event, serviceInclude: string | undefined): void {
