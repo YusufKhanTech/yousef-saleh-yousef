@@ -69,7 +69,7 @@ export class EmployeeUtil {
       },
       {
         id: 'emp02',
-        name: 'Yahya',
+        name: 'Yehia Ali',
         designation: 'HR Manager',
         image: 'assets/img/employees/yahya.jpeg'
       },

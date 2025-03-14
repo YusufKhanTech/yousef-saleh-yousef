@@ -3,13 +3,13 @@ import {AwardAndCertificate, CERTIFICATE_TYPE} from '../model/award-and-certific
 export class AwardAndCertificateUtil {
 
   public static commercialCertificates: AwardAndCertificate[] = [
-    { certificateId: 'cc01', certificateName: 'CR', image: '/assets/img/awards/ministry-of-commerce.png', showImage: '/assets/img/awards/cr-registration.png' },
-    { certificateId: 'cc02', certificateName: 'saudi-contractor-classification', image: '/assets/img/awards/saudi-contractor-authority.jpeg', showImage: '/assets/img/awards/contractor-classification.png' },
-    { certificateId: 'cc03', certificateName: 'chamber', image: '/assets/img/awards/asharqia-chamber.svg', showImage: '/assets/img/awards/cc-chamber.png' },
-    { certificateId: 'cc04', certificateName: 'national-address', image: '/assets/img/awards/national-address.svg', showImage: '/assets/img/awards/national-address.png' },
-    { certificateId: 'cc05', certificateName: 'gosi-certification', image: '/assets/img/awards/gosi.svg', showImage: '/assets/img/awards/gosi-certificate.png' },
-    { certificateId: 'cc06', certificateName: 'vat-certification', image: '/assets/img/awards/zakat.png', showImage: '/assets/img/awards/cc-vat.jpeg' },
-    { certificateId: 'cc07', certificateName: 'zakat-certification', image: '/assets/img/awards/zakat.png' , showImage: '/assets/img/awards/cc-zakat-1.jpeg' }
+    { certificateId: 'cc01', certificateName: 'CR', image: '/assets/img/awards/moc-logo.png', showImage: '/assets/img/awards/cr-registration.png' },
+    { certificateId: 'cc02', certificateName: 'saudi-contractor-classification', image: '/assets/img/awards/saudi-contractor-authority.png', showImage: '/assets/img/awards/contractor-classification.png' },
+    { certificateId: 'cc03', certificateName: 'chamber', image: '/assets/img/awards/asharqia-chamber.png', showImage: '/assets/img/awards/cc-chamber.png' },
+    { certificateId: 'cc04', certificateName: 'national-address', image: '/assets/img/awards/national-address-logo.png', showImage: '/assets/img/awards/national-address.png' },
+    { certificateId: 'cc05', certificateName: 'gosi-certification', image: '/assets/img/awards/gosi-logo.png', showImage: '/assets/img/awards/gosi-certificate.png' },
+    { certificateId: 'cc06', certificateName: 'vat-certification', image: '/assets/img/awards/vat-logo.png', showImage: '/assets/img/awards/vat-certification.png' },
+    { certificateId: 'cc07', certificateName: 'zakat-certification', image: '/assets/img/awards/zakat-logo.png' , showImage: '/assets/img/awards/zakat-certificate.png' }
   ];
 
   public static preQualifiedCertificates: AwardAndCertificate[] = [
@@ -24,11 +24,11 @@ export class AwardAndCertificateUtil {
   ];
 
   public static  aFourRecognitionCertificates: AwardAndCertificate[] = [
+    { certificateId: 'arc01', certificateName: 'national-grid-award',image: '/assets/img/clients/saudi-electricity-logo.png', showImage: '/assets/img/awards/sec-approval-app.png' },
     { certificateId: 'arc02', certificateName: 'national-grid', image: '/assets/img/clients/national-grid-logo.png', showImage: '/assets/img/awards/national-grid-app-certificate.png' },
-    { certificateId: 'arc03', certificateName: 'zamil-coolcare', image: '/assets/img/clients/national-grid-logo.png',showImage: '/assets/img/awards/zamil-app-certificate.png' },
-    { certificateId: 'arc01', certificateName: 'national-grid-award',image: '/assets/img/clients/national-grid-logo.png', showImage: '/assets/img/awards/sec-approval-app.png' },
-    { certificateId: 'arc04', certificateName: 'awards-saudi-electricity', image: '/assets/img/clients/national-grid-logo.png', showImage: '/assets/img/awards/sec-work-progress-certificate.png' },
-    { certificateId: 'arc05', certificateName: 'awards-saudi-electricity', image: '/assets/img/clients/national-grid-logo.png', showImage: '/assets/img/awards/sec-approval-certificate.png' },
+    { certificateId: 'arc04', certificateName: 'awards-saudi-electricity', image: '/assets/img/clients/saudi-electricity-logo.png', showImage: '/assets/img/awards/sec-work-progress-certificate.png' },
+    { certificateId: 'arc03', certificateName: 'zamil-coolcare', image: '/assets/img/awards/zamil-logo.png',showImage: '/assets/img/awards/zamil-app-certificate.png' },
+    { certificateId: 'arc05', certificateName: 'awards-saudi-electricity', image: '/assets/img/clients/saudi-electricity-logo.png', showImage: '/assets/img/awards/sec-approval-certificate.png' },
     { certificateId: 'arc06', certificateName: 'awards-saudi-electricity', image: '/assets/img/clients/national-grid-logo.png', showImage: '/assets/img/awards/awards-saudi-electricity.jpeg' },
   ];
 
