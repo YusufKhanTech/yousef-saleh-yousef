@@ -8,8 +8,8 @@ export class AwardAndCertificateUtil {
     { certificateId: 'cc03', certificateName: 'chamber', image: '/assets/img/awards/asharqia-chamber.png', showImage: '/assets/img/awards/cc-chamber.png' },
     { certificateId: 'cc04', certificateName: 'national-address', image: '/assets/img/awards/national-address-logo.png', showImage: '/assets/img/awards/national-address.png' },
     { certificateId: 'cc05', certificateName: 'gosi-certification', image: '/assets/img/awards/gosi-logo.png', showImage: '/assets/img/awards/gosi-certificate.png' },
-    { certificateId: 'cc06', certificateName: 'vat-certification', image: '/assets/img/awards/vat-logo.png', showImage: '/assets/img/awards/cc-vat.jpeg' },
-    { certificateId: 'cc07', certificateName: 'zakat-certification', image: '/assets/img/awards/zakat-logo.png' , showImage: '/assets/img/awards/cc-zakat-1.jpeg' }
+    { certificateId: 'cc06', certificateName: 'vat-certification', image: '/assets/img/awards/vat-logo.png', showImage: '/assets/img/awards/vat-certification.png' },
+    { certificateId: 'cc07', certificateName: 'zakat-certification', image: '/assets/img/awards/zakat-logo.png' , showImage: '/assets/img/awards/zakat-certificate.png' }
   ];
 
   public static preQualifiedCertificates: AwardAndCertificate[] = [
